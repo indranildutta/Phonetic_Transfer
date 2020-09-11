@@ -1,0 +1,195 @@
+\documentclass[11pt]{article}
+\usepackage{apacite}
+\usepackage{syntonly}
+%\syntaxonly
+%
+%Margin - 1 inch on all sides
+%
+\usepackage[letterpaper]{geometry}
+\usepackage{times}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+
+%
+%Doublespacing
+%
+\usepackage{setspace}
+%\doublespacing
+
+%
+%Rotating tables (e.g. sideways when too long)
+%
+\usepackage{rotating}
+
+%\usepackage{hyperref}
+%
+%Fancy-header package to modify header/page numbering (insert last name)
+%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{} 
+\chead{} 
+\rhead{\thepage} 
+\lfoot{} 
+\cfoot{} 
+\rfoot{} 
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt} 
+%To make sure we actually have header 0.5in away from top edge
+%12pt is one-sixth of an inch. Subtract this from 0.5in to get headsep value
+\setlength\headsep{0.5in}
+
+
+
+%
+%Works cited environment
+%(to start, use \begin{workscited...}, each entry preceded by \bibent)
+% - from Ryan Alcock's MLA style file
+%
+%\newcommand{\bibent}{\noindent \hangindent 40pt}
+%\newenvironment{workscited}{\newpage \begin{center} References \end{center}}{\newpage }
+
+\usepackage{tipa}
+\newcommand{\nt}[1]{\textipa{[#1]}} % narrow transcription
+\newcommand{\wt}[1]{\textipa{/#1/}} % wide transcription
+
+\usepackage{graphicx} %for images
+\graphicspath{{images/}}
+\usepackage{caption}
+
+\usepackage{enumitem} %customize list numberings
+
+%
+%Begin document
+%
+
+\title{Cross-language Phonetic Transfer in Bilingual Speech}
+\date{}
+
+
+
+\begin{document}
+
+\maketitle
+	
+\bibliographystyle{apacite}
+
+\section{Introduction}
+\subsection{Literature review}
+
+Research on the phonological systems of bi/multilingual speakers suggests that speakers maintain separate, but phonologically linked sound categories for both their languages. These show cross-language influence in both perception and production. There is a lot of work on-
+\begin{enumerate}[label=(\roman*)]
+	
+\item Long-term influence due to acquisition of multiple languages-- affects not only L2, but also L1. Bidirectional influence-- shapes phonetic categories in bilinguals, which differ from that of monolingual speakers\cite{caramazza1973acquisition, flege1987production, guion2003vowel}.
+
+\item Temporary phonetic drift due to language exposure \cite{sancier1997gestural,chang2012rapid,tobin2017phonetic}
+\end{enumerate}
+These studies- look at the two languages of a bilingual speaker as used separately.
+\citeA{grosjean1994going} first studied dynamic phonetic influence due to simultaneous activation of both languages of a bilingual speaker. Although they did not find any evidence of cross-language influence, and concluded that the switch between language systems is immediate and complete at the phonetic level, subsequent studies using similar paradigms have reported different results.
+
+\paragraph{}These compare bilingual speakers’ productions during mixed-language usage to their own productions in a single language. The findings vary greatly—studies have shown unidirectional influence of L1 on L2 \cite{balukas2015spanish,antoniou2011inter,vsimavckova2015immediate,goldrick2014language}, L2 on L1 \cite{tsui2019impact,elias2017effects}, bidirectional convergence \cite{bullock2009trying, olson2016role}, divergence \cite{bullock2009trying,vsimavckova2018patterns} and no influence \cite{muldner2019phonetics,schwartz2015language}. Partly attributed to differences in methodology, populations, and language pairs, along with variation in individual switching strategies. 
+
+\paragraph{}Overall, the results suggest that cross-language phonetic influence in bilinguals increases during mixed-language processing, and both L1 and L2 sounds can show gradient phonetic shift in production as a result. The extent of shift is mediated by language-specific (sound system), context-specific (eg. language mode), and speaker-specific (proficiency, dominance) constraints. Studies eliciting spontaneous bilingual speech have also noted the influence of social factors \cite{khattab2009phonetic}. 
+
+\paragraph{}Most studies of this phenomenon have focused on consonant sounds, using differences in typical VOT of stop consonants to measure phonetic shift. Studies on vowel sounds are relatively fewer and much more recent, but suggest that vowels too show dynamic cross-language transfer. The studies so far report varied results: \citeA{elias2017effects,simonet2014phonetic,simonet2020increased} have reported L2 influence on L1 in code-switching (CS) tasks, whereas \citeA{muldner2019phonetics} found no significant increase in cross-language influence. As far as we are aware, there is no study yet on L1 influence on L2 vowels during mixed language use.
+
+\paragraph{}The majority of studies reviewed so far have used CS (both spontaneous and scripted) to induce co-activation of languages. Other methods used include delayed repetition \cite{simonet2014phonetic}, reading single- or mixed-language word lists \cite{simonet2020increased}, and interpreting across languages \cite{vsimavckova2015immediate,vsimavckova2018patterns}. \citeA{olson2013bilingual} argues— CS (switching languages within a discourse, in connected speech) allows for planning and pragmatic considerations, which independently affect production, and might therefore obscure the underlying phonetic interaction due to mixed-language processing. They propose cued picture-naming as an alternative paradigm to induce switches in language—it lacks discourse context and predictability, so offers a more controlled way to observe phonetic effects due to language-processing manipulations. Following this, other studies \cite{goldrick2014language,tsui2019impact} have used this paradigm to study dynamic phonetic transfer in bilinguals.
+
+\paragraph{}While phonetic transfer is usually measured at the point of the language-switch, previous  research has noted that the observed transfer could potentially have been triggered by two different sources— local phonetic processing (the switch itself), or global language co-activation (language mode \cite{grosjean1998studying} or context of the task). To examine this, several studies have manipulated language mode /context in addition to language-switching. Excepting one study (\citeNP{olson2013bilingual}; language context operationalized as proportion of words from each language during a test block) which found the balanced language context to mitigate transfer, results generally suggest that cross-language transfer due to switching either increases in a mixed language mode \cite{simonet2014phonetic}, or remains unaffected by it \cite{schwartz2015language,vsimavckova2015immediate,olson2016role,simonet2020increased}.
+
+
+\subsection{Present study}
+\paragraph{}Dynamic phonetic transfer has been shown to be mediated by language-specific constraints, and vary across groups. However, existing studies have largely focused on a limited set of phonologically related language pairs. We extend the research to a new language pair and population—Bengali-English bilingual speakers in India. Long history of language contact, rapid CS in this population is common, socially unmarked. Therefore, we expect any phonetic effects observed in a CS paradigm, to be at least partially representative of what happens during daily language use experience.
+
+\paragraph{}The small body of existing work on transfer in vowels so far has reported L2 influence on L1 due to language mixing. Many earlier studies on VOT, however, have shown transfer from L1 to L2. Building on the current line of questioning about the nature of transfer in vowels, we ask whether simultaneous co-activation causes an increased L1 influence on the production of L2 vowels. If this influence is characterized as accentedness \cite{goldrick2014language}, then-- can ask whether language mixing temporarily leads more accented L2 productions. 
+
+
+\paragraph{}The results of \citeA{simonet2014phonetic} and \citeA{elias2017effects} suggest that phonetic interaction during switching affects vowel categories which are common across the two languages, as well as those which are not. For the purpose of this study, two English vowels were chosen:
+(i) \wt{\ae}--exists as a category in both Bengali and General Indian English (GIE)\cite{masica1972sound}, and (ii) \wt{2}-- exists as a category in English, but not Bengali. It is assumed that the lack of a mid-central vowel in Bengali allows greater room for variablity due to shift (if any) in \nt{2} compared to \nt{\ae}. This criteria has been used to explain differences in the extent and direction of cross-language transfer in numerous studies measuring VOT. Therefore, we ask whether a parallel difference in the extent of shift is found in vowels. 
+
+
+\paragraph{}Both CS and cued picture naming have been used in different studies to elicit mixed-language productions, and have shown a similar range of variation in results. Following from the ongoing debates about  switching paradigms, we collect production data from the same participant pool using both test paradigms, allowing for a direct comparison of responses. 
+
+\paragraph{}Since previous work largely shows no inhibitory effect of a mixed language mode on temporary phonetic effects of language switching, switched and non-switched utterances were not presented in separate test blocks in this study (cf \citeNP{bullock2009trying,muldner2019phonetics,olson2016role}, etc), but rather alternated randomly within each block. Instructions were given in mixed language. Thus, maintained a bilingual language mode throughout the experiment. Also more ecologically valid, because daily language experience of the target population-- not likely to provide stable, monolingual ambient language conditions; constantly encounter mixed-language input (both auditory and visual).
+
+\paragraph{}The research questions can thus be summarized as follows:
+\begin{enumerate}[label=(\roman*)]
+	\item Does mixed-language processing temporarily increase L1 influence on L2 vowel productions?
+	\item If so, does the language-specific distribution of vowels constrain the extent of shift?
+	\item Do two commonly used paradims-- code-switching and cued picture-naming, elicit different degrees of cross-langauge transfer?
+\end{enumerate}
+
+\section{Methodology} %ID will write this
+Design: 10 participants*20 target words*2 utterance types *2 tasks *4 iterations = 3200 items
+
+\subsection{Participants}
+
+\begin{itemize}
+	\item 10 Bengali-English bilingual speakers (5 female)
+	\item age range-- 19 to 28
+	\item selected on the basis of response to a Language Background Questionnaire, to match for language experience and LSRW skills in L1 and L2 
+\end{itemize}
+
+\subsection{Stimuli}
+\begin{itemize}
+	\item Target words: 20 monosyllabic English words containing \nt{2} or \nt{ae} (not lexicalized loanwords)
+	\item Words with pre-vocalic voiced plosives (/b/ and /d/) were selected, to minimize coarticulatory effects on the target vowel
+	\item Filler words: 10 monosyllabic English words not containing the target vowels
+\end{itemize}
+
+\subsection{Procedure}
+\begin{enumerate}[]
+	\item Cued picture-naming: Participants were presented with slides in the following sequence-
+	\begin{itemize}
+		\item Language cue- a word in either English or Bengali orthography
+		\item a picture displayed for 50ms; named by the participant in either English or Bengali, depending on the language cue 
+		\item Target word- English word printed in English orthography; read out by the participant
+		\item Distracter math problem
+	\end{itemize}
+Since all target words were in English, language cue was used to manipulate the preceding word, giving target words in non-switched and switched utterances. Engish and Bengali orthographies are visually distinct, so it was used to cue language.
+  \item Code-switching: Each slide contained one target word embedded in either an English (unilingual) or a Bengali (bilingual; target produced as a code switch from Bengali) carrier sentence; read out by the participant. Carrier sentences:
+  \begin{itemize}
+  	\item Unilingual sentence: That is a yellow [Target Word].
+  	\item Mixed-language sentence: \textipa{o-ta \ae k-ta ka:lo} [Target Word].
+  \end{itemize}
+ 
+  The sound preceding the target word was uniform across al sentences (the final sound in ‘yellow’ is assimilated to [o] in Indian English), to minimize the possible effects of coarticulation on the target word. A specifier-noun construction was used to ensure identical word order in both languages, giving uniform prosodic context for the target word. For bilingual utterances, mixed orthography was used. \\
+  Four iterations of each task were recorded. Every target word appeared twice during a test block; once in a switched and once in a non-switched context. Order of items and conditions (switched vs non-switched) was randomized within each trial. Participants alternated between the two tasks.
+  
+\end{enumerate}
+\subsection{Acoustic analysis}
+ The first iteration of each task was treated as a trial. An additional 67 tokens (2.79\%) were excluded due to errors in presentation/production, giving 2333 target word items for analysis. Recodings were manually segmented and annotated in PRAAT \cite{boersma2016praat}, F1 and F2 of the target vowels \nt{2, ae} were measured at 5\% and 50\% into the vowels. 
+
+
+\section{Results} %ID will write this
+\begin{itemize}
+	\item A linear mixed effects model with utterance type (unilingual vs bilingual), vowel, and gender as fixed effects shows a significant effect of utterance type on lobanov normalized F1 at 5\% (p=0.0096). Normalized F1 is higher in the bilingual utterances.
+	
+	\item No effect of utterance type on F1 at 50\% of the vowel, or on normalized F2 values.
+	
+	\item \nt{2} is lowered to a greater extent than \nt{\ae}. 
+	
+	\item Significant effect of task 
+	
+	\item \wt{d}-initial target words show more lowering than \wt{b}-initial words %I had subsetted the data by onset consonant, and saw this. Not sure what to make of it. The b-initial set by itself doesn't show significant lowering.
+	
+\end{itemize}
+
+  
+\section{Discussion}
+Results are in line with previous studies which find that CS between languages does not lead to a parallel switch in phonology. Instead, gradient, momentary phonetic shifts are observed.
+\begin{itemize}
+	\item Both the vowels are lowered (shift towards related L1 category) in the bilingual utterances compared to speakers’ own unilingual productions, showing increased cross-language influence during mixed-language processing. 
+	\item Lowering at 5\% of the vowel, but not at 50\%, suggests that only the initial part of the vowel is receptive to dynamic shift, not the steady state
+	\item No change in F2
+	\item More shift in \nt{2} compared to \nt{\ae}-- suggests that the extent of shift is constrained by the distribution of vowels and room for variability. Since we don't have monolingual Bengali data, can't say anything about the extent of shift relative to the initial distance between the categories. 
+	\item CS in connected speech leads to greater cross-language phonetic interaction than unplanned switches through a cued picture naming task, suggesting that at least part of the observed effects in CS paradigms can be attributed to discourse awareness and planning.
+\end{itemize}
+
+\section{Conclusion}
+Mixed language processing temporarily increases cross-language phonetic transfer, causing L2 vowels to converge towards L1. The extent of shift is mediated by language-specific distribution of sound categories, and is greater in connected speech.
+
+\bibliography{references}
+
+
+
+\end{document}
