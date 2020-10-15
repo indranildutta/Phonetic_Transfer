@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.12.14)  15 OCT 2020 22:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.12.14)  16 OCT 2020 01:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -22,6 +22,13 @@ File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
+) (./apacite.sty
+Package: apacite 2005/06/08 APA citation
+\c@BibCnt=\count88
+\bibleftmargin=\skip43
+\bibindent=\skip44
+\bibparsep=\skip45
+\bibitemsep=\skip46
 )
 (c:/texlive/2018/texmf-dist/tex/latex/base/syntonly.sty
 Package: syntonly 2017/06/30 v2.1e Standard LaTeX2e package
@@ -43,9 +50,9 @@ Package ifvtex Info: VTeX not detected.
 (c:/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count88
-\Gm@cntv=\count89
-\c@Gm@tempcnt=\count90
+\Gm@cnth=\count89
+\Gm@cntv=\count90
+\c@Gm@tempcnt=\count91
 \Gm@bindingoffset=\dimen103
 \Gm@wd@mp=\dimen104
 \Gm@odd@mp=\dimen105
@@ -58,17 +65,14 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 (c:/texlive/2018/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
-) (./apacite.sty
-Package: apacite 2005/06/08 APA citation
-\c@BibCnt=\count91
-\bibleftmargin=\skip43
-\bibindent=\skip44
-\bibparsep=\skip45
-\bibitemsep=\skip46
 )
 (c:/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
+(c:/texlive/2018/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
 (c:/texlive/2018/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 
@@ -161,64 +165,30 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 70.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 71.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 71.
 
 (c:/texlive/2018/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 70.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 71.
 
 (c:/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: letterpaper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=469.75502pt
-* \textheight=650.43001pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=-37.0pt
-* \headheight=12.0pt
-* \headsep=36.135pt
-* \topskip=11.0pt
-* \footskip=30.0pt
-* \marginparwidth=59.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
 (c:/texlive/2018/texmf-dist/tex/latex/apacite/english.apc
 File: english.apc 2013/07/21 v6.03 apacite language file
 
@@ -385,9 +355,43 @@ If that doesn't work, type  X <return>  to quit.
 ! Extra \fi.
 <argument> ...APAC@apcfile \space not found.}}\fi 
                                                   \let \APAC@tmp \@undefined 
-l.70 \begin{document}
+l.71 \begin{document}
                      
 I'm ignoring this; it doesn't match any \if.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=36.135pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -457,30 +461,49 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 74.
+(Font)              <12> on input line 73.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 74.
+(Font)              <8> on input line 73.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 74.
+(Font)              <6> on input line 73.
+
+
+LaTeX Warning: No \author given.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 78.
+! Use of \@year@ doesn't match its definition.
+\Y@guion2003vowel ->\@year@ 0
+                             
+l.83 ...amazza1973acquisition,flege1987production}
+                                                  ; (ii) When both languages...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
+! Use of \@year@ doesn't match its definition.
+\Y@caramazza1973acquisition ->\@year@ 0
+                                       
+l.83 ...amazza1973acquisition,flege1987production}
+                                                  ; (ii) When both languages...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-LaTeX Warning: Citation `guion2003vowel' on page 1 undefined on input line 83.
-
-
-LaTeX Warning: Citation `caramazza1973acquisition' on page 1 undefined on input
- line 83.
-
-
-LaTeX Warning: Citation `flege1987production' on page 1 undefined on input line
- 83.
+! Use of \@year@ doesn't match its definition.
+\Y@flege1987production ->\@year@ 0
+                                  
+l.83 ...amazza1973acquisition,flege1987production}
+                                                  ; (ii) When both languages...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 85.
-
-LaTeX Warning: Reference `asymmetries' on page 1 undefined on input line 85.
-
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 93.
 [1
@@ -494,9 +517,15 @@ ne 98.
 LaTeX Warning: Citation `sirsa2013effects' on page 2 undefined on input line 10
 0.
 
-
-LaTeX Warning: Citation `masica1972sound' on page 2 undefined on input line 100
-.
+! Use of \@year@ doesn't match its definition.
+\Y@masica1972sound ->\@year@ 0
+                              
+l.100 ...an English or GIE, \cite{masica1972sound}
+                                                  ) were primarily attempts ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
 
 LaTeX Warning: Citation `pandey201517' on page 2 undefined on input line 100.
@@ -551,19 +580,35 @@ LaTeX Warning: Citation `grosjean2012attempt' on page 2 undefined on input line
 LaTeX Warning: Citation `paradis1993linguistic' on page 2 undefined on input li
 ne 120.
 
+! Use of \@year@ doesn't match its definition.
+\Y@elias2017effects ->\@year@ 0
+                               
+l.121 ...ite{elias2017effects,simonet2014phonetic}
+                                                  . What triggers this inter...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-LaTeX Warning: Reference `duration' on page 2 undefined on input line 121.
+! Use of \@year@ doesn't match its definition.
+\Y@simonet2014phonetic ->\@year@ 0
+                                  
+l.121 ...ite{elias2017effects,simonet2014phonetic}
+                                                  . What triggers this inter...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-
-LaTeX Warning: Citation `elias2017effects' on page 2 undefined on input line 12
-1.
-
-
-LaTeX Warning: Citation `simonet2014phonetic' on page 2 undefined on input line
- 121.
-
-
-LaTeX Warning: Citation `olson2016role' on page 2 undefined on input line 121.
+! Use of \@year@ doesn't match its definition.
+\Y@olson2016role ->\@year@ 0
+                            
+l.121 ...s this interaction? \citeA{olson2016role}
+                                                   argues that while cross-l...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -572,53 +617,147 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
+! Use of \@year@ doesn't match its definition.
+\Y@grosjean1998studying ->\@year@ 0
+                                   
+l.124 ...language mode \cite{grosjean1998studying}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-LaTeX Warning: Citation `grosjean1998studying' on page 3 undefined on input lin
-e 124.
+! Use of \@year@ doesn't match its definition.
+\Y@simonet2020increased ->\@year@ 0
+                                   
+l.127 ...simonet2020increased,simonet2014phonetic}
+                                                  ; (ii) However, language m...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
+! Use of \@year@ doesn't match its definition.
+\Y@simonet2014phonetic ->\@year@ 0
+                                  
+l.127 ...simonet2020increased,simonet2014phonetic}
+                                                  ; (ii) However, language m...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-LaTeX Warning: Citation `simonet2020increased' on page 3 undefined on input lin
-e 127.
+! Use of \@year@ doesn't match its definition.
+\Y@olson2016role ->\@year@ 0
+                            
+l.127 ...mode) \cite{olson2016role,tsui2019impact}
+                                                   or spontaneous conversati...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-
-LaTeX Warning: Citation `tsui2019impact' on page 3 undefined on input line 127.
-
+! Use of \@year@ doesn't match its definition.
+\Y@tsui2019impact ->\@year@ 0
+                             
+l.127 ...mode) \cite{olson2016role,tsui2019impact}
+                                                   or spontaneous conversati...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
 
 LaTeX Warning: Citation `piccinini2015voice' on page 3 undefined on input line 
 127.
 
+! Use of \@year@ doesn't match its definition.
+\Y@olson2016role ->\@year@ 0
+                            
+l.127 ...t fully understood-- \cite{olson2016role}
+                                                   found no additive effects...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-LaTeX Warning: Citation `olson2013bilingual' on page 3 undefined on input line 
-127.
+! Use of \@year@ doesn't match its definition.
+\Y@olson2013bilingual ->\@year@ 0
+                                 
+l.127 ...ditive effects, \cite{olson2013bilingual}
+                                                   found the balanced langua...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-
-LaTeX Warning: Citation `schwartz2015language' on page 3 undefined on input lin
-e 127.
+! Use of \@year@ doesn't match its definition.
+\Y@schwartz2015language ->\@year@ 0
+                                   
+l.127 ...ova2015immediate,vsimavckova2018patterns}
+                                                  .
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
 
 LaTeX Warning: Citation ` bullock2009trying' on page 3 undefined on input line 
 127.
 
-
-LaTeX Warning: Citation `antoniou2011inter' on page 3 undefined on input line 1
-27.
+! Use of \@year@ doesn't match its definition.
+\Y@antoniou2011inter ->\@year@ 0
+                                
+l.127 ...ova2015immediate,vsimavckova2018patterns}
+                                                  .
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
 
 LaTeX Warning: Citation ` elias2017effects' on page 3 undefined on input line 1
 27.
 
+! Use of \@year@ doesn't match its definition.
+\Y@vsimavckova2015immediate ->\@year@ 0
+                                       
+l.127 ...ova2015immediate,vsimavckova2018patterns}
+                                                  .
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-LaTeX Warning: Citation `vsimavckova2015immediate' on page 3 undefined on input
- line 127.
+! Use of \@year@ doesn't match its definition.
+\Y@vsimavckova2018patterns ->\@year@ 0
+                                      
+l.127 ...ova2015immediate,vsimavckova2018patterns}
+                                                  .
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
+! Use of \@year@ doesn't match its definition.
+\Y@grosjean1998studying ->\@year@ 0
+                                   
+l.129 \paragraph{}\citeA{grosjean1998studying}
+                                               suggests that various aspects...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-LaTeX Warning: Citation `vsimavckova2018patterns' on page 3 undefined on input 
-line 127.
-
-
-LaTeX Warning: Citation `grosjean1998studying' on page 3 undefined on input lin
-e 129.
+! Use of \@year@ doesn't match its definition.
+\Y@guion2003vowel ->\@year@ 0
+                             
+l.136 ...guion2003vowel, caramazza1973acquisition}
+                                                  . However, longitudinal st...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
 
 LaTeX Warning: Citation ` caramazza1973acquisition' on page 3 undefined on inpu
@@ -628,139 +767,953 @@ t line 136.
 LaTeX Warning: Citation `bohn1992production' on page 3 undefined on input line 
 136.
 
+! Use of \@year@ doesn't match its definition.
+\Y@sancier1997gestural ->\@year@ 0
+                                  
+l.139 ...irreversible. \citeA{sancier1997gestural}
+                                                   first demonstrated that s...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-LaTeX Warning: Citation `sancier1997gestural' on page 3 undefined on input line
- 139.
+! Use of \@year@ doesn't match its definition.
+\Y@tobin2017phonetic ->\@year@ 0
+                                
+l.139 ...recent study by \citeA{tobin2017phonetic}
+                                                   found comparable effects ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@chang2012rapid ->\@year@ 0
+                             
+l.139 ...gitudinal study by \citeA{chang2012rapid}
+                                                   showed that over the cour...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@bullock2009trying ->\@year@ 0
+                                
+l.143 ...ch measured this \cite{bullock2009trying}
+                                                   did not find any residual...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+[3]
+! Use of \@year@ doesn't match its definition.
+\Y@tsui2019impact ->\@year@ 0
+                             
+l.145 ... \cite{tsui2019impact,olson2013bilingual}
+                                                  , and still found differen...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@olson2013bilingual ->\@year@ 0
+                                 
+l.145 ... \cite{tsui2019impact,olson2013bilingual}
+                                                  , and still found differen...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
 
-LaTeX Warning: Citation `tobin2017phonetic' on page 3 undefined on input line 1
-39.
-
-
-LaTeX Warning: Citation `chang2012rapid' on page 3 undefined on input line 139.
-
-
-
-LaTeX Warning: Reference `asymmetry between sounds' on page 3 undefined on inpu
-t line 139.
-
-
-LaTeX Warning: Citation `bullock2009trying' on page 3 undefined on input line 1
-43.
-
-
-LaTeX Warning: Citation `pardo2010expressing' on page 3 undefined on input line
+LaTeX Warning: Citation `pardo2010expressing' on page 4 undefined on input line
  145.
 
 
-LaTeX Warning: Citation `babel2010dialect' on page 3 undefined on input line 14
+LaTeX Warning: Citation `babel2010dialect' on page 4 undefined on input line 14
 5.
 
 
-LaTeX Warning: Citation `babel2012evidence' on page 3 undefined on input line 1
+LaTeX Warning: Citation `babel2012evidence' on page 4 undefined on input line 1
 45.
 
-[3]
 
 LaTeX Warning: Citation `flege1984limits' on page 4 undefined on input line 152
 .
 
+! Use of \@year@ doesn't match its definition.
+\Y@flege1987production ->\@year@ 0
+                                  
+l.152 ...teNP{flege1984limits,flege1987production}
+                                                  ), and
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-LaTeX Warning: Citation `balukas2015spanish' on page 4 undefined on input line 
-155.
+! Use of \@year@ doesn't match its definition.
+\Y@guion2003vowel ->\@year@ 0
+                             
+l.153 ...onolingual speakers \cite{guion2003vowel}
+                                                  .
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
+! Use of \@year@ doesn't match its definition.
+\Y@balukas2015spanish ->\@year@ 0
+                                 
+l.155 ...vckova2015immediate,goldrick2014language}
+                                                  , L2 on L1 \cite{tsui2019i...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-LaTeX Warning: Citation `goldrick2014language' on page 4 undefined on input lin
-e 155.
+! Use of \@year@ doesn't match its definition.
+\Y@antoniou2011inter ->\@year@ 0
+                                
+l.155 ...vckova2015immediate,goldrick2014language}
+                                                  , L2 on L1 \cite{tsui2019i...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@vsimavckova2015immediate ->\@year@ 0
+                                       
+l.155 ...vckova2015immediate,goldrick2014language}
+                                                  , L2 on L1 \cite{tsui2019i...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@goldrick2014language ->\@year@ 0
+                                   
+l.155 ...vckova2015immediate,goldrick2014language}
+                                                  , L2 on L1 \cite{tsui2019i...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@tsui2019impact ->\@year@ 0
+                             
+l.155 ...act,elias2017effects, olson2013bilingual}
+                                                  , bidirectional convergenc...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@elias2017effects ->\@year@ 0
+                               
+l.155 ...act,elias2017effects, olson2013bilingual}
+                                                  , bidirectional convergenc...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
 
 LaTeX Warning: Citation ` olson2013bilingual' on page 4 undefined on input line
  155.
 
+! Use of \@year@ doesn't match its definition.
+\Y@bullock2009trying ->\@year@ 0
+                                
+l.155 ...e \cite{bullock2009trying, olson2016role}
+                                                  , divergence \cite{bullock...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
 
 LaTeX Warning: Citation ` olson2016role' on page 4 undefined on input line 155.
 
 
+! Use of \@year@ doesn't match its definition.
+\Y@bullock2009trying ->\@year@ 0
+                                
+l.155 ...ullock2009trying,vsimavckova2018patterns}
+                                                  , and no influence \cite{m...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-LaTeX Warning: Citation `muldner2019phonetics' on page 4 undefined on input lin
-e 155.
+! Use of \@year@ doesn't match its definition.
+\Y@vsimavckova2018patterns ->\@year@ 0
+                                      
+l.155 ...ullock2009trying,vsimavckova2018patterns}
+                                                  , and no influence \cite{m...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
+! Use of \@year@ doesn't match its definition.
+\Y@muldner2019phonetics ->\@year@ 0
+                                   
+l.155 ...uldner2019phonetics,schwartz2015language}
+                                                  . Since most existing stud...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-LaTeX Warning: Reference `sound systems' on page 4 undefined on input line 155.
+! Use of \@year@ doesn't match its definition.
+\Y@schwartz2015language ->\@year@ 0
+                                   
+l.155 ...uldner2019phonetics,schwartz2015language}
+                                                  . Since most existing stud...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
+! Use of \@year@ doesn't match its definition.
+\Y@olson2013bilingual ->\@year@ 0
+                                 
+l.157  \citeA{olson2013bilingual}
+                                  first found unidirectional VOT shift of L1...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
 
 LaTeX Warning: Citation `green1998mental' on page 4 undefined on input line 157
 .
+
+! Use of \@year@ doesn't match its definition.
+\Y@tsui2019impact ->\@year@ 0
+                             
+l.157 ...fer effects on L2. \citeA{tsui2019impact}
+                                                   found comparable results,...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@simonet2014phonetic ->\@year@ 0
+                                  
+l.159 ...ic,muldner2019phonetics,elias2017effects}
+                                                   and phonological processe...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@muldner2019phonetics ->\@year@ 0
+                                   
+l.159 ...ic,muldner2019phonetics,elias2017effects}
+                                                   and phonological processe...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@elias2017effects ->\@year@ 0
+                               
+l.159 ...ic,muldner2019phonetics,elias2017effects}
+                                                   and phonological processe...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@simonet2020increased ->\@year@ 0
+                                   
+l.159 ...imonet2020increased,schwartz2015language}
+                                                   have examined transfer ef...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@schwartz2015language ->\@year@ 0
+                                   
+l.159 ...imonet2020increased,schwartz2015language}
+                                                   have examined transfer ef...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@tobin2017phonetic ->\@year@ 0
+                                
+l.162 ...9trying,antoniou2011inter,chang2012rapid}
+                                                  . In general, short-lag VO...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@bullock2009trying ->\@year@ 0
+                                
+l.162 ...9trying,antoniou2011inter,chang2012rapid}
+                                                  . In general, short-lag VO...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@antoniou2011inter ->\@year@ 0
+                                
+l.162 ...9trying,antoniou2011inter,chang2012rapid}
+                                                  . In general, short-lag VO...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@chang2012rapid ->\@year@ 0
+                             
+l.162 ...9trying,antoniou2011inter,chang2012rapid}
+                                                  . In general, short-lag VO...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@bullock2009trying ->\@year@ 0
+                                
+l.162 ...modative shift. \citeA{bullock2009trying}
+                                                   suggests that because lon...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@antoniou2011inter ->\@year@ 0
+                                
+l.163 ...a similar vein, \citeA{antoniou2011inter}
+                                                   found that while English ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
 [4]
 
 LaTeX Warning: Citation `dmitrieva2020acoustic' on page 5 undefined on input li
 ne 167.
 
+! Use of \@year@ doesn't match its definition.
+\Y@chang2012rapid ->\@year@ 0
+                             
+l.172 ...ft \cite{chang2012rapid,elias2017effects}
+                                                  , suggesting that `extent ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-LaTeX Warning: Reference `sound systems' on page 5 undefined on input line 172.
+! Use of \@year@ doesn't match its definition.
+\Y@elias2017effects ->\@year@ 0
+                               
+l.172 ...ft \cite{chang2012rapid,elias2017effects}
+                                                  , suggesting that `extent ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-
-
-LaTeX Warning: Reference `vowel systems' on page 5 undefined on input line 178.
-
+! Use of \@year@ doesn't match its definition.
+\Y@simonet2014phonetic ->\@year@ 0
+                                  
+l.180 ...rable paradigm \cite{simonet2014phonetic}
+                                                  . Here, the Catalan \nt{O}...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
 [5]
 
-LaTeX Warning: Reference `vowel systems' on page 6 undefined on input line 182.
-
-
-
 LaTeX Warning: Citation `myers1993dueling' on page 6 undefined on input line 18
 7.
+
+! Use of \@year@ doesn't match its definition.
+\Y@olson2013bilingual ->\@year@ 0
+                                 
+l.187 ...ord-lists etc. \citeA{olson2013bilingual}
+                                                   argues that code-switchin...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@bullock2009trying ->\@year@ 0
+                                
+l.187 ...the switch point \cite{bullock2009trying}
+                                                  , or other evidence of pla...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@muldner2019phonetics ->\@year@ 0
+                                   
+l.187 ...rarticulation \cite{muldner2019phonetics}
+                                                   and interlocutor-awarenes...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
 
 LaTeX Warning: Citation `khattab2013phonetic' on page 6 undefined on input line
  187.
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 200.
+! Use of \@year@ doesn't match its definition.
+\Y@bullock2009trying ->\@year@ 0
+                                
+l.189 ...terature-- while \cite{bullock2009trying}
+                                                   found tokens immediately ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@muldner2019phonetics ->\@year@ 0
+                                   
+l.189 ... et al.'s \citeyear{muldner2019phonetics}
+                                                   study hyperarticulated sw...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@year@ doesn't match its definition.
+\Y@olson2016role ->\@year@ 0
+                            
+l.189 ...all that Olson's \citeyear{olson2016role}
+                                                   findings suggest that the...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 201.
 
 (c:/texlive/2018/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 200.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 201.
  [6]
-
-LaTeX Warning: Citation `boersma2016praat' on page 7 undefined on input line 23
-3.
+! Use of \@year@ doesn't match its definition.
+\Y@boersma2016praat ->\@year@ 0
+                               
+l.234 ...nnotated in PRAAT \cite{boersma2016praat}
+                                                  , F1 and F2 of the target ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
 [7]
-Overfull \hbox (2.92882pt too wide) in paragraph at lines 258--259
+Overfull \hbox (2.92882pt too wide) in paragraph at lines 259--260
 \OT1/ptm/m/n/10.95 through a cued pic-ture nam-ing task, sug-gest-ing that at l
 east part of the ob-served ef-fects in CS paradigms
  []
 
-[8] (./main.aux)
+(./main.bbl
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.3 \bibitem{caramazza1973acquisition}
+                                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-LaTeX Warning: There were undefined references.
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.3 \bibitem{caramazza1973acquisition}
+                                      
+I'm forgetting what you said and using zero instead.
 
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.10 \bibitem{flege1987production}
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.10 \bibitem{flege1987production}
+                                  
+I'm forgetting what you said and using zero instead.
 
- ) 
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.16 \bibitem{guion2003vowel}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.16 \bibitem{guion2003vowel}
+                             
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.21 \bibitem{sancier1997gestural}
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.21 \bibitem{sancier1997gestural}
+                                  
+I'm forgetting what you said and using zero instead.
+
+[8]
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.27 \bibitem{chang2012rapid}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.27 \bibitem{chang2012rapid}
+                             
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.33 \bibitem{tobin2017phonetic}
+                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.33 \bibitem{tobin2017phonetic}
+                                
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.39 \bibitem{grosjean1994going}
+                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.39 \bibitem{grosjean1994going}
+                                
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.44 \bibitem{balukas2015spanish}
+                                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.44 \bibitem{balukas2015spanish}
+                                 
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.50 \bibitem{antoniou2011inter}
+                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.50 \bibitem{antoniou2011inter}
+                                
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.56 \bibitem{vsimavckova2015immediate}
+                                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.56 \bibitem{vsimavckova2015immediate}
+                                       
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.62 \bibitem{goldrick2014language}
+                                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.62 \bibitem{goldrick2014language}
+                                   
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.67 \bibitem{tsui2019impact}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.67 \bibitem{tsui2019impact}
+                             
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.73 \bibitem{elias2017effects}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.73 \bibitem{elias2017effects}
+                               
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.79 \bibitem{bullock2009trying}
+                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.79 \bibitem{bullock2009trying}
+                                
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.86 \bibitem{olson2016role}
+                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.86 \bibitem{olson2016role}
+                            
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.93 \bibitem{vsimavckova2018patterns}
+                                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.93 \bibitem{vsimavckova2018patterns}
+                                      
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.99 \bibitem{muldner2019phonetics}
+                                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.99 \bibitem{muldner2019phonetics}
+                                   
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.104 \bibitem{schwartz2015language}
+                                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.104 \bibitem{schwartz2015language}
+                                    
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.109 \bibitem{khattab2009phonetic}
+                                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.109 \bibitem{khattab2009phonetic}
+                                   
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.114 \bibitem{simonet2014phonetic}
+                                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.114 \bibitem{simonet2014phonetic}
+                                   
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.120 \bibitem{simonet2020increased}
+                                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.120 \bibitem{simonet2020increased}
+                                    
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.126 \bibitem{olson2013bilingual}
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.126 \bibitem{olson2013bilingual}
+                                  
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.132 \bibitem{grosjean1998studying}
+                                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.132 \bibitem{grosjean1998studying}
+                                    
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.137 \bibitem{masica1972sound}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.137 \bibitem{masica1972sound}
+                               
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.142 \bibitem{boersma2016praat}
+                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.142 \bibitem{boersma2016praat}
+                                
+I'm forgetting what you said and using zero instead.
+
+) [9] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 5070 strings out of 492649
- 73829 string characters out of 6133383
- 141753 words of memory out of 5000000
- 8875 multiletter control sequences out of 15000+600000
- 20895 words of font info for 46 fonts, out of 8000000 for 9000
+ 5129 strings out of 492649
+ 74779 string characters out of 6133383
+ 142863 words of memory out of 5000000
+ 8926 multiletter control sequences out of 15000+600000
+ 21501 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,43p,1429b,307s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2018/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fo
-nts/type1/urw/times/utmb8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/time
-s/utmr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/tipa/xipa10.pfb>
-Output written on main.pdf (8 pages, 72390 bytes).
+ 41i,12n,43p,1432b,307s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:
+/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/
+2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2018/texmf-dist/fo
+nts/type1/urw/times/utmr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/time
+s/utmri8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/tipa/xipa10.pfb>
+Output written on main.pdf (9 pages, 89649 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 55 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
