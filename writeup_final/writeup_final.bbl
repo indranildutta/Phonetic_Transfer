@@ -107,6 +107,37 @@ Balukas, C.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Bates%
+, M{\"a}chler%
+, Bolker%
+\BCBL {}\ \BBA {} Walker%
+}{%
+Bates%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+lme4}
+\APACinsertmetastar {%
+lme4}%
+\begin{APACrefauthors}%
+Bates, D.%
+, M{\"a}chler, M.%
+, Bolker, B.%
+\BCBL {}\ \BBA {} Walker, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Fitting Linear Mixed-Effects Models Using {lme4}}
+  {Fitting linear mixed-effects models using {lme4}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Statistical Software}{67}{1}{1--48}.
+\newblock
+\begin{APACrefDOI} \doi{10.18637/jss.v067.i01} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Best%
 \ \BBA {} Tyler%
 }{%
@@ -159,30 +190,34 @@ Boersma, P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Bohn%
-\ \BBA {} Flege%
+Brauer%
+\ \BBA {} Curtin%
 }{%
-Bohn%
-\ \BBA {} Flege%
+Brauer%
+\ \BBA {} Curtin%
 }{%
-{\protect \APACyear {1992}}%
+{\protect \APACyear {2018}}%
 }]{%
-bohn1992production}
+brauer2018linear}
 \APACinsertmetastar {%
-bohn1992production}%
+brauer2018linear}%
 \begin{APACrefauthors}%
-Bohn, O\BHBI S.%
-\BCBT {}\ \BBA {} Flege, J\BPBI E.%
+Brauer, M.%
+\BCBT {}\ \BBA {} Curtin, J\BPBI J.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{1992}{}{}.
+\APACrefYearMonthDay{2018}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {The production of new and similar vowels by adult German
-  learners of English} {The production of new and similar vowels by adult
-  german learners of english}.{\BBCQ}
+{\BBOQ}\APACrefatitle {Linear mixed-effects models and the analysis of
+  nonindependent data: A unified framework to analyze categorical and
+  continuous independent variables that vary within-subjects and/or
+  within-items.} {Linear mixed-effects models and the analysis of
+  nonindependent data: A unified framework to analyze categorical and
+  continuous independent variables that vary within-subjects and/or
+  within-items.}{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Studies in Second Language Acquisition}{}{}{131--158}.
+\APACjournalVolNumPages{Psychological Methods}{23}{3}{389}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -267,29 +302,6 @@ Chang, C\BPBI B.%
   of second-language learning on first-language speech production}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of phonetics}{40}{2}{249--268}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Chatterji%
-}{%
-Chatterji%
-}{%
-{\protect \APACyear {1921}}%
-}]{%
-chatterji1921bengali}
-\APACinsertmetastar {%
-chatterji1921bengali}%
-\begin{APACrefauthors}%
-Chatterji, S\BPBI K.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1921}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Bengali phonetics} {Bengali phonetics}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Bulletin of the School of Oriental Studies, University
-  of London}{2}{1}{1--25}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -855,29 +867,29 @@ Piccinini, P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Sancier%
-, Fowler%
-\BCBL {}\ \protect \BOthers {.}}{%
-Sancier%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {1997}}%
+{R Core Team}%
+}{%
+{R Core Team}%
+}{%
+{\protect \APACyear {2016}}%
 }]{%
-sancier1997gestural}
+r}
 \APACinsertmetastar {%
-sancier1997gestural}%
+r}%
 \begin{APACrefauthors}%
-Sancier, M\BPBI L.%
-, Fowler, C\BPBI A.%
-\BCBL {}\ \BOthersPeriod {.}\end{APACrefauthors}%
+{R Core Team}.%
+\end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{1997}{}{}.
+\APACrefYearMonthDay{2016}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Gestural drift in a bilingual speaker of Brazilian
-  Portuguese and English} {Gestural drift in a bilingual speaker of brazilian
-  portuguese and english}.{\BBCQ}
+{\BBOQ}\APACrefatitle {R: A Language and Environment for Statistical Computing}
+  {R: A language and environment for statistical computing}{\BBCQ}\
+  [\bibcomputersoftwaremanual].
 \newblock
-\APACjournalVolNumPages{Journal of phonetics}{25}{4}{421--436}.
+\APACaddressPublisher{Vienna, Austria}{}.
+\newblock
+\begin{APACrefURL} \url{https://www.R-project.org/} \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
