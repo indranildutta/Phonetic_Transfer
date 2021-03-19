@@ -332,6 +332,37 @@ Dmitrieva, O.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Dutta%
+, Shailendra%
+\BCBL {}\ \BBA {} Harsha%
+}{%
+Dutta%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+dutta2016using}
+\APACinsertmetastar {%
+dutta2016using}%
+\begin{APACrefauthors}%
+Dutta, I.%
+, Shailendra, I.%
+\BCBL {}\ \BBA {} Harsha, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Using {ANNs} for vowel identification from {V-to-V
+  coarticulation in non-harmonic VCV sequences}} {Using {ANNs} for vowel
+  identification from {V-to-V coarticulation in non-harmonic VCV
+  sequences}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {{15th LabPhon. July 13-16th, 2016, Cornell University,
+  Ithaca, NY USA}.} {{15th LabPhon. July 13-16th, 2016, Cornell University,
+  Ithaca, NY USA}.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Elias%
 , McKinnon%
 \BCBL {}\ \BBA {} Milla-Mu{\~n}oz%

@@ -22,45 +22,45 @@ Repeated entry---line 1673 of file references.bib
 I'm skipping whatever remains of this entry
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--No journal in masica1972sound
-You've used 44 entries,
+You've used 45 entries,
             6951 wiz_defined-function locations,
-            1526 strings with 18233 characters,
-and the built_in function-call counts, 84777 in all, are:
-= -- 10458
-> -- 615
-< -- 4403
-+ -- 4428
-- -- 95
-* -- 5605
-:= -- 16292
-add.period$ -- 182
-call.type$ -- 44
-change.case$ -- 750
+            1530 strings with 18470 characters,
+and the built_in function-call counts, 87215 in all, are:
+= -- 10780
+> -- 634
+< -- 4528
++ -- 4549
+- -- 97
+* -- 5751
+:= -- 16723
+add.period$ -- 188
+call.type$ -- 45
+change.case$ -- 768
 chr.to.int$ -- 0
-cite$ -- 89
-duplicate$ -- 2047
-empty$ -- 3186
-format.name$ -- 1003
-if$ -- 15807
+cite$ -- 91
+duplicate$ -- 2102
+empty$ -- 3269
+format.name$ -- 1035
+if$ -- 16270
 int.to.chr$ -- 0
-int.to.str$ -- 132
+int.to.str$ -- 135
 missing$ -- 0
-newline$ -- 1068
-num.names$ -- 352
-pop$ -- 1321
+newline$ -- 1094
+num.names$ -- 360
+pop$ -- 1386
 preamble$ -- 1
-purify$ -- 176
+purify$ -- 180
 quote$ -- 0
-skip$ -- 5361
+skip$ -- 5518
 stack$ -- 0
-substring$ -- 4755
-swap$ -- 1240
-text.length$ -- 91
+substring$ -- 4882
+swap$ -- 1269
+text.length$ -- 93
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 3648
+type$ -- 3792
 warning$ -- 1
-while$ -- 334
+while$ -- 346
 width$ -- 0
-write$ -- 1292
+write$ -- 1327
 (There were 2 error messages)
