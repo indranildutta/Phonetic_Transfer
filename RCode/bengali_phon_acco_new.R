@@ -1,4 +1,4 @@
-formant_data_5 <- read.csv("~/Desktop/Disha_Project/formant_data_5.csv")
+formant_data_5 <- read.csv("~/Desktop/Disha_Project/formant_data_5.csv", check.names = TRUE)
 attach(formant_data_5)
 detach(formant_data_5)
 
@@ -33,7 +33,7 @@ detach(bengali)
 bengaliAE <- subset (bengali, V1=="A"|V1=="E")
 attach(bengaliAE)
 detach(bengaliAE)
-bengaliAE_bd
+
 
 
 #####
@@ -97,26 +97,29 @@ detach(taskp)
 
 # subject-wise F1 in English context
 attach(contexte)
-ggplot(contexte, aes(x = Subject, y = enormF1$F1_25, fill = Vowel)) + ylab("Normalized F1") +geom_boxplot()
+remapping <- c(`\\ae` = "æ", `\\vt` = "ʌ")
+contexte$unicodevowel <- remapping[as.character(contexte$Vowel)]
+ggplot(contexte, aes(x = Subject, y = enormF1$F1_25, fill = unicodevowel)) + ylab("Normalized F1") +scale_fill_discrete(name="Vowel")+ geom_boxplot()
 detach(contexte)
 
 
 # vowels: unilingual English, mixed, and baseline Bengali
-xlim <- c(3,-3)
-ylim = c(3,-3)
+xlim <- c(2.5,-2.5)
+ylim = c(3.5,-2.5)
 
-remapping <- c(A = "a:", E = "\\ae")
+remapping <- c(A = "a:", E = "æ")
 bengaliAE$unicodevowel <- remapping[as.character(bengaliAE$V1)]
 with(bengaliAE,plotVowels(F1_V1_T55,F2_V1_T55, unicodevowel, plot.tokens = F, plot.means = TRUE,
-                        pch.tokens = V1, pch.means = unicodevowel, cex.tokens = 0.8, var.col.by = V1,
-                        cex.means = 0.8, alpha.means = 0.8,alpha.tokens = 0.1,ellipse.line = F,  
-                        ellipse.fill = T, pretty = TRUE, xlim = xlim, ylim = ylim, axes=FALSE))
+                        pch.tokens = V1, pch.means = unicodevowel, cex.tokens = 0.8, var.col.by = unicodevowel,
+                        cex.means = 1, alpha.means = 0.8,alpha.tokens = 0.1,ellipse.line = F,  
+                        ellipse.fill = T, pretty = TRUE, xlim = xlim, ylim = ylim, legend.kwd="bottomleft", legend.args = list(legend=c("baseline æ","baseline a:")), axes=FALSE))
 par(new = TRUE)
-
+remapping <- c(`\\ae` = "æ", `\\vt` = "ʌ")
+formant_data_5$unicodevowel <- remapping[as.character(formant_data_5$Vowel)]
 with(formant_data_5, plotVowels(normF1$F1_45, normF2$F2_45, Vowel, group = Context, plot.tokens = FALSE, 
-                                plot.means = TRUE , var.sty.by = Context, pch.means = Vowel, cex.tokens = 0.8,
-                                cex.means = 0.8, alpha.means = 0.5,alpha.tokens = 0.3,ellipse.line = T,  ellipse.fill = T,
-                                fill.opacity = 0.1, pretty = TRUE, xlim = xlim, ylim = ylim))
+                                plot.means = TRUE , var.sty.by = Context, pch.means = unicodevowel, cex.tokens = 0.8,
+                                cex.means = 1, alpha.means = 0.5,alpha.tokens = 0.3,ellipse.line = T,  ellipse.fill = T,
+                                fill.opacity = 0.1, pretty = TRUE, xlim = xlim, ylim = ylim, legend.kwd = "bottomright", legend.args = list(legend=c("unilingual","mixed"))))
 
 
 
