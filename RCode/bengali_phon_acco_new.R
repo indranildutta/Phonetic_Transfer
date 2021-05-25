@@ -1,4 +1,4 @@
-formant_data_5 <- read.csv("~/Desktop/Disha_Project/formant_data_5.csv")
+formant_data_5 <- read.csv("formant_data_5.csv")
 attach(formant_data_5)
 detach(formant_data_5)
 
@@ -27,7 +27,7 @@ with(formant_data_5, plotVowels(normF1$F1_15, normF2$F2_15, Vowel, group = Conte
 
 
 ## bengali baseline data
-bengali <- read.csv("~/Desktop/Disha_Project/bengali_shruti/anti.csv", stringsAsFactors = TRUE, header = TRUE)
+bengali <- read.csv("anti.csv", stringsAsFactors = TRUE, header = TRUE)
 attach(bengali)
 detach(bengali)
 bengaliAE <- subset (bengali, V1=="A"|V1=="E")
