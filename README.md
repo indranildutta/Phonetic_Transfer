@@ -1,5 +1,6 @@
 # Phonetic transfer
-    
+This study examines phonetic transfer between Bengali and English in a group of highly proficient bilingual speakers in India. We measure spectral properties (F1 and F2) of two English vowels to ascertain if L1 influence on L2 increases during mixed-language use, relative to a participant’s unilingual baseline production of L2. Mixed-language data is elicited in two switching paradigms: code-switching and cued picture-naming.
+
 ## Bengali and English in India
 * Demography
 * Sound systems
