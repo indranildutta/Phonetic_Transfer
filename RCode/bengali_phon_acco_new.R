@@ -1,10 +1,10 @@
 <<<<<<< HEAD
 formant_data_5 <- read.csv("formant_data_5.csv")
 =======
-formant_data_5 <- read.csv("~/Desktop/Disha_Project/formant_data_5.csv", check.names = TRUE)
+formant_data_5 <- read.csv("formant_data_5.csv", check.names = TRUE)
 >>>>>>> 093ce24fb2b2845200c064d597ff33aaf389134e
 attach(formant_data_5)
-detach(formant_data_5)
+# detach(formant_data_5)
 
 library(lattice)
 library(plyr)
@@ -15,7 +15,7 @@ library(dplyr)
 library(tidyr)
 library(stargazer)
 
-?gather
+
 normF1 <- with(formant_data_5,normLobanov(cbind(F1_5,F1_15,F1_25,F1_35,F1_45)),group=Subject)
 normF1 <- as.data.frame(normF1)
 
@@ -31,12 +31,12 @@ with(formant_data_5, plotVowels(normF1$F1_15, normF2$F2_15, Vowel, group = Conte
 
 
 ## bengali baseline data
-bengali <- read.csv("anti.csv", stringsAsFactors = TRUE, header = TRUE)
+bengali <- read.csv("baseline_bengali.csv", stringsAsFactors = TRUE, header = TRUE)
 attach(bengali)
 detach(bengali)
 bengaliAE <- subset (bengali, V1=="A"|V1=="E")
 attach(bengaliAE)
-detach(bengaliAE)
+# detach(bengaliAE)
 
 
 
