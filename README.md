@@ -9,7 +9,7 @@ This study examines phonetic transfer between Bengali and English in a group of 
 * Sound categories: changes to representation vs changes during processing
 * Source of cross-language interaction: local point of switch vs (global) language co-activation-- Bilingual Language Mode 
     
-## Duration: how long do effects last?
+## Duration of transfer effects
 * Long-term vs short-term changes
 * Transfer during mixed-language use: localized, reversible
 
