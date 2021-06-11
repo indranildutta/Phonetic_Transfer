@@ -170,7 +170,7 @@
 	\newcommand{\BIBand}{\&}
 	\setlength{\bibsep}{0pt}
 	\setlength{\bibhang}{0.25in}
-	\bibliographystyle{apa}
+	\bibliographystyle{glossa}
     \newcommand{\posscitet}[1]{\citeauthor{#1}'s (\citeyear{#1})}
     \newcommand{\posscitealt}[1]{\citeauthor{#1}'s \citeyear{#1}}
     \newcommand{\possciteauthor}[1]{\citeauthor{#1}'s}
