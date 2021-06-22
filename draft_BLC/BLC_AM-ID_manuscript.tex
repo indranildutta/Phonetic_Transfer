@@ -1,7 +1,11 @@
 % !TeX document-id = {6d544fe2-4255-4108-8022-d809ff1d2c53}
 % TeX program = xelatexmk %doesn't work, no xelatexmk option under 'build'. Changed default engine to xelatex (options-->configure-->build-->default build-->xelatex)
 % see http://info.semprag.org/basics for a full description of this template
-\documentclass[charis,linguex]{glossa}
+%\documentclass[times,linguex]{glossa}
+\documentclass[12 pt]{article}
+\usepackage[letterpaper]{geometry}
+%\usepackage{times}
+\geometry{top=1.5in, bottom=1.0in, left=1.0in, right=1.0in}
 % possible options: 
 % [times] for Times font (default if no option is chosen)
 % [cm] for Computer Modern font 
@@ -14,34 +18,60 @@
 % [linguex] loads the linguex example package
 % !! a note on the use of linguex: in glossed examples, the third line of the example (the translation) needs to be prefixed with \glt. This is to allow a first line with the name of the language and the source of the example. See example (2) in the text for an illustration.
 % !! a note on the use of bibtex: for PhD dissertations to typeset correctly in the references list, the Address field needs to contain the city (for US cities in the format "Santa Cruz, CA")
-
 %\addbibresource{sample.bib} 
 % the above line is for use with biblatex
 % replace this by the name of your bib-file (extension .bib is required)
 % comment out if you use natbib/bibtex
 
 %for natbib: replace \cite with \citep (parenthetical); \citea with \cite (in-text)
-\usepackage{hyperref}
-\let\B\relax %to resolve a conflict in the definition of these commands between xyling and xunicode (the latter called by fontspec, called by charis)
-\let\T\relax
-\usepackage{xyling} %for trees; the use of xyling with the CharisSIL font produces poor results in the branches. This problem does not arise with the packages qtree or forest.
-\usepackage[linguistics]{forest} %for nice trees!
+\usepackage[hidelinks]{hyperref}
+%\renewcommand{\sectionautorefname}{\S}
+\usepackage{xcolor}
+\hypersetup{
+	colorlinks,
+	linkcolor={blue!50!black},
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black}
+}
+
+
+\usepackage{graphicx} %for images
+\graphicspath{{images/}}
+\usepackage{caption}
+
+\usepackage{booktabs}
+\usepackage{enumitem} %customize list numberings
+
+\usepackage[natbibapa]{apacite}
+\usepackage{natbib}
 
 \usepackage{tipa}
 \newcommand{\nt}[1]{\textipa{[#1]}} % narrow transcription
 \newcommand{\wt}[1]{\textipa{/#1/}} % wide transcription
+%\usepackage{natbib}
 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[R]{\thepage}
 
+\usepackage{setspace}
+\doublespacing
 
-%\graphicspath{{images/}}
+\usepackage{comment}
 
-% \pdf* commands provide metadata for the PDF output. ASCII characters only!
-%\pdfauthor{Auromita Mitra, Indranil Dutta}
-%\pdftitle{Mixed language processing increases cross-language phonetic transfer in Bengali-English Bilinguals}
-\pdfkeywords{phonetic transfer, vowel formants, Bengali, English}
+\newlength\mystoreparindent
+\newenvironment{myparindent}[1]{%
+	\setlength{\mystoreparindent}{\the\parindent}
+	\setlength{\parindent}{#1}
+}{%
+	\setlength{\parindent}{\mystoreparindent}
+}
+
 
 \title{Mixed language processing increases cross-language phonetic transfer in Bengali-English bilinguals}
-% Optional short title inside square brackets, for the running headers.
+
 
 
 % \author[Auromita \& Indranil]% short form of the author names for the running header. If no short author is given, no authors print in the headers.
@@ -61,22 +91,59 @@
 %\usepackage{gb4e}
 
 \begin{document}
+\bibliographystyle{apacite}
+%\sffamily
+%\maketitle
 
-\sffamily
-\maketitle
+%Word count: 9263
 
-Word count: 9263
+\begin{singlespace}
 
-\begin{abstract}
-This study investigates the phonetic outcome of mixed-language production in a group of highly proficient bilingual speakers of Bengali and English, to better understand the nature of cross-language phonetic interaction. Existing research has largely focused on a small set of phonologically related languages and used voice onset time (VOT) to measure phonetic transfer. Results indicate that such interaction is mediated by both language-specific features and linguistic experience, highlighting the need for diversification in the range of languages and populations studied. We compare productions from a yet-unstudied population in two conditions-- unilingual L2 (English) and mixed (Bengali and English). The spectral properties of two L2 vowel categories— \nt{\ae} (common to L1 and L2) and \nt{2} (absent in L1) are examined as sites for transfer. To understand how this unfolds dynamically, we measure F1 and F2 at five points over the course of articulating the vowel. We find dynamic and asymmetrical changes in both vowels during mixed production, with \nt{2} shifting towards a related L1 category \nt{a:}. We interpret this as a temporary increase in cross-language phonetic influence during mixed-language use, leading to a shift towards L1 norms. Mixed language is elicited in two switching paradigms: cued picture-naming and code-switching, to assess if differences between the paradigms independently influence the outcome of phonetic interaction. Results reveal no difference in transfer patterns across the two paradigms. We discuss these findings in light of recent proposals about asymmetries in short-term phonetic interaction and the postulated role of connected speech in introducing discursive factors to transfer studies. 
-\end{abstract}
+\begin{myparindent}{0pt}
+Short title: Phonetic transfer\\
 
-\begin{keywords}
- phonetic transfer; vowel quality; bilingual speech production; L1-L2 interaction; Indian English; Bengali 
-\end{keywords}
+Full title: Mixed language processing increases cross-language phonetic transfer in Bengali-English bilinguals\\
 
-\rmfamily
+Authors:\\
 
+Auromita Mitra
+
+EFL University
+
+Hyderabad\\
+
+Indranil Dutta
+
+Jadavpur University
+
+Kolkata\\
+
+Acknowledgements:\\
+
+Address for correspondence:\\
+Auromita Mitra,
+
+EFL University,
+
+Hyderabad- 500007,
+
+auromita.mitra@gmail.com
+
+\end{myparindent}
+
+\end{singlespace}
+
+\newpage
+\begin{myparindent}{0pt}
+Abstract:\\
+This study investigates the phonetic outcome of mixed-language speech in Bengali and Indian English, towards understanding cross-language interaction in highly proficient bilinguals.  We compare spectral properties of L2 vowels \nt{\ae} (common to L1, L2) and \nt{2} (absent in L1) in unilingual vs mixed productions. Results reveal dynamic and asymmetrical changes in both vowels, \nt{2} shifting towards a related L1 category \nt{a:}. We interpret this as a temporary increase in cross-language phonetic interaction during mixed-language use, leading to a shift towards L1 norms, evidencing transfer effects on L2 vowels for the first time. We elicit mixed productions through two tasks: cued picture-naming and code-switching, to assess if experimental paradigm independently influences the behavior under study. Results reveal no difference across paradigms. We discuss these findings in light of recent proposals about asymmetries in short-term phonetic interaction between sound systems and the postulated role of connected speech in introducing discursive factors to transfer studies.\\
+
+
+Keywords: phonetic transfer; vowel quality; bilingual speech production; L1-L2 interaction; Indian English; Bengali 
+
+\end{myparindent}
+
+\newpage
 
 \section{Phonetic transfer}
 
@@ -102,7 +169,7 @@ The rest of this section is structured as follows: \ref{bengali_english_in_india
 
 \subsection{Bengali and English in India} \label{bengali_english_in_india}
 
-\subsubsection{Demography} 
+\subsubsection*{Demography} 
 
 Bengali (also, Bangla) is an Indo-Aryan language primarily spoken in India and Bangladesh. In India, more than 97 million people speak Bengali as a first language (Census of India, 2011), mostly in the state of West Bengal. A majority of this population also speaks other additional languages.
 
@@ -120,7 +187,7 @@ Considering the language usage patterns suggested by this demography, the presen
 
 The socio-linguistic facts about English in India also suggest that for the present population, mixed-language processing of English and an L1 is an ecologically valid paradigm that is likely to be a part of everyday language experience. Thus, data from this population is valuable to the understanding of short-term phonetic interaction.
 
-\subsubsection{Vowel systems} \label{vowel systems}
+\subsubsection*{Vowel systems} \label{vowel systems}
 The vowel inventory of Western Bangla (the variety spoken by the participants in this study) consists of \nt{i, e, \ae, a, O, o, u}, and their nasalized counterparts \citep{garry2001facts}. Note that there is no mid-central vowel category. 
 
 
@@ -159,7 +226,7 @@ Note that all the studies discussed above measure VOT, which is a temporal featu
 \subsection{Asymmetries between languages in extent and direction of transfer} \label{asymmetries}
 A recurring pattern that emerges from existing research on short-term phonetic transfer is that the extent and patterns of phonetic shift are not equivalent across the two languages of the bilingual speaker. Studies vary greatly in the nature of differences that they report. The potential causes for such asymmetry are of interest because they point towards the factors that mediate cross-language phonetic interaction. In this section, we discuss two proposed sources of such asymmetry that are relevant to the present study: 
 
-\subsubsection{L1 vs L2 status} 
+\subsubsection*{L1 vs L2 status} 
 Flege's Speech Learning Model (SLM) \citeyearpar{flege1995second,flege2007language} posits that the sound categories of a bilingual speaker exist in a common phonological space, and therefore in principle, both L1 and L2 categories can influence one another. Thus, the patterns of cross-language transfer depend on how L2 phonemes are mapped in relation to the existing L1 categories. In non-switched production, this is evidenced through a pervasive L1 influence on non-native contrasts that are perceptually linked to an existing L1 contrast (cf. \textit{equivalence classification}-- \cite{flege1984limits,flege1987production}), and the observation that both L1 and L2 sound systems of bilinguals differ from those of corresponding monolingual speakers \citep[e.g.][]{guion2003vowel}. \\
 
 In mixed-language production, the role of language status is less clear-- studies have reported unidirectional influence of L1 on L2 \citep{balukas2015spanish,antoniou2011inter,vsimavckova2015immediate,goldrick2014language}, L2 on L1 \citep{tsui2019impact,elias2017effects, olson2013bilingual}, bidirectional convergence \citep{bullock2009trying, olson2016role}, divergence \citep{bullock2009trying,vsimavckova2018patterns}, and no influence \citep{muldner2019phonetics,schwartz2015language}. Since most existing studies measure shifts in VOT, the observed asymmetries between languages have been variously explained either in terms of their L1 vs L2 status, or language-specific differences between long- and short-lag VOT languages. %(cf sec. \ref{sound systems}).
@@ -168,7 +235,7 @@ In mixed-language production, the role of language status is less clear-- studie
 
 Since differences between long-lag and short-lag languages independently affect the phonetic realization of VOT, focusing on other phonetic features as sites for transfer can avoid this conflation, and clarify the precise effect of language status. However, given the implications of the ICM, it is necessary to first establish that these L2 categories can indeed be affected by dynamic interference, particularly in proficient bilinguals. The few existing studies on vowel quality \citep{simonet2014phonetic,muldner2019phonetics,elias2017effects} or phonological processes \citep{simonet2020increased,schwartz2015language} have examined transfer effects on L1 categories. As far as we are aware, there is no work yet on vowels in L2. Thus, this study builds on the existing work by examining whether the L2 vowel quality of proficient bilinguals can be affected by mixed-language processing.
 
-\subsubsection{Differences between sound systems of the languages} \label{sound systems} In addition to the cognitive factors discussed above, many researchers have attributed the observed asymmetries to language-internal factors. Specifically, a pattern that emerges from the body of work on VOT is that a shift in long-lag VOT towards the short-lag norms of the other language is much more consistent and systematic than the converse \citep{tobin2017phonetic, olson2016role,bullock2009trying,antoniou2011inter,chang2012rapid}. In general, short-lag VOTs seem to resist accommodative shift. \cite{bullock2009trying} suggest that because long-lag languages offer a greater range of acceptable VOTs, there is more ``room" for movement. In contrast, shift in short-lag languages could risk the loss of a phonological contrast (VOT being the primary cue for voicing contrast in these languages).  This is a language-specific phonological constraint on transfer.
+\subsubsection*{Differences between sound systems of the languages} \label{sound systems} In addition to the cognitive factors discussed above, many researchers have attributed the observed asymmetries to language-internal factors. Specifically, a pattern that emerges from the body of work on VOT is that a shift in long-lag VOT towards the short-lag norms of the other language is much more consistent and systematic than the converse \citep{tobin2017phonetic, olson2016role,bullock2009trying,antoniou2011inter,chang2012rapid}. In general, short-lag VOTs seem to resist accommodative shift. \cite{bullock2009trying} suggest that because long-lag languages offer a greater range of acceptable VOTs, there is more ``room" for movement. In contrast, shift in short-lag languages could risk the loss of a phonological contrast (VOT being the primary cue for voicing contrast in these languages).  This is a language-specific phonological constraint on transfer.
 In a similar vein, \cite{antoniou2011inter} observe that while the VOT of English stops shifted towards Greek (a short-lag language), the reverse was seen only in a specific subset of sounds-- word-medial non-nasalized stops. They attribute this to the low frequency of these sounds in Greek, making them less ``stable", and thus more amenable to cross-language influence. This suggests that the distribution of sounds in a language could affect the kind of transfer patterns observed.\\
 
 These results highlight that beyond interaction during the cognitive processing of sounds, phonetic transfer is ultimately a linguistic phenomenon, and thus subject to language-specific phonological constraints. Therefore, to make meaningful generalizations, it is imperative to consider data from a variety of language pairs. Existing research on phonetic transfer largely revolves around a limited set of phonologically related languages. Thus, the present study extends the scope of this research to a new pair of languages--- Indian English and Bengali.
@@ -185,7 +252,7 @@ In the present study, we focus on two vowel categories in Indian English-- the m
 \begin{enumerate}
 	\item Position in the IE vowel space: compared to \nt{\ae}, \nt{2} exists in a part of the vowel space that has a lower vowel density. This affords a greater latitude for movement without risking the loss of a contrast, particularly in the vowel height (F1) dimension. Thus, considering purely phonological constraints on IE, we expect that a greater degree of shift is possible in \nt{2} compared to \nt{\ae}. Any movement in \nt{\ae} is expected to be primarily in the backness (F2) dimension.
 	\item Target of transfer: findings from existing research on cross-language phonetic interaction suggest that changes in production during mixed-language use are not random, but rather targeted with respect to categories in the other language. Thus, another source of asymmetry is the fact that the category \nt{2} is absent in Bengali, whereas \nt{\ae} is a common category across both languages (cf. sec.\ref{vowel systems}).
-\end{enumerate}\\
+\end{enumerate}
 
 %table
 
@@ -272,28 +339,25 @@ All statistical analyses were performed in R \citep{r}. The dependent variables 
 
 \begin{table}[h]
 	\caption{Fixed factors}
-	\sffamily
 	\centering
-	\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
-		\hline 
-		Factor & Levels\\ 
-		\hline
-		Gender & male, female\\
-		Vowel & \nt{2}, \nt{\ae} \\
-		Task (corresponding to the two paradigms) & p (Picture: cued picture-naming, s (Sentence: code-switching)\\
-		Context (corresponding to the experimental conditions) & e (English: unilingual), b (Bengali: mixed)\\ [1ex]
-		\hline	
-	\end{tabular}
-	\label{table variables}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{@{}ll@{}}
+			\toprule
+			Factor                                                 & Levels                                                            \\ \midrule
+			Gender                                                 & male, female                                                      \\
+			Vowel                                                  & \nt{2}, \nt{\ae} \\
+			Task (corresponding to the two paradigms)              & p (Picture: cued picture-naming, s (Sentence: code-switching)     \\
+			Context (corresponding to the experimental conditions) & e (English: unilingual), b (Bengali: mixed)                       \\ \bottomrule
+		\end{tabular}%
+	}
+\label{table variables}
 \end{table}
-
-
 
 Our target in this analysis was to model vowel quality at different points in the vowel using the same mixed-effects model, allowing us to track if/how transfer changes over time. To do this, we arbitrarily chose a point in the vowel: F1 at 25\% (henceforth F1$\_$25) to identify an optimal model, and then fitted this to all other points. 
 
-Vowel quality and gender are expected to systematically affect F1. Thus, we began with a model that had Vowel and Gender as fixed effects, random intercepts for Subject and Item, and random slopes for each within-unit variable that was relevant to our hypotheses-- by-subject slopes for Task, Context, and Vowel; by-item slopes for Task and Context. Next, adding Context as a fixed effect significantly improved the model fit ($\chi^2(1) = 5.54, p= 0.01854$), suggesting that the experimental condition affects vowel height. Following from our hypothesis \textbf{Asymmetry}, we expected the extent of change in vowel height between the conditions to be mediated by the identity of the vowel. Thus, we added a two-way interaction factor between Context and Vowel (Context*Vowel). As expected, this was found to significantly improve model fit ($\chi^2(1) = 12.61, p= 0.0003837$). To assess whether the experimental paradigm affected F1, we added Task as a fixed effect. This marginally improved the model ($\chi^2(1) = 3.74, p= 0.05302$). Towards addressing our research question \textbf{Paradigm}, we wanted to assess whether the extent of shift differs across the two paradigms. However, no significant improvement was achieved by adding an interaction effect between Task and Context. Subsequent additions of other interactions, and removing each of the fixed effects in turn, did not lead to any further improvement. 
+Vowel quality and gender are expected to systematically affect F1. Thus, we began with a model that had Vowel and Gender as fixed effects, random intercepts for Subject and Item, and random slopes for each within-unit variable that was relevant to our hypotheses-- by-subject slopes for Task, Context, and Vowel; by-item slopes for Task and Context. Next, adding Context as a fixed effect significantly improved the model fit ($\chi^2(1) = 5.54, p= .01854$), suggesting that the experimental condition affects vowel height. Following from our hypothesis \textbf{Asymmetry}, we expected the extent of change in vowel height between the conditions to be mediated by the identity of the vowel. Thus, we added a two-way interaction factor between Context and Vowel (Context*Vowel). As expected, this was found to significantly improve model fit ($\chi^2(1) = 12.61, p= .0003837$). To assess whether the experimental paradigm affected F1, we added Task as a fixed effect. This marginally improved the model ($\chi^2(1) = 3.74, p= .05302$). Towards addressing our research question \textbf{Paradigm}, we wanted to assess whether the extent of shift differs across the two paradigms. However, no significant improvement was achieved by adding an interaction effect between Task and Context. Subsequent additions of other interactions, and removing each of the fixed effects in turn, did not lead to any further improvement. 
 
-Context and Vowel are both within-subject factors. Since our hypothesis concerns their interaction, we modified the random effects structure by adding a by-subject random slope for the interaction term \citep{brauer2018linear}. This improved the model fit ($\chi^2(5) = 11.43, p = 0.04342$). Thus, we report on a model that includes Gender, Task, Context, Vowel, Context*Vowel as fixed effects, random intercepts for Subject and Item, by-subject random slopes for Task, Context, Vowel and Context*Vowel, and by-item random slopes for Task and Context.\\
+Context and Vowel are both within-subject factors. Since our hypothesis concerns their interaction, we modified the random effects structure by adding a by-subject random slope for the interaction term \citep{brauer2018linear}. This improved the model fit ($\chi^2(5) = 11.43, p = .04342$). Thus, we report on a model that includes Gender, Task, Context, Vowel, Context*Vowel as fixed effects, random intercepts for Subject and Item, by-subject random slopes for Task, Context, Vowel and Context*Vowel, and by-item random slopes for Task and Context.\\
 
 The following sections discuss the results for vowel height and backness respectively:
 
@@ -405,7 +469,7 @@ Table \ref{table_F2_fixed_effects} summarizes the results of fixed effects from 
 With regard to our first research question \textbf{L2 vowels}, the results confirm that the L2 vowels of proficient bilinguals can be affected by mixed-language processing. Both vowels in this study showed systematic shifts in the mixed-language condition compared to baseline unilingual productions. In the context of an ICM--based analysis of between-language asymmetries in phonetic transfer as proposed by \cite{olson2013bilingual}, this is a significant finding: it demonstrates that the postulated lower switch cost on an L2 does not entirely mask transfer effects on L2 vowels. Moreover, our findings differ from \cite{tsui2019impact} who report on the basis of VOT measurements that balanced bilinguals do not evidence an effect of language-switching. The authors attribute this to greater experience with language switching, leading to lower switch-costs in both languages. We find that even proficient bilinguals with extensive experience of language-switching demonstrate cross-language transfer effects in vowel production. Thus, following from the discussion in sec. \ref{asymmetries}, it might be fruitful for future studies to focus on vowels as a potential site for transfer. This would both expand the scope of the existing research (cf. sec. \ref{asymmetry between sounds}) and avoid confounding factors arising from independent differences between long- and short-lag VOT languages.\\
 
 We hypothesized an asymmetrical shift between the two vowels (\textbf{Asymmetry}), owing to differences in (i) their positions in the Indian English vowel space, and (ii) the presence/absence of a corresponding category in the L1 Bengali inventory. The significant interaction between Vowel and Context in both F1 and F2 confirm that the experimental condition affected both height and backness differently for each vowel. As expected, we find a greater degree of shift in \nt{2}, possibly owing to its position in a less dense part of the IE vowel space.
-Figure \ref{vowels_e_b} shows $F1xF2$ plots for vowel productions in the unilingual and mixed (dotted ellipses) conditions, in comparison to the related Bengali categories (colored ellipses) from \cite{dutta2021}.   
+Figure \ref{vowels_e_b} shows $F1XF2$ plots for vowel productions in the unilingual and mixed (dotted ellipses) conditions, in comparison to the related Bengali categories (colored ellipses) from \cite{dutta2021}.   
 The category \nt{2} is lowered and fronted in the mixed language condition as expected. The direction of shift in \nt{\ae} is surprising-- it is fronted in the mixed-language condition. While phonological constraints on IE suggested that a shift in the F1 dimension could potentially risk the loss of contrast and is thus expected to be minimal, Figure \ref{vowels_e_b} shows that \nt{\ae} in Bengali is not fronted with respect to the English category. Thus, fronting in the mixed condition cannot be explained in relation the former, at least from the present data. Recall that the Bengali vowel productions used here are from a different set of speakers than our participants. Assuming some amount of individual differences in the precise phonetic realization of vowel categories in both languages, this could be a potential source of explanation for this result. Data from a larger number of speakers for both languages, as well as within-speaker comparisons of English and Bengali vowels, are required to clarify this. \\
 
 
@@ -423,7 +487,7 @@ The paradigm did affect vowel quality, but this applied uniformly across experim
 
 \section{Conclusion}
 This study examined the phonetic outcome of mixed-language production in a group of highly proficient bilingual speakers of Bengali and Indian English. Specifically, we examined the spectral quality of two L2 vowel categories \nt{2} and \nt{\ae} produced in two experimental conditions: unilingual (English) and mixed (switching from Bengali to English).
-Comparisons of F1 and F2 reveal that mixed language processing temporarily increases phonetic interaction between the languages, causing \nt{2} to converge towards a related L1 category \nt{a:}. The extent and direction of such shift is asymmetrical across the two categories, which parallels findings in prior studies. This asymmetry appears to be mediated by the language-specific distribution of vowel categories. Mixed productions were elicited in two switching paradigms: code-switching and cued picture-naming, to assess whether the postulated discursive elements in code-switching independently influences the outcome of phonetic transfer. Results suggest that in an experimental setup, elicitation through cued-picture-naming vs (controlled) code-switching does not significantly alter the behavior under study. \\
+Comparisons of F1 and F2 reveal that mixed language processing temporarily increases phonetic interaction between the languages, causing \nt{2} to converge towards a related L1 category \nt{a:}. The extent and direction of such shift is asymmetrical across the two categories, which parallels findings in prior studies. This asymmetry appears to be mediated by the language-specific distribution of vowel categories. Mixed productions were elicited in two switching paradigms: code-switching and cued picture-naming, to assess whether the postulated discursive elements in code-switching independently influence the outcome of phonetic transfer. Results suggest that in an experimental setup, elicitation through cued-picture-naming vs (controlled) code-switching does not significantly alter the behavior under study. \\
 
 This study has a number of limitations: (i) the `baseline' values for Bengali vowel categories were estimated from a different set of speakers than the participants of this study, potentially obscuring the role of individual differences in the realization of vowel categories; (ii) we used a frame sentence to elicit code-switched productions such that not all the sentences were pragmatically well-formed. This could have blocked some of the discursive effects that might result from speech planning in ordinary connected speech, thus obscuring differences between the two paradigms under study. Future work should address this by considering data from more naturalistic code-switching paradigms.     
 
@@ -431,7 +495,7 @@ This study has a number of limitations: (i) the `baseline' values for Bengali vo
 \textsc{clf} = classifier
 
 \section*{Data availability}
-The data files and analysis code are available at:  \url{https://osf.io/dsb2x/?view_only=5cb821070bc74a038a293239157c3b11}
+The data files and analysis code are openly available at:  \url{https://osf.io/dsb2x/?view_only=5cb821070bc74a038a293239157c3b11}
 
 
 \section*{Competing interests}
