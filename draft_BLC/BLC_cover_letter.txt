@@ -1,0 +1,25 @@
+Dear Editors,
+
+We are excited to submit our manuscript "Mixed language processing increases cross-language phonetic transfer in Bengali-English Bilinguals" for consideration by Bilingualism: Language and Cognition. 
+
+In this article, we report on a speech production study with highly proficient bilingual speakers of Bengali and Indian English, to better understand how the language systems of bilingual individuals interact at the phonetic level. We find that L2 English vowels temporarily show an increased influence of L1 Bengali when speakers switch between languages. 
+
+Prior research on short-term phonetic interaction has mostly focused on a small set of phonologically related languages. However, there is increasing evidence that both language-specific features and linguistic experience affect this phenomenon. This article expands the empirical scope of this research to a new pair of languages, and a yet-unstudied multilingual population whose phonetic behavior is likely to reflect real-world experience with mixed language processing. The bulk of existing research has studied transfer effects on voice onset time (VOT), a temporal feature. We focus on spectral properties of vowels to avoid confounds from independent differences between long an short-lag VOT languages. To the best of our knowledge, this is the first study that reports transfer effects on L2 vowels. These findings raise questions for proposed inhibition-based accounts of phonetic transfer. 
+
+As a secondary aim, we compare two experimental paradigms for elicing mixed-language productions, to verify if the postulated discursive factors in connected speech independently alter the behavior under study. Because the reported outcomes of short-term phonetic interaction vary so greatly across studies, generalizations about the mechanisms that underlie these patterns often rely crucially on the assumption of comparability between paradigms. Therefore, identifying paradigm-specific differences is particularly relevant for this line of research.
+
+
+We believe that this will be of interest to the readers of Bilingualism: Language and Cognition, because .
+
+We hope that our paper contributes to the mandate, goals, and objectives set forth by the journal.
+
+
+The materials, data, and analysis code are available in the following OSF repository:  https://osf.io/dsb2x/?view_only=5cb821070bc74a038a293239157c3b11
+
+
+We will be happy to respond to any queries that you may have, and hope to hear from you soon.
+
+
+
+Warmly,
+Auromita Mitra
