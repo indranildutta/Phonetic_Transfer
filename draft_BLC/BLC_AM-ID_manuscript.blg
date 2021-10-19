@@ -12,6 +12,10 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: references.bib
+Repeated entry---line 1331 of file references.bib
+ : @manual{r
+ :          ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 1663 of file references.bib
  : @inproceedings{vsimavckova2015immediate
  :                                        ,
@@ -25,7 +29,7 @@ Warning--No journal in masica1972sound
 Warning--`others' not consistent with 6th ed. of the APA Manual
 You've used 58 entries,
             6951 wiz_defined-function locations,
-            1603 strings with 20609 characters,
+            1603 strings with 20716 characters,
 and the built_in function-call counts, 114775 in all, are:
 = -- 14264
 > -- 828
@@ -64,4 +68,4 @@ warning$ -- 2
 while$ -- 457
 width$ -- 0
 write$ -- 1715
-(There were 2 error messages)
+(There were 3 error messages)

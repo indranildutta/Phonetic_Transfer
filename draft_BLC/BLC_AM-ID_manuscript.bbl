@@ -190,9 +190,9 @@ Best, C\BPBI T.%
   {Nonnative and second-language speech perception}.{\BBCQ}
 \newblock
 \BIn{} O\BHBI S.~Bohn\ \BBA {} M\BPBI J.~Munro\ (\BEDS), \APACrefbtitle
-  {Language experience in second language speech learning: In honour of James
-  Emil Flege} {Language experience in second language speech learning: In
-  honour of james emil flege}\ (\BPGS\ 13--34).
+  {{Language experience in second language speech learning: In honour of James
+  Emil Flege}} {{Language experience in second language speech learning: In
+  honour of James Emil Flege}}\ (\BPGS\ 13--34).
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -240,9 +240,9 @@ Bohn, O\BHBI S.%
 \newblock
 \APACrefYearMonthDay{1992}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {The production of new and similar vowels by adult German
-  learners of English} {The production of new and similar vowels by adult
-  german learners of english}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{The production of new and similar vowels by adult
+  German learners of English}} {{The production of new and similar vowels by
+  adult German learners of English}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Studies in Second Language Acquisition}{}{}{131--158}.
 \PrintBackRefs{\CurrentBib}
@@ -357,10 +357,10 @@ Caramazza, A.%
 \newblock
 \APACrefYearMonthDay{1973}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {The acquisition of a new phonological contrast: The case
-  of stop consonants in French-English bilinguals} {The acquisition of a new
-  phonological contrast: The case of stop consonants in french-english
-  bilinguals}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{The acquisition of a new phonological contrast: The
+  case of stop consonants in French-English bilinguals}} {{The acquisition of a
+  new phonological contrast: The case of stop consonants in French-English
+  bilinguals}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{The Journal of the Acoustical Society of
   America}{54}{2}{421--428}.
@@ -435,9 +435,9 @@ Dmitrieva, O.%
 \newblock
 \APACrefYearMonthDay{2020}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Acoustic correlates of the four-way laryngeal contrast
-  in Marathi} {Acoustic correlates of the four-way laryngeal contrast in
-  marathi}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Acoustic correlates of the four-way laryngeal contrast
+  in Marathi}} {{Acoustic correlates of the four-way laryngeal contrast in
+  Marathi}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Phonetica}{77}{3}{209--237}.
 \PrintBackRefs{\CurrentBib}
@@ -488,10 +488,10 @@ Elias, V.%
 \newblock
 \APACrefYearMonthDay{2017}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {The effects of code-switching and lexical stress on
-  vowel quality and duration of heritage speakers of Spanish} {The effects of
+{\BBOQ}\APACrefatitle {{The effects of code-switching and lexical stress on
+  vowel quality and duration of heritage speakers of Spanish}} {{The effects of
   code-switching and lexical stress on vowel quality and duration of heritage
-  speakers of spanish}.{\BBCQ}
+  speakers of Spanish}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Languages}{2}{4}{29}.
 \PrintBackRefs{\CurrentBib}
@@ -650,9 +650,9 @@ Fowler, C\BPBI A.%
 \newblock
 \APACrefYearMonthDay{2008}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Cross language phonetic influences on the speech of
-  French--English bilinguals} {Cross language phonetic influences on the speech
-  of french--english bilinguals}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Cross language phonetic influences on the speech of
+  French--English bilinguals}} {{Cross language phonetic influences on the
+  speech of French--English bilinguals}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Phonetics}{36}{4}{649--663}.
 \PrintBackRefs{\CurrentBib}
@@ -821,8 +821,8 @@ Hickey, R.%
 \newblock
 \APACrefYear{2005}.
 \newblock
-\APACrefbtitle {Legacies of colonial English: Studies in transported dialects}
-  {Legacies of colonial english: Studies in transported dialects}.
+\APACrefbtitle {{Legacies of colonial English: Studies in transported
+  dialects}} {{Legacies of colonial English: Studies in transported dialects}}.
 \newblock
 \APACaddressPublisher{}{Cambridge University Press}.
 \PrintBackRefs{\CurrentBib}
@@ -1029,9 +1029,9 @@ Nihalani, P.%
 \newblock
 \APACrefYear{1979}.
 \newblock
-\APACrefbtitle {Indian and British English: A handbook of usage and
-  pronunciation} {Indian and british english: A handbook of usage and
-  pronunciation}.
+\APACrefbtitle {{Indian and British English: A handbook of usage and
+  pronunciation}} {{Indian and British English: A handbook of usage and
+  pronunciation}}.
 \newblock
 \APACaddressPublisher{}{Oxford University Press Delhi}.
 \PrintBackRefs{\CurrentBib}
@@ -1199,7 +1199,7 @@ Piccinini, P.%
 }{%
 {R Core Team}%
 }{%
-{\protect \APACyear {2016}}%
+{\protect \APACyear {2013}}%
 }]{%
 r}
 \APACinsertmetastar {%
@@ -1209,7 +1209,7 @@ r}%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2016}{}{}.
+\APACrefYearMonthDay{2013}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {R: A Language and Environment for Statistical Computing}
   {R: A language and environment for statistical computing}{\BBCQ}\
@@ -1217,7 +1217,7 @@ r}%
 \newblock
 \APACaddressPublisher{Vienna, Austria}{}.
 \newblock
-\begin{APACrefURL} \url{https://www.R-project.org/} \end{APACrefURL}
+\begin{APACrefURL} \url{http://www.R-project.org/} \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1240,13 +1240,13 @@ Rubino, C\BPBI R\BPBI G.%
 \newblock
 \APACrefYear{2001}.
 \newblock
-\APACrefbtitle {Facts about the world's languages : an encyclopedia of the
+\APACrefbtitle {{Facts about the world's languages : an encyclopedia of the
   world's major languages, past and present / edited by Jane Garry and Carl
   Rubino; contributing linguistics editors, Adams B. Dodomo, Alice Faber,
-  Robert French} {Facts about the world's languages : an encyclopedia of the
-  world's major languages, past and present / edited by jane garry and carl
-  rubino; contributing linguistics editors, adams b. dodomo, alice faber,
-  robert french}\ [Book].
+  Robert French}} {{Facts about the world's languages : an encyclopedia of the
+  world's major languages, past and present / edited by Jane Garry and Carl
+  Rubino; contributing linguistics editors, Adams B. Dodomo, Alice Faber,
+  Robert French}}\ [Book].
 \newblock
 \APACaddressPublisher{}{H.W. Wilson New York}.
 \PrintBackRefs{\CurrentBib}
@@ -1302,7 +1302,9 @@ Schwartz, G.%
   Polish}} {{Language mode vs. L2 interference: Evidence from L1
   Polish}}.{\BBCQ}
 \newblock
-\BIn{} \APACrefbtitle {ICPhS.} {Icphs.}
+\BIn{} \APACrefbtitle {{Proceedings of the International Congress of Phonetic
+  Sciences (ICPhS). Glasgow, UK}.} {{Proceedings of the International Congress
+  of Phonetic Sciences (ICPhS). Glasgow, UK}.}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1329,9 +1331,9 @@ vsimavckova2015immediate}%
   interpreting} {Immediate phonetic interference in code-switching and
   interpreting}.{\BBCQ}
 \newblock
-\BIn{} \APACrefbtitle {Proceedings of the 18th International Congress of
-  Phonetic Sciences. Glasgow, UK.} {Proceedings of the 18th international
-  congress of phonetic sciences. glasgow, uk.}
+\BIn{} \APACrefbtitle {{Proceedings of the 18th International Congress of
+  Phonetic Sciences (ICPhS). Glasgow, UK}.} {{Proceedings of the 18th
+  International Congress of Phonetic Sciences (ICPhS). Glasgow, UK}.}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
