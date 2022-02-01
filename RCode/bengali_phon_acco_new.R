@@ -1,32 +1,35 @@
-<<<<<<< HEAD
-formant_data_5 <- read.csv("formant_data_5.csv")
-=======
-formant_data_5 <- read.csv("formant_data_5.csv", check.names = TRUE)
->>>>>>> 093ce24fb2b2845200c064d597ff33aaf389134e
-attach(formant_data_5)
-# detach(formant_data_5)
+# analysis code for phonetic_transfer
+# file paths relative to R project environment (root = phonetic_transfer)
 
-library(lattice)
-library(plyr)
+library(tidyverse)
 library(phonR)
 library(lme4)
-library(ggplot2)
-library(dplyr)
-library(tidyr)
+library(lmerTest)
 library(stargazer)
 
 
+formant_data_5 <- read.csv("RCode/formant_data_5.csv", check.names = TRUE)%>%
+  mutate_if(is.character,as.factor)
+str(formant_data_5)
+
+attach(formant_data_5)
+
+
+
+# pool measures from all 5 points in the vowel, then from that-- calculate the average F1 for each speaker, and normalize all data points from that speaker wrt that.  
 normF1 <- with(formant_data_5,normLobanov(cbind(F1_5,F1_15,F1_25,F1_35,F1_45)),group=Subject)
-normF1 <- as.data.frame(normF1)
 
 normF2 <- with(formant_data_5,normLobanov(cbind(F2_5,F2_15,F2_25,F2_35,F2_45)),group=Subject)
-normF2 <- as.data.frame(normF2)
 
 
-with(formant_data_5, plotVowels(normF1$F1_15, normF2$F2_15, Vowel, group = Context, plot.tokens = FALSE, 
-              plot.means = TRUE , var.sty.by = Vowel,var.col.by = Context, pch.means = Vowel, cex.tokens = 0.8,
-              cex.means = 0.8, alpha.means = 0.3,alpha.tokens = 0.3,ellipse.line = TRUE,  ellipse.fill = TRUE,
-              fill.opacity = 0.1, pretty = TRUE))
+df_lobanov <- data.frame(Subject,Gender,Task,Word,Context,Vowel,normF1,normF2)
+
+
+detach(formant_data_5)
+# with(formant_data_5, plotVowels(normF1$F1_15, normF2$F2_15, Vowel, group = Context, plot.tokens = FALSE, 
+#               plot.means = TRUE , var.sty.by = Vowel,var.col.by = Context, pch.means = Vowel, cex.tokens = 0.8,
+#               cex.means = 0.8, alpha.means = 0.3,alpha.tokens = 0.3,ellipse.line = TRUE,  ellipse.fill = TRUE,
+#               fill.opacity = 0.1, pretty = TRUE))
 
 
 
@@ -129,10 +132,17 @@ with(formant_data_5, plotVowels(normF1$F1_45, normF2$F2_45, Vowel, group = Conte
 
 
 ## main model
-phon_acco.model = lmer(normF1$F1_25 ~ Gender + Context*Vowel + Task + (1+Task+Context|Word) + 
-                         (1+Task+Context*Vowel|Subject), data=formant_data_5, REML=FALSE)
-null.model = lmer(normF1$F1_25 ~ Gender + Context*Vowel + Task + (1+Task+Context|Word) + 
-                    (1+Task+Context+Vowel|Subject), data=formant_data_5, REML=FALSE)
+
+# mean-centered and scaled data: 
+
+df_lobanov.CS <- df_lobanov %>% mutate_if(is.numeric,scale)
+
+
+phon_acco.model = lmer(F1_25 ~ Gender + Context*Vowel + Task + (1+Task+Context|Word) + 
+                         (1+Task+Context*Vowel|Subject), data=df_lobanov.CS, REML=FALSE)
+
+null.model = lmer(F1_25 ~ Gender + Context*Vowel + Task + (1+Task+Context|Word) + 
+                    (1+Task+Context+Vowel|Subject), data=df_lobanov.CS, REML=FALSE)
 summary(phon_acco.model)
 anova(phon_acco.model,null.model) 
 coef(phon_acco.model)

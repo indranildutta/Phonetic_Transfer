@@ -1,0 +1,85 @@
+---
+title: "Phonetic Tansfer analysis code"
+author: "Auromita"
+date: "1/23/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = TRUE, message = TRUE)
+```
+
+Load packages and data, create objects for lobanov normalized F1 and F2, create dataframe.
+
+(note: file paths relative to the .Rmd file, not the global R environment)
+
+```{r, include=FALSE}
+
+library(tidyverse)
+library(phonR)
+library(lme4)
+library(lmerTest)
+library(stargazer)
+library(pwr)
+
+
+df <- read.csv("formant_data_5.csv", check.names = TRUE) %>%
+  rename_all(tolower) %>%
+  mutate_if(is.character,as.factor) 
+  
+str(df)
+
+attach(df)
+
+# pool measures from all 5 points in the vowel, then from that-- calculate the average F1 for each speaker, and normalize all data points from that speaker wrt that.  
+
+normF1 <- with(df,normLobanov(cbind(f1_5,f1_15,f1_25,f1_35,f1_45)),group=subject)
+normF2 <- with(df,normLobanov(cbind(f2_5,f2_15,f2_25,f2_35,f2_45)),group=subject)
+
+df_lobanov <- data.frame(subject,gender,task,word,context,vowel,normF1,normF2)
+
+detach(df)
+
+rm(df,normF1,normF2)
+
+
+# data frame with time as variable
+df_time <- df_lobanov %>%
+  rename(f1_1=f1_5, f1_2=f1_15, f1_3=f1_25, f1_4=f1_35, f1_5=f1_45, f2_1=f2_5, f2_2=f2_15, f2_3=f2_25, f2_4=f2_35, f2_5=f2_45) %>%
+  # dplyr pivot() functions: convert data between long(indexed) and wide(cartesian) formats
+  pivot_longer(starts_with("f"),
+               names_to = c(".value", "time"),
+               names_sep = "_",
+               names_transform = list(time = as.factor)
+               )
+# Since there are multiple observations per row (F1 and F2) that need to go in separate columns in the output, the ".value" lets you specify that part of the variable name will be used to split the data in the output. The rest of the name becomes the variable "time"
+
+```
+
+LME models:
+
+
+```{r}
+
+## main model
+
+
+phon_acco.model = lmer(f1 ~ 
+                         gender + context*vowel + time*vowel + task +
+                         (1|word) + (1+context*vowel|subject), 
+                         data= df_time, REML=FALSE)
+summary(phon_acco.model)
+summary(rePCA(phon_acco.model))
+
+null.model = lmer(f1 ~ 
+                    gender + context*vowel + task + 
+                    (1|word) + (1+context*vowel|subject), 
+                    data=df_time, REML=FALSE)
+summary(null.model)
+
+anova(phon_acco.model,null.model) 
+
+coef(phon_acco.model)
+
+
+```
