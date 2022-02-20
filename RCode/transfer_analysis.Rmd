@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE, warning = TRUE, message = TRUE)
 
 Load packages and data, create objects for lobanov normalized F1 and F2, create dataframe.
 
-(note: file paths relative to the .Rmd file, not the global R environment)
+(note: file paths relative to project root folder (phonetic_transfer))
 
 ```{r, include=FALSE}
 
@@ -21,9 +21,11 @@ library(lme4)
 library(lmerTest)
 library(stargazer)
 library(pwr)
+library(smir)
 
 
-df <- read.csv("formant_data_5.csv", check.names = TRUE) %>%
+
+df <- read.csv("RCode/formant_data_5.csv", check.names = TRUE) %>%
   rename_all(tolower) %>%
   mutate_if(is.character,as.factor) 
   
@@ -40,11 +42,11 @@ df_lobanov <- data.frame(subject,gender,task,word,context,vowel,normF1,normF2)
 
 detach(df)
 
-rm(df,normF1,normF2)
+rm(normF1,normF2)
 
 
 # data frame with time as variable
-df_time <- df_lobanov %>%
+df_lobanov_time <- df_lobanov %>%
   rename(f1_1=f1_5, f1_2=f1_15, f1_3=f1_25, f1_4=f1_35, f1_5=f1_45, f2_1=f2_5, f2_2=f2_15, f2_3=f2_25, f2_4=f2_35, f2_5=f2_45) %>%
   # dplyr pivot() functions: convert data between long(indexed) and wide(cartesian) formats
   pivot_longer(starts_with("f"),
@@ -54,7 +56,283 @@ df_time <- df_lobanov %>%
                )
 # Since there are multiple observations per row (F1 and F2) that need to go in separate columns in the output, the ".value" lets you specify that part of the variable name will be used to split the data in the output. The rest of the name becomes the variable "time"
 
+rm(df_lobanov)
 ```
+
+
+Log-mean normalization:
+
+```{r}
+
+# data in long format for log-mean normalization 
+df_long <- df %>%
+  select(!c(vowel_duration, f1_mid)) %>%
+  rename(f1_1=f1_5, f1_2=f1_15, f1_3=f1_25, f1_4=f1_35, f1_5=f1_45, f2_1=f2_5, f2_2=f2_15, f2_3=f2_25, f2_4=f2_35, f2_5=f2_45, iteration=filename) %>%
+  pivot_longer(starts_with("f"), # pivot all the columns whose names start with "f"
+               values_to = "ff_raw",
+               # drop the f part, store the rest as values for new variables "formant" and "time"
+               names_to = c(NA, "formant", "time"), 
+               # how to divide up the variable name (f + formant + _ + time)
+               names_pattern = "(.)(.)_(.)") %>% 
+  # reorder columns
+  relocate("subject", "gender", "task", "word", "context", "vowel", "time", "formant", "ff_raw") %>%
+  mutate_if(is.character, as.factor) %>%
+  # new column with log-transformed FFs
+  mutate(ff_log = log(ff_raw)) %>%
+  # composite variable vowel-formant (estimate for the dialectal reference pattern-- the target ff for that vowel in the dialect)
+  mutate (vowel.formant = factor(interaction(vowel, formant)))
+
+
+# fitting a regression model to predict log-transformed formant-frequencies (ff-log) for a given vowel, formant and speaker as the sum of a speaker displacement term (subject) and normalized vowel-formant effects (vowel.formant)  (Barreda&Neary 2018)
+
+### only vowel midpoints for figures
+df_long <- df_long %>%
+  filter(time==5)
+
+attach(df_long)
+
+# forcing the intercept to 0 so that coefficients are calculated for all levels of "subject"
+M = lm (ff_log ~ 0 + subject + vowel.formant, contrasts = list(vowel.formant = contr.sum))
+summary(M)
+
+# coefficients of the speaker effect (estimate of speaker parameter)
+speaker_coeff = dummy.coef(M)$subject
+# coefficients of the vowel.formant effect (estimate of dialect reference/target formant for each vowel)
+vowel_coeff = dummy.coef(M)$vowel.formant
+
+detach(df_long)
+
+# from each log-transformed ff of a particular speaker, want to subtract the speaker coefficient 
+
+temp <- as.data.frame(speaker_coeff) %>%
+  rownames_to_column(var = "subject")
+
+df_long <- df_long %>%
+  full_join(temp, by = "subject") 
+
+df_long <- df_long %>%
+  mutate(ff_log_normalized = ff_log - speaker_coeff) 
+
+df_long <- df_long %>%
+  mutate(ff_exp_normalized = exp(ff_log_normalized))
+
+rm(temp,speaker_coeff,vowel_coeff)
+
+
+# putting F1 and F2 in separate columns for plotting (pivot_wider doesn't work because there are no unique identifiers for each vowel, since there were multiple reps in each condition). So crude workaround:
+
+df_clean <- df_long %>%
+  select(subject, gender, task, iteration, word, context, vowel, time, formant, ff_log_normalized, ff_exp_normalized, ff_raw) 
+
+f1 <- df_clean %>%
+  filter(formant == 1)
+
+f2 <- df_clean %>%
+  filter(formant == 2)
+
+df_normalized <- bind_cols(f1,f2$ff_log_normalized,f2$ff_exp_normalized, f2$ff_raw)%>%
+  mutate(formant=NULL) %>%
+  rename(f1_log = ff_log_normalized, f1_exp = ff_exp_normalized, f1_raw = ff_raw, f2_log =...13, f2_exp = ...14, f2_raw = ...15)
+
+
+rm(df_clean, f1, f2)
+
+```
+
+
+Baseline Bengali data from the Shruti corpus:
+
+```{r, include=FALSE}
+
+# list of files in directory (paths relative to project root)
+file_list <- list.files(path="shruti/merged_speaker_data", full.names = T)
+vowel_list <- "oh|u|i|ee|A|E|aa"
+
+# create dataframe by reading data from each file in folder
+df_ben <- file_list %>%
+  set_names(.) %>%
+  # apply read_table() to each file, read only specified columns
+  map_df(read_table, .id = "FileName", col_types = cols_only(rowLabel ='f', Time ='d', F1 ='d', F2 ='d')) %>%
+  # rename columns
+  rename(speaker=FileName, vowel=rowLabel, time_absolute=Time, f1=F1, f2=F2) %>%
+  # only keep rows that have vowels
+  filter(grepl(vowel_list, vowel)) %>%
+  # clean column name (remove file path)
+  mutate(speaker = str_replace(speaker, "shruti/merged_speaker_data/", "")) %>%
+  mutate(speaker = str_replace(speaker, "_merged.txt", "")) %>%
+  mutate(speaker = as.factor(speaker)) %>%
+  droplevels() 
+  
+
+# columns for gender and time point (1-20)
+
+male = c("abd", "chandan", "kunal", "plb", "sayan", "sudha", "swarnendu", "amitava", "deb", "mainak", "rajashree", "sm", "suman", "xxx", "bd", "jit", "moy", "samaresh", "smt", "suparna", "chan", "jyotirmoy", "padma", "sandi", "styabrata", "suparnakdas")
+
+female = c("manika", "msm", "punam", "rita",  "ritwika",  "shyamoshree",  "suranjana",  "tml")
+
+timepoints <- c(1:20)
+
+
+# add column for gender using mutate() and ifelse()
+# add column for time (iterate over 1:20; length.out: desired length of final vector (here- total no. of rows))
+df_ben <- df_ben %>%
+  mutate(gender = ifelse(speaker %in% male, "male", "female"),
+         time = rep(timepoints, length.out = 2458340), .after = time_absolute,
+         time = as.factor(time)
+         ) 
+
+
+# Lobanov normalization (normalizing over all vowels here. For the English data-- only have 2 vowels.)
+
+# attach(bengali_df)
+# lobanov <- with(bengali_df,normLobanov(cbind(f1,f2), group = speaker))
+# bengali_lobanov <- data.frame(speaker, gender, vowel, time, lobanov)
+# rm(lobanov)
+# detach(bengali_df)
+
+rm(female, file_list, male, timepoints, vowel_list) 
+
+```
+
+Log-mean normalization for Bengali data:
+
+```{r}
+
+# subset of dataframe with only vowels of interest (A and E) at vowel midpoints (timepoints 8-12),
+# removing outlier formant values (<300 Hz): ~ 11% of rows. In full dataset (all vowels): ~14%
+
+df_ben_AE <- df_ben %>%
+  filter(grepl("A|E", vowel), time %in% (8:12), f1>500) %>%
+  droplevels() %>%
+  mutate(time_absolute = NULL) %>%
+  relocate(gender, .after = speaker)
+
+
+# data in long format for log-mean normalization 
+
+df_ben_long <- df_ben_AE %>%
+  pivot_longer(starts_with("f"), # pivot all the columns whose names start with "f"
+               values_to = "ff_raw",
+               # drop the f part, store the rest as value for new variable "formant" 
+               names_to = c(NA, "formant"), 
+               # how to divide up the variable name (f + formant)
+               names_pattern = "(.)(.)") %>% 
+  mutate_if(is.character, as.factor) %>%
+  # new column with log-transformed FFs
+  mutate(ff_log = log(ff_raw)) %>%
+  # composite variable vowel-formant (estimate for the dialectal reference pattern-- the target ff for that vowel in the dialect)
+  mutate (vowel.formant = factor(interaction(vowel, formant)))
+
+
+
+# fitting a regression model to predict log-transformed formant-frequencies (ff-log) for a given vowel, formant and speaker as the sum of a speaker displacement term (subject) and normalized vowel-formant effects (vowel.formant)  (Barreda&Neary 2018)
+
+attach(df_ben_long)
+
+# forcing the intercept to 0 so that coefficients are calculated for all levels of "subject"
+M_ben = lm (ff_log ~ 0 + speaker + vowel.formant, contrasts = list(vowel.formant = contr.sum))
+summary(M)
+
+# coefficients of the speaker effect (estimate of speaker parameter)
+speaker_coeff = dummy.coef(M_ben)$speaker
+# coefficients of the vowel.formant effect (estimate of dialect reference/target formant for each vowel)
+vowel_coeff = dummy.coef(M_ben)$vowel.formant
+
+detach(df_ben_long)
+
+# from each log-transformed ff of a particular speaker, want to subtract the speaker coefficient 
+
+temp <- as.data.frame(speaker_coeff) %>%
+  rownames_to_column(var = "speaker")
+
+df_ben_long <- df_ben_long %>%
+  full_join(temp, by = "speaker") 
+
+df_ben_long <- df_ben_long %>%
+  mutate(ff_log_normalized = ff_log - speaker_coeff) 
+
+df_ben_long <- df_ben_long %>%
+  mutate(ff_exp_normalized = exp(ff_log_normalized)) 
+
+
+rm(temp,speaker_coeff,vowel_coeff)
+
+
+# putting F1 and F2 in separate columns for plotting (pivot_wider doesn't work because there are no unique identifiers for each vowel, since there were multiple reps in each condition). So crude workaround:
+
+df_clean <- df_ben_long %>%
+  select(speaker, gender, vowel, time, formant, ff_log_normalized, ff_exp_normalized) 
+
+f1 <- df_clean %>%
+  filter(formant == 1)
+
+f2 <- df_clean %>%
+  filter(formant == 2)
+
+df_ben_normalized <- bind_cols(f1, f2$ff_log_normalized, f2$ff_exp_normalized) %>%
+  mutate(formant=NULL) %>%
+  rename(f1_log=ff_log_normalized, f1_exp=ff_exp_normalized, f2_log=...8, f2_exp=...9)
+
+
+rm(df_clean, f1, f2)
+
+
+variance <- var(df_ben$f1)
+variancef2 <- var(df_ben$f2)
+
+
+```
+
+
+Plotting vowel data:
+
+
+```{r}
+
+# IPA vowel symbols
+remapping_english <- c(`\\ae` = "æ", `\\vt` = "ʌ")
+remapping_bengali <- c(A = "a:", E = "æ")
+
+# add column with unicode vowels
+df_ben_normalized$unicodevowel <- remapping_bengali[as.character(df_ben_normalized$vowel)]
+
+df_normalized$unicodevowel <- remapping_english[as.character(df_normalized$vowel)]
+
+# plot: unilingual English, mixed, and baseline Bengali
+xlim <- c(1,-0.2)
+ylim = c(0,-1)
+
+
+# Bengali vowels
+with(df_ben_normalized,plotVowels(f1_log, f2_log, vowel,
+                        plot.tokens = F, plot.means = TRUE, pch.tokens = unicodevowel, pch.means = unicodevowel, 
+                        var.col.by = vowel, var.sty.by = vowel, 
+                        cex.tokens = 0.8, cex.means = 1, alpha.means = 0.8,alpha.tokens = 0.3,
+                        ellipse.line = F, ellipse.fill = T, fill.opacity = 0.5,
+                        poly.line = F, poly.order = c("A","E"),
+                        xlim = xlim, ylim = ylim, 
+                        legend.kwd="bottomleft", legend.args = list(legend=c("baseline æ","baseline a:")), 
+                        axes=FALSE, pretty = TRUE))
+par(new=TRUE)
+
+# English vowels
+with(df_normalized, plotVowels(f1_log, f2_log, vowel, group = context, 
+                               plot.tokens = F, plot.means = TRUE , pch.tokens = unicodevowel, pch.means = unicodevowel,
+                               var.col.by = NA, var.sty.by = context, 
+                               cex.tokens = 0.8, cex.means = 1, alpha.means = 0.5,alpha.tokens = 0.3,
+                               ellipse.line = T,  ellipse.fill = T,
+                               poly.line = F, poly.order = c("\\ae","\\vt"),
+                               xlim = xlim, ylim = ylim, 
+                               legend.kwd = "bottomright", legend.args = list(legend=c("unilingual","mixed")),
+                               fill.opacity = 0.1, pretty = TRUE))
+
+
+
+
+```
+
+
+
 
 LME models:
 
@@ -65,11 +343,26 @@ LME models:
 
 
 phon_acco.model = lmer(f1 ~ 
-                         gender + context*vowel + time*vowel + task +
+                         gender + context*vowel + context*task +
                          (1|word) + (1+context*vowel|subject), 
                          data= df_time, REML=FALSE)
 summary(phon_acco.model)
 summary(rePCA(phon_acco.model))
+
+fixef(phon_acco.model)
+powerSim(phon_acco.model)
+
+trial <- lmer(f1 ~
+                context*vowel + gender + task +
+                (1+context*vowel|subject) + (1|word),
+                data = df_time, REML = FALSE)
+
+summary(trial)
+
+fixef(trial)["contexte:tasks"] <- 0.1
+powerSim(trial, test = fixed("tasks"), nsim = 20)
+pc <- powerCurve (trial, along = "subject", test = fixed("task"), nsim = 20)
+plot(pc)
 
 null.model = lmer(f1 ~ 
                     gender + context*vowel + task + 
