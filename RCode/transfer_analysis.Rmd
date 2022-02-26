@@ -19,9 +19,8 @@ library(tidyverse)
 library(phonR)
 library(lme4)
 library(lmerTest)
-library(stargazer)
 library(pwr)
-library(smir)
+library(simr)
 
 
 
@@ -46,6 +45,8 @@ rm(normF1,normF2)
 
 
 # data frame with time as variable
+
+# lobanov-normalized FFs
 df_lobanov_time <- df_lobanov %>%
   rename(f1_1=f1_5, f1_2=f1_15, f1_3=f1_25, f1_4=f1_35, f1_5=f1_45, f2_1=f2_5, f2_2=f2_15, f2_3=f2_25, f2_4=f2_35, f2_5=f2_45) %>%
   # dplyr pivot() functions: convert data between long(indexed) and wide(cartesian) formats
@@ -56,13 +57,24 @@ df_lobanov_time <- df_lobanov %>%
                )
 # Since there are multiple observations per row (F1 and F2) that need to go in separate columns in the output, the ".value" lets you specify that part of the variable name will be used to split the data in the output. The rest of the name becomes the variable "time"
 
-rm(df_lobanov)
+
+# raw FFs
+df_time <- df %>%
+  select(!c("filename", "f1_mid", "vowel_duration")) %>%
+  rename(f1_1=f1_5, f1_2=f1_15, f1_3=f1_25, f1_4=f1_35, f1_5=f1_45, f2_1=f2_5, f2_2=f2_15, f2_3=f2_25, f2_4=f2_35, f2_5=f2_45) %>%
+  # dplyr pivot() functions: convert data between long(indexed) and wide(cartesian) formats
+  pivot_longer(starts_with("f"),
+               names_to = c(".value", "time"),
+               names_sep = "_",
+               names_transform = list(time = as.factor)
+               )
+
 ```
 
 
 Log-mean normalization:
 
-```{r}
+```{r, eval=FALSE, include=FALSE}
 
 # data in long format for log-mean normalization 
 df_long <- df %>%
@@ -183,7 +195,6 @@ df_ben <- df_ben %>%
 
 
 # Lobanov normalization (normalizing over all vowels here. For the English data-- only have 2 vowels.)
-
 # attach(bengali_df)
 # lobanov <- with(bengali_df,normLobanov(cbind(f1,f2), group = speaker))
 # bengali_lobanov <- data.frame(speaker, gender, vowel, time, lobanov)
@@ -202,7 +213,7 @@ Log-mean normalization for Bengali data:
 # removing outlier formant values (<300 Hz): ~ 11% of rows. In full dataset (all vowels): ~14%
 
 df_ben_AE <- df_ben %>%
-  filter(grepl("A|E", vowel), time %in% (8:12), f1>500) %>%
+  filter(grepl("A|E", vowel), time %in% (8:12), f1>600) %>%
   droplevels() %>%
   mutate(time_absolute = NULL) %>%
   relocate(gender, .after = speaker)
@@ -261,7 +272,7 @@ rm(temp,speaker_coeff,vowel_coeff)
 # putting F1 and F2 in separate columns for plotting (pivot_wider doesn't work because there are no unique identifiers for each vowel, since there were multiple reps in each condition). So crude workaround:
 
 df_clean <- df_ben_long %>%
-  select(speaker, gender, vowel, time, formant, ff_log_normalized, ff_exp_normalized) 
+  select(speaker, gender, vowel, time, formant, ff_log_normalized, ff_exp_normalized, ff_raw) 
 
 f1 <- df_clean %>%
   filter(formant == 1)
@@ -269,17 +280,12 @@ f1 <- df_clean %>%
 f2 <- df_clean %>%
   filter(formant == 2)
 
-df_ben_normalized <- bind_cols(f1, f2$ff_log_normalized, f2$ff_exp_normalized) %>%
+df_ben_normalized <- bind_cols(f1, f2$ff_log_normalized, f2$ff_exp_normalized, f2$ff_raw) %>%
   mutate(formant=NULL) %>%
-  rename(f1_log=ff_log_normalized, f1_exp=ff_exp_normalized, f2_log=...8, f2_exp=...9)
+  rename(f1_log=ff_log_normalized, f1_exp=ff_exp_normalized, f1_raw=ff_raw, f2_log=...9, f2_exp=...10, f2_raw=...11)
 
 
 rm(df_clean, f1, f2)
-
-
-variance <- var(df_ben$f1)
-variancef2 <- var(df_ben$f2)
-
 
 ```
 
@@ -299,16 +305,29 @@ df_ben_normalized$unicodevowel <- remapping_bengali[as.character(df_ben_normaliz
 df_normalized$unicodevowel <- remapping_english[as.character(df_normalized$vowel)]
 
 # plot: unilingual English, mixed, and baseline Bengali
-xlim <- c(1,-0.2)
-ylim = c(0,-1)
+xlim <- c(2500,600)
+ylim = c(1100,400)
 
+
+temp <- df_ben %>%
+  filter(time %in% (8:12), f1>300)
+
+with(temp,plotVowels(f1, f2, vowel,
+                        plot.tokens = F, plot.means = TRUE, pch.tokens = vowel, pch.means = vowel, 
+                        var.col.by = vowel, var.sty.by = vowel, 
+                        cex.tokens = 0.8, cex.means = 1, alpha.means = 0.8,alpha.tokens = 0.3,
+                        ellipse.line = F, ellipse.fill = T, fill.opacity = 0.3,
+                        poly.line = F, poly.order = c("A","E"),
+                        xlim = xlim, ylim = ylim, 
+                        legend.kwd="bottomleft", legend.args = list(legend=c("baseline æ","baseline a:")), 
+                        axes=T, pretty = TRUE))
 
 # Bengali vowels
-with(df_ben_normalized,plotVowels(f1_log, f2_log, vowel,
+with(df_ben_normalized,plotVowels(f1_raw, f2_raw, vowel,
                         plot.tokens = F, plot.means = TRUE, pch.tokens = unicodevowel, pch.means = unicodevowel, 
                         var.col.by = vowel, var.sty.by = vowel, 
                         cex.tokens = 0.8, cex.means = 1, alpha.means = 0.8,alpha.tokens = 0.3,
-                        ellipse.line = F, ellipse.fill = T, fill.opacity = 0.5,
+                        ellipse.line = F, ellipse.fill = T, fill.opacity = 0.2,
                         poly.line = F, poly.order = c("A","E"),
                         xlim = xlim, ylim = ylim, 
                         legend.kwd="bottomleft", legend.args = list(legend=c("baseline æ","baseline a:")), 
@@ -316,7 +335,7 @@ with(df_ben_normalized,plotVowels(f1_log, f2_log, vowel,
 par(new=TRUE)
 
 # English vowels
-with(df_normalized, plotVowels(f1_log, f2_log, vowel, group = context, 
+with(df_normalized, plotVowels(f1_raw, f2_raw, vowel, group = context, 
                                plot.tokens = F, plot.means = TRUE , pch.tokens = unicodevowel, pch.means = unicodevowel,
                                var.col.by = NA, var.sty.by = context, 
                                cex.tokens = 0.8, cex.means = 1, alpha.means = 0.5,alpha.tokens = 0.3,
@@ -334,20 +353,159 @@ with(df_normalized, plotVowels(f1_log, f2_log, vowel, group = context,
 
 
 
-LME models:
+## LME models:
 
+```{r}
+# plot for English vowels:
+
+# Lobanov-normalized FFs
+xlim = c(2.5, -2)
+ylim = c(2.3, -2)
+
+with(df_lobanov_time, plotVowels(f1, f2, vowel, group = task,
+                               plot.tokens = F, plot.means = TRUE , pch.tokens = vowel, pch.means = vowel,
+                               var.col.by = task, var.sty.by = NULL, 
+                               cex.tokens = 0.8, cex.means = 1, alpha.means = 0.5,alpha.tokens = 0.3,
+                               ellipse.line = F,  ellipse.fill = T,
+                               poly.line = F, poly.order = c("\\ae","\\vt"),
+                               xlim = xlim, ylim = ylim, 
+                               legend.kwd = "bottomright", legend.args = gender,
+                               fill.opacity = 0.1, pretty = TRUE))
+
+
+
+
+# raw FFs
+with(df_time, plotVowels(f1, f2, vowel, group = task, 
+                               plot.tokens = F, plot.means = TRUE , pch.tokens = vowel, pch.means = vowel,
+                               var.col.by = task, var.sty.by = context, 
+                               cex.tokens = 0.8, cex.means = 1, alpha.means = 0.5,alpha.tokens = 0.3,
+                               ellipse.line = T,  ellipse.fill = T,
+                               poly.line = F, poly.order = c("\\ae","\\vt"),
+                               xlim = c(2500, 700), ylim = c(1400, 100), 
+                               legend.kwd = "bottomright", legend.args = gender,
+                               fill.opacity = 0.1, pretty = TRUE))
+
+```
+
+Gender difference is not removed after lobanov normalization. Normalizing by gender:
 
 ```{r}
 
+df_lobanov_gender_time <- df_time %>%
+  mutate(f1 = with(df_lobanov_time, normLobanov(f1), group = gender),
+         f2 = with(df_lobanov_time, normLobanov(f2), group = gender))
+
+```
+
+
 ## main model
 
+writeup-- (using data from all 5 points. This should be okay because the pre-vocalic consonants are all the same, so any effect of the consonant should be uniform. A difference between contexts in the early part of the vowel suggests differences in target FFs)
 
+Gender effects: try:
+- normalize by gender
+- use log-mean normalized values
+
+Hypotheses:
+
+- FFs are different across vowels
+- FFS are different across contexts
+- the two vowel categories are differently affected (precise direction/extent of shift in FFs depends on category, position in vowel space, presence/absence of contrast in L1)
+So main effect of interest: context*vowel
+
+- if transfer patterns differ across tasks, then expect: context\*task interaction, OR context\*vowel\*task interaction
+
+- FFs should change across time, so effect of time on FF. But what time is doing to the FF (direction of change)-- depends on the vowel category. So expect: time\*vowel interaction
+
+- if transfer patterns change across time, then expect: context\*time interaction, OR context\*vowel\*time interaction
+
+Random effects structure:
+
+- subject: intercept, context, vowel (target FF different across speakers), context\*vowel interaction (transfer pattern different across speakers)
+
+-item: intercept (FF for vowel different in each item), context (the effect of context is different for each word), NOT vowel (between-item variable), NOT gender (even though within-item, no reason to believe that effect of gender on FF is different for each item)
+
+
+```{r, results='hide'}
+temp <- df_lobanov_time %>%
+  filter(time == "5")
+
+# F1
+
+# full model
+phon_acco.model = lmer(f1 ~ 
+                         gender + time*vowel + vowel*context*task +
+                         (1|word) + (1+context+vowel|subject), 
+                         data= df_lobanov_time, REML=FALSE)
+summary(phon_acco.model)
+summary(rePCA(phon_acco.model))
+
+
+# null model
+null.model = lmer(f1~
+                   gender + time*vowel + vowel*context + task*vowel +
+                   (1|word) + (1+context+vowel|subject), 
+                   data= df_lobanov_time, REML=FALSE) 
+
+summary(null.model)
+
+anova(phon_acco.model, null.model)
+```
+
+Random effects structure: (1+context|word) + (1+context+vowel|subject). But by-word random slope for context is explaining barely any variance, and null model is not converging. So removing that.
+
+- Full model1: gender + time\*vowel + vowel\*context
+- null model1: gender + time*vowel
+full model is better
+- null model2: gender + time*vowel + context
+full model still better
+
+Shows: F1 differs across contexts (mediated by vowel category). So transfer is happening.
+
+Now want to see: effect of task?
+If there is a difference in transfer patterns across tasks, then expect task to interact with the vowel\*context variable 
+- full model: gender + time\*vowel + vowel\*context\*task 
+-task by itself affects F1 (unexpected)
+- marginal effect of context\*task (effect of context on F1 is moderated by task) -- expected
+- significant effect of vowel\*context\*task (transfer pattern is moderated by task) -- expected
+
+- null model: gender + time\*vowel + vowel\*context
+full model better
+
+- null model: gender + time\*vowel + vowel\*context + task
+(because adding task is significant on its own, and adding it as an interaction term increases model parameters, want to see if having it as an interaction significantly improves fit)
+full model better -- task does interact with context and vowel
+
+- null model: gender + time\*vowel + vowel\*context + task\*context 
+to see if three-way interaction is needed. Is task only interacting with context?
+nope, context\*task not significant here
+full model better
+
+gender + time\*vowel + vowel\*context + task\*vowel 
+to see if three-way interaction is needed. Is task only interacting with vowel?
+context\*vowel is significant
+but anova shows that the full model is still better
+
+So: need the task\*context\*vowel interaction
+
+Want to see: is the effect of task local (decreases with time)? Since the effect of juat task on F1 is unexpected, want to see if it might be an artifact of the paradigm/stimuli
+
+
+```{r}
+# F2
 phon_acco.model = lmer(f1 ~ 
                          gender + context*vowel + context*task +
                          (1|word) + (1+context*vowel|subject), 
                          data= df_time, REML=FALSE)
 summary(phon_acco.model)
 summary(rePCA(phon_acco.model))
+
+```
+
+Power analysis:
+
+```{r}
 
 fixef(phon_acco.model)
 powerSim(phon_acco.model)
