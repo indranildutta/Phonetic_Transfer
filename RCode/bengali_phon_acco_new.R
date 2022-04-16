@@ -34,7 +34,7 @@ detach(formant_data_5)
 
 
 ## bengali baseline data
-bengali <- read.csv("baseline_bengali.csv", stringsAsFactors = TRUE, header = TRUE)
+bengali <- read.csv("RCode/baseline_bengali.csv", stringsAsFactors = TRUE, header = TRUE)
 attach(bengali)
 detach(bengali)
 bengaliAE <- subset (bengali, V1=="A"|V1=="E")

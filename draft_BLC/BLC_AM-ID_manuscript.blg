@@ -27,45 +27,45 @@ I'm skipping whatever remains of this entry
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--No journal in masica1972sound
 Warning--`others' not consistent with 6th ed. of the APA Manual
-You've used 58 entries,
+You've used 60 entries,
             6951 wiz_defined-function locations,
-            1603 strings with 20716 characters,
-and the built_in function-call counts, 114775 in all, are:
-= -- 14264
-> -- 828
-< -- 5962
-+ -- 6056
-- -- 125
-* -- 7509
-:= -- 22008
-add.period$ -- 244
-call.type$ -- 58
-change.case$ -- 993
+            1616 strings with 20981 characters,
+and the built_in function-call counts, 118340 in all, are:
+= -- 14718
+> -- 857
+< -- 6121
++ -- 6227
+- -- 129
+* -- 7729
+:= -- 22623
+add.period$ -- 252
+call.type$ -- 60
+change.case$ -- 1027
 chr.to.int$ -- 0
-cite$ -- 117
-duplicate$ -- 2790
-empty$ -- 4256
-format.name$ -- 1335
-if$ -- 21414
+cite$ -- 121
+duplicate$ -- 2892
+empty$ -- 4401
+format.name$ -- 1381
+if$ -- 22114
 int.to.chr$ -- 0
-int.to.str$ -- 174
+int.to.str$ -- 180
 missing$ -- 0
-newline$ -- 1413
-num.names$ -- 468
-pop$ -- 1818
+newline$ -- 1463
+num.names$ -- 484
+pop$ -- 1927
 preamble$ -- 1
-purify$ -- 234
+purify$ -- 242
 quote$ -- 0
-skip$ -- 7233
+skip$ -- 7424
 stack$ -- 0
-substring$ -- 6553
-swap$ -- 1648
-text.length$ -- 139
+substring$ -- 6743
+swap$ -- 1708
+text.length$ -- 143
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 4960
+type$ -- 5120
 warning$ -- 2
-while$ -- 457
+while$ -- 474
 width$ -- 0
-write$ -- 1715
+write$ -- 1776
 (There were 3 error messages)

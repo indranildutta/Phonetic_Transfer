@@ -901,6 +901,35 @@ Khattab, G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Kuznetsova%
+, Brockhoff%
+\BCBL {}\ \BBA {} Christensen%
+}{%
+Kuznetsova%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+lmerTest}
+\APACinsertmetastar {%
+lmerTest}%
+\begin{APACrefauthors}%
+Kuznetsova, A.%
+, Brockhoff, P\BPBI B.%
+\BCBL {}\ \BBA {} Christensen, R\BPBI H\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{lmerTest} Package: Tests in Linear Mixed Effects
+  Models} {{lmerTest} package: Tests in linear mixed effects models}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Statistical Software}{82}{13}{1--26}.
+\newblock
+\begin{APACrefDOI} \doi{10.18637/jss.v082.i13} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 MacLeod%
 \ \BBA {} Stoel-Gammon%
 }{%
@@ -950,6 +979,30 @@ Masica, C.%
   {{The Sound System of Indian English. Monograph No. 7.}}{\BBCQ}
 \newblock
 
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+McCloy%
+}{%
+McCloy%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+phonR}
+\APACinsertmetastar {%
+phonR}%
+\begin{APACrefauthors}%
+McCloy, D\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {phonR: tools for phoneticians and phonologists} {phonr:
+  tools for phoneticians and phonologists}{\BBCQ}\
+  [\bibcomputersoftwaremanual].
+\newblock
+\APACrefnote{R package version 1.0-7}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

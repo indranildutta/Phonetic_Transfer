@@ -7,6 +7,8 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = TRUE, message = TRUE)
+
+options(scipen=999) # turn off scientific e notation, show full numbers. To turn on: options(scipen=0)
 ```
 
 Load packages and data, create objects for lobanov normalized F1 and F2, create dataframe.
@@ -17,15 +19,22 @@ Load packages and data, create objects for lobanov normalized F1 and F2, create 
 
 library(tidyverse)
 library(phonR)
+library(stargazer)
+library(modelsummary)
 library(lme4)
 library(lmerTest)
 library(pwr)
 library(simr)
+library(EMAtools) # to calculate Cohen's d values from lmer objects
 
 
+# replacing vowel symbols with unicode:
+remapping_english <- c(`\\ae` = "æ", `\\vt` = "ʌ")
 
+# read in data
 df <- read.csv("RCode/formant_data_5.csv", check.names = TRUE) %>%
   rename_all(tolower) %>%
+  mutate(vowel = remapping_english[as.character(vowel)]) %>%
   mutate_if(is.character,as.factor) 
   
 str(df)
@@ -154,7 +163,7 @@ rm(df_clean, f1, f2)
 
 Baseline Bengali data from the Shruti corpus:
 
-```{r, include=FALSE}
+```{r, eval=FALSE}
 
 # list of files in directory (paths relative to project root)
 file_list <- list.files(path="shruti/merged_speaker_data", full.names = T)
@@ -207,7 +216,7 @@ rm(female, file_list, male, timepoints, vowel_list)
 
 Log-mean normalization for Bengali data:
 
-```{r}
+```{r, eval=FALSE}
 
 # subset of dataframe with only vowels of interest (A and E) at vowel midpoints (timepoints 8-12),
 # removing outlier formant values (<300 Hz): ~ 11% of rows. In full dataset (all vowels): ~14%
@@ -293,7 +302,7 @@ rm(df_clean, f1, f2)
 Plotting vowel data:
 
 
-```{r}
+```{r, eval=FALSE}
 
 # IPA vowel symbols
 remapping_english <- c(`\\ae` = "æ", `\\vt` = "ʌ")
@@ -362,25 +371,27 @@ with(df_normalized, plotVowels(f1_raw, f2_raw, vowel, group = context,
 xlim = c(2.5, -2)
 ylim = c(2.3, -2)
 
-with(df_lobanov_time, plotVowels(f1, f2, vowel, group = task,
-                               plot.tokens = F, plot.means = TRUE , pch.tokens = vowel, pch.means = vowel,
-                               var.col.by = task, var.sty.by = NULL, 
+with(df_lobanov_gender_time, plotVowels(f1, f2, vowel, group = interaction(task,context),
+                               plot.tokens = F, plot.means = TRUE , pch.tokens = vowel, pch.means = interaction(task,context),
+                               var.col.by = interaction(task,context), var.sty.by = gender, 
                                cex.tokens = 0.8, cex.means = 1, alpha.means = 0.5,alpha.tokens = 0.3,
-                               ellipse.line = F,  ellipse.fill = T,
+                               ellipse.line = F,  ellipse.fill = F,
                                poly.line = F, poly.order = c("\\ae","\\vt"),
-                               xlim = xlim, ylim = ylim, 
+                               xlim = c(1,-1), ylim = c(0.5,-1), 
                                legend.kwd = "bottomright", legend.args = gender,
                                fill.opacity = 0.1, pretty = TRUE))
 
 
+```
 
+```{r}
 
 # raw FFs
-with(df_time, plotVowels(f1, f2, vowel, group = task, 
+with(df_time, plotVowels(f1, f2, vowel, group = interaction(gender, task), 
                                plot.tokens = F, plot.means = TRUE , pch.tokens = vowel, pch.means = vowel,
-                               var.col.by = task, var.sty.by = context, 
+                               var.col.by = interaction(gender, task), var.sty.by = task, 
                                cex.tokens = 0.8, cex.means = 1, alpha.means = 0.5,alpha.tokens = 0.3,
-                               ellipse.line = T,  ellipse.fill = T,
+                               ellipse.line = F,  ellipse.fill = F,
                                poly.line = F, poly.order = c("\\ae","\\vt"),
                                xlim = c(2500, 700), ylim = c(1400, 100), 
                                legend.kwd = "bottomright", legend.args = gender,
@@ -392,10 +403,14 @@ Gender difference is not removed after lobanov normalization. Normalizing by gen
 
 ```{r}
 
-df_lobanov_gender_time <- df_time %>%
-  mutate(f1 = with(df_lobanov_time, normLobanov(f1), group = gender),
-         f2 = with(df_lobanov_time, normLobanov(f2), group = gender))
+gender_normalized <- with(df_lobanov_time, normLobanov(cbind(f1,f2), group=gender))
 
+df_lobanov_gender_time <- df_lobanov_time %>%
+  select(!c(f1,f2)) %>%
+  mutate(f1 = gender_normalized$f1,
+         f2 = gender_normalized$f2)
+
+rm(gender_normalized)  
 ```
 
 
@@ -404,7 +419,7 @@ df_lobanov_gender_time <- df_time %>%
 writeup-- (using data from all 5 points. This should be okay because the pre-vocalic consonants are all the same, so any effect of the consonant should be uniform. A difference between contexts in the early part of the vowel suggests differences in target FFs)
 
 Gender effects: try:
-- normalize by gender
+- normalize by gender (done)
 - use log-mean normalized values
 
 Hypotheses:
@@ -428,37 +443,53 @@ Random effects structure:
 
 
 ```{r, results='hide'}
-temp <- df_lobanov_time %>%
-  filter(time == "5")
+
+
+temp <- df_lobanov_gender_time %>%
+  mutate(time = as.numeric(time)) %>%
+  mutate(time = scale(time))
 
 # F1
 
 # full model
-phon_acco.model = lmer(f1 ~ 
-                         gender + time*vowel + vowel*context*task +
-                         (1|word) + (1+context+vowel|subject), 
-                         data= df_lobanov_time, REML=FALSE)
+phon_acco.model_f1 = lmer(f1 ~ 
+                         time*vowel + vowel*context*task + time*task +
+                         (1+context|word) + (1+context+vowel|subject), 
+                         data= temp, REML=FALSE, control = lmerControl(optimizer = "bobyqa"))
 summary(phon_acco.model)
 summary(rePCA(phon_acco.model))
 
+# Cohen's d values (from EMAtools package):
+d_F1 <- lme.dscore(phon_acco.model, data=temp, type='lme4')
+
+
+##--> find way to export fixed effects table (estimate, SE, p values) to LaTex
+
+stargazer(phon_acco.model)
 
 # null model
 null.model = lmer(f1~
-                   gender + time*vowel + vowel*context + task*vowel +
-                   (1|word) + (1+context+vowel|subject), 
-                   data= df_lobanov_time, REML=FALSE) 
+                   time*vowel + vowel*context*task + time*task +
+                   (1+context|word) + (1+context+vowel|subject), 
+                   data= temp, REML=FALSE, control = lmerControl(optimizer = "bobyqa")) 
 
 summary(null.model)
+summary(rePCA(null.model))
 
 anova(phon_acco.model, null.model)
+
+# some weird interaction with lmerTest package. Detach that first
+stargazer(phon_acco.model)
+modelsummary(phon_acco.model)
+
 ```
 
-Random effects structure: (1+context|word) + (1+context+vowel|subject). But by-word random slope for context is explaining barely any variance, and null model is not converging. So removing that.
+Random effects structure: (1+context|word) + (1+context+vowel|subject). But by-word random slope for context is explaining barely any variance, and null model is not converging. So removing that: (1|word) + (1+context+vowel|subject)
 
-- Full model1: gender + time\*vowel + vowel\*context
-- null model1: gender + time*vowel
+- Full model: time\*vowel + vowel\*context
+- null model: time*vowel
 full model is better
-- null model2: gender + time*vowel + context
+- null model: time*vowel + context
 full model still better
 
 Shows: F1 differs across contexts (mediated by vowel category). So transfer is happening.
@@ -482,55 +513,180 @@ to see if three-way interaction is needed. Is task only interacting with context
 nope, context\*task not significant here
 full model better
 
-gender + time\*vowel + vowel\*context + task\*vowel 
+- null model: gender + time\*vowel + vowel\*context + task\*vowel 
 to see if three-way interaction is needed. Is task only interacting with vowel?
-context\*vowel is significant
+task\*vowel is significant
 but anova shows that the full model is still better
 
 So: need the task\*context\*vowel interaction
 
-Want to see: is the effect of task local (decreases with time)? Since the effect of juat task on F1 is unexpected, want to see if it might be an artifact of the paradigm/stimuli
+vowel\\vt:contexte:tasks      -1.185e-01  3.551e-02  1.162e+04  -3.338 0.000848 ***
+vowelvt:contexte has a negative slope (for vt, in the English context, F1 is lower--vowel is higher, i.e. vowel is lower in b context. This is the main transfer effect.)
+Now, the interaction of this with tasks has a negative slope (this entire thing is increased (becomes more in magnitude) in the s task compared to the p task)
+i.e., more transfer in the s task?
 
+Want to see: is the effect of task local (decreases with time)? Since the effect of just task on F1 is unexpected, want to see if it might be an artifact of the paradigm/stimuli
+tasks:time     -7.506e-02  1.751e-02  1.162e+04  -4.286 1.83e-05 ***
+(tasks has a positive slope (F1 increases/vowel lowers in s task);
+time has a positive slope (F1 increases/vowel lowers with time);
+interaction term has a negative slope: the effect of tasks (lowering of vowel) reduces with increase in time: effect of task is more in the beginning: local effect)
+
+
+Is transfer pattern changing with time? 
+vowel\*context\*time: not significant
+context\*time: not significant
+
+full model: gender + vowel\*context\*task\*time
+null model: gender + time\*vowel + vowel\*context\*task + task\*time -- final model
+null model better (time doesn't need to interact with context, or with vowel\*context)-- transfer pattern is not changing over time-- the targets are different
+No effect of context on formant dynamics. There is a linear scaling of the trajectory--targets are different.
+
+Do transfer patterns differ across gender?
+full model: time\*vowel + vowel\*context\*task\*gender + task\*time
+no effect of vowel\*context\*gender-- no difference in transfer patterns
+but: task\*gender is significant: men show more lowering in the sentence task than females --unexpected
 
 ```{r}
 # F2
-phon_acco.model = lmer(f1 ~ 
-                         gender + context*vowel + context*task +
-                         (1|word) + (1+context*vowel|subject), 
-                         data= df_time, REML=FALSE)
+
+# full model
+phon_acco.model_f2 = lmer(f2 ~ 
+                         vowel*time + vowel*context*task + task*time +
+                         (1+context|word) + (1+context+vowel|subject), 
+                         data= temp, REML=FALSE, control = lmerControl(optimizer = "bobyqa"))
 summary(phon_acco.model)
 summary(rePCA(phon_acco.model))
 
+# Cohen's d values (from EMAtools package):
+d_F2 <- lme.dscore(phon_acco.model, data=temp, type='lme4')
+
+##--> find way to export fixed effects table (estimate, SE, p values) to LaTex
+
+
+
+# null model
+null.model = lmer(f2~
+                   time*vowel + vowel*context*task*time +
+                   (1+context|word) + (1+context+vowel|subject), 
+                    data= temp, REML=FALSE, control = lmerControl(optimizer = "bobyqa"))
+
+summary(null.model)
+
+anova(phon_acco.model, null.model)
+
+stargazer(phon_acco.model)
 ```
+
+- Full model: time\*vowel + vowel\*context
+effect of vowel: vt is more backed than ae
+effect of time: F2 changes with time, but direction is moderated by vowel: ae is fronted, vt less so
+marginal effect of context: both vowels are fronted in b context
+main effect of vowel*context: ae is fronted in the b context, vt is very very slightly backed
+- null model: time*vowel
+full model is better
+- null model: time*vowel + context
+full model still better
+
+Shows: F2 differs across contexts (mediated by vowel category). So transfer is happening in front-back dimension.
+
+Now want to see: effect of task?
+If there is a difference in transfer patterns across tasks, then expect task to interact with the vowel\*context variable 
+- full model: time\*vowel + vowel\*context\*task 
+fails to converge.
+fitting 0-correlation model (remove correlations from by-subject random effects): still doesn't converge. VCV matrix shows by-subject slopes for vowel have correlation of 1. So removing that. Converges now.
+independent effect of task: vowels are backed in the s task
+
+-task by itself affects F2 (unexpected)
+- marginal effect of context\*task (effect of context on F2 is moderated by task) -- more fronting (in b context) during s task
+- effect of vowel\*context\*task: not significant 
+
+- null model: gender + time\*vowel + vowel\*context
+full model better
+---
+- null model: gender + time\*vowel + vowel\*context + task
+(because adding task is significant on its own, and adding it as an interaction term increases model parameters, want to see if having it as an interaction significantly improves fit)
+full model better -- task does interact with context and vowel
+
+- null model: gender + time\*vowel + vowel\*context + task\*context 
+to see if three-way interaction is needed. Is task only interacting with context?
+nope, context\*task not significant here
+full model better
+
+- null model: gender + time\*vowel + vowel\*context + task\*vowel 
+to see if three-way interaction is needed. Is task only interacting with vowel?
+task\*vowel is significant
+but anova shows that the full model is still better
+
+So: need the task\*context\*vowel interaction
+
+vowel\\vt:contexte:tasks      -1.185e-01  3.551e-02  1.162e+04  -3.338 0.000848 ***
+vowelvt:contexte has a negative slope (for vt, in the English context, F1 is lower--vowel is higher, i.e. vowel is lower in b context. This is the main transfer effect.)
+Now, the interaction of this with tasks has a negative slope (this entire thing is increased (becomes more in magnitude) in the s task compared to the p task)
+i.e., more transfer in the s task?
+
+Want to see: is the effect of task local (decreases with time)? Since the effect of just task on F1 is unexpected, want to see if it might be an artifact of the paradigm/stimuli
+tasks:time     -7.506e-02  1.751e-02  1.162e+04  -4.286 1.83e-05 ***
+(tasks has a positive slope (F1 increases/vowel lowers in s task);
+time has a positive slope (F1 increases/vowel lowers with time);
+interaction term has a negative slope: the effect of tasks (lowering of vowel) reduces with increase in time: effect of task is more in the beginning: local effect)
+
+
+Is transfer pattern changing with time? 
+vowel\*context\*time: not significant
+context\*time: not significant
+
+full model: gender + vowel\*context\*task\*time
+null model: gender + time\*vowel + vowel\*context\*task + task\*time -- final model
+null model better (time doesn't need to interact with context, or with vowel\*context)-- transfer pattern is not changing over time-- the targets are different
+No effect of context on formant dynamics. There is a linear scaling of the trajectory--targets are different.
+
+Do transfer patterns differ across gender?
+full model: time\*vowel + vowel\*context\*task\*gender + task\*time
+no effect of vowel\*context\*gender-- no difference in transfer patterns
+but: task\*gender is significant: men show more lowering in the sentence task than females --unexpected
+
 
 Power analysis:
 
 ```{r}
 
-fixef(phon_acco.model)
-powerSim(phon_acco.model)
+# F1:
 
-trial <- lmer(f1 ~
-                context*vowel + gender + task +
-                (1+context*vowel|subject) + (1|word),
-                data = df_time, REML = FALSE)
+fixef(phon_acco.model_f1)
 
-summary(trial)
+fixef(phon_acco.model_f1)["vowelʌ:contexte:tasks"] <- - 0.1
 
-fixef(trial)["contexte:tasks"] <- 0.1
-powerSim(trial, test = fixed("tasks"), nsim = 20)
-pc <- powerCurve (trial, along = "subject", test = fixed("task"), nsim = 20)
+# power for interaction term: compare current model to one without the interaction term
+powerSim(phon_acco.model_f1, nsim = 20, test = fcompare(f1 ~ time*vowel + vowel*context + time*task))
+# shows 90% power
+
+pc <- powerCurve (phon_acco.model_f1, along = "subject", test = fixed("vowelʌ:contexte:tasks"), nsim = 20)
 plot(pc)
-
-null.model = lmer(f1 ~ 
-                    gender + context*vowel + task + 
-                    (1|word) + (1+context*vowel|subject), 
-                    data=df_time, REML=FALSE)
-summary(null.model)
-
-anova(phon_acco.model,null.model) 
-
-coef(phon_acco.model)
 
 
 ```
+
+Reporting power analyses:
+
+Now that you have conducted your power analysis you will need to report it in APA style. Thissentence (or two) is usually placed in the Results section of a research report near the start of theresults when the assumptions and adequacy of the sample size are being reported.The sentence that you write should include the following:
+
+- The type of statistical test that you will be using to analyse the data (e.g., an independentsample t-test)
+- The type of power analysis that you did–either a priori or post hoc (generally researchersreport the a priori power analysis)
+- The name of the software program that you used to conduct the power analysis and acitation to the authors and date of publication (see the G\*Power website listed above forthe journal article to cite)
+- The level of power aspired to for a prior analyses, or the actual power achieved for post hocanalysesThe estimated or actual effect size used in the calculationThe alpha level used in the calculation
+- For an a priori power analysis, report the sample size needed to achieve the minimumacceptable power level.For post hoc analysis, report achieved sample size.
+
+All this detail needs to be reported concisely and in one or two sentences at most.I’ve written an example reportfor question 1 for a power of .80 below:
+
+An a priori power analysis was conducted using G*Power3 (Faul, Erdfelder, Lang, & Buchner,2007) to test the difference between two independent group means using a two-tailed test,a medium effect size (d= .50), and an alpha of .05.Result showed that a total sample of 128 participants with two equal sized groups ofn= 64 was required to achieve a power of .80.
+
+-------
+
+A statistical power analysis was performed for sample size estimation, based on data from pilot
+study/published study X (N=…), comparing …. to ….. The effect size (ES) in this study was ….,
+considered to be extremely large/large/medium/small using Cohen's (1988) criteria. With an
+alpha = .05 and power = 0.80, the projected sample size needed with this effect size (GPower
+3.1 or other software) is approximately N = ….. for this simplest between/within group
+comparison. Thus, our proposed sample size of ..N+.. will be more than adequate for the main
+objective of this study and should also allow for expected attrition and our additional objectives
+of controlling for possible mediating/moderating factors/subgroup analysis, etc.
