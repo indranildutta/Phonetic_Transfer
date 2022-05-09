@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.12.14)  17 APR 2022 15:48
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.12.14)  8 MAY 2022 13:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -846,9 +846,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
-
-LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 209.
+Overfull \hbox (10.92314pt too wide) in paragraph at lines 216--218
+[]\TU/ptm/bx/n/12 Moreover, changes due to transfer are not necessarily unidire
+ctional or irreversible. ([][]Sancier,
+ []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -857,11 +858,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
-Overfull \hbox (10.92314pt too wide) in paragraph at lines 219--221
-[]\TU/ptm/bx/n/12 Moreover, changes due to transfer are not necessarily unidire
-ctional or irreversible. ([][]Sancier,
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -898,15 +894,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [14]
 
+Package natbib Warning: Citation `shruticorpus' on page 15 undefined on input l
+ine 268.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [15]
-
-Package natbib Warning: Citation `shr' on page 16 undefined on input line 272.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -936,18 +933,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [19]
 
+LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 317.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 327--330
+Underfull \hbox (badness 10000) in paragraph at lines 323--326
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--332
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
 
  []
 
@@ -958,6 +959,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [21]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 336.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 336.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 336.
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--339
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -965,22 +982,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [22]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 340.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 340.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 340.
-
-Underfull \hbox (badness 10000) in paragraph at lines 340--341
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
-
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -989,6 +990,34 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [23]
 
+Package natbib Warning: Citation `kumle2021estimating' on page 24 undefined on 
+input line 359.
+
+
+Package natbib Warning: Citation `brysbaert2018power' on page 24 undefined on i
+nput line 361.
+
+
+Package natbib Warning: Citation `kumle2021estimating' on page 24 undefined on 
+input line 361.
+
+
+Package natbib Warning: Citation `hoenig2001abuse' on page 24 undefined on inpu
+t line 363.
+
+
+Package natbib Warning: Citation `gelman2019observed_effect_size' on page 24 un
+defined on input line 363.
+
+
+Package natbib Warning: Citation `brysbaert2018power' on page 24 undefined on i
+nput line 363.
+
+
+Package natbib Warning: Citation `kumle2021estimating' on page 24 undefined on 
+input line 363.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -996,24 +1025,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [24]
 
-Package natbib Warning: Citation `simr' on page 25 undefined on input line 363.
+Package natbib Warning: Citation `brysbaert2018power' on page 25 undefined on i
+nput line 367.
 
+
+Package natbib Warning: Citation `kumle2021estimating' on page 25 undefined on 
+input line 367.
 
 
 Package natbib Warning: Citation `brysbaert2018power' on page 25 undefined on i
-nput line 365.
+nput line 369.
 
 
 Package natbib Warning: Citation `kumle2021estimating' on page 25 undefined on 
-input line 365.
-
-
-Package natbib Warning: Citation `kumle2021estimating' on page 25 undefined on 
-input line 365.
-
-
-Package natbib Warning: Citation `ematools' on page 25 undefined on input line 
-366.
+input line 369.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1022,13 +1047,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [25]
-Overfull \hbox (1.39946pt too wide) in paragraph at lines 382--383
+Overfull \hbox (1.39946pt too wide) in paragraph at lines 384--385
 \TU/ptm/m/it/12 First, to test hypothesis 1 (L2 transfer), we fitted a model wi
 th vowel*time, and vowel*context
  []
 
 
-Overfull \hbox (10.49384pt too wide) in paragraph at lines 384--387
+Overfull \hbox (10.49384pt too wide) in paragraph at lines 386--389
 []\TU/ptm/m/it/12 To test the hypothesis Paradigm, we fitted a model with vowel
 *time and task*vowel*context
  []
@@ -1040,7 +1065,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 394--397
+
+LaTeX Warning: Reference `table_f1_fixed_effects' on page 27 undefined on input
+ line 397.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 396--399
 
  []
 
@@ -1051,13 +1081,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
 
- []
+LaTeX Warning: Reference `table_f1_fixed_effects' on page 28 undefined on input
+ line 400.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 400--401
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
+
+ []
+
+
+Overfull \hbox (1.39946pt too wide) in paragraph at lines 410--411
+\TU/ptm/m/it/12 First, to test hypothesis 1 (L2 transfer), we fitted a model wi
+th vowel*time, and vowel*context
  []
 
 
@@ -1067,13 +1108,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [28]
-Overfull \hbox (1.39946pt too wide) in paragraph at lines 408--409
-\TU/ptm/m/it/12 First, to test hypothesis 1 (L2 transfer), we fitted a model wi
-th vowel*time, and vowel*context
- []
-
-
-Overfull \hbox (10.49384pt too wide) in paragraph at lines 410--411
+Overfull \hbox (10.49384pt too wide) in paragraph at lines 412--413
 []\TU/ptm/m/it/12 To test the hypothesis Paradigm, we fitted a model with vowel
 *time and task*vowel*context
  []
@@ -1092,9 +1127,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 429--430
+
+LaTeX Warning: Reference `table_f2_fixed_effects' on page 31 undefined on input
+ line 431.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 431--432
 
  []
+
+
+LaTeX Warning: Reference `table_f2_fixed_effects' on page 31 undefined on input
+ line 433.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1103,6 +1147,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [31]
+
+LaTeX Warning: Reference `introduction' on page 32 undefined on input line 444.
+
+
+
+LaTeX Font Warning: Font shape `TU/ptm/bx/it' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 448.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1117,9 +1169,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 445--446
 
- []
+Package natbib Warning: Citation `green1986control' on page 34 undefined on inp
+ut line 457.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1129,26 +1181,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [34]
 
-LaTeX Font Warning: Font shape `TU/ptm/bx/sc' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 455.
-
-LaTeX Font Info:    Try loading font information for TU+pcr on input line 458.
-LaTeX Font Info:    No file TUpcr.fd. on input line 458.
-
-LaTeX Font Warning: Font shape `TU/pcr/bx/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 458.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35] (./BLC_AM-ID_manuscript.bbl
-
-LaTeX Font Warning: Font shape `TU/ptm/bx/it' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 31.
-
+[35]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1163,6 +1201,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [37]
+Underfull \hbox (badness 10000) in paragraph at lines 481--482
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1170,6 +1212,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [38]
+
+LaTeX Font Warning: Font shape `TU/ptm/bx/sc' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 491.
+
+LaTeX Font Info:    Try loading font information for TU+pcr on input line 494.
+LaTeX Font Info:    No file TUpcr.fd. on input line 494.
+
+LaTeX Font Warning: Font shape `TU/pcr/bx/n' undefined
+(Font)              using `TU/lmr/m/n' instead on input line 494.
+
+(./BLC_AM-ID_manuscript.bbl
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1183,7 +1236,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40])
+[40]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1198,10 +1251,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [42]
-Overfull \hbox (10.28381pt too wide) in paragraph at lines 491--526
-[][] 
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1209,20 +1258,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [43]
-Overfull \hbox (10.28381pt too wide) in paragraph at lines 533--568
-[][] 
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[44]
-File: vowels_e_b_final.png Graphic file (type bmp)
-<vowels_e_b_final.png>
-
+[44])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1230,9 +1272,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [45]
-File: vowel_by_subject_ggplot.png Graphic file (type bmp)
-<vowel_by_subject_ggplot.png>
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1240,28 +1279,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [46]
-Missing character: There is no ʌ in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ʌ in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ʌ in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ʌ in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ʌ in font [lmroman12-regular]:mapping=tex-text;!
-
-
-LaTeX Warning: Float too large for page by 16.94666pt on input line 643.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 649.
-
-Missing character: There is no ʌ in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ʌ in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ʌ in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ʌ in font [lmroman12-regular]:mapping=tex-text;!
-Missing character: There is no ʌ in font [lmroman12-regular]:mapping=tex-text;!
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 670.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1276,25 +1293,52 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [48]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 670.
+File: vowels_e_b_final.png Graphic file (type bmp)
+<vowels_e_b_final.png>
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[49]
+File: vowel_by_subject_ggplot.png Graphic file (type bmp)
+<vowel_by_subject_ggplot.png>
+
+
+Package natbib Warning: There were undefined citations.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 596.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 596.
  (./BLC_AM-ID_manuscript.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 670.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 670.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 596.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 596.
 Package rerunfilecheck Info: File `BLC_AM-ID_manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: 17E24FAFF53D1E4F89377A1D8361F43F.
+(rerunfilecheck)             Checksum: 7DD0F1822FF7CC96D4332DB252E5C971.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 670.
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 596.
  ) 
 Here is how much of TeX's memory you used:
- 22350 strings out of 492970
- 394156 string characters out of 6137297
- 466876 words of memory out of 5000000
- 26015 multiletter control sequences out of 15000+600000
+ 22353 strings out of 492970
+ 394197 string characters out of 6137297
+ 465959 words of memory out of 5000000
+ 26018 multiletter control sequences out of 15000+600000
  8024 words of font info for 33 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 69i,11n,58p,2147b,559s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,12n,58p,2147b,567s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on BLC_AM-ID_manuscript.pdf (48 pages).
+Output written on BLC_AM-ID_manuscript.pdf (50 pages).

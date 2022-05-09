@@ -206,9 +206,6 @@ A number of studies have specifically manipulated language mode, both in the pre
 
 In a bilingual mode, both language systems are expected to be nearly equally accessible throughout the test block. Thus, a consistent difference between switched and non-switched tokens in such a paradigm would be possible only if the effects were highly localized-- if not, we should expect a gradual convergence over the course of the experiment. This is discussed in the next section.
 
-\alert{discussion: this confirms that the local act of switching does cause transfer, beyond language mode. Most existing studies looking at local effect of switching measure VOT. We find that the sae happens in vowels. Moreover, the result of transfer is interesting-- in VOT, it can only increase or decrease, which makes it impossible to know if it is the particular consonant that becomes more like its L1 counterpart, or if there is some more system-wide shift. Because vowel quality measures have directionality as well as quantity, we can see finer patterns. We find that it is not merely a shift towards a Bengali counterpart, but rather a shift towards Bengali \textit{norms}-- a category that doesn't exist in Bengali moves towards a related Bengali category. What does this say about what happens during online processing and speech planning? --- look at discussion section of the mode vs switching papers: what do they say about this? Can this finding be accounted for with that?}
-
-\alert{It makes sense that a bilingual language mode makes the representations from boh languages available. But how are these processed during the act of using language? If these representtions are combined in creative ways, then are we moving between languages during a single discourse? Can we think of intermediate representations, not of individual sounds, but rather of sound systems? }
 
 \subsection{Duration of transfer effects} \label{duration}
 
@@ -267,9 +264,8 @@ There is no obvious competing L1 category during the production of \nt{2}. Howev
 
 We expect the vowel \nt{2} to shift towards an acoustically/perceptually close category in IE -- a probable candidate being the low vowel \nt{a:}, as anecdotal observations of Bengali-accented English suggest that the sounds are perceived as close by Bengali speakers. 
 
-\alert{in discussion- say: fact that nt shows more shift-- shows that this influence is not just at the level of individual sounds (that way would expect more shif in the common category because it's "confusing". But this-- shows that the L1 influence is at a system-level. More inclined towards using a Bengali-like phonological system. Has implications for cognitive models of language and what happens during short-term interaction)}
 
-In the present study, we do not elicit unilingual Bengali productions. To estimate average baseline differences in vowel quality between the relevant English and Bengali categories, we processed and used productions from a freely available Bengali corpus SHRUTI \citep{shruticorpus}. Formant values were extracted from syllable-initial productions of \nt{\ae} and \nt{a:}, at 55\% into the vowel. Next, we compared these to our participants' productions in the unilingual English condition. \alert{fig. .. plots} F1-F2 plots show that the Bengali category \nt{\ae} is lower, and \nt{a:} lower and more fronted, than the English categories \nt{\ae} and \nt{2} respectively. 
+In the present study, our research question concerns whether L2 vowels are produced differently in unilingual vs mixed conditions. We do not elicit unilingual Bengali productions. To estimate average baseline differences in vowel quality between the relevant English and Bengali categories, we used production data from the freely available Bengali corpus, SHRUTI \citep{shruticorpus}. Formant values were extracted from syllable-initial productions of \nt{\ae} and \nt{a:}, at 55\% into the vowel, to get formant estimates from the steady state, which should most closely approximate the production target. Next, we compared these to our participants' productions in the unilingual English condition to understand the relative positions of the categories. \alert{fig. .. plots-- from current plot- remove the dotted line. Filter by context, then remove group=context from figure code} F1-F2 plots show that the Bengali category \nt{\ae} is lower, and \nt{a:} lower and more fronted, than the English categories \nt{\ae} and \nt{2} respectively. 
 
 \subsection{A note on paradigms: connected speech or not?} \label{paradigms}
 
@@ -291,7 +287,7 @@ The precise contribution of various (linguistic and extra-linguistic) factors an
 \section{Methodology} \label{methodology}
 The experiment had the following factorial design: 10 participants* 20 target words* 2 conditions* 2 tasks* 4 iterations = 3200 target tokens.
 
-\subsection{Participants}
+\subsection{Participants} \label{participants}
 
 10 Bengali-English bilingual speakers (male=5, age range 19 to 28), completed the tasks. All the participants speak other languages in addition to Bengali and English. At the time of recording, they were living in or around the EFL University campus in Hyderabad, which has a linguistically diverse population. Speakers were selected on the basis of responses to a Language Background Questionnaire to ensure comparable LSRW (listening, speaking, reading, writing) skills in L1 and L2 across participants, and were compensated for their time.
 
@@ -332,12 +328,12 @@ The sound preceding the target word was uniform across all sentences (the final 
 	
 \end{enumerate}
 \subsection{Acoustic analysis}\label{analysis}
-The first iteration of each task was treated as a trial, and excluded from further analyses. An additional 67 tokens (2.79\%) were excluded due to errors in presentation/production, giving 2333 target word tokens (\nt{2}: 1137, \nt{\ae}: 1196) for analysis. Recordings were manually segmented and annotated in Praat \citep{boersma2016praat}, and the first and second formant frequencies (F1 and F2) of the target vowels \nt{2, \ae} were measured at five points-- in 10\% increments starting at 5\% into the vowel. This gave measures of F1 and F2 at 5\%, 15\%, 25\%, 35\% and 45\% into the vowel, allowing us to observe any dynamic changes in the extent of transfer over the course of producing the vowel. Individual vocal tract differences affect formant frequencies across speakers. To avoid this confound, we used Lobanov normalization (using the PhonR package \citep{phonR} in R \citep{r}, representing each speaker's formant frequencies as the scaled distance from their own mean (\alert{citation for lobanov normalization?}). Plotting the vowels (figure) shows a difference between male and female speakers, such that male speakers have lower formant frequencies. Normalizing by speaker does not get rid of this difference. Since gender-related differences in formant frequencies are not of interest in this study, we normalized individual values by gender (representing each speaker's values as a scaled distance from the group mean). Statistical analyses were performed on these normalized values. 
+The first iteration of each task was treated as a trial, and excluded from further analyses. An additional 67 tokens (2.79\%) were excluded due to errors in presentation/production, giving 2333 target word tokens (\nt{2}: 1137, \nt{\ae}: 1196) for analysis. Recordings were manually segmented and annotated in Praat \citep{boersma2016praat}, and the first and second formant frequencies (F1 and F2) of the target vowels \nt{2, \ae} were measured at five points-- in 10\% increments starting at 5\% into the vowel. This gave measures of F1 and F2 at 5\%, 15\%, 25\%, 35\% and 45\% into the vowel, allowing us to observe any dynamic changes in the extent of transfer over the course of producing the vowel. Individual vocal tract differences affect formant frequencies across speakers. To avoid this confound, we used Lobanov normalization (using the PhonR package \citep{phonR} in R \citep{r}, representing each speaker's formant frequencies as the scaled distance from their own mean (\alert{citation for lobanov normalization?}). Plotting the vowels \alert{(figure)} shows a difference between male and female speakers, such that male speakers have overall lower formant frequencies. Speaker normalization using the Lobanov method does not get rid of this difference. Since gender-related differences in formant frequencies are not of interest in this study, we normalized individual values by gender (representing each value as a scaled distance from the group mean). Statistical analyses were performed on these normalized values. 
 
 
 \section{Results} \label{results}
 
-All statistical analyses were performed in R \citep{r}. We used linear mixed effects models to test the effect of experimental conditions on vowel height (F1) and backness (F2) respectively. Since formants were extracted from five points over the course of articulating the vowel, time was coded numerically (1-5), and treated as an independent variable. This was scaled and centered prior to analysis and treated as a continuous predictor. Models were fit using the \emph{lme4} package \citep{lme4}, and \emph{lmerTest} \citep{lmerTest} was used to estimate p values for individual variables. For all mixed models, the alpha criterion was set at $|t| > 2 $. The dependent variables were Lobanov normalized F1 and F2, and we fitted separate models for these. The independent variables or fixed factors, along with their levels, are given in table \ref{table variables}. Subject and Item were treated as random factors.\\
+All statistical analyses were performed in R \citep{r}. We used linear mixed effects models to test the effect of experimental conditions on vowel height (F1) and backness (F2) respectively. Since formants were extracted from five points over the course of articulating the vowel, time was coded numerically (1-5), and treated as an independent variable. This was scaled and centered prior to analysis and treated as a continuous predictor. We fitted models using the \emph{lme4} package \citep{lme4}, and used \emph{lmerTest} \citep{lmerTest} to obtain estimates of p values for individual variables. For all mixed models, the alpha criterion was set at $|t| > 2 $. The dependent variables were normalized F1 and F2, and we fitted separate models for these. The independent variables or fixed factors, along with their levels, are given in table \ref{table variables} \alert{add variable type with each: factor, numerical, ...}. Subject and Item were treated as random factors.\\
 
 < Insert Table \ref{table variables} about here > \\
 
@@ -347,103 +343,134 @@ All statistical analyses were performed in R \citep{r}. We used linear mixed eff
 
 Our study involved two IE vowels. Vowel category is expected to systematically affect formant frequencies (FFs). 
 
-The experimental treatment of interest is Context, i.e. whether the target item was presented in a unilingual (English) or mixed (Bengali) context. Our main research question (\bf{L2 vowels}) asks whether L2 vowel quality (formant frequencies) of proficient bilinguals is affected by the Context of utterance. We hypothesize that the direction of shift in the mixed condition is towards the corresponding L1 category. Thus, we expect the effect of Context on formant frequencies, i.e. the direction of shift, to be affected by the vowel category (c.f. the second hypothesis \bf{Asymmetry}). Thus, our main effect of interest is the interaction term Context*Vowel. This corresponds to the transfer pattern.
+The experimental treatment of interest is Context, i.e. whether the target item was presented in a unilingual (English) or mixed (Bengali) context. Our main research question (\bf{L2 vowels}) asks whether L2 vowel quality (formant frequencies) of proficient bilinguals is affected by the Context of utterance. We hypothesize that the direction of shift in the mixed condition is towards the corresponding L1 category. Thus, we expect the effect of Context on formant frequencies, i.e. the direction of shift, to be affected by the vowel category (c.f. section \ref{asymmetry between sounds}). Thus, our main effect of interest is the interaction term Context*Vowel. This corresponds to the transfer pattern.
 
-Our third hypothesis (\bf{Paradigm}) was that the language-mixing paradigm, or Task, will affect the extent and direction of transfer. If this is the case, we expect Task to interact with the transfer term, giving a three way Task*Context*Vowel interaction.
+Our third research question (\bf{Paradigm}) asks whether the language-mixing paradigm, or Task, affects the extent and direction of transfer. If this is the case, we expect Task to interact with the transfer term, giving a three way Task*Context*Vowel interaction.
 
-Since we measured FFs at five points in the vowel, Time is expected to affect the FF. However, formant dynamics are expected to depend on the vowel category, and so we expect the interaction of Vowel*Time to predict formant frequency. If transfer patterns change across time, then we should expect it to interact with the transfer term, giving a Context*Vowel*Time interaction.
+Since we measured FFs at five points in the vowel, Time is expected to affect the FF. However, the precise effect of formant dynamics is expected to depend on the vowel category. Thus, we expect the interaction of Vowel*Time to predict formant frequency. If transfer patterns change across time, then we should expect it to interact with the transfer term, giving a Context*Vowel*Time interaction.
 
 \subsubsection*{Random effects structure}
 
-Subject and Item were treated as random factors. Given our hypotheses, we included random intercepts for Subject and Item, by-subject random slopes for Vowel (formant targets for vowel categories differ across individuals) and Context (individuals differ in their response to the experimental condition), and a by-item random slope for Context (the effect of experimental conditions differ across words). \alert{(convergence problems with by-word random slope for context-- changing the optimizer to bobyqa solved the problem)}
+Subject and Item were treated as random factors. Given our hypotheses, we included random intercepts for Subject and Item, by-subject random slopes for Vowel (formant targets for vowel categories differ across individuals) and Context (individuals differ in their response to the experimental condition), and a by-item random slope for Context (the effect of experimental conditions differ across words). 
 
-We tested the significance of our hypothesized explanatory variables using t-values and p-values for individual variables in the models, and tested overall model fit by comparing the full model to a corresponding null model that lacks the variable of interest using ANOVAs. The following subsections summarize and discuss the model outputs for F1 and F2 respectively:
-
-\subsection{Power analysis}
-We were able to recruit 10 participants. To confirm whether the experiment design was powerful enough to detect the effects we are investigating, we carried out post-hoc power analyses using the simr package \citep{simr} in R. The target of the analysis was to calculate the power for detecting an effect for our main variables of interest: vowel*context (to test the hypotheses L2-vowels and Asymmetry), and vowel*context*task (to test the hypothesis Paradigm). 
-
-Power is a function of sample size and effect size. Thus, a key issue in power analyses is to estimate the expected effect size for the treatment/factor of interest \citep{brysbaert2018power, kumle2021estimating}. This may be expressed as a standardized effect size or estimate ($\beta$), Cohen's d, or partial $\eta ^2$. Effect sizes in simr are expressed as unstandardized effect sizes (model estimates). In the absence (to the best of our knowledge) of literature on typical effect sizes for spectral differences in cross-language vowel production, we made a conservative estimate of effect sizes as |$\beta$| > 0.1. This amounts to the assumption that the smallest effect size that is meaningful to us (smallest effect size of interest; SESOI \citep{kumle2021estimating}) is 0.1, and we want to confirm whether the study has enough power to detect such an effect, if it were to exist. Note that this is an arbitrary assumption; only more discussion among researchers in this field will lead to a consensus on what is considered a typical cross-language effect. 
-
-"Determining the SESOI for (G)LMMs is difficult in a simulation-based approach where effect sizes are indicated through the model’s unstandardized beta coefficients. relating effect sizes to beta coefficients in complex models is far from trivial and the authors therefore refrain from making specific recommendations." \citep{kumle2021estimating}
-
-Next, following \cite{kumle2021estimating}, we ran a power analysis assuming smaller effect sizes by reducing the beta-coefficients by 15\%. (Use the model summary, make a vector of all beta-values, including intercept, add as argument of SESOI= )
-
-In the  Calculations of d values from our models using the package EMAtools \citep{ematools} show that they range from 0.01 to 1.06 (no need).  
-
-While differences between paradigms have been discussed in previous literature and theoretically motivated, there is no work yet which has measured differences in a controlled experimental setup, and thus no reported effect sizes to act as a guideline. Since we are assuming $\beta$ = 0.1 to be the smallest difference across conditions that we are interested in, we will assume that a difference of similar magnitude across paradigms will be of theoretical interest to us. Thus, the power analysis fixes effect sizes of both variables at $\beta$ = 0.1, and report the power. 
+We tested the significance of our hypothesized explanatory variables using t-values and p-values for individual variables in the models, and tested overall model fit by comparing the full model to a corresponding null model that lacks the variable of interest using ANOVAs. The following subsections summarize and discuss the model outputs for F1 and F2 respectively.
 
 
-
---> in cover letter: power analyses for complex mixed models are not trivial and is an active pursuit. While we have done our best to follow available literature, we would love to have more feedback on this. 
-\subsubsection*{transfer term: vowel*context}
-To calculate the power for the interaction term using simr, we set the estimate for the term to 0.05, and compare the full model against a model that lacks the interaction term. On the basis of 100 simulations, the power for  
-
-\subsubsection*{paradigm differences: vowel*context*task}
 
 \subsection{Vowel Height -- F1}
 
 \subsubsection*{Model output summary}
 
-First, to test hypothesis 1 (\bf{L2 transfer}), we fitted a model with vowel*time, and vowel*context as fixed effects. The transfer term (vowel*context) is significant in this model (standardized effect size ($\beta$)= -2.330e-01, standardized error (SE)=  5.244e-02, t= -4.44, p=0.0002). Comparing this to a null model that lacks the transfer term shows that the full model is significantly better ($\chi^2(2) = 14.42, p=  0.0007$). To confirm whether the effect of context is moderated by vowel identity, we compared a second null model that contained Context as a fixed effect, but lacked the Context*Vowel interaction. The full model was better ($\chi^2(1) = 12.51, p= 0.0004$).
+First, to test hypothesis 1 (\bf{L2 transfer}), we fitted a model with vowel*time, and vowel*context as fixed effects. The transfer term (vowel*context) is significant in this model (model coefficient/ unstandardized effect size ($\beta$)= -2.330e-01, standard error (SE)=  5.244e-02, t= -4.44, p=0.0002). Comparing this to a null model that lacks the transfer term shows that the full model is significantly better ($\chi^2(2) = 14.42, p=  0.0007$). To confirm whether the effect of context is moderated by vowel identity, we compared a second null model that contained Context as a fixed effect, but lacked the Context*Vowel interaction. The full model was better ($\chi^2(1) = 12.51, p= 0.0004$).
 
-To test the hypothesis \textbf{Paradigm}, we fitted a model with vowel*time and task*vowel*context as fixed effects. This three-way interaction term is significant ($\beta$= -1.955e-01, SE=  5.453e-02, t= -3.59, p= 0.0003). We also find a significant effect of task on FFs ($\beta$=3.300e-01, SE=2.668e-02, t=12.371, p=2e-16). Comparing this model to null models that lack the fixed effect Task ($\chi^2(4) = 572.61, p=  2.2e-16$) shows that the full model is better. Because Task has an independent effect on F1, and adding interactions increases model parameters, we fitted a second null model with Task as a separate fixed effect without the interaction term to test whether the interaction term is needed. However, the full model was still a better fit for the data ($\chi^2(3) = 23.82, p=  2.722e-05$). Next, we tested two other null models to verify that the full model with the three-way interaction term is indeed the optimal model for the data, by replacing the three-way interaction term with: (i) vowel*context + task*context (to test if task only interacts with context, rather than the transfer term vowel*context). The full model is better ($\chi^2(2) = 23.28, p= 8.78e-06$); (ii) vowel*context + task*vowel (to test if task only interacts with vowel, rather than the transfer term vowel*context). The full model is better ($\chi^2(2) = 13.36, p= 0.001$). This shows that the three-way interaction is the best fit for the data.
-\alert{later, during interpreting part? --> Want to see: is the effect of task local (decreases with time)? Since the effect of just task on F1 is unexpected, want to see if it might be an artifact of the paradigm/stimuli} --
-Because an independent effect of task on FFs is unexpected (c.f. ), we wanted to see if the effect might be local, i.e. decrease over time. We added a task*time interaction term to the full model, which is significant ($\beta$= -1.216e-01, SE=  1.347e-02, t= -9.028, p= 2e-16 ) and improves model fit ($\chi^2(1) = 81.22, p= 2.2e-16$).
+To test the hypothesis \textbf{Paradigm}, we fitted a model with vowel*time and task*vowel*context as fixed effects. This three-way interaction term is significant ($\beta$= -1.955e-01, SE=  5.453e-02, t= -3.59, p= 0.0003). We also find a significant effect of task on FFs ($\beta$=3.300e-01, SE=2.668e-02, t=12.371, p=2e-16). Comparing this model to null models that lack the fixed effect Task ($\chi^2(4) = 572.61, p=  2.2e-16$) shows that the full model is better. Because Task has an independent effect on F1, and adding interactions increases model parameters, we fitted a second null model with Task as a separate fixed effect without the interaction term to test whether the interaction term is needed. However, the full model was still a better fit for the data ($\chi^2(3) = 23.82, p=  2.722e-05$). Next, we tested two other null models to verify that the full model with the three-way interaction term is indeed the optimal model for the data, by replacing the three-way interaction term with: (i) vowel*context + task*context (to test if task only interacts with context, rather than the transfer term vowel*context). The full model is better ($\chi^2(2) = 23.28, p= 8.78e-06$); (ii) vowel*context + task*vowel (to test if task only interacts with vowel, rather than the transfer term vowel*context). The full model is better ($\chi^2(2) = 13.36, p= 0.001$). This shows that the three-way interaction is the best fit for the data. Because an independent effect of task on FFs is unexpected (c.f. ), we wanted to see if the effect might be local, i.e. decrease over time. We added a task*time interaction term to the full model, which is significant ($\beta$= -1.216e-01, SE=  1.347e-02, t= -9.028, p= 2e-16 ) and improves model fit ($\chi^2(1) = 81.22, p= 2.2e-16$).
 
 Next, to examine the dynamics of transfer, we added a three-way interaction between the transfer term (vowel*context) and time. This term has a marginally significant effect ($\beta$= -4.604e-02, SE=  2.692e-02, t= -1.71, p= 0.08), but does not significantly improve model fit compared to a null model lacking the vowel*context*time term ($\chi^2(2) = 3.41, p= 0.18$).
 
-Table summary:
+Thus, the optimal model was: f1 ~ time*vowel + vowel*context*task + time*task + (1 + context|word) + (1 + context + vowel|subject). Table \ref{table_f1} summarizes the model coefficient estimates ($\beta$), standard errors (S.E.), t-values, and p-values for this model. \alert{p-vales smaller than 0.05 are in bold.} 
+
 
 \subsubsection*{Interpretation}
+We extracted formant estimates from five uniformly spaced points in the vowel, from the time at 5\% into the vowel (at the start of articulation) to 45\% (at the mid-part, or steady state, which is expected to correspond to the articulatory target for the category). As expected, we see that F1 values are significantly predicted by Time in the model, reflecting th dynamic nature of articulation which causes acoustic variation over the course of time. The positive slope of the estimate for Time indicates that F1 increases, i.e. the two categories in the study show lowering over the course of articulation. Moreover, the significant Time*Vowel interaction shows that the F1 trajectory is different for the two vowels. This is expected, as the categories are expected to present different articulatory targets.  
 
----older stuff:
-Table \ref{table_f1_fixed_effects} summarizes the results of the fixed effects from the model for F1. As expected, we observe a significant effect of gender, such that male speakers have a lower mean F1 than female speakers. Vowel is not a significant predictor of F1. This is surprising, given that the phonological category is expected to systematically affect vowel quality. However, a boxplot visualization (Figure \ref{boxplot_F1}) shows that the participants in this study vary greatly both in the relative heights of the two categories \nt{2, \ae} and the extent of height difference between them. Note that these measures are only from the English (unilingual) condition, suggesting that this variability is a feature of the participants' IE vowel categories, independent of the effects of switching. The lack of any independent effect of Context on F1 suggests that using English words in mixed utterances does not lead to a uniform lowering/raising across vowels. Instead, the significant interaction between Context and Vowel indicates a lowering in \nt{2}, but not in \nt{\ae}, in the mixed-language condition. The results also reveal a significant effect of Task, such that the sentence task (code-switching) leads to higher F1 values in both vowels, relative to the cued picture-naming task. This effect is strongest at the beginning of the vowel, and disappears by 45\%. This is an unexpected result, since we have no principled reason to expect code-switching to induce an across-board lowering of vowels. As noted earlier, there is no significant interaction of Task with any of the other fixed factors. We used a series of ANOVAs to compare the model elaborated above with a null model that differs in the absence of the main factor which concerns our hypothesis, Vowel*Context, at each point in the vowel. We find that the difference is not significant at 5\%, and increases over the course of articulating the vowel. \\
-%ANOVA table add
+ Vowel is not a significant predictor of F1. This appears surprising, given that the phonological category is expected to systematically affect vowel quality. However, a boxplot visualization (Figure \ref{boxplot_F1}) shows that the participants in this study vary greatly both in the relative heights of the two categories \nt{2, \ae} and the extent of height difference between them. Note that these measures are only from the English (unilingual) condition, suggesting that this variability is a feature of the participants' IE vowel categories, independent of the effects of switching. Given that estimates for fixed effects are pooled across participants, this explains the lack of reliable differences between \nt{2} and \nt{\ae}. The negative slope of the estimate for Context shows that F1 is lower, i.e. vowels are higher, in the unilingual (e) condition compared to the mixed (b) condition. Put more intuitively, vowels are lowered in the mixed condition. However, the lack significance indicates that using English words in mixed utterances does not lead to a uniform lowering/raising across vowels. Instead, the significant interaction between Vowel and Context signals an asymmetrical shift in the categories \nt{2} and \nt{\ae} in the mixed-language condition. Specifically, the Vowel*Context interaction has a negative slope, showing that the lowering is greater in \nt{2}.  
+ 
+The results also reveal a significant effect of Task, such that the sentence task (code-switching) leads to higher F1 values in both vowels relative to the cued picture-naming task as: vowels are lowered in the code-switching task, independent of experimental condition. This is surprising, as we have no aproiri reason to expect a uniform difference in vowel quality across tasks. A significant interaction with Time with a positive slope of the estimate shows that this effect is local: it is strongest at the beginning of the vowel, and reduces over the course of the vowel. This is consistent with our assumption that the unexpected Task effect is an artifact of the paradigm, possibly resulting from coarticulatory effects with the preceding sound in the carrier phrase. Of greater interest to us is the significant Vowel*Context*Task interaction, which indicates a difference in transfer patterns across paradigms. Specifically, the negative slope of the estimate suggests that transfer in the F1 (height) dimension are greater in the code-switching (s) task compared to the picture-naming (p) task.\\
 
-< Insert Table \ref{table_f1_fixed_effects} about here >\\
 
 < Insert Figure \ref{boxplot_F1} about here >\\
 
----end older stuff
 
 \subsection{Vowel backness -- F2}
 
-\subsubsection*{title}
+\subsubsection*{Model output summary}
 
 First, to test hypothesis 1 (\bf{L2 transfer}), we fitted a model with vowel*time, and vowel*context as fixed effects. The transfer term (vowel*context) is significant in this model (standardized effect size ($\beta$)= 1.234e-01, standardized error (SE)=  2.055e-02, t= 6.00, p=5.46e-06). Comparing this to a null model that lacks the transfer term shows that the full model is significantly better ($\chi^2(2) = 16.20, p= 0.0003$). To confirm whether the effect of context is moderated by vowel identity, we compared a second null model that contained Context as a fixed effect, but lacked the Context*Vowel interaction. The full model was better ($\chi^2(1) = 16.02, p= 6.245e-05$).
   
 To test the hypothesis \textbf{Paradigm}, we fitted a model with vowel*time and task*vowel*context as fixed effects. While task has an independent effect on F2 ($\beta$= -8.758e-02, SE= 1.756e-02, t= -4.98, p= 6.18e-07), the three-way interaction term is not significant ($\beta$= 3.349e-02, SE= 3.565e-02, t= 0.94, p= 0.34). However, there are significant two-way interactions between task*context ($\beta$= -1.099e-01, SE= 2.483e-02, t= -4.427, p= 9.66e-06) and task*vowel ($\beta$= -8.983e-02, SE= 2.535e-02, t= -3.544, p= 0.000396). Comparing this to a null model that lacks the fixed effect Task confirms that the full model is still a better fit for the data ($\chi^2(4) = 572.61, p=  2.2e-16$), indicating that an optimal model should contain the term Task. To confirm whether Task interacts with any of the other terms, we fitted a model with Task as a separate fixed effect without the interaction term. Comparing this to the full (interaction) model shows that the latter is still a better fit ($\chi^2(3) = 44.8, p= 1.02e-09$). Next, we tested two other null models to verify that the three-way interaction term is indeed optimal for the data, by replacing the three-way interaction term with: (i) vowel*context + task*context (to test if task only interacts with context, rather than the transfer term vowel*context). The full model is better ($\chi^2(2) = 17.28, p= 0.0001$); (ii) vowel*context + task*vowel (to test if task only interacts with vowel, rather than the transfer term vowel*context). The full model is better ($\chi^2(2) = 28.45, p= 6.633e-07$). This shows that the three-way interaction is the best fit for the data.
 
-\alert{later, during interpreting part? --> Want to see: is the effect of task local (decreases with time)? Since the effect of just task on F1 is unexpected, want to see if it might be an artifact of the paradigm/stimuli} --
-Because an independent effect of task on FFs is unexpected (c.f. ), we wanted to see if the effect might be local, i.e. decrease over time. We added a task*time interaction term to the full model, which is significant ($\beta$= 6.237e-02, SE=  8.876e-03, t= 7.027, p= 2.23e-12 ) and improves model fit ($\chi^2(1) = 49.271, p= 2.23e-12$).
-\alert{interpretation: direction of effects: tasks has negative estimate (vowels are backed in the s task). task*time has a positive estimate-- means that the effect of task is mitigated/reduced with increase in time}	
-
+Because an independent effect of task on FFs is unexpected \alert{(c.f. next section)}, we wanted to see if the effect might be local, i.e. decrease over time. We added a task*time interaction term to the full model, which is significant ($\beta$= 6.237e-02, SE=  8.876e-03, t= 7.027, p= 2.23e-12 ) and improves model fit ($\chi^2(1) = 49.271, p= 2.23e-12$).
 	
 Next, to examine the dynamics of transfer, we added a three-way interaction between the transfer term (vowel*context) and time. This term is not significant ($\beta$= -6.274e-03, SE= 1.774e-02, t= -0.35, p= 0.72), and the addition does not significantly improve model fit compared to a null model lacking the vowel*context*time term ($\chi^2(2) = 2.2443, p= 0.32$).
 
-Thus, the optimal model is: vowel*time + vowel*context*task + task*time + (1+context|word) + (1+context+vowel|subject)
+Thus, the optimal model is: vowel*time + vowel*context*task + task*time + (1+context|word) + (1+context+vowel|subject). Table \ref{table_f2} summarizes the model coefficient estimates ($\beta$), standard errors (S.E.), t-values, and p-values for this model. \alert{p-vales smaller than 0.05 are in bold.} 
 
-Table .. summarizes the fixed effects for the optimal model for F2. Model coefficient estimates ($\beta$), standard errors, and p-values. p-vales smaller than 0.05 are in bold. (do the same for F1)
 
-[put at end of subsection: after summary of model results, say-- want to see how the direction of shift compares to corresponding Bengali categories] Figure \ref{vowels_e_b} summarizes the findings of the experiment ($F1XF2$ plots for vowel productions in the unilingual and mixed conditions, in comparison to the related Bengali categories from \cite{dutta2021}). The following sections discuss the results for vowel height and backness respectively.
+Statistical analyses reveal that the vowel \nt{2} is lowered and fronted, while \nt{\ae} is fronted, in the mixed condition.  Previous literature on phonetic transfer suggests that such shifts are not random, but rather directional and targeted. We want to understand how the direction of shift compares to corresponding Bengali categories. Figure \ref{vowels_e_b} summarizes the findings of the experiment ($F1XF2$ plots for vowel productions in the unilingual and mixed conditions, in comparison to the related Bengali categories from \cite{dutta2021}). This confirms our hypotheses (c.f. section \ref{asymmetry between sounds}) that \nt{\ae} moves towards the corresponding \nt{\ae} category in Bengali, whereas the shift in \nt{2} is towards the related Bengali category \nt{a:}. The following sections discuss the results for vowel height and backness respectively.
 
 < Insert Figure \ref{vowels_e_b} about here >
 
----older stuff:
+\subsection*{Interpretation}
 
-Table \ref{table_f2_fixed_effects} summarizes the results of fixed effects from the model for F2 at each point. Once again, we see that male speakers have a lower mean F2 than female speakers, as expected. The estimates for Vowel show that excepting the beginning of the vowel, the category \nt{2} is consistently produced as more backed than \nt{\ae}. Unlike vowel height, Context has an independent effect on vowel backness, such that both the vowels in this study have higher F2 values in the Bengali (mixed) condition, i.e. they are fronted in the mixed condition. A significant interaction between Vowel and Context reveals an asymmetry in the extent of fronting between the two vowels -- the shift is greater in the case of \nt{\ae}. We see a significant effect of Task on F2, such that vowels in the Sentence task (code-switching) were more backed than those in the picture-naming task. As with F1, this is an unexpected result, as we have no principled reason to expect code-switching to induce an across-board backing of vowels. A lack of significant interaction with Context suggests that there is no difference in the extent of shift between the two paradigms. The results of ANOVAs comparing the full model to a null model that lacks the Vowel*Context interaction factor reveal that as with vowel height, the change in vowel backness between the two conditions is not significant at 5\%, and increases over the course of the vowel.\\
+As with F1, we find that Time significantly influences F2 values in the model, reflecting the dynamic nature of articulation which causes acoustic variation over the course of time. Moreover, the Time*Vowel interaction shows that this trajectory differs across the two vowels: while the positive slope for Time indicates that F2 increases, i.e. vowels are fronted with time, the negative slope of the Time*Vowel interaction shows that this effect is smaller for \nt{2}. This is expected, as figure \alert{ref} confirms that the category \nt{\ae} is overall more fronted than \nt{2}. 
+
+Unlike in the F1 dimension, Vowel is a significant predictor of F2, with \nt{2} having significantly lower F2, i.e. produced as more backed, than \nt{\ae}.
+
+As with vowel height, there is no significant independent effect of Context
+ 
+The estimates for Vowel show that excepting the beginning of the vowel, the category \nt{2} is consistently produced as more backed than \nt{\ae}. Unlike vowel height, Context has an independent effect on vowel backness, such that both the vowels in this study have higher F2 values in the Bengali (mixed) condition, i.e. they are fronted in the mixed condition. A significant interaction between Vowel and Context reveals an asymmetry in the extent of fronting between the two vowels -- the shift is greater in the case of \nt{\ae}. We see a significant effect of Task on F2, such that vowels in the Sentence task (code-switching) were more backed than those in the picture-naming task. As with F1, this is an unexpected result, as we have no principled reason to expect code-switching to induce an across-board backing of vowels. A lack of significant interaction with Context suggests that there is no difference in the extent of shift between the two paradigms. The results of ANOVAs comparing the full model to a null model that lacks the Vowel*Context interaction factor reveal that as with vowel height, the change in vowel backness between the two conditions is not significant at 5\%, and increases over the course of the vowel.\\
 
 < Insert Table \ref{table_f2_fixed_effects} about here >
 
+\subsection{Power analysis}
+We were able to recruit 10 participants (c.f. section \ref{participants}). To confirm whether the experiment design was powerful enough to detect the effects we are investigating, we carried out post-hoc power analyses using the mixedpower package \citep{kumle2021estimating} in R. The target of the analysis was to calculate the power for detecting an effect for our main variables of interest: vowel*context (to test the hypotheses L2-vowels and Asymmetry), and vowel*context*task (to test the hypothesis Paradigm). 
+
+Power is a function of sample size and effect size. Thus, a key issue in power analyses is to estimate the expected effect size for the treatment/factor of interest \citep{brysbaert2018power, kumle2021estimating}. This may be expressed as a standardized effect size or estimate ($\beta$), Cohen's d, or partial $\eta ^2$. 
+
+Using observed effect sizes from the data for power analyses is a bad practice and has been shown to be meaningless \citep{hoenig2001abuse, gelman2019observed_effect_size}, as such "observed power" depends on the p-value. Therefore, we need a reasonable estimate of effect size. One way to do this is to use effect sizes reported in other existing literature (however, see \cite{brysbaert2018power} who recommends against using effect sizes from single published studies, as these tend to be inflated), or meta analyses. An alternative approach is to define a smallest effect size that is meaningful to us (smallest effect size of interest; SESOI \citep{kumle2021estimating}), and test whether the study has enough power to detect such an effect, if it were to exist. This needs to be theoretically motivated. To the best of our knowledge, there is no existing literature on typical effect sizes for spectral differences in cross-language vowel production, and not many studies that report model estimates. Only more discussion among researchers in this field will lead to a consensus on what is considered a typical or minimally meaningful cross-language effect. 
+
+Similarly, while differences between language-switching paradigms have been informally discussed in previous literature, we are not aware of any study that has measured these differences in a controlled experimental setup, and thus no reported effect sizes to act as a guideline. 
+
+Cohen (cite) arbitrarily classifies effect sizes (cohen's d values) as small, medium, and large. Although there ar arguments against the meaningfulness of these categories \alert{citations}, these are often used as ballpark values for power analyses in psychological studies (for a discussion, see \cite{brysbaert2018power}). However, this approach does not generalize well to mixed-effects analyses, particularly for complex models with multiple random effects and interactions, as is typical in psycholinguistic and bilingualism research. "Determining the SESOI for (G)LMMs is difficult in a simulation-based approach where effect sizes are indicated through the model’s unstandardized beta coefficients...relating effect sizes to beta coefficients in complex models is far from trivial and the authors therefore refrain from making specific recommendations. \citep{kumle2021estimating}". 
+
+The results of a power analysis are only as meaningful as the assumptions that go into it. To avoid making arbitrary assumptions, we followed the approach in \cite{brysbaert2018power} (and discussed in \cite{kumle2021estimating}) of taking effect sized of the study of interest and directly modifying all the beta coefficients by a fixed percentage. Note that we are not assuming that doing so gets us closer to a "true effect size". Instead, we run simulations with a range of effect sized and report the power of our study to plausibly detect an effect of that size. The results are shown in the plots in figure ... These show power over a range of sample sizes, given the assumed effect size.   
+
+
+
+--> in cover letter: power analyses for complex mixed models are not trivial and is an active pursuit. While we have done our best to follow available literature, we would love to have more feedback on this. 
 
 
 \section{Discussion}
 
-With regard to our first research question \textbf{L2 vowels}, the results confirm that the L2 vowels of proficient bilinguals can be affected by mixed-language processing. Both vowels in this study showed systematic shifts in the mixed-language condition compared to baseline unilingual productions. In the context of an ICM--based analysis of between-language asymmetries in phonetic transfer as proposed by \cite{olson2013bilingual}, this is a significant finding: it demonstrates that the postulated lower switch cost on an L2 does not entirely mask transfer effects on L2 vowels. Moreover, our findings differ from \cite{tsui2019impact} who report on the basis of VOT measurements that balanced bilinguals do not evidence an effect of language-switching. \citeauthor{tsui2019impact} attribute the absence of transfer effects to greater experience with language switching in these participants, leading to lower switch-costs in both languages. We find that even proficient bilinguals with extensive experience of language switching demonstrate cross-language transfer effects in vowel production. Thus, following from the discussion in sec. \ref{asymmetries}, it might be fruitful for future studies to focus on vowels as a potential site for transfer. This would both expand the empirical scope of existing research (cf. sec. \ref{asymmetry between sounds}) and avoid confounding factors arising from independent differences between long- and short-lag VOT languages. More generally, these findings point to a need for expanding the range of features in which transfer effects are studied, in order to make robust generalizations about the mechanisms underlying observed patterns.
-
-We hypothesized an asymmetrical shift between the two vowels (\textbf{Asymmetry}), owing to differences in (i) their positions in the Indian English vowel space, and (ii) the presence/absence of a corresponding category in the L1 Bengali inventory. The significant interaction between Vowel and Context in both F1 and F2 confirm that the experimental condition affected both height and backness differently for each vowel. As expected, we find a greater degree of shift in \nt{2}, possibly owing to its position in a less dense part of the IE vowel space. The category \nt{2} is lowered and fronted in the mixed language condition as expected (Figure \ref{vowels_e_b}). The direction of shift in \nt{\ae} is surprising-- it is fronted in the mixed-language condition. While phonological constraints on IE suggested that a shift in the F1 dimension could potentially risk the loss of contrast and is thus expected to be minimal, Figure \ref{vowels_e_b} shows that \nt{\ae} in Bengali is not fronted with respect to the English category. Thus, fronting in the mixed condition cannot be explained in relation the former, at least from the present data. Recall that the Bengali vowel productions used here are from a different set of speakers than our participants. Assuming some amount of individual differences in the precise phonetic realization of vowel categories in both languages, this could be a potential source of explanation for this result. Data from a larger number of speakers for both languages, as well as within-speaker comparisons of English and Bengali vowels, are required to clarify this. 
+Taken as a whole, these results bear on our original research questions in the following ways: regarding our first question, whether L2 vowels of proficient bilinguals can be affected by short-term transfer from L1 (\textbf{L2 vowels}), our results confirm that this indeed happens during mixed-language use. Both the common category \nt{\ae} and the L2-exclusive category \nt{2} show spectral shifts during mixed-language productions compared to unilingual productions. As hypothesized (\textbf{Asymmetry}), the results reveal asymmetries in the extent and direction of shifts between the two vowels. Specifically, \nt{2} is lowered and fronted, while \nt{\ae} is fronted, with the extent of shift being greater in \nt{2}. Comparision with canonical Bengali vowel productions shows that the shift in \nt{\ae} is towards the corresponding Bengali category, while that in \nt{2} is towards the Bengali category \nt{a:}. Regarding our third research question, whether paradigm used to elicit language switching independently affects patterns of transfer (\textbf{Paradigm}), analyzing the role of Task in the results confirms this. We find a greater degree of transfer during code-switching compared to the cued picture-naming task. However, the difference is small, and needs to be replicated (?). These results and their implications are discussed in the following subsections.
 
 
+\subsection{Phonetic transfer in L2 vowels}
+
+One of the main aims of this study is to understand short-term phonetic transfer in L2, towards understanding language processing in proficient bilinguals. Two interrelated questions, discussed in section \ref{introduction} (....) bear on this: (i) what causes transfer in mixed-language speech; and (ii) what causes observed asymmetries between transfer in L1 vs L2. Together, these serve as guidelines for how we posit that the language systems of th bilingual exist in relation to one another, and consequently, what a cognitive model should look like-- any model should be able to account for these observations. 
+
+-- what causes transfer: language mode vs switching
+
+\alert{discussion: We presented data in the same session, such that the language mode (participants' overall language ``setting" remained the same). The results show differences between between the switched and non-switched tokens in spite of this. this confirms that the local act of switching does cause transfer, even in a bilingual language mode, paralleling results from \cite{olson2016role, tsui2019impact, piccinini2015voice}. All of these examined the local effect of switching on a temporal feature of speech, namely, VOT. The results of the present study indicate that the same happens in vowels. Moreover, the result of transfer is interesting-- in VOT, it can only increase or decrease, which makes it impossible to know if it is the particular consonant that becomes more like its L1 counterpart, or if there is some more system-wide shift. --* check discussion section of these three studies and see if they have talked about this --* Because vowel quality measures show directionality as well as magnitude, we can see finer patterns. We find that it is not merely a shift towards a Bengali counterpart, but rather a shift towards Bengali \textit{norms}-- a category that doesn't exist in Bengali moves towards a related Bengali category. This result parallels \cite{simonet2014phonetic}, who found the Catalan ... of bilingual speakers shifts towards a related L1 Spanish category .. in a bilingual language mode (although, this study did not examine switched speech). (check discussion section once) What does this say about what happens during online processing and speech planning? --- look at discussion section of the mode vs switching papers (those three + ones that found no local effect of switching): what do they say about this? Can this finding be accounted for with that?}
+
+\alert{It makes sense that a bilingual language mode makes the representations from both languages available. But what do these representations look like, and how are these processed during the act of using language? Examining speech during switching can shed light on this. We argue that what we see here is an example of \textit{creativity}-- beyond a simple L2-L1 mapping, there is a method to the movement such that it makes reference to entities beyond the level of the individual sound-- i.e., the system-level. If representations are combined in creative ways, then are we truly ``moving between" languages, in a real sense, during online processing within a single discourse? Can we think of intermediate representations, not of individual sounds, but rather of sound systems? While more detailed empirical data will eventually enable us to map out patterns of transfer during switched speech, this interpretation is in line with the kind of model proposed by \cite{khattab2013phonetic} based on observation from the use of phonological variables in bilingual children (check-- this the one where they talked about moving between systems-- spectrum of choices?). This visualizes/conceptualizes the bilingual language system as a \textit{continuum of sound systems}, from which the bilingual speaker is constantly choosing, guided by a variety of different pressures. We propose that vowels are a good feature to examine: in addition to continuous measures (as opposed to phonological variables), they also give us the 2-dimensional data (as opposed to VOT) that is suited to further testing and refining such a model.}
+
+
+--- differences between L1 vs L2 transfer:
+
+Studies of short-term phonetic transfer consistently find differences between transfer patterns in L1 vs L2. The bulk of this literature is based on the feature VOT. While vowels have been show to induce L2-to-L1 influence, the present study demonstrates L1-to-L2 transfer. 
+
+Previous studies with VOT have often found a lack of parallel transfer from L1 to L2. One postulated model that is consistent with this finding is the ICM, first proposed by \cite{green1986control} at the level of the lexicon, but extended to sound systems by \cite{olson2013bilingual,tsui2019impact}. This proposes that ...\alert{read Olson2013 discussion, more about assumptions of ICM and consequences about models of processing}  As discussed in section \ref{causes}, vowels provide a fertile testing ground for this theory in sound systems.
+
+Both vowels in this study showed systematic shifts in the mixed-language condition compared to baseline unilingual productions. In the context of an ICM--based analysis of between-language asymmetries in phonetic transfer as proposed by \cite{olson2013bilingual}, this is a significant finding: it demonstrates that the postulated lower switch cost on an L2 does not entirely mask transfer effects on L2 vowels. Moreover, our findings differ from \cite{tsui2019impact} who report on the basis of VOT measurements that balanced bilinguals do not evidence an effect of language-switching. \citeauthor{tsui2019impact} attribute the absence of transfer effects to greater experience with language switching in these participants, leading to lower switch-costs in both languages. We find that even proficient bilinguals with extensive experience of language switching demonstrate cross-language transfer effects in vowel production. Thus, following from the discussion in sec. \ref{asymmetries}, it might be fruitful for future studies to focus on vowels as a potential site for transfer. This would both expand the empirical scope of existing research (cf. sec. \ref{asymmetry between sounds}) and avoid confounding factors arising from independent differences between long- and short-lag VOT languages. More generally, these findings point to a need for expanding the range of features in which transfer effects are studied, in order to make robust generalizations about the mechanisms underlying observed patterns. 
+
+\alert{this is an example where studying different features allows us to compare the predictions of different underlying process models. While most studies usually focus on a single feature due to ease of creating materials, there have been studies which have measured multiple features (e.g. ..., or no need?). Measuring multiple features within a single design, with the same group of participants, would give a powerful tool to compare different models at little added cost to researchers. This would sidestep the unavoidable confounds that come with comparing results across studies, or even replication}
+
+
+\subsection{Asymmetries in Phonetic Transfer}
+The literature on short-term phonetic transfer has frequently noted differences in transfer patterns between different sound categories in a languages. This has been attributed to both general linguistic principles such as contrast preservation, and language-specific factors such as frequency and distribution of categories. Examining these asymmetries more closely, and understanding their sources, helps us figure out what factors affect/moderate transfer and thus, by extension, what level of representation and processing this interaction happens at, and the nature of short-term intra-speaker variation. 
+The present study examined transfer in two L2 categories, \nt{2} and \nt{\ae}. We hypothesized an asymmetrical shift between the two vowels (\textbf{Asymmetry}), owing to differences in:
+ \begin{itemize}
+ 	\item their position in the Indian English vowel space: \nt{\ae} is in a more crowded part of the vowel space
+ 	\item the presence/absence of a corresponding category in the L1 Bengali inventory
+ \end{itemize}
+
+The significant interaction between Vowel and Context in both F1 and F2 in the present study confirm that the experimental condition affected both height and backness differently for each vowel. Examining the model coeffieicnets ($\beta$) values shows that the transfer effect is greater for ... compared to ...   (\alert{check interaction effect and unpack}) a greater degree of shift in \nt{2}, possibly owing to its position in a less dense part of the IE vowel space. The category \nt{2} is lowered and fronted in the mixed language condition as expected (Figure \ref{vowels_e_b}). The direction of shift in \nt{\ae} is surprising-- it is fronted in the mixed-language condition. While phonological constraints on IE suggested that a shift in the F1 dimension could potentially risk the loss of contrast and is thus expected to be minimal, Figure \ref{vowels_e_b} shows that \nt{\ae} in Bengali is not fronted with respect to the English category. Thus, fronting in the mixed condition cannot be explained in relation the former, at least from the present data. \alert{remove-- Recall that the Bengali vowel productions used here are from a different set of speakers than our participants. Assuming some amount of individual differences in the precise phonetic realization of vowel categories in both languages, this could be a potential source of explanation for this result.} Data from a larger number of speakers for both languages, as well as within-speaker comparisons of English and Bengali vowels, are required to clarify this. 
+
+\alert{The fact that nt shows more shift-- shows that this influence is not just at the level of individual sounds (that way would expect more shift in the common category because it's "confusing". --check what \cite{simonet2014phonetic} says about this, about why shift happens. But this-- shows that the L1 influence is at a system-level. More inclined towards using a Bengali-like phonological system. Has implications for cognitive models of language and what happens during short-term interaction)}
+
+
+Switching paradigm
 Our third research question \textbf{Paradigm} concerned the effect of experimental paradigm on the phonetic outcome of mixed-language use. \cite{olson2013bilingual} proposes that in both scripted and spontaneous code-switching paradigms, ``discursive properties may partially drive the production of code-switches, masking underlying effects of interaction", and thus proposes cued picture-naming as a preferable alternative. If such discursive properties independently affect the phonetic outcome of language mixing in an experimental setup, this calls to question the comparability of results across studies using these different paradigms. We verified this by comparing productions of the same items from the same group of participants in a scripted CS paradigm and a cued picture-naming paradigm. We found no significant interaction of Task either with Context, or with the Vowel*Context interaction, suggesting that the extent of phonetic transfer was not affected by the paradigm. 
 There are at least two plausible reasons for this-- (i) it is possible that the planning effects of CS do not translate to an increase/decrease in observable transfer at all. This would mean that the pre-switch effects observed, for example, in \cite{muldner2019phonetics} and \cite{bullock2009trying} are better interpreted as resulting from some other aspect of the experimental setup, than the act of code-switching itself. While planning could additionally affect the words preceding the switch, the effects on the switched token itself do not change. (ii) Our study used a frame sentence to induce code switching, and not all the items led to pragmatically meaningful sentences. Thus, another possible explanation is that the discursive effects discussed by \cite{olson2013bilingual} are triggered by more naturalistic paradigms where attention to meaning and interlocutor are important. More within-study comparisons with less structured paradigms, and spontaneous code-switching data, can clarify this. The results of the present study indicate that for the purposes of observing dynamic phonetic transfer in an experimental setup, elicitation through cued-picture-naming vs. (controlled) code-switching does not significantly alter the behavior under study. Thus, the choice of paradigm can be based on other considerations. Moreover, this suggests that (all else being equal) the results from such studies can be compared directly. 
 
@@ -472,108 +499,79 @@ The authors declare none.
 \newpage
 \section*{Tables}
 \begin{table}[h]
-	\caption{Fixed factors}
+	\caption{Fixed effects}
 	%\centering
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{@{}ll@{}}
 			\toprule
-			Factor                                                 & Levels                                                            \\ \midrule
+			Variable name                                                 & Levels                                                            \\ \midrule
 			Gender                                                 & male, female                                                      \\
 			Vowel                                                  & \nt{2}, \nt{\ae} \\
 			Task (corresponding to the two paradigms)              & p (Picture: cued picture-naming, s (Sentence: code-switching)     \\
 			Context (corresponding to the experimental conditions) & e (English: unilingual), b (Bengali: mixed)                       \\
-			Time                                                   & continuous variable, -1.6 - 1.6 \\
+			Time                                                   & continuous variable, range -1.6 to 1.6, scaled and centered\\
 			 \bottomrule
 		\end{tabular}%
 	}
 	\label{table variables}
 \end{table}
 
-\newpage
-\begin{table}[htbp] %\centering 
-	\caption{Model outputs for F1 at each of the five points in the vowel} 
-	\label{table_f1_fixed_effects} 
-	\begin{tabular}{@{\extracolsep{5pt}}lccccc} 
-		\\[-1.8ex]\hline 
-		\hline \\[-1.8ex] 
-		& \multicolumn{5}{c}{\textit{Dependent variable:}} \\ 
-		\cline{2-6} 
-		\\[-1.8ex] & F1\_5 & F1\_15 & F1\_25 & F1\_35 & F1\_45 \\ 
-		\\[-1.8ex] & (Model 1) & (Model 2) & (Model 3) & (Model 4) & (Model 5)\\ 
-		\hline \\[-1.8ex] 
-		(Intercept) & 0.447$^{**}$ & 0.718$^{***}$ & 0.750$^{***}$ & 0.863$^{***}$ & 0.921$^{***}$ \\ 
-		& (0.211) & (0.176) & (0.153) & (0.152) & (0.150) \\ 
-		& & & & & \\ 
-		Gender(male) & $-$1.171$^{***}$ & $-$1.526$^{***}$ & $-$1.586$^{***}$ & $-$1.668$^{***}$ & $-$1.681$^{***}$ \\ 
-		& (0.237) & (0.184) & (0.168) & (0.177) & (0.175) \\ 
-		& & & & & \\ 
-		Context(e) & $-$0.010 & $-$0.015 & 0.033 & 0.025 & 0.037 \\ 
-		& (0.058) & (0.057) & (0.042) & (0.040) & (0.035) \\ 
-		& & & & & \\ 
-		Vowel(\textipa{2}) & 0.022 & $-$0.070 & $-$0.034 & $-$0.131 & $-$0.216 \\ 
-		& (0.170) & (0.175) & (0.170) & (0.174) & (0.168) \\ 
-		& & & & & \\ 
-		Task(s) & 0.319$^{***}$ & 0.235$^{***}$ & 0.172$^{**}$ & 0.133$^{*}$ & 0.102 \\ 
-		& (0.091) & (0.083) & (0.081) & (0.077) & (0.073) \\ 
-		& & & & & \\ 
-		Context(e):Vowel(\textipa{2}) & $-$0.126$^{**}$ & $-$0.138$^{**}$ & $-$0.185$^{***}$ & $-$0.191$^{***}$ & $-$0.192$^{***}$ \\ 
-		& (0.056) & (0.060) & (0.055) & (0.064) & (0.066) \\ 
-		& & & & & \\ 
-		\hline \\[-1.8ex] 
-		Observations & 2,333 & 2,333 & 2,333 & 2,333 & 2,333 \\ 
-		Log Likelihood & $-$1,771.558 & $-$1,589.316 & $-$1,278.310 & $-$1,313.795 & $-$1,380.083 \\ 
-		Akaike Inf. Crit. & 3,599.116 & 3,234.631 & 2,612.621 & 2,683.589 & 2,816.165 \\ 
-		Bayesian Inf. Crit. & 3,760.253 & 3,395.769 & 2,773.758 & 2,844.727 & 2,977.303 \\ 
-		\hline 
-		\hline \\[-1.8ex] 
-		\textit{Note:}  & \multicolumn{5}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
-	\end{tabular} 
-\end{table} 
 
 \newpage
 
-\begin{table}[htbp] %\centering 
-	\caption{Model outputs for F2 at each of the five points in the vowel} 
-	\label{table_f2_fixed_effects} 
-	\begin{tabular}{@{\extracolsep{5pt}}lccccc} 
-		\\[-1.8ex]\hline 
-		\hline \\[-1.8ex] 
-		& \multicolumn{5}{c}{\textit{Dependent variable:}} \\ 
-		\cline{2-6} 
-		\\[-1.8ex] & F2\_5 & F2\_15 & F2\_25 & F2\_35 & F2\_45 \\ 
-		\\[-1.8ex] & (Model 1) & (Model 2) & (Model 3) & (Model 4) & (Model 5)\\ 
-		\hline \\[-1.8ex] 
-		(Intercept) & 0.607$^{***}$ & 0.838$^{***}$ & 0.778$^{***}$ & 0.827$^{***}$ & 0.826$^{***}$ \\ 
-		& (0.222) & (0.213) & (0.211) & (0.203) & (0.204) \\ 
-		& & & & & \\ 
-		Gender(male) & $-$0.839$^{***}$ & $-$0.891$^{***}$ & $-$0.807$^{***}$ & $-$0.750$^{***}$ & $-$0.748$^{***}$ \\ 
-		& (0.124) & (0.106) & (0.107) & (0.116) & (0.109) \\ 
-		& & & & & \\ 
-		Context(e) & 0.003 & $-$0.088$^{**}$ & $-$0.065$^{**}$ & $-$0.063 & $-$0.103$^{***}$ \\ 
-		& (0.036) & (0.036) & (0.032) & (0.044) & (0.033) \\ 
-		& & & & & \\ 
-		Vowel(\textipa{2}) & $-$0.217 & $-$0.615$^{***}$ & $-$0.651$^{***}$ & $-$0.801$^{***}$ & $-$0.836$^{***}$ \\ 
-		& (0.175) & (0.183) & (0.175) & (0.168) & (0.166) \\ 
-		& & & & & \\
-		Task(s) & $-$0.234$^{***}$ & $-$0.194$^{***}$ & $-$0.152$^{***}$ & $-$0.141$^{***}$ & $-$0.092$^{**}$ \\ 
-		& (0.029) & (0.035) & (0.050) & (0.047) & (0.045) \\ 
-		& & & & & \\
-		Context(e):Vowel(\textipa{2}) & 0.031 & 0.110$^{***}$ & 0.128$^{***}$ & 0.091$^{**}$ & 0.147$^{***}$ \\ 
-		& (0.050) & (0.041) & (0.040) & (0.046) & (0.043) \\ 
-		& & & & & \\   
-		\hline \\[-1.8ex] 
-		Observations & 2,333 & 2,333 & 2,333 & 2,333 & 2,333 \\ 
-		Log Likelihood & $-$1,283.531 & $-$1,478.494 & $-$1,174.087 & $-$1,222.682 & $-$1,019.033 \\ 
-		Akaike Inf. Crit. & 2,623.062 & 3,012.988 & 2,404.175 & 2,501.363 & 2,094.066 \\ 
-		Bayesian Inf. Crit. & 2,784.199 & 3,174.125 & 2,565.312 & 2,662.501 & 2,255.204 \\ 
-		\hline 
-		\hline \\[-1.8ex] 
-		\textit{Note:}  & \multicolumn{5}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
-	\end{tabular} 
-\end{table} 
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[h]
+	\centering
+	\caption{Optimal model: F1}
+	\label{table_f1}
+	\begin{tabular}{@{}lllll@{}}
+		\toprule
+		& Estimate  & Std. Error & t value & p value          \\ \midrule
+		(Intercept)           & -0.053474 & 0.178435   & -0.300  & 0.769            \\
+		time                  & 0.139140  & 0.011556   & 12.040  & \textbf{< 0.001 ***} \\
+		vowel\textipa{2}                & -0.147480 & 0.223022   & -0.661  & 0.519            \\
+		contexte              & -0.013419 & 0.068357   & -0.196  & 0.846            \\
+		tasks                 & 0.330034  & 0.026586   & 12.414  & \textbf{< 0.001 ***} \\
+		time:vowel\textipa{2}           & -0.170892 & 0.013469   & -12.688 & \textbf{< 0.001 ***} \\
+		vowel\textipa{2}:contexte       & -0.137062 & 0.060884   & -2.251  & \textbf{0.031 *}   \\
+		vowel\textipa{2}:tasks          & 0.009002  & 0.038498   & 0.234   & 0.815            \\
+		contexte:tasks        & 0.073341  & 0.037597   & 1.951   & 0.051 .          \\
+		time:tasks            & -0.121604 & 0.013469   & -9.028  & \textbf{< 0.001 ***} \\
+		vowel\textipa{2}:contexte:tasks & -0.195613 & 0.054338   & -3.600  & \textbf{< 0.001 ***} \\ \bottomrule
+	\end{tabular}
+\end{table}
 
 \newpage
 
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[h]
+	\centering
+	\caption{Optimal model: F2}
+	\label{table_f2}
+	\begin{tabular}{@{}lllll@{}}
+		\toprule
+		& Estimate & Std. Error & t value & p value          \\ \midrule
+		(Intercept)           & 0.23202  & 0.22100    & 1.05    & 0.304            \\
+		vowel\textipa{2}                & -0.38596 & 0.14858    & -2.60   & \textbf{0.015 *}   \\
+		time                  & 0.04287  & 0.00761    & 5.63    & \textbf{< 0.001 ***} \\
+		contexte              & -0.01720 & 0.02823    & -0.61   & 0.548            \\
+		tasks                 & -0.08758 & 0.01752    & -5.00   & \textbf{< 0.001 ***} \\
+		vowel\textipa{2}:time           & -0.16289 & 0.00888    & -18.35  & \textbf{< 0.001 ***} \\
+		vowel\textipa{2}:contexte       & 0.11043  & 0.02751    & 4.01    & \textbf{< 0.001 ***} \\
+		vowel\textipa{2}:tasks          & -0.08983 & 0.02530    & -3.55   & \textbf{< 0.001 ***} \\
+		contexte:tasks        & -0.10990 & 0.02477    & -4.44   & \textbf{< 0.001 ***} \\
+		time:tasks            & 0.06237  & 0.00888    & 7.03    & \textbf{< 0.001 ***} \\
+		vowel\textipa{2}:contexte:tasks & 0.03349  & 0.03557    & 0.94    & 0.34652          \\ \bottomrule
+	\end{tabular}
+\end{table}
+
+f1: contexte had -ve slope, vt also has -ve slope, so vt is moving up in e ie down in b condition. vowel*context has -ve slope, which means that vt is moving more than ae. Now, vowel*context*task has -ve slope, which means in the s task, compared to p, there is  more downward movement. So more transfer in s task.
+
+f2: vt has -ve slope, contexte has -ve slope, which means e condition e things are more back, ie vowels are fronted in b condition. But vowel*context has a +ve slope-- vt is less backed in the e condition that ae, ie it is less fronted in the b condition, ie ae is fronted more, or shows more transfer effect, than vt. vowel*context*task also has +ve slope, which means thatthe -ve effect of contexte are further reduced when the task is s, ie fronting in mixed condition is less in s task
+
+\newpage
 \section*{Figures}
 
 \begin{figure}[h] %\centering
@@ -590,87 +588,6 @@ The authors declare none.
 	\caption{Subject-wise mean F1 in unilingual English productions}
 	\label{boxplot_F1}
 \end{figure}
-
-\newpage
-
-\begin{table}[!htbp] \centering 
-	\caption{} 
-	\label{} 
-	\begin{tabular}{@{\extracolsep{5pt}}lc} 
-		\\[-1.8ex]\hline 
-		\hline \\[-1.8ex] 
-		& \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
-		\cline{2-2} 
-		\\[-1.8ex] & f1 \\ 
-		\hline \\[-1.8ex] 
-		time & 0.139$^{***}$ \\ 
-		& (0.012) \\ 
-		& \\ 
-		vowelʌ & $-$0.147 \\ 
-		& (0.223) \\ 
-		& \\ 
-		contexte & $-$0.013 \\ 
-		& (0.068) \\ 
-		& \\ 
-		tasks & 0.330$^{***}$ \\ 
-		& (0.027) \\ 
-		& \\ 
-		time:vowelʌ & $-$0.171$^{***}$ \\ 
-		& (0.013) \\ 
-		& \\ 
-		vowelʌ:contexte & $-$0.137$^{**}$ \\ 
-		& (0.061) \\ 
-		& \\ 
-		vowelʌ:tasks & 0.009 \\ 
-		& (0.038) \\ 
-		& \\ 
-		contexte:tasks & 0.073$^{*}$ \\ 
-		& (0.038) \\ 
-		& \\ 
-		time:tasks & $-$0.122$^{***}$ \\ 
-		& (0.013) \\ 
-		& \\ 
-		vowelʌ:contexte:tasks & $-$0.196$^{***}$ \\ 
-		& (0.054) \\ 
-		& \\ 
-		Constant & $-$0.053 \\ 
-		& (0.178) \\ 
-		& \\ 
-		\hline \\[-1.8ex] 
-		Observations & 11,665 \\ 
-		Log Likelihood & $-$12,954.910 \\ 
-		Akaike Inf. Crit. & 25,951.830 \\ 
-		Bayesian Inf. Crit. & 26,106.480 \\ 
-		\hline 
-		\hline \\[-1.8ex] 
-		\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
-	\end{tabular} 
-\end{table} 
-
-\newpage
-
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-\begin{table}[]
-	\centering
-	\caption{optimal model: F1}
-	\label{table_model_f1}
-	\begin{tabular}{@{}llllll@{}}
-		\toprule
-		& Estimate   & Std. Error & t value & Pr(>|t|)    &  \\ \midrule
-		(Intercept)           & -5.347e-02 & 1.784e-01  & -0.300  & 0.76863     &  \\
-		time                  & 1.391e-01  & 1.156e-02  & 12.040  & < 2e-16 *** &  \\
-		vowelʌ                & -1.475e-01 & 2.230e-01  & -0.661  & 0.51870     &  \\
-		contexte              & -1.342e-02 & 6.836e-02  & -0.196  & 0.84627     &  \\
-		tasks                 & 3.300e-01  & 2.659e-02  & 12.414  & < 2e-16 *** &  \\
-		time:vowelʌ           & -1.709e-01 & 1.347e-02  & -12.688 & < 2e-16 *** &  \\
-		vowelʌ:contexte       & -1.371e-01 & 6.088e-02  & -2.251  & 0.03130 *   &  \\
-		vowelʌ:tasks          & 9.002e-03  & 3.850e-02  & 0.234   & 0.81512     &  \\
-		contexte:tasks        & 7.334e-02  & 3.760e-02  & 1.951   & 0.05112 .   &  \\
-		time:tasks            & -1.216e-01 & 1.347e-02  & -9.028  & < 2e-16 *** &  \\
-		vowelʌ:contexte:tasks &            &            &         &             &  \\ \bottomrule
-	\end{tabular}
-\end{table}
 
 \end{document}
 %%% Local Variables:

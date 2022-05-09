@@ -19,17 +19,25 @@ Load packages and data, create objects for lobanov normalized F1 and F2, create 
 
 library(tidyverse)
 library(phonR)
+library(lme4)
 library(stargazer)
 library(modelsummary)
-library(lme4)
 library(lmerTest)
 library(pwr)
 library(simr)
 library(EMAtools) # to calculate Cohen's d values from lmer objects
 
+# package mixedpower (power analysis)
+if (!require("devtools")) {
+    install.packages("devtools", dependencies = TRUE)}
+
+   devtools::install_github("DejanDraschkow/mixedpower") 
+library(mixedpower)
+
 
 # replacing vowel symbols with unicode:
 remapping_english <- c(`\\ae` = "æ", `\\vt` = "ʌ")
+
 
 # read in data
 df <- read.csv("RCode/formant_data_5.csv", check.names = TRUE) %>%
@@ -444,7 +452,6 @@ Random effects structure:
 
 ```{r, results='hide'}
 
-
 temp <- df_lobanov_gender_time %>%
   mutate(time = as.numeric(time)) %>%
   mutate(time = scale(time))
@@ -456,7 +463,8 @@ phon_acco.model_f1 = lmer(f1 ~
                          time*vowel + vowel*context*task + time*task +
                          (1+context|word) + (1+context+vowel|subject), 
                          data= temp, REML=FALSE, control = lmerControl(optimizer = "bobyqa"))
-summary(phon_acco.model)
+
+summary(phon_acco.model_f1)
 summary(rePCA(phon_acco.model))
 
 # Cohen's d values (from EMAtools package):
@@ -465,7 +473,7 @@ d_F1 <- lme.dscore(phon_acco.model, data=temp, type='lme4')
 
 ##--> find way to export fixed effects table (estimate, SE, p values) to LaTex
 
-stargazer(phon_acco.model)
+stargazer(phon_acco.model_f1)
 
 # null model
 null.model = lmer(f1~
@@ -554,7 +562,7 @@ phon_acco.model_f2 = lmer(f2 ~
                          vowel*time + vowel*context*task + task*time +
                          (1+context|word) + (1+context+vowel|subject), 
                          data= temp, REML=FALSE, control = lmerControl(optimizer = "bobyqa"))
-summary(phon_acco.model)
+summary(phon_acco.model_f2)
 summary(rePCA(phon_acco.model))
 
 # Cohen's d values (from EMAtools package):
@@ -654,25 +662,102 @@ Power analysis:
 
 fixef(phon_acco.model_f1)
 
-fixef(phon_acco.model_f1)["vowelʌ:contexte:tasks"] <- - 0.1
 
-# power for interaction term: compare current model to one without the interaction term
-powerSim(phon_acco.model_f1, nsim = 20, test = fcompare(f1 ~ time*vowel + vowel*context + time*task))
-# shows 90% power
+# using the mixedpower package
 
-pc <- powerCurve (phon_acco.model_f1, along = "subject", test = fixed("vowelʌ:contexte:tasks"), nsim = 20)
-plot(pc)
+# dummy numeric variable for subject:
+remapping_subjects <- c("f1"="01", "f2"="02", "f3"="03", "f4"="04", "f5"="05", "m1"="06", "m2"="07", "m3"="08", "m4"="09", "m5"="10")
 
+temp <- temp %>%
+  mutate(subject_num = remapping_subjects[as.character(subject)]) %>%
+  mutate(subject_num = as.numeric(subject_num))
+
+power_trial <- mixedpower(model = phon_acco.model_f1, data = temp,
+                          fixed_effects = c("vowel","context","time","task"),
+                          simvar = "subject_num", steps = c(5,10,15,20),
+                          critical_value = 2)
+
+power_plot <- multiplotPower(power_trial, filename = "powerplot_f1_databased.png")
+
+# next, ran a power analysis assuming smaller effect sizes by reducing the beta-coefficients by 15\%. (Use the model summary, make a vector of all beta-values, including intercept, add as argument of SESOI= )
+
+beta.f1 <-fixef(phon_acco.model_f1) # unname() #creates a named vector. To remove names, function: unname(beta.f1)
+
+
+beta.f1
+
+# setting beta-values to 85% of original
+beta.f1<- beta.f1 %>%
+  map(~ . * 0.95) %>% # map each element of the vector to the result of applying the function f to it (creates a list)
+  unlist()  # convert back to a named vector
+
+beta.f1
+
+power_f1_minus5 <- mixedpower(model = phon_acco.model_f1, data = temp,
+                          fixed_effects = c("vowel","context","time","task"),
+                          simvar = "subject_num", steps = c(5,8,10,12,15), n_sim = 500,
+                          SESOI = beta.f1, databased = F,
+                          critical_value = 2)
+
+
+powerplot_f1_minus5 <- multiplotPower(power_f1_minus5, filename = "powerplot_f1_minus5.png")
+
+```
+
+done: F1: -5, -15, +15
+F2: -15, +15
+
+```{r}
+
+# F2:
+
+
+# using the mixedpower package
+
+# dummy numeric variable for subject:
+remapping_subjects <- c("f1"="01", "f2"="02", "f3"="03", "f4"="04", "f5"="05", "m1"="06", "m2"="07", "m3"="08", "m4"="09", "m5"="10")
+
+temp <- temp %>%
+  mutate(subject_num = remapping_subjects[as.character(subject)]) %>%
+  mutate(subject_num = as.numeric(subject_num))
+
+power_f2_databased <- mixedpower(model = phon_acco.model_f2, data = temp,
+                          fixed_effects = c("vowel","context","time","task"),
+                          simvar = "subject_num", steps = c(5,10,15,20),
+                          critical_value = 2)
+
+powerplot_f2_databased <- multiplotPower(power_f2_databased, filename = "powerplot_f2_databased.png")
+
+# next, ran a power analysis assuming smaller effect sizes by reducing the beta-coefficients by 15\%. (Use the model summary, make a vector of all beta-values, including intercept, add as argument of SESOI= )
+
+beta.f2 <-fixef(phon_acco.model_f2) #creates a named vector. To remove names, function: unname(beta.f1)
+
+beta.f2
+
+# setting beta-values to 85% of original
+beta.f2 <- beta.f2 %>%
+  map(~ . * 1.15) %>% # map each element of the vector to the result of applying the function f to it (creates a list)
+  unlist()  # convert back to a named vector
+
+beta.f2
+
+power_f2_plus15 <- mixedpower(model = phon_acco.model_f2, data = temp,
+                          fixed_effects = c("vowel","context","time","task"),
+                          simvar = "subject_num", steps = c(5,7,10,12,15), n_sim = 500,
+                          SESOI = beta.f2, databased = F,
+                          critical_value = 2)
+
+powerplot_f2_plus15 <- multiplotPower(power_f2_plus15, filename = "powerplot_f2_plus15.png")
 
 ```
 
 Reporting power analyses:
 
-Now that you have conducted your power analysis you will need to report it in APA style. Thissentence (or two) is usually placed in the Results section of a research report near the start of theresults when the assumptions and adequacy of the sample size are being reported.The sentence that you write should include the following:
+Now that you have conducted your power analysis you will need to report it in APA style. This sentence (or two) is usually placed in the Results section of a research report near the start of the results when the assumptions and adequacy of the sample size are being reported.The sentence that you write should include the following:
 
 - The type of statistical test that you will be using to analyse the data (e.g., an independentsample t-test)
 - The type of power analysis that you did–either a priori or post hoc (generally researchersreport the a priori power analysis)
-- The name of the software program that you used to conduct the power analysis and acitation to the authors and date of publication (see the G\*Power website listed above forthe journal article to cite)
+- The name of the software program that you used to conduct the power analysis and a citation to the authors and date of publication (see the G\*Power website listed above forthe journal article to cite)
 - The level of power aspired to for a prior analyses, or the actual power achieved for post hocanalysesThe estimated or actual effect size used in the calculationThe alpha level used in the calculation
 - For an a priori power analysis, report the sample size needed to achieve the minimumacceptable power level.For post hoc analysis, report achieved sample size.
 
@@ -690,3 +775,17 @@ alpha = .05 and power = 0.80, the projected sample size needed with this effect 
 comparison. Thus, our proposed sample size of ..N+.. will be more than adequate for the main
 objective of this study and should also allow for expected attrition and our additional objectives
 of controlling for possible mediating/moderating factors/subgroup analysis, etc.
+
+------
+There is literature saying that power analysis is not very relevant if an effect has already been observed (cite), and should not change the interpretation of already observed significant effects. Here, did a retrospective power analysis to guide how null results should be interpreted. 
+say:power for vowel\*context is lower than 80%. Means that: for a effect of this size, if it is present, there is a 40% chance that we may not observe it in the data. This means that if we get a null result, we should be careful about interpreting this as an absence of effect, and future studies should instead repeat this with larger sample sizes. For vowel\*context\*task, however, power is more than 80%. Thus, we can reasonably interpret the absence of statistical significance as an absence of the effect. 
+
+```{r}
+# scratch pad: additional code for manuscript revision
+
+temp <- df_lobanov %>%
+  filter(vowel == "æ")
+
+# total: 2333; ʌ: 1137, æ: 1196
+
+```

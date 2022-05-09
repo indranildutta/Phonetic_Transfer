@@ -1,0 +1,461 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Post Hoc Power Calculations are Not Useful | University of Virginia Library Research Data Services + Sciences</title>
+  <meta name="description" content="Collections, services, branches, and contact information." />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="/wp-content/themes/libweb-base/img/favicon.ico" />
+  <link rel="stylesheet" href="/wp-content/themes/libweb-base/css/1140/1140.css">
+	<link rel="stylesheet" href="/wp-content/themes/libweb-base/css/style.css">
+	<!--[if lt IE 8]><link rel="stylesheet" href="/wp-content/themes/libweb-base/css/1140/ie.css"><![endif]-->
+  <link rel="stylesheet" href="/wp-content/themes/libweb-base/css/bootstrap-custom.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="alternate" type="application/rss+xml" title="Research Data Services + Sciences Feed" href="https://data.library.virginia.edu/feed/">
+  <link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.8"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.1.8">
+<link rel="stylesheet" href="/wp-content/plugins/announcer/public/announcer-styles.css?ver=5.1.8">
+<script type='text/javascript' src='/wp-content/themes/libweb-base/js/libs/jquery-1.7.1.min.js?ver=1.7.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/announcer/public/announcer-js.js?ver=5.1.8'></script>
+<link rel='https://api.w.org/' href='https://data.library.virginia.edu/wp-json/' />
+<link rel="alternate" type="application/json+oembed" href="https://data.library.virginia.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdata.library.virginia.edu%2Fpost-hoc-power-calculations-are-not-useful%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://data.library.virginia.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdata.library.virginia.edu%2Fpost-hoc-power-calculations-are-not-useful%2F&#038;format=xml" />
+	<link rel="canonical" href="https://data.library.virginia.edu/post-hoc-power-calculations-are-not-useful/">
+    <link href='//wp.library.virginia.edu/css/include.css' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700' rel='stylesheet' type='text/css'>
+  <script src="//static.lib.virginia.edu/js/controllers/libweb-base.js"></script>
+  <script src="/wp-content/themes/libweb-base/js/libs/modernizr-2.5.3-custom.min.js"></script>
+  <script type="text/javascript"
+    src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+  <script src="https://www.library.virginia.edu/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+  <link rel="import" href="https://www.library.virginia.edu/bower_components/uvalib-search-box/uvalib-search-box.html">
+</head>
+<body class="post-template-default single single-post postid-9106 single-format-standard statlab-articles no-bg">
+<noscript>
+    <div  style="background-color: #ffffff; text: #000; padding: 5px;">
+        JavaScript must be enabled in order for you to use our website. However, it seems JavaScript is either disabled or not supported by your browser.
+    </div>
+</noscript>
+
+    <div id="wrap" role="document">
+    <div id="jump-menu" class="visuallyhidden">
+      Jump to:
+      <ul>
+        <li><a href="#content">Main content</a></li>
+        <li><a href="#main-nav">Main navigation</a></li>
+        <li id="searchlink" style="display:none"><a href="#search">Search</a></li>
+        <li><a href="https://www.library.virginia.edu/services/accessibility-services/">Accessibility Services</a></li>
+      </ul>
+      <script>
+        $(function(){ if( $('#search, [name="search"]').length > 0){ $('#searchlink').show(); }  });
+      </script>
+    </div>
+    <div class="container top-container">
+      <div class="row top-row">
+        <nav class="sixcol" id="main-nav">
+          <h3 class="visuallyhidden">U.Va. Links</h3>
+          <ul>
+            <li><a class="return-home" href="https://data.library.virginia.edu/">Research Data Services + Sciences Home</a></li>
+            <li><a href="http://www.virginia.edu">U.Va. Home</a></li>
+            <li><a href="https://library.virginia.edu">U.Va. Library</a></li>
+          </ul>
+        </nav>
+        <div class="sixcol last">
+                  </div>
+      </div>
+    </div>
+  <div class="container header-container"><div class="row header-row clearfix">
+    <header id="top-banner" class="twelvecol" role="banner">
+            <div class="container">
+        <h1 class="ninecol" id="main-title">
+          <a href="https://data.library.virginia.edu/">
+            <span class="donor-title">University of Virginia Library</span>
+            <span class="library-title">Research Data Services + Sciences</span>
+        </a></h1>
+        <a class="threecol last" id="logo" href="https://library.virginia.edu" aria-label="University of Virginia Library">
+          <img src="/wp-content/themes/libweb-base/img/liblogo.png" width="198" height="90" alt="University of Virginia Library">
+        </a>
+      </div>
+    </header>
+  </div></div><!-- /.row /.container -->
+<div class="container content-container"><div class="row content-row clearfix">
+      <div id="content" class="row">
+          <div id="main" class="ninecol" role="main">
+        <div class="container">
+                          <article class="post-9106 post type-post status-publish format-standard hentry category-statlab-articles tag-clay-ford tag-power-analysis tag-r tag-simulation tag-statistical-methods" id="post-9106">
+          <header>
+        <h1 class="entry-title">Post Hoc Power Calculations are Not Useful</h1>
+        <time class="updated" datetime="2021-08-04T19:01:48+00:00" pubdate>Posted on Wednesday, August 4th, 2021 at 7:01 pm.</time><p class="byline author vcard">Written by <a href="https://data.library.virginia.edu/author/jcf2d/" rel="author" class="fn">jcf2d</a></p>      </header>
+      <div class="entry-content">
+        <p>It is well documented that post hoc power calculations are not useful (Goodman and Berlin 1994, Hoenig and Heisey 2001, Althouse 2020). Also known as observed power or retrospective power, post hoc power purports to estimate the power of a test given an observed effect size. The idea is to show that a “non-significant” hypothesis test failed to achieve significance because it wasn’t powerful enough. This allows researchers to entertain the notion that their hypothesized effect may actually exist, they just needed to use a bigger sample size. The problem with this idea is that post hoc power calculations are <em>completely determined</em> by the p-value. High p-values (ie, non-significance) will always have low power. Low p-values will always have high power. Nothing is learned from post hoc power calculations.</p>
+<p>In this article we demonstrate this idea using simulations in R. To begin let’s simulate some data and perform a t test. We first draw 10 samples from two Normal distributions. One has a mean of 10 and the other a mean of 10.1. Therefore the “true” effect size is 0.1 (ie, 10.1 &#8211; 10 = 0.1). Notice both also have the same variance. The <code>set.seed(11)</code> function allows us to always generate the same “random” data for this example. This allows you to follow along in case you want to replicate the result. It may help to pretend that we ran an experiment and the x1 group is the control and the x2 group received some sort of treatment.</p>
+<div style="padding-left: 40px;font-size: 80%">
+<pre>
+set.seed(11)
+x1 &lt;- rnorm(10, mean = 10, sd = 1)
+x2 &lt;- rnorm(10, mean = 10.1, sd = 1)
+
+</pre>
+</div>
+<p>Next we run a t test using the <code>t.test</code> function. The t test for these data returns a very high p-value of 0.72. If this were a real analysis we would conclude that we’re unable to determine what effect, if any, exists. The 95% confidence interval on the difference in means ranges from -0.67 to 0.95. Every value in that range, including 0, is compatible with the data. The effect is almost certainly not exactly 0, but we can’t tell if the effect is positive or negative.</p>
+<div style="padding-left: 40px;font-size: 80%">
+<pre>
+ttest &lt;- t.test(x1, x2, var.equal = TRUE)
+ttest
+## 
+##  Two Sample t-test
+## 
+## data:  x1 and x2
+## t = 0.3608, df = 18, p-value = 0.7224
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -0.6707225  0.9488640
+## sample estimates:
+## mean of x mean of y 
+##  9.769937  9.630867
+
+</pre>
+</div>
+<p>Now let’s do a so-called post hoc power calculation using the <em>observed</em> effect. This is the observed difference in means. We can calculate power with the <code>power.t.test</code> function. We need to give it <code>delta</code> (the effect, or difference in means), <code>sd</code> (the pooled standard deviation), <code>n</code> (sample size), and <code>sig.level</code> (the significance level or type I error tolerance). We get the difference in means by calling the <code>diff</code> function on the <code>estimate</code> element of the “ttest” object.</p>
+<div style="padding-left: 40px;font-size: 80%">
+<pre>
+power.t.test(delta = diff(ttest$estimate), 
+             sd = sqrt((var(x1) + var(x2))/2), 
+             n = 10,
+             sig.level = 0.05,
+             type = &quot;two.sample&quot;,
+             alternative = &quot;two.sided&quot;)
+## 
+##      Two-sample t test power calculation 
+## 
+##               n = 10
+##           delta = 0.1390708
+##              sd = 0.8618848
+##       sig.level = 0.05
+##           power = 0.05283998
+##     alternative = two.sided
+## 
+## NOTE: n is number in *each* group
+
+</pre>
+</div>
+<p>The post hoc power is calculated to be about 0.053, which is very low. Proponents of post hoc power might conclude that the experiment was under-powered, but as we stated in the opening, <em>post hoc power is completely determined by the p-value</em>. The experiment may very well be under-powered, but a post hoc power calculation doesn’t prove that. You will <em>always</em> get low post hoc power on a hypothesis test with a large p-value. The exercise is useless. Hoenig and Heisey (2001) demonstrate this mathematically. We’ll demonstrate it via simulation.</p>
+<p>The <code>replicate</code> function makes quick work of this. Simply pass our previous code (minus the <code>set.seed</code> function) as an expression surrounded by curly braces and specify the number of times to replicate the code. Below we “replicate” the code 2000 times. The p-value of the test and post hoc power (or “observed power”) are returned in a vector. The results are stored in an object called “sim_out”.</p>
+<div style="padding-left: 40px;font-size: 80%">
+<pre>
+sim_out &lt;- replicate(n = 2000, expr = {
+  x1 &lt;- rnorm(10, mean = 10, sd = 1)
+  x2 &lt;- rnorm(10, mean = 10.1, sd = 1)
+  ttest &lt;- t.test(x1, x2, var.equal = TRUE)
+  pwr &lt;- power.t.test(delta = diff(ttest$estimate), 
+               sd = sqrt((var(x1) + var(x2))/2), 
+               sig.level = 0.05,
+               n = 10)
+  c(pvalue = ttest$p.value, obs_power = pwr$power)
+})
+
+</pre>
+</div>
+<p>Next we create a scatterplot. Since the “sim_out” object has a dimension of 2 x 2000, we need to transpose it for easier plotting. We can do that with the <code>t</code> function.</p>
+<div style="padding-left: 40px;font-size: 80%">
+<pre>
+plot(t(sim_out),
+     xlim = c(0,1), ylim = c(0,1), 
+     xlab = &quot;p-value&quot;, ylab = &quot;observed power&quot;,
+     main = &quot;Two-sample t test simulation&quot;)
+	 
+</pre>
+</div>
+<p><a href="/files/unnamed-chunk-5-1-1.png"><img src="https://data.library.virginia.edu/files/unnamed-chunk-5-1-1.png" alt="" width="1344" height="960" class="aligncenter size-full wp-image-9108" srcset="https://data.library.virginia.edu/files/unnamed-chunk-5-1-1.png 1344w, https://data.library.virginia.edu/files/unnamed-chunk-5-1-1-300x214.png 300w, https://data.library.virginia.edu/files/unnamed-chunk-5-1-1-1024x731.png 1024w" sizes="(max-width: 1344px) 100vw, 1344px" /></a></p>
+<p>The resulting scatterplot reveals that high p-values always have low power and vice versa. The only time you’ll see high post hoc power is with a very small p-value. The point is you learn nothing new by calculating post hoc power.</p>
+<p>We can demonstrate this with a chi-square test as well. Below we generate two groups labeled “A” and “B”, each with 40 members. Then we assign them probabilities of “success” of 0.5 and 0.7, respectively.</p>
+<div style="padding-left: 40px;font-size: 80%">
+<pre>
+grp &lt;- rep(c(&quot;A&quot;, &quot;B&quot;), each = 40)
+p &lt;- rep(c(0.5, 0.7), each = 40)
+
+</pre>
+</div>
+<p>Next we use the <code>rbinom</code> function to randomly return a 0 or 1 depending on the probability we give it. A 1 corresponds to treatment response, a 0 indicates no response. According to how we generated probabilities, group B should have more subjects respond. However that doesn’t guarantee a chi-square test will detect that association as we see below.</p>
+<div style="padding-left: 40px;font-size: 80%">
+<pre>
+set.seed(2)
+resp &lt;- rbinom(n = length(grp), size = 1, prob = p)
+table(grp, resp)
+##    resp
+## grp  0  1
+##   A 21 19
+##   B 15 25
+
+chisq.test(table(grp, resp))
+## 
+##  Pearson&#039;s Chi-squared test with Yates&#039; continuity correction
+## 
+## data:  table(grp, resp)
+## X-squared = 1.2626, df = 1, p-value = 0.2612
+
+</pre>
+</div>
+<p>We got a p-value of about 0.26. What’s the post hoc power of this test? We can calculate this by saving the results of the chi-square test, extracting the proportions, and using the <code>power.prop.test</code> function. Notice we use the base R pipe operator <code>|&gt;</code>, introduced in version 4.1, to pass the observed counts to the <code>proportions</code> function.</p>
+<div style="padding-left: 40px;font-size: 80%">
+<pre>
+cout &lt;- chisq.test(table(grp, resp))
+obs &lt;- cout$observed |&gt; proportions(margin = 1)
+power.prop.test(n = length(grp)/2, 
+                p1 = obs[&quot;A&quot;,&quot;1&quot;], 
+                p2 = obs[&quot;B&quot;,&quot;1&quot;], 
+                sig.level = 0.05)
+## 
+##      Two-sample comparison of proportions power calculation 
+## 
+##               n = 40
+##              p1 = 0.475
+##              p2 = 0.625
+##       sig.level = 0.05
+##           power = 0.2680786
+##     alternative = two.sided
+## 
+## NOTE: n is number in *each* group
+
+</pre>
+</div>
+<p>It should come as no surprise that a p-value of 0.26 leads to a low “observed power”, in this case about 0.27.</p>
+<p>As we did with the t test, we can replicate this many times and plot the p-values and post hoc power calculations.</p>
+<div style="padding-left: 40px;font-size: 80%">
+<pre>
+sim_out &lt;- replicate(n = 2000, expr = {
+  resp &lt;- rbinom(n = length(grp), size = 1, prob = p)
+  chisqtest &lt;- chisq.test(table(grp, resp))
+  obs &lt;- chisqtest$observed |&gt; proportions(margin = 1)
+  pwr &lt;- power.prop.test(n = length(grp)/2, 
+                  p1 = obs[&quot;A&quot;,&quot;1&quot;], 
+                  p2 = obs[&quot;B&quot;,&quot;1&quot;], 
+                  sig.level = 0.05)
+  c(pvalue = chisqtest$p.value, obs_power = pwr$power)
+})
+
+plot(t(sim_out),
+     xlim = c(0,1), ylim = c(0,1), 
+     xlab = &quot;p-value&quot;, ylab = &quot;observed power&quot;,
+     main = &quot;Chi-square test simulation&quot;)
+	 
+</pre>
+</div>
+<p><a href="/files/unnamed-chunk-9-1.png"><img src="https://data.library.virginia.edu/files/unnamed-chunk-9-1.png" alt="" width="1344" height="960" class="aligncenter size-full wp-image-9109" srcset="https://data.library.virginia.edu/files/unnamed-chunk-9-1.png 1344w, https://data.library.virginia.edu/files/unnamed-chunk-9-1-300x214.png 300w, https://data.library.virginia.edu/files/unnamed-chunk-9-1-1024x731.png 1024w" sizes="(max-width: 1344px) 100vw, 1344px" /></a></p>
+<p>Again, nothing is gained performing post hoc power calculations. An insignificant result will always have low “power”. (The gaps in the scatterplot line are due to the discrete counts in the table.)</p>
+<p>Power is something to think about <em>before</em> running an experiment, not after. Power is the probability of correctly rejecting a null hypothesis test when a hypothesized effect really exists. We pretend some meaningful effect is actually real and then determine the sample size we need to achieve a high level of power, such as 0.90.</p>
+<p>In our first example, the real effect was 0.1 (with a standard deviation of 1). How large a sample size do we need to have a 90% chance of correctly rejecting the null hypothesis of no difference in the means at a significance level of 0.05? We can use the <code>power.t.test</code> function to answer this.</p>
+<div style="padding-left: 40px;font-size: 80%">
+<pre>
+power.t.test(delta = 0.1, sd = 1, sig.level = 0.05, power = 0.90)
+## 
+##      Two-sample t test power calculation 
+## 
+##               n = 2102.445
+##           delta = 0.1
+##              sd = 1
+##       sig.level = 0.05
+##           power = 0.9
+##     alternative = two.sided
+## 
+## NOTE: n is number in *each* group
+
+</pre>
+</div>
+<p>It appears we need over 2100 subjects <em>per group</em>. Assuming our effect size estimates are realistic and meaningful, this provides us guidance on how many subjects we need to recruit. But it doesn’t guarantee a significant result. High power is a probability, not a certainty.</p>
+<p>In addition to considering power before an experiment, we should focus less on p-values after the analysis and more on <em>confidence intervals on the effect</em>. There is a long tradition of making binary decisions of “some effect” or “no effect” based on a p-value falling below an arbitrary threshold. For example, get a p-value of 0.08 and declare there is “no effect” because the p-value is not less than 0.05. Or get a p-value of 0.000023 and declare a “highly significant effect” because the p-value is very small. In both cases we’re making decisions about the effect without <em>actually investigating the effect</em>.</p>
+<p>We previously ran a chi-square test on simulated data. Let’s do that again. Below we use <code>set.seed(8)</code> to allow you to replicate our result.</p>
+<div style="padding-left: 40px;font-size: 80%">
+<pre>
+grp &lt;- rep(c(&quot;A&quot;, &quot;B&quot;), each = 40)
+p &lt;- rep(c(0.5, 0.7), each = 40)
+set.seed(8)
+resp &lt;- rbinom(n = length(grp), size = 1, prob = p)
+chisq.test(table(grp, resp))
+
+## 
+##  Pearson&#039;s Chi-squared test with Yates&#039; continuity correction
+## 
+## data:  table(grp, resp)
+## X-squared = 1.8569, df = 1, p-value = 0.173
+
+</pre>
+</div>
+<p>The p-value of the chi-square test is 0.17. In a real analysis we might conclude “no effect” since the p-value is greater than 0.05. But that decision doesn’t even consider the estimated effect. One way to estimate the effect is to calculate the difference in proportions between those who responded in group A and those who responded in group B, and then calculate a 95% confidence interval on the difference in proportions. This can be done with the <code>prop.test</code> function. Before we do that we use the <code>table</code> and <code>proportions</code> function to determine the observed effect is 0.675 &#8211; 0.500 = 0.175.</p>
+<div style="padding-left: 40px;font-size: 80%">
+<pre>
+table(grp, resp) |&gt; proportions(margin = 1)
+##    resp
+## grp     0     1
+##   A 0.500 0.500
+##   B 0.325 0.675
+
+</pre>
+</div>
+<p>To use the <code>prop.test</code> function, the table needs to have “successes” in the first column and “failures” in the second column, so we swap the order of the columns. In addition we swap the order of the rows so the estimated effect is B &#8211; A.</p>
+<div style="padding-left: 40px;font-size: 80%">
+<pre>
+tab &lt;- table(grp, resp)[c(&quot;B&quot;,&quot;A&quot;),c(&quot;1&quot;,&quot;0&quot;)]
+prop.test(x = tab)
+## 
+##  2-sample test for equality of proportions with continuity correction
+## 
+## data:  tab
+## X-squared = 1.8569, df = 1, p-value = 0.173
+## alternative hypothesis: two.sided
+## 95 percent confidence interval:
+##  -0.06231373  0.41231373
+## sample estimates:
+## prop 1 prop 2 
+##  0.675  0.500
+
+</pre>
+</div>
+<p>Notice the p-value is exactly the sames as the chi-square test. (A chi-square test and 2-sample proportion test are the same thing statistically speaking.) More importantly notice the 95 percent confidence interval on the difference in proportions. <em>Every proportion</em> in that range is compatible with the data. Even though the p-value is “not significant”, plausible effects range from -0.06 to 0.4. To declare “no effect” is to decide that 0 is the most likely effect. But why is 0 more likely than 0.1 or 0.2? Instead of compressing this information into a single yes/no decision, we should report the confidence interval and let the reader see the range of plausible effect sizes.</p>
+<p><strong>References</strong></p>
+<ul>
+<li>Althouse A. Post Hoc Power: Not Empowering, Just Misleading. <em>J Surg Res</em>. 2021 Mar; 259:A3-A6.</li>
+<li>Goodman SN, Berlin JA. The use of predicted confidence intervals when planning experiments and the misuse of power when interpreting results. <em>Ann Intern Med</em>. 1994; 121:200-206.</li>
+<li>Hoenig JM, Heisey DM. The abuse of power: the pervasive fallacy of power calculations for data analysis. <em>Am Stat</em>. 2001; 55:19-24.</li>
+<li>R Core Team (2021). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL <a href="https://www.R-project.org/" class="uri">https://www.R-project.org/</a>.</li>
+</ul>
+<p>For questions or clarifications regarding this article, contact the UVA Library StatLab: <a href="mailto:statlab@virginia.edu">statlab@virginia.edu</a></p>
+<p><a href="https://data.library.virginia.edu/category/statlab-articles/">View the entire collection</a> of UVA Library StatLab articles.</p>
+<address>
+<a href="https://data.library.virginia.edu/tag/clay-ford/">Clay Ford</a><br />
+Statistical Research Consultant<br />
+University of Virginia Library<br />
+August 4, 2021<br />
+</address>
+      </div>
+      <footer>
+
+      </footer>
+                </article>
+                    </div>
+      </div><!-- /#main -->
+              <aside id="sidebar" class="threecol last" role="complementary">
+              <div class="container">
+          <div id="sidebar-area-top">
+  </div>
+<nav id="nav-utility">
+  <div class="menu-research-data-services-container"><ul id="menu-research-data-services" class="menu"><li id="menu-item-4131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><a href="/training/">Workshops</a></li>
+<li id="menu-item-1599" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1599"><a href="/datasources/">Data Discovery</a>
+<ul class="sub-menu">
+	<li id="menu-item-1601" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1601"><a href="/datasources/licensed/">Licensed Data Sources</a></li>
+	<li id="menu-item-2480" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2480"><a href="http://guides.lib.virginia.edu/data">Research Guide</a></li>
+</ul>
+</li>
+<li id="menu-item-1602" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1602"><a href="/data-management/">Research Data Management</a>
+<ul class="sub-menu">
+	<li id="menu-item-1603" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1603"><a href="/data-management/dmp-support/">Data Management Planning Support</a></li>
+	<li id="menu-item-1604" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1604"><a href="/?page_id=1286">What is Data Management?</a></li>
+	<li id="menu-item-1605" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1605"><a href="/data-management/plan/">Data Management Components</a></li>
+	<li id="menu-item-1654" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1654"><a href="/data-management/fall2014/">Past Data Management Workshops</a></li>
+</ul>
+</li>
+<li id="menu-item-1641" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1641"><a href="/statlab/">StatLab</a>
+<ul class="sub-menu">
+	<li id="menu-item-3259" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-3259"><a href="/category/statlab-articles/">StatLab Articles</a></li>
+</ul>
+</li>
+<li id="menu-item-1620" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1620"><a href="/research-software/">Research Software</a>
+<ul class="sub-menu">
+	<li id="menu-item-1621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1621"><a href="/research-software/amos/">AMOS</a></li>
+	<li id="menu-item-1622" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1622"><a href="/research-software/ansys/">ANSYS</a></li>
+	<li id="menu-item-1623" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1623"><a href="/research-software/arcinfo-by-esri/">GIS Software</a></li>
+	<li id="menu-item-1624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1624"><a href="/research-software/idl/">IDL</a></li>
+	<li id="menu-item-1625" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1625"><a href="/research-software/labview/">LabVIEW</a></li>
+	<li id="menu-item-1627" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1627"><a href="/research-software/mathematica/">Mathematica for Staff and Faculty</a></li>
+	<li id="menu-item-1629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1629"><a href="/research-software/minitab-2/">Minitab</a></li>
+	<li id="menu-item-1631" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1631"><a href="/research-software/originpro/">OriginPro</a></li>
+	<li id="menu-item-1632" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1632"><a href="/research-software/other-software/">Other Software</a></li>
+	<li id="menu-item-1633" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1633"><a href="/research-software/oxygen/">oXygen</a></li>
+	<li id="menu-item-1635" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1635"><a href="/research-software/sas/">SAS</a></li>
+	<li id="menu-item-1638" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1638"><a href="/research-software/spss/">SPSS</a></li>
+	<li id="menu-item-1639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1639"><a href="/research-software/stata/">Stata</a></li>
+</ul>
+</li>
+<li id="menu-item-4661" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4661"><a href="/sne/">Social, Natural, Engineering Sciences</a></li>
+<li id="menu-item-1617" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1617"><a href="/rds-staff/">Meet the Team</a></li>
+</ul></div></nav>
+<div id="sidebar-area-bottom">
+  </div>
+        </div>
+            </aside><!-- /#sidebar -->
+        </div><!-- /#content -->
+    </div></div><!-- /.row /.container -->
+<div class="container footer-container"><div class="row row-container clearfix">
+    <footer id="content-info" class="row" role="contentinfo">
+            <div class="container">
+                <p id="copyright">&copy; 2022 by the Rector and Visitors of the <a href="http://www.virginia.edu">University of Virginia</a></p>
+      </div>
+    </footer>
+    </div></div><!-- /.row /.container -->
+  </div><!-- /#wrap -->
+
+
+<!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://analytics.lib.virginia.edu/" : "http://analytics.lib.virginia.edu/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 17);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="https://analytics.lib.virginia.edu/piwik.php?idsite=17" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+
+
+
+
+
+<script type='text/javascript' src='/wp-content/plugins/skip-to/js/skipToInit.js?ver=1.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/skip-to/js/SkipTo.min.js?ver=2.0.0'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=5.1.8'></script>
+
+
+<script src="/wp-content/themes/libweb-base/js/libs/css3-mediaqueries.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="/wp-content/themes/libweb-base/js/libs/jquery.cycle.all.js"></script>
+<script src="/wp-content/themes/libweb-base/js/plugins.js"></script>
+
+
+  <!--[if lt IE 7]>
+    <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
+
+<script src="/wp-content/themes/libweb-base/js/script.js"></script>
+<script src="/wp-content/themes/libweb-base/js/gravity_scripts.js"></script>
+<script src="/wp-content/themes/libweb-base/js/libs/bootstrap.min.js"></script>
+
+</body>
+</html>
