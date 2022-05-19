@@ -2,6 +2,10 @@ This is BibTeX, Version 0.99d (TeX Live 2018/W32TeX)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: BLC_AM-ID_manuscript.aux
 The style file: apacite.bst
+White space in argument---line 114 of file BLC_AM-ID_manuscript.aux
+ : \citation{ELE
+ :               readings find}
+I'm skipping whatever remains of this command
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
@@ -24,48 +28,53 @@ Repeated entry---line 1677 of file references.bib
  : @article{vsimavckova2018patterns
  :                                 ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 2685 of file references.bib
+ : @article{stuart2011hybridity
+ :                             ,
+I'm skipping whatever remains of this entry
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--No journal in leap-q
 Warning--No journal in masica1972sound
 Warning--`others' not consistent with 6th ed. of the APA Manual
-You've used 60 entries,
+You've used 73 entries,
             6951 wiz_defined-function locations,
-            1616 strings with 20981 characters,
-and the built_in function-call counts, 118340 in all, are:
-= -- 14718
-> -- 857
-< -- 6121
-+ -- 6227
-- -- 129
-* -- 7729
-:= -- 22623
-add.period$ -- 252
-call.type$ -- 60
-change.case$ -- 1027
+            1683 strings with 23086 characters,
+and the built_in function-call counts, 143420 in all, are:
+= -- 17828
+> -- 1065
+< -- 7376
++ -- 7468
+- -- 155
+* -- 9314
+:= -- 27241
+add.period$ -- 307
+call.type$ -- 73
+change.case$ -- 1251
 chr.to.int$ -- 0
-cite$ -- 121
-duplicate$ -- 2892
-empty$ -- 4401
-format.name$ -- 1381
-if$ -- 22114
+cite$ -- 148
+duplicate$ -- 3530
+empty$ -- 5362
+format.name$ -- 1721
+if$ -- 26872
 int.to.chr$ -- 0
-int.to.str$ -- 180
+int.to.str$ -- 219
 missing$ -- 0
-newline$ -- 1463
-num.names$ -- 484
-pop$ -- 1927
+newline$ -- 1781
+num.names$ -- 588
+pop$ -- 2370
 preamble$ -- 1
-purify$ -- 242
+purify$ -- 296
 quote$ -- 0
-skip$ -- 7424
+skip$ -- 9068
 stack$ -- 0
-substring$ -- 6743
-swap$ -- 1708
-text.length$ -- 143
+substring$ -- 8078
+swap$ -- 2074
+text.length$ -- 176
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 5120
-warning$ -- 2
-while$ -- 474
+type$ -- 6288
+warning$ -- 3
+while$ -- 595
 width$ -- 0
-write$ -- 1776
-(There were 3 error messages)
+write$ -- 2171
+(There were 5 error messages)

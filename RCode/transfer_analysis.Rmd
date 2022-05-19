@@ -20,12 +20,12 @@ Load packages and data, create objects for lobanov normalized F1 and F2, create 
 library(tidyverse)
 library(phonR)
 library(lme4)
-library(stargazer)
-library(modelsummary)
+#library(stargazer)
+#library(modelsummary)
 library(lmerTest)
-library(pwr)
-library(simr)
-library(EMAtools) # to calculate Cohen's d values from lmer objects
+#library(pwr)
+#library(simr)
+#library(EMAtools) # to calculate Cohen's d values from lmer objects
 
 # package mixedpower (power analysis)
 if (!require("devtools")) {
@@ -35,8 +35,9 @@ if (!require("devtools")) {
 library(mixedpower)
 
 
-# replacing vowel symbols with unicode:
+# for replacing vowel symbols with unicode:
 remapping_english <- c(`\\ae` = "æ", `\\vt` = "ʌ")
+remapping_bengali <- c(A = "a:", E = "æ")
 
 
 # read in data
@@ -61,7 +62,7 @@ detach(df)
 rm(normF1,normF2)
 
 
-# data frame with time as variable
+# data frame with time as variable (long format)
 
 # lobanov-normalized FFs
 df_lobanov_time <- df_lobanov %>%
@@ -75,7 +76,7 @@ df_lobanov_time <- df_lobanov %>%
 # Since there are multiple observations per row (F1 and F2) that need to go in separate columns in the output, the ".value" lets you specify that part of the variable name will be used to split the data in the output. The rest of the name becomes the variable "time"
 
 
-# raw FFs
+# raw FFs with time as variable
 df_time <- df %>%
   select(!c("filename", "f1_mid", "vowel_duration")) %>%
   rename(f1_1=f1_5, f1_2=f1_15, f1_3=f1_25, f1_4=f1_35, f1_5=f1_45, f2_1=f2_5, f2_2=f2_15, f2_3=f2_25, f2_4=f2_35, f2_5=f2_45) %>%
@@ -171,7 +172,7 @@ rm(df_clean, f1, f2)
 
 Baseline Bengali data from the Shruti corpus:
 
-```{r, eval=FALSE}
+```{r, include=FALSE}
 
 # list of files in directory (paths relative to project root)
 file_list <- list.files(path="shruti/merged_speaker_data", full.names = T)
@@ -220,11 +221,24 @@ df_ben <- df_ben %>%
 
 rm(female, file_list, male, timepoints, vowel_list) 
 
+
+# subset of dataframe with only vowels of interest (A and E) at vowel midpoints (timepoints 8-12),
+# removing outlier formant values (<300 Hz): ~ 11% of rows. In full dataset (all vowels): ~14%
+
+df_ben_AE <- df_ben %>%
+  filter(grepl("A|E", vowel), time %in% (8:12), f1>600) %>%
+  droplevels() %>%
+  mutate(time_absolute = NULL) %>%
+  relocate(gender, .after = speaker) %>%
+  mutate (vowel = remapping_bengali[as.character(vowel)])
+  
+
+
 ```
 
 Log-mean normalization for Bengali data:
 
-```{r, eval=FALSE}
+```{r, eval=FALSE, include=FALSE}
 
 # subset of dataframe with only vowels of interest (A and E) at vowel midpoints (timepoints 8-12),
 # removing outlier formant values (<300 Hz): ~ 11% of rows. In full dataset (all vowels): ~14%
@@ -310,59 +324,79 @@ rm(df_clean, f1, f2)
 Plotting vowel data:
 
 
-```{r, eval=FALSE}
+```{r}
 
-# IPA vowel symbols
-remapping_english <- c(`\\ae` = "æ", `\\vt` = "ʌ")
-remapping_bengali <- c(A = "a:", E = "æ")
-
-# add column with unicode vowels
-df_ben_normalized$unicodevowel <- remapping_bengali[as.character(df_ben_normalized$vowel)]
-
-df_normalized$unicodevowel <- remapping_english[as.character(df_normalized$vowel)]
+# add column with unicode vowels (if needed)
+#df_normalized$unicodevowel <- remapping_english[as.character(df_normalized$vowel)]
 
 # plot: unilingual English, mixed, and baseline Bengali
 xlim <- c(2500,600)
-ylim = c(1100,400)
+ylim <- c(1100,500)
 
 
-temp <- df_ben %>%
-  filter(time %in% (8:12), f1>300)
 
-with(temp,plotVowels(f1, f2, vowel,
+## plot for baseline Bengali vs unilingual English
+df_eng_unilingual <- df_time %>%
+  filter(time %in% (3:5), context == "e")
+
+with(df_ben_AE,plotVowels(f1, f2, vowel,
                         plot.tokens = F, plot.means = TRUE, pch.tokens = vowel, pch.means = vowel, 
-                        var.col.by = vowel, var.sty.by = vowel, 
+                        var.col.by = NULL, var.sty.by = NULL, 
                         cex.tokens = 0.8, cex.means = 1, alpha.means = 0.8,alpha.tokens = 0.3,
-                        ellipse.line = F, ellipse.fill = T, fill.opacity = 0.3,
-                        poly.line = F, poly.order = c("A","E"),
+                        ellipse.line = F, ellipse.fill = T, fill.opacity = 0.2, 
+                        poly.line = F, poly.order = c("a:","æ"),
                         xlim = xlim, ylim = ylim, 
-                        legend.kwd="bottomleft", legend.args = list(legend=c("baseline æ","baseline a:")), 
-                        axes=T, pretty = TRUE))
-
-# Bengali vowels
-with(df_ben_normalized,plotVowels(f1_raw, f2_raw, vowel,
-                        plot.tokens = F, plot.means = TRUE, pch.tokens = unicodevowel, pch.means = unicodevowel, 
-                        var.col.by = vowel, var.sty.by = vowel, 
-                        cex.tokens = 0.8, cex.means = 1, alpha.means = 0.8,alpha.tokens = 0.3,
-                        ellipse.line = F, ellipse.fill = T, fill.opacity = 0.2,
-                        poly.line = F, poly.order = c("A","E"),
-                        xlim = xlim, ylim = ylim, 
-                        legend.kwd="bottomleft", legend.args = list(legend=c("baseline æ","baseline a:")), 
-                        axes=FALSE, pretty = TRUE))
+                        #legend.kwd="bottomleft", legend.args = list(legend=c("baseline æ","baseline a:")), 
+                        pretty = TRUE))
 par(new=TRUE)
 
 # English vowels
-with(df_normalized, plotVowels(f1_raw, f2_raw, vowel, group = context, 
-                               plot.tokens = F, plot.means = TRUE , pch.tokens = unicodevowel, pch.means = unicodevowel,
-                               var.col.by = NA, var.sty.by = context, 
+with(df_eng_unilingual, plotVowels(f1, f2, vowel, 
+                               plot.tokens = F, plot.means = TRUE , pch.tokens = vowel, pch.means = vowel,
+                               var.col.by = NULL, var.sty.by = NULL, 
                                cex.tokens = 0.8, cex.means = 1, alpha.means = 0.5,alpha.tokens = 0.3,
-                               ellipse.line = T,  ellipse.fill = T,
-                               poly.line = F, poly.order = c("\\ae","\\vt"),
+                               ellipse.line = T, ellipse.fill = F, fill.opacity = 0.1,
+                               poly.line = F, poly.order = c("æ","ʌ"),
+                               xlim = xlim, ylim = ylim, 
+                               #legend.kwd = "bottomright", 
+                               axes=FALSE, pretty = TRUE))
+
+rm(df_eng_unilingual)
+
+```
+
+
+```{r}
+## final result plot:
+
+df_eng_plots <- df_time %>%
+  filter(time %in% (3:5))
+
+# Bengali vowels
+with(df_ben_AE,plotVowels(f1, f2, vowel,
+                        plot.tokens = F, plot.means = TRUE, pch.tokens = vowel, pch.means = vowel, 
+                        var.col.by = vowel, var.sty.by = vowel, 
+                        cex.tokens = 0.8, cex.means = 1, alpha.means = 0.8,alpha.tokens = 0.3,
+                        ellipse.line = F, ellipse.fill = T, fill.opacity = 0.2,
+                        poly.line = F, poly.order = c("a:","æ"),
+                        xlim = xlim, ylim = ylim, 
+                        legend.kwd="bottomleft", legend.args = list(legend=c("baseline æ","baseline a:")), 
+                        pretty = TRUE))
+par(new=TRUE)
+
+# English vowels
+with(df_eng_plots, plotVowels(f1, f2, vowel, group = context,
+                               plot.tokens = F, plot.means = TRUE , pch.tokens = vowel, pch.means = vowel,
+                               var.col.by = NULL, var.sty.by = context, 
+                               cex.tokens = 0.8, cex.means = 1, alpha.means = 0.5,alpha.tokens = 0.3,
+                               ellipse.line = T, ellipse.fill = T, fill.opacity = 0.1,
+                               poly.line = F, poly.order = c("æ","ʌ"),
                                xlim = xlim, ylim = ylim, 
                                legend.kwd = "bottomright", legend.args = list(legend=c("unilingual","mixed")),
-                               fill.opacity = 0.1, pretty = TRUE))
+                               axes=FALSE, pretty = TRUE))
 
 
+rm(df_eng_plots)
 
 
 ```
@@ -372,7 +406,7 @@ with(df_normalized, plotVowels(f1_raw, f2_raw, vowel, group = context,
 
 ## LME models:
 
-```{r}
+```{r, eval=FALSE, include=FALSE}
 # plot for English vowels:
 
 # Lobanov-normalized FFs
@@ -392,7 +426,7 @@ with(df_lobanov_gender_time, plotVowels(f1, f2, vowel, group = interaction(task,
 
 ```
 
-```{r}
+```{r, eval=FALSE, include=FALSE}
 
 # raw FFs
 with(df_time, plotVowels(f1, f2, vowel, group = interaction(gender, task), 
@@ -450,7 +484,7 @@ Random effects structure:
 -item: intercept (FF for vowel different in each item), context (the effect of context is different for each word), NOT vowel (between-item variable), NOT gender (even though within-item, no reason to believe that effect of gender on FF is different for each item)
 
 
-```{r, results='hide'}
+```{r, eval=FALSE}
 
 temp <- df_lobanov_gender_time %>%
   mutate(time = as.numeric(time)) %>%
@@ -465,7 +499,7 @@ phon_acco.model_f1 = lmer(f1 ~
                          data= temp, REML=FALSE, control = lmerControl(optimizer = "bobyqa"))
 
 summary(phon_acco.model_f1)
-summary(rePCA(phon_acco.model))
+summary(rePCA(phon_acco.model_f1))
 
 # Cohen's d values (from EMAtools package):
 d_F1 <- lme.dscore(phon_acco.model, data=temp, type='lme4')
@@ -473,7 +507,7 @@ d_F1 <- lme.dscore(phon_acco.model, data=temp, type='lme4')
 
 ##--> find way to export fixed effects table (estimate, SE, p values) to LaTex
 
-stargazer(phon_acco.model_f1)
+#stargazer(phon_acco.model_f1)
 
 # null model
 null.model = lmer(f1~
@@ -484,11 +518,11 @@ null.model = lmer(f1~
 summary(null.model)
 summary(rePCA(null.model))
 
-anova(phon_acco.model, null.model)
+anova(phon_acco.model_f1, null.model)
 
 # some weird interaction with lmerTest package. Detach that first
-stargazer(phon_acco.model)
-modelsummary(phon_acco.model)
+#stargazer(phon_acco.model)
+#modelsummary(phon_acco.model)
 
 ```
 
@@ -554,7 +588,7 @@ full model: time\*vowel + vowel\*context\*task\*gender + task\*time
 no effect of vowel\*context\*gender-- no difference in transfer patterns
 but: task\*gender is significant: men show more lowering in the sentence task than females --unexpected
 
-```{r}
+```{r,eval=FALSE}
 # F2
 
 # full model
@@ -563,7 +597,7 @@ phon_acco.model_f2 = lmer(f2 ~
                          (1+context|word) + (1+context+vowel|subject), 
                          data= temp, REML=FALSE, control = lmerControl(optimizer = "bobyqa"))
 summary(phon_acco.model_f2)
-summary(rePCA(phon_acco.model))
+summary(rePCA(phon_acco.model_f2))
 
 # Cohen's d values (from EMAtools package):
 d_F2 <- lme.dscore(phon_acco.model, data=temp, type='lme4')
@@ -580,9 +614,9 @@ null.model = lmer(f2~
 
 summary(null.model)
 
-anova(phon_acco.model, null.model)
+anova(phon_acco.model_f2, null.model)
 
-stargazer(phon_acco.model)
+
 ```
 
 - Full model: time\*vowel + vowel\*context
@@ -656,7 +690,7 @@ but: task\*gender is significant: men show more lowering in the sentence task th
 
 Power analysis:
 
-```{r}
+```{r, include=FALSE, eval=FALSE}
 
 # F1:
 
@@ -688,26 +722,26 @@ beta.f1
 
 # setting beta-values to 85% of original
 beta.f1<- beta.f1 %>%
-  map(~ . * 0.95) %>% # map each element of the vector to the result of applying the function f to it (creates a list)
+  map(~ . * 1.05) %>% # map each element of the vector to the result of applying the function f to it (creates a list)
   unlist()  # convert back to a named vector
 
 beta.f1
 
-power_f1_minus5 <- mixedpower(model = phon_acco.model_f1, data = temp,
+power_f1_plus5 <- mixedpower(model = phon_acco.model_f1, data = temp,
                           fixed_effects = c("vowel","context","time","task"),
                           simvar = "subject_num", steps = c(5,8,10,12,15), n_sim = 500,
                           SESOI = beta.f1, databased = F,
                           critical_value = 2)
 
 
-powerplot_f1_minus5 <- multiplotPower(power_f1_minus5, filename = "powerplot_f1_minus5.png")
+powerplot_f1_plus5 <- multiplotPower(power_f1_plus5, filename = "powerplot_f1_plus5.png")
 
 ```
 
 done: F1: -5, -15, +15
 F2: -15, +15
 
-```{r}
+```{r, eval=FALSE, include=FALSE}
 
 # F2:
 
@@ -736,18 +770,18 @@ beta.f2
 
 # setting beta-values to 85% of original
 beta.f2 <- beta.f2 %>%
-  map(~ . * 1.15) %>% # map each element of the vector to the result of applying the function f to it (creates a list)
+  map(~ . * 1.05) %>% # map each element of the vector to the result of applying the function f to it (creates a list)
   unlist()  # convert back to a named vector
 
 beta.f2
 
-power_f2_plus15 <- mixedpower(model = phon_acco.model_f2, data = temp,
+power_f2_plus5 <- mixedpower(model = phon_acco.model_f2, data = temp,
                           fixed_effects = c("vowel","context","time","task"),
-                          simvar = "subject_num", steps = c(5,7,10,12,15), n_sim = 500,
+                          simvar = "subject_num", steps = c(5,8,10,12,15), n_sim = 500,
                           SESOI = beta.f2, databased = F,
                           critical_value = 2)
 
-powerplot_f2_plus15 <- multiplotPower(power_f2_plus15, filename = "powerplot_f2_plus15.png")
+ powerplot_f2_plus5 <- multiplotPower(power_f2_plus5, filename = "powerplot_f2_plus5.png")
 
 ```
 
@@ -780,7 +814,7 @@ of controlling for possible mediating/moderating factors/subgroup analysis, etc.
 There is literature saying that power analysis is not very relevant if an effect has already been observed (cite), and should not change the interpretation of already observed significant effects. Here, did a retrospective power analysis to guide how null results should be interpreted. 
 say:power for vowel\*context is lower than 80%. Means that: for a effect of this size, if it is present, there is a 40% chance that we may not observe it in the data. This means that if we get a null result, we should be careful about interpreting this as an absence of effect, and future studies should instead repeat this with larger sample sizes. For vowel\*context\*task, however, power is more than 80%. Thus, we can reasonably interpret the absence of statistical significance as an absence of the effect. 
 
-```{r}
+```{r, eval=FALSE, include=FALSE}
 # scratch pad: additional code for manuscript revision
 
 temp <- df_lobanov %>%
