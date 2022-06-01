@@ -401,45 +401,26 @@ rm(df_eng_plots)
 
 ```
 
+## Gender differences in IE vowels:
+```{r}
 
+# Lobanov-normalized FFs-- before gender normalization
+xlim = c(3, -3)
+ylim = c(4, -4)
 
-
-## LME models:
-
-```{r, eval=FALSE, include=FALSE}
-# plot for English vowels:
-
-# Lobanov-normalized FFs
-xlim = c(2.5, -2)
-ylim = c(2.3, -2)
-
-with(df_lobanov_gender_time, plotVowels(f1, f2, vowel, group = interaction(task,context),
-                               plot.tokens = F, plot.means = TRUE , pch.tokens = vowel, pch.means = interaction(task,context),
-                               var.col.by = interaction(task,context), var.sty.by = gender, 
-                               cex.tokens = 0.8, cex.means = 1, alpha.means = 0.5,alpha.tokens = 0.3,
-                               ellipse.line = F,  ellipse.fill = F,
-                               poly.line = F, poly.order = c("\\ae","\\vt"),
-                               xlim = c(1,-1), ylim = c(0.5,-1), 
-                               legend.kwd = "bottomright", legend.args = gender,
-                               fill.opacity = 0.1, pretty = TRUE))
-
-
-```
-
-```{r, eval=FALSE, include=FALSE}
-
-# raw FFs
-with(df_time, plotVowels(f1, f2, vowel, group = interaction(gender, task), 
+with(df_lobanov_time, plotVowels(f1, f2, vowel, group = gender,
                                plot.tokens = F, plot.means = TRUE , pch.tokens = vowel, pch.means = vowel,
-                               var.col.by = interaction(gender, task), var.sty.by = task, 
+                               var.col.by = vowel, var.sty.by = gender, 
                                cex.tokens = 0.8, cex.means = 1, alpha.means = 0.5,alpha.tokens = 0.3,
-                               ellipse.line = F,  ellipse.fill = F,
+                               ellipse.line = T,  ellipse.fill = T,
                                poly.line = F, poly.order = c("\\ae","\\vt"),
-                               xlim = c(2500, 700), ylim = c(1400, 100), 
+                               xlim = xlim, ylim = ylim, 
                                legend.kwd = "bottomright", legend.args = gender,
-                               fill.opacity = 0.1, pretty = TRUE))
+                               fill.opacity = 0.05, pretty = TRUE))
+
 
 ```
+
 
 Gender difference is not removed after lobanov normalization. Normalizing by gender:
 
@@ -455,8 +436,25 @@ df_lobanov_gender_time <- df_lobanov_time %>%
 rm(gender_normalized)  
 ```
 
+Plots after gender normalization:
 
-## main model
+```{r}
+
+# raw FFs
+with(df_lobanov_gender_time, plotVowels(f1, f2, vowel, group = gender,
+                               plot.tokens = F, plot.means = TRUE , pch.tokens = vowel, pch.means = vowel,
+                               var.col.by = vowel, var.sty.by = gender, 
+                               cex.tokens = 0.8, cex.means = 1, alpha.means = 0.5,alpha.tokens = 0.3,
+                               ellipse.line = T,  ellipse.fill = T,
+                               poly.line = F, poly.order = c("\\ae","\\vt"),
+                               xlim = xlim, ylim = ylim, 
+                               legend.kwd = "bottomright", legend.args = gender,
+                               fill.opacity = 0.05, pretty = TRUE))
+
+
+```
+
+## LME models:
 
 writeup-- (using data from all 5 points. This should be okay because the pre-vocalic consonants are all the same, so any effect of the consonant should be uniform. A difference between contexts in the early part of the vowel suggests differences in target FFs)
 

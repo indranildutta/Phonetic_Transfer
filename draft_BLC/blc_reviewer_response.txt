@@ -1,0 +1,196 @@
+Manuscript BLC-21-0133
+Response to Reviewers
+
+Dear Editors,
+
+Thank you for the opportunity to submit a revised draft of our manuscript “Mixed language processing increases cross-language phonetic transfer in Bengali-English bilinguals” for publication in Bilingualism: Language and Cognition. We appreciate the time and effort from your end and that of the reviewers in providing feedback on our manuscript, and in particular the thoughtful comments for improvements to the work. We have incorporated the suggestions made by the reviewers. Please see below, for a point-by-point response to the reviewers’ comments and concerns. All page numbers refer to the revised manuscript file uploaded in the portal.
+
+
+Sincerely,
+Auromita
+
+------------------------------------------------
+
+Reviewers' comments to authors:
+
+Reviewer: 1
+
+I will focus my comments here on a few things I believe should be improved. Let me say first that I am quite impressed by the quality of the writing and the insight demonstrated. This is a very fine project and it has many positive things going on for it. There are a number of issues the authors would do well to address, though.
+
+1. The sample size is just too small. The study recruited only 10 participants. This is not much less than comparable studies, I know. The standards in our field, however, are quickly changing. This study sets out to compare the sizes of the effects of two experimental treatments or conditions. Effect sizes are likely to be very small in the population, if they exist at all. This is designed as a confirmatory study, rather than an exploratory study. It is one thing to explore an issue for the first or second time, and another to confirm a specific effect others believe they have found while exploring the possibility of its existence. A confirmatory experiment needs a power analyses, or at the very least the sample size must be explicitly justified. I suspect the sample is too small to detect any differences between the two treatments (picture naming vs. code-switching), and the differences between the unilingual and the bilingual trials is apparently found to be very small. The likelihood of detecting a significant difference increases with a more powerful experimental design; and if no differences are detected one may propose that none exist in the population. And, for significant differences, a more accurate estimate can be found in more powerful designs--those with larger samples. I'd like to encourage the authors to consider the possibility to return to the field and to continue to collect data, if at all feasible. Otherwise, at the very least, acknowledge the limitations openly and justify your sample size. Changes are this won't be enough, but only the editorial team can decide whether they continue to accept low-power studies or not.
+
+Authors' response (AR): We agree that the sample size is smaller than ideal. We were constrained by resources and participant availability given a stringent inclusion criteria (discussed in response point 2).This was in order to minimize random variability in the sample, given that the population we are working with is highly variable in terms of linguistic experience. Unfortunately, it is not possible to collect more data. Our university has still not fully reopened after the pandemic, and we therefore don't have access to a lab at present. We plan to expand this study by collecting data online in the near future, but that is beyond the scope of the present study. 
+We have performed a power analysis and included it in our manuscript (section 3.4, page 35). This shows that the study does have enough power to detect the effects of interest (phonetic transfer: vowel*context interaction, and paradigm differences: vowel*context*task interaction in F1). We acknowledge that the power for detecting a paradigm effect in F2 is low, given the effect sizes in the present data. We have acknowledged the sample size limitation within the text (page 36). However, we would like to note a couple of points:
+
+i) There is a body of literature that debates the usefulness of post-hoc power analyses in interpreting the findings of a completed study where statistical analyses have already been performed:
+
+Lakens, D. (2021, January 4). Sample Size Justification. https://doi.org/10.1525/collabra.33267
+Dziak, J. J., Dierker, L. C., & Abar, B. (2020). The interpretation of statistical power after the data have been gathered. Current Psychology, 39(3), 870-877.
+Lenth, R. V. (2007). Post hoc power: tables and commentary. Iowa City: Department of Statistics and Actuarial Science, University of Iowa, 1-13.
+Gelman, A. (2019). Don’t calculate post-hoc power using observed estimate of effect size. Annals of surgery, 269(1), e9-e10.
+
+This is especially important in situations where norms around expected effect sizes are yet to be established in the field, and thus cannot be readily motivated on theoretical grounds, making it necessary to rely on observed effect sizes from the data.
+
+ii) We still do not know enough about power calculations in complex mixed effect models and effect sizes for cross-language transfer phenomena to make designing and interpreting such analyses straightforward. We have discussed this in some detail in the manuscript (page 36). Although we have done our best to conduct a power analysis with minimum bias, we are open to any methodological suggestions the reviewers might have. 
+
+iii) In light of these considerations, we want to draw your attention to the scarcity of literature on language behaviors of native multilingual populations. This makes it doubly difficult to find effect size estimates from comparable populations, and more generally to rely on existing norms/expectations while making methodological decisions. In large part, this is due to resource inequality, leading to a system that propagates more research on already well-studied languages and populations. The norms for experimental research on bilingualism have been established in a Western context. In a setting where linguistic variability at the population level is much greater than canonically studied groups, establishing comparable levels of experimental control requires significantly greater resources. For example, even after a recruitment call that already controlled for language background and education level (recruiting Bengali-English bilinguals in a university campus), we were able to include only 10 out of 28 volunteers (35.7%)  in the final study given our inclusion criteria. Note that these criteria (discussed further later) establish only a minimal level of between-participant similarity in exposure, dominance, habits, and proficiency, such as is extremely common in most contemporary transfer studies. This example demonstrates the degree of linguistic variability in the present population. In such a scenario, is it scientifically justified to apply blanket uniform standards for participant numbers across populations?  
+We completely agree that power considerations are important, and will strive for more well-powered designs in future studies. But we also wish to point out that the lack of diversity in existing bilingual data is an equally large impediment to progress in our field. We believe that the norms that propagate this urgently need to change. Given the methodological uncertainties discussed above, the interpretation of this power analysis is tentative at best (c.f. discussion on page 35). On the other hand, existing results from transfer studies clearly demonstrate the need for data from a wider range of populations and language pairs (c.f. discussion in section 1, Introduction). While we respect whatever decision the editorial team makes in this regard, we write this to draw your attention to an alternative perspective on this issue. 
+
+
+
+2. We need to know a lot more about the participants. Participant information takes a single paragraph. Readers are not necessarily familiar with this particular bilingual population. What's more, there are no indicators of bilingualism or English or Bengali proficiency. The authors would do well to collect information from the participants utilizing one of the available bilingualism surveys, such as the BLP  or the LEAP-Q. Also, linguistic proficiency should be assessed somehow; perhaps a vocabulary size measure or a grammar knowledge measure. Or at lest a self-assessed proficiency questionnaire. This is of course optional, particularly in native bilingual populations. In this case, though, the reader needs to learn a lot more about the society and the bilingual conditions of both the population and the specific sample: language use patterns, ages and contexts of acquisition, literacy, origin, ages, education levels and languages of education, etc. Finally, consider the possibility of reporting the inclusion and exclusion criteria openly and explicitly.
+
+AR: Thank you for pointing this out. As per reviewer suggestions, we have discussed the linguistic situation of the population in greater detail (section 2.1, page 20) . We had collected some language background information from participants prior to the study, which was used to screen participants. We have now collected additional information about literacy, acquisition, usage habits and attitudes (in the form of a collated survey of the BLP + LEAP-Q + Bilingual Switching Questionnaire (BSWQ)) from the participants of the study (we were able to reach 9 of the 10 original participants). We have discussed these responses in the Participants section. This language background survey includes self-ratings for proficiency, which have been shown in existing literature to correlate well with actual performance. Moreover, educational history is a reliable predictor of proficiency for this population, as detailed in the manuscript. We have reported our inclusion criteria, and discussed the motivation behind it. 
+
+
+
+3. The Discussion section is brief and shallow. I am impressed by the quality of the writing in the Introduction, but the Discussion and Conclusions are no match for it. The Discussion needs to be much longer, much deeper, it needs to engage with theory and contextual findings explicitly and in depth, it needs to interpret the specific findings and explain their implications. I suggest that the "limitations" paragraph be moved out of the last position in the article. It could perhaps be placed in the Discussion section, but not in the Conclusions section. The Conclusions section needs to focus on the positive findings: what have we learned here? What can we say after having conducted this study? Etc. Finally, regarding the Discussion section, there should be a separate subsection entitled "Summary of Findings" (of course, whether there is such a separate section or not is a personal matter, but my point is that there need to be a few paragraphs in which the authors summarize the findings (perhaps by providing standardized effect sizes) in plain English while refraining from interpreting or explaining the data. There needs to be a subsection in which the data are summarized so that the reader can remember the findings before engaging in a discussion of their implications.
+
+AR: We agree with this feedback. Accordingly, we have now rewritten the Discussion section to be longer and more detailed, with an overall summary of findings at the beginning (page 37), and separate subsections for each of our original hypotheses. We have added a separate subsection titled “Model output summary” in the Results section where we report the fitted model, model output, and effect sizes without interpretation. This is followed by a “Model interpretation” subsection which explains the effects in plain language without theoretical interpretation – i.e.  what the numbers mean in terms of acoustics (e.g. the negative lope of the vowel*context interaction indicates that \nt is lowered to a greater extent than \ae in the mixed condition). In the Discussion section, we have interpreted the finding, discussed it in light of our original research questions and hypotheses, and discussed theoretical implications.
+
+
+Except for my suggestion to keep collecting data to obtain a larger sample (as well as collecting more information from the participants, in the form of some bilingualism survey), I believe my other suggestions are relatively minor. I must say that I was quite impressed while reading the manuscript until (1) I saw the Participants section (small sample size and sparse information about the linguistic histories and experiences of the participants), and (2) I read the Discussion (brief, shallow, avoiding a deep discussion of the implications of the study and lacking a summary of findings devoid of interpretation before moving on to their interpretation). I sincerely hope the authors are willing to consider some of my comments. I believe this is, overall, a fine study.
+
+AR: Thank you for these suggestions and feedback! We hope we have been able to address the major concerns.
+
+------------------------------------------------------------------------------------------
+Reviewer: 2
+
+This study set out “to ascertain if L1 influence on L2 increases during mixed-language use, relative to a participant’s multilingual baseline production of L2.” The major claim (page 24) is that “Both vowels in this study showed systematic shifts in the mixed-language condition compared to baseline unilingual productions.”
+I am concerned about whether the results actually support this claim. As the ms. makes very clear, the data on baseline production of these vowels in IE was taken from a different study of five female speakers. 
+
+AR: As outlined in the Methodology section (page 19), our study had a within-participant design: we elicited IE speech from a group of bilingual speakers in two conditions-- unilingual (IE), and mixed (switching from Bengali to IE). Our statistical analyses compared productions across these two conditions. This means that participants' unilingual IE productions were compared to their own mixed productions, and were found to differ in vowel quality. Thus, the main claim that “Both vowels in this study showed systematic shifts in the mixed-language condition compared to baseline unilingual productions.” is certainly supported by the results.
+Based on previous literature, we expect that such shifts in vowel categories are not random, but rather targeted with respect to L1 categories. Although our primary research question is about whether productions in unilingual vs mixed conditions differ, we wanted to understand how the direction of shift compares to corresponding Bengali categories. Towards this, we used existing data to estimate average formant values of the relevant Bengali vowel categories. Initially, this data was taken from Dutta (2021). However, in light of concerns about the sample size and gender makeup of that data, we have now used a larger dataset consisting of both male and female speakers from the SHRUTI corpus[i] (c.f. response to comment 1 of reviewer 3). The distribution of vowels was found to be the same in both datasets. Page 16 of the revised manuscript contains a detailed discussion of how this data was extracted and used, including speaker information from the corpus. Note that we have clearly mentioned that this baseline Bengali data represents average formant values, and is only used as a heuristic for discussion. We have not included this data in our statistical analyses. 
+[i] Das, B., Mandal, S., & Mitra, P. (2011, October). Bengali speech corpus for continuous auutomatic speech recognition system. In 2011 International conference on speech database and assessments (Oriental COCOSDA) (pp. 51-55). IEEE. 
+
+
+
+The participants in this study were ten male speakers. While we are told that the speakers in this study “were selected on the basis of responses to a Language Background Questionnaire to ensure comparable LSRW...skills in L1 and L2 across participants), we are not given any information on the criteria used in this selection, and no information beyond gender is provided for the baseline group. 
+
+AR: We have taken this feedback into account, and reported the inclusion criteria for the study, and the motivations for using those specific metrics for participant selection (section 2.1, page 20; c.f. response to comment 2 of reviewer 1). More information about the baseline Bengali data, including speaker information, was added as a separate subsection on page 16 (c.f. response to comment 1 of reviewer 3).
+(We would like to note that the participants in our study were 5 male and 5 female speakers, rather than 10 male speakers, as detailed in section 2.1 (page 20).)
+
+
+
+The ms. seems to assume that the 5 female speakers in the baseline study can be taken as representative of all L1 IE speakers, but we have no evidence for that.
+
+AR: We reiterate that the baseline data was for L1 Bengali vowels. However, in light of concerns about the small sample size, we have now used a larger dataset of Bengali speech extracted from the SHRUTI corpus, which contains both male and female speakers, and is expected to be representative of vowel targets of educated Western Bengali speakers from India (c.f. response to comment 1 of reviewer 3).
+
+
+A second claim (p. 25) is that “As expected, we find a greater degree of shift in [ʌ], possibly owing to its position in a less dense part of the IE vowel space.” This is a very interesting claim but it would be much more convincing if we were provided explicit information on the IE vowel space, in the form of a chart of all the vowels in this language. We also need to know whether acoustic differences in addition to F1 and F2 (such as duration) play a role in distinguishing vowels.
+
+AR: Thanks for this suggestion! We have accordingly added a vowel chart for IE (page 60), and discussed the two categories of interest, [ʌ] and [æ], in greater detail in section 4.2, page 44. As for other acoustic features, while the IE vowel system uses phonological length contrast, the two categories studied here are not part of a length-contrasted minimal pair (they do not have a long or short counterpart). While [ʌ] and [æ] differ in their canonical durations, with [æ] being a longer vowel[i], we are not aware of any perception data from L1 Bengali IE speakers that could illuminate the role of duration as a perceptual cue to these categories.  
+[i]Maxwell, O., & Fletcher, J. (2009). Acoustic and durational properties of Indian English vowels. World Englishes, 28(1), 52-69.
+
+
+
+Finally, at a number of points the ms. makes reference to the lack of studies of cross-language influence on vowels (as opposed to VOT). I’m not sure this is a fair characterization. While studies of the effect of language switching on vowels may be lacking, there are certainly a number of studies investigating phonetic drift in vowels, for example:
+Grace E. Oh, Susan Guion-Anderson, Katsura Aoyama, James E. Flege, Reiko Akahane-Yamada, Tsuneo Yamada. 2011. A one-year longitudinal study of English and Japanese vowel production by Japanese adults and children in an English-speaking setting. Journal of Phonetics 39: 156-167.
+Natalia Kartushina and Clara D. Martin. 2019. Third-language learning affects bilinguals’ production in both their native languages: A longitudinal study of dynamic changes in L1, L2 and L3 vowel production. Journal of Phonetics 77: 100920.
+Benjamin Lang and Lisa Davidson. 2019. Effects of Exposure and Vowel Space Distribution on Phonetic Drift: Evidence from American English Learners of French. Language and Speech 62:30-60.
+
+AR: Thank you for pointing us to these references. Our discussions about the lack of studies focusing on vowels are very specifically about short-term, transient phonetic interaction, such as is triggered by language mixing or immediate language context. Such studies demonstrate local cross-language influence during speech processing, as opposed to changes to the mental representations of sound categories over longer periods. We distinguish between long- and short-term transfer early in the text (Introduction, page  3), and focus most of our literature review on the latter, unless explicitly specified otherwise. In light of the reviewer's concern, we have rephrased the text on page 10 ("all the studies of mixed-language production discussed above measure VOT, which is a temporal feature.") to indicate this more clearly.
+
+
+Specific comments
+page 6: I found the sentence in (ii) confusing.
+AR: Original sentence: "Given that examples of an IE phonology without L1 'influence' are very rare, it is more meaningful to think of cross-language transfer in L2 as relative to a speaker's own production in a given baseline condition."
+As discussed in the preceding paragraph (page 6.), for the majority of this population, English is learned and used as an L2 to communicate with other L2 speakers. There are very limited L1 IE speakers. Thus, what is collectively understood as "Indian English" is not a monolithic entity, as it is always colored by a speaker's other languages. Examining cross-language interaction in this scenario amounts to observing an increase in the amount of such L1 "accentedness" in IE speech. 
+
+page 6: ‘monopthongs’ should be ‘monophthongs’
+page 9: First sentence: “bilinguals speakers’...”
+page 14: “individual sounds pairs”
+AR: Thanks for pointing these out, we have edited these lines in the manuscript.
+
+page 9: “The research discussed above concerns situations where the bilingual speaker is
+operating in any one of their languages.” It seems odd to refer to studies investigating the first
+five weeks of learning a language as involving bilinguals.
+AR: We have rephrased this line on page 10: "The research discussed above concerns situations where a speaker is operating in any one of their languages"
+
+
+page 13: It wasn’t clear to me how the discussion of the Bengali laryngeal contrast was relevant
+here.
+AR: We discuss the four-way laryngeal contrast to motivate our use of vowels as the feature of interest in this study, rather than VOT. The large body of literature on phonetic transfer in VOT is largely based around languages where VOT is the primary cue for voicing contrast (voiced vs voiceless). Thus, exploiting canonical VOT differences between languages allows us to ascertain cross-language influence. In Bengali, the voicing contrast is four-way (voiced vs voiceless, aspirated/breathy vs unaspirated), and VOT is not the primary cue for this contrast. If we were to examine changes to L2 IE VOT as a result of L1 Bengali influence, it would be difficult to interpret the observations in a straightforward manner, owing to the additional phonological differences between the languages.  
+
+------------------------------------------------------------------------------------------------------------------
+Reviewer: 3
+
+Comments to the Author
+The paper reports two tasks – cued-picture naming and code switching – investigating cross-language phonetic transfer in bilingual (Bengali-English) speakers. The study focused on the F1 and F2 of two vowels of the L2 (Indian English) language. Both vowels were subject to changes, with a shift toward the L1 norms. The same changes occurred independently of the task. The study thus reports first evidence of transfer effects on L2 vowels.
+
+I've found the study interesting, and the findings having a good potential for significantly contributing to models of bilingual language control. There are some relatively minor issues (mostly methodological) that I think deserve attention and need to be addressed.
+
+1. As baseline data, the authors use Dutta's (2021) dataset, which is composed of production data from 5 female speakers. In the present study, however, participants are 5 females and 5 males. Because of the effects of gender on vowel realization, do the authors think that this difference between the two groups (Dutta vs the present one) might have contributed to the effects reported in the present study?
+
+AR: Thank you for pointing this out. The statistical analyses in this study is within-participant, comparing participants' IE production in a unilingual condition to their own mixed productions. The baseline Bengali data was used as a heuristic tool to understand how the direction of shift relates to Bengali vowel categories. We had initially used data from Dutta (2021), which was a subset of speech data from the SHRUTI corpus[i], extracted for another study. However, we agree with the reviewer's assessment that the small dataset an lack of gender balance makes it not ideal representative of Bengali vowel production. We have now discarded the Dutta (2021) data, and instead used the entirety of the SHRUTI corpus to get average vowel positions. This corpus contains speech from 34 speakers of Bengali (includes both male and female speakers) and is the largest available corpus of Western Bengali speech that we are aware of. We have elaborated on details of the corpus and speakers on page 16. While the relative vowel positions we observe have not changed as a result of using this larger dataset, we believe that this dataset is more 
+representative of average Bengali vowels, and address the reviewer's concern that the observed results might be an artifact of the particular speech data used earlier.
+
+[i] Das, B., Mandal, S., & Mitra, P. (2011, October). Bengali speech corpus for continuous auutomatic speech recognition system. In 2011 International conference on speech database and assessments (Oriental COCOSDA) (pp. 51-55). IEEE. 
+
+
+
+2. Participants.
+a) How was the sample size calculated?
+AR: This was based on resource constraints and participant availability based on our inclusion criteria (c.f. response to comment 2 of reviewer 1). We have elaborated on this process and reported our inclusion criteria in page 20 of the revised manuscript.
+
+b) Participants should be described better, especially for what concerns their L2 experience. Currently, there is no information about their proficiency level, as well as their degree of exposure and use of their two languages.
+AR: Thanks for this suggestion. We have added the suggested content to the manuscript on page 19; c.f. response to comment 2 of reviewer 1.
+
+
+3. Materials, how many of the 20 words contained each of the two target vowels? Please specify this information in the text.
+AR: We have added this information on page  23:
+"Twenty monosyllabic English words: ten containing the vowel ʌ and ten containing æ, were selected as target words."
+
+
+4. Procedures.
+
+a) If I correctly understand, each word was repeated 4 times in each task (i.e., the same word was produced for a total of 8 times by each participant). If this is the case, can the authors exclude any repetition effect? And why did they opt for a so massive repetition, instead of, e.g., increasing the number of items?
+
+AR: Our choice of items was constrained by phonological considerations, to ensure that coarticulatory effects that are known to affect vowel acoustics, such as identity of the pre- and post-vocalic consonant, were minimal, and controlled across items. Thus, we only used words where the pre-vocalic consonant was a voiced plosive /b/ or /d/, and had a balanced set of post-vocalic consonants across the set of items. Taking into consideration lexical frequency (we only included common words to avoid hesitation while reading) and loanword status (we excluded lexicalized loanwords, e.g. "cup") allowed for 10 target items. We opted for a larger number of repetitions because (i) we wanted multiple responses per participant per item to control for random variability and potential production errors, and (ii) to ensure enough data points for robust statistical analyses. Given that items were presented in random order, and participants were presented with intermediate distracter tasks during the cued picture-naming which relies on language priming, we do not think that repetition effects would come into play in this design.
+
+
+b) Cued-picture naming: why was the picture presented for a so short time (50 ms)? What words were used as language cue and as target?
+
+AR: In this task the picture, named in either Bengali or English, serves to prime the participant for that particular language. The following target word then either complies with the prime (unilingual condition) or deviates from it (inducing switching; mixed condition). Since participants are already in a bilingual language mode, the effects of such priming, if any, are expected to be highly localized (c.f. discussion in section 1.2 and 1.3, page 9). We presented the picture for a short time to avoid a pause between the prime and the target that would potentially undo the effect of priming, or introduce unwarranted planning effects. Another consideration was for productions in both tasks to mimic the time course and prosody of naturalistic speech as much as possible. Thus, we wanted to avoid long pauses or unnatural intonation that might arise from producing the target as an isolated word.
+
+We have specified the words used as langauge cue, and provided a link to the list of target words, in the text (page 25).
+
+
+5. Analyses.
+a) To analyze the changes at different times during the vowel production, I would suggest to run a single model in which the time of measurement (5%, 15%, 25%, 35%, 45%) is entered as a numeric predictor (from 1 to 5). This will reduce the number of statistical models to run and, more importantly, will allow to directly study the time course of the changes.
+AR: This is an excellent suggestion, thank you! We have re-run the analysis as suggested.
+
+
+b) p. 22 ls 21-23. The authors should specify which interactions they are referring to and report the results of the statistical tests.
+AR: While we have now re-written this section to reflect the revised analysis, we have reported the effect sizes, standard errors, and p-values associated with all interaction terms of interest, and reported chi-square, degrees of freedom, and p-values for all model comparisons throughout the manuscript. 
+
+c) first analysis (p. 22, ls 24 and following). Given its relevance for the hypotheses, why not including the interaction term for the random slope since the beginning of the analysis?
+AR: We have re-written this section. We have now motivated and specified the random effects structure at the beginning of the analysis (page 28), and used that throughout, changing only the fixed effects to test our hypotheses.
+
+d) Tables reporting statistical results, please, specify in the legend what the numbers are (I assume the beta values and the standard errors (in parenthesis), but this should be spelt out).
+AR: Values are specified in the revised results tables. 
+
+e) I think the readers may appreciate few lines commenting the baseline measure (i.e., Dutta's (2021) data). Moreover, the authors should clarify whether and how these baseline data were compared to the results of their study.
+AR: We agree that this information could have been clearer in the original manuscript. We have now added a separate subsection in the introduction (page 16) discussing how we used the baseline Bengali measures, and more detailed speaker information for that data (c.f. response to comment 3 of reviewer 1).
+
+
+6. I have found the discussion a bit unbalanced, as approximately half of it is dedicated to a secondary question (i.e., the impact of the paradigm on the transfer effects). I suggest the authors to re-balance the space, expanding the discussion of their main research question – they might further develop the theoretical implications of their findings, also offering some explanation of the results they consider unexpected.
+AR: Thanks for this feedback; we have re-written the discussion section to include the suggested content (c.f. response to comment 3 of reviewer 1).
+
+Minor
+
+- p. 3 ls 39-43, To improve readiness, I would suggest the authors to consistently use only one term throughout the manuscript.
+AH: We have modified the text to use the term "transfer" throughout, and specified this in the Introduction on page 3.
+
+- in some places, the authors use capital letters to highlight some concepts, but I don't think they are really needed. Simple lower-case letters may be fine as well.
+AR: We have edited these throughout the manuscript.
+
+- Introduction, when discussing previous studies, the authors might clarify what acoustic measure each study has investigated (VOT, ...)
+AR: We have added this information to citations throughout the introduction, and specified this on page 5.
+
+- Acoustic analyses, third line, the authors report a total of 2333 target to be analyzed. How many of them were there for each target vowel?
+AR: There were 1137 tokens of [ʌ] and 1196 tokens of [æ]; we have added this information into the text on page 24.
+
+- p. 22, first line, please change “mediated” with “affected” or “moderated” or a similar term – mediated refers to mediation analysis, which is not the analysis run by the authors.
+AR: We have made this edit.
+

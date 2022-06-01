@@ -1,32 +1,6 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
-Agnihotri%
-}{%
-Agnihotri%
-}{%
-{\protect \APACyear {1979}}%
-}]{%
-agnihotri1979processes}
-\APACinsertmetastar {%
-agnihotri1979processes}%
-\begin{APACrefauthors}%
-Agnihotri, R\BPBI K.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYear{1979}.
-\unskip\
-\newblock
-\APACrefbtitle {Processes of Assimilation: A Sociolinguistic Study of Sikh
-  Children in Leeds.} {Processes of assimilation: A sociolinguistic study of
-  sikh children in leeds.}\ \APACtypeAddressSchool {\BUPhD}{}{}.
-\unskip\
-\newblock
-\APACaddressSchool {}{University of York}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Antoniou%
 , Best%
 , Tyler%
@@ -222,33 +196,6 @@ Best, C\BPBI T.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Birdsong%
-, Gertken%
-\BCBL {}\ \BBA {} Amengual%
-}{%
-Birdsong%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2012}}%
-}]{%
-blp}
-\APACinsertmetastar {%
-blp}%
-\begin{APACrefauthors}%
-Birdsong, D.%
-, Gertken, L.%
-\BCBL {}\ \BBA {} Amengual, M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2012}{}{}.
-\newblock
-\APACrefbtitle {Bilingual Language Profile: An Easy-to-Use Instrument to Assess
-  Bilingualism. COERLL, University of Texas at Austin. Web. 20 Jan. 2012.}
-  {Bilingual language profile: An easy-to-use instrument to assess
-  bilingualism. coerll, university of texas at austin. web. 20 jan. 2012.}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Boersma%
 \ \BBA {} Weenink%
 }{%
@@ -329,30 +276,34 @@ Bosch, L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Brysbaert%
-\ \BBA {} Stevens%
+Brauer%
+\ \BBA {} Curtin%
 }{%
-Brysbaert%
-\ \BBA {} Stevens%
+Brauer%
+\ \BBA {} Curtin%
 }{%
 {\protect \APACyear {2018}}%
 }]{%
-brysbaert2018power}
+brauer2018linear}
 \APACinsertmetastar {%
-brysbaert2018power}%
+brauer2018linear}%
 \begin{APACrefauthors}%
-Brysbaert, M.%
-\BCBT {}\ \BBA {} Stevens, M.%
+Brauer, M.%
+\BCBT {}\ \BBA {} Curtin, J\BPBI J.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
 \APACrefYearMonthDay{2018}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Power analysis and effect size in mixed effects models:
-  A tutorial} {Power analysis and effect size in mixed effects models: A
-  tutorial}.{\BBCQ}
+{\BBOQ}\APACrefatitle {Linear mixed-effects models and the analysis of
+  nonindependent data: A unified framework to analyze categorical and
+  continuous independent variables that vary within-subjects and/or
+  within-items.} {Linear mixed-effects models and the analysis of
+  nonindependent data: A unified framework to analyze categorical and
+  continuous independent variables that vary within-subjects and/or
+  within-items.}{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of cognition}{1}{1}{}.
+\APACjournalVolNumPages{Psychological Methods}{23}{3}{389}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -462,59 +413,6 @@ Coelho, G\BPBI M.%
   english}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Language in Society}{}{}{561--589}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Cohen%
-}{%
-Cohen%
-}{%
-{\protect \APACyear {1988}}%
-}]{%
-cohen1988statistical}
-\APACinsertmetastar {%
-cohen1988statistical}%
-\begin{APACrefauthors}%
-Cohen, J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYear{1988}.
-\newblock
-\APACrefbtitle {Statistical power analysis for the behavioral sciences}
-  {Statistical power analysis for the behavioral sciences}.
-\newblock
-\APACaddressPublisher{}{Routledge}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Das%
-, Mandal%
-\BCBL {}\ \BBA {} Mitra%
-}{%
-Das%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2011}}%
-}]{%
-shruticorpus}
-\APACinsertmetastar {%
-shruticorpus}%
-\begin{APACrefauthors}%
-Das, B.%
-, Mandal, S.%
-\BCBL {}\ \BBA {} Mitra, P.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2011}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Bengali speech corpus for continuous auutomatic speech
-  recognition system} {Bengali speech corpus for continuous auutomatic speech
-  recognition system}.{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {2011 International conference on speech database and
-  assessments (Oriental COCOSDA)} {2011 international conference on speech
-  database and assessments (oriental cocosda)}\ (\BPGS\ 51--55).
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -760,55 +658,6 @@ Fowler, C\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Gelman%
-}{%
-Gelman%
-}{%
-{\protect \APACyear {2019}}%
-}]{%
-gelman2019observed_effect_size}
-\APACinsertmetastar {%
-gelman2019observed_effect_size}%
-\begin{APACrefauthors}%
-Gelman, A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2019}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Don’t calculate post-hoc power using observed estimate
-  of effect size} {Don’t calculate post-hoc power using observed estimate of
-  effect size}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Annals of surgery}{269}{1}{e9--e10}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Ghosh%
-}{%
-Ghosh%
-}{%
-{\protect \APACyear {2016}}%
-}]{%
-ghosh2016bengali_vowels}
-\APACinsertmetastar {%
-ghosh2016bengali_vowels}%
-\begin{APACrefauthors}%
-Ghosh, S.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2016}{10}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Vowel Sound Change in Progress: A Cross-Generational
-  Study of Navaron Dialect} {Vowel sound change in progress: A
-  cross-generational study of navaron dialect}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{International Journal of English: Literature, Language
-  & Skills IJELLS}{5}{}{2278-742}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Goldrick%
 , Runnqvist%
 \BCBL {}\ \BBA {} Costa%
@@ -833,31 +682,6 @@ Goldrick, M.%
   {Language switching makes pronunciation less nativelike}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Psychological Science}{25}{4}{1031--1036}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Green%
-}{%
-Green%
-}{%
-{\protect \APACyear {1986}}%
-}]{%
-green1986control}
-\APACinsertmetastar {%
-green1986control}%
-\begin{APACrefauthors}%
-Green, D\BPBI W.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1986}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Control, activation, and resource: A framework and a
-  model for the control of speech in bilinguals} {Control, activation, and
-  resource: A framework and a model for the control of speech in
-  bilinguals}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Brain and language}{27}{2}{210--223}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1004,61 +828,6 @@ Hickey, R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Hoenig%
-\ \BBA {} Heisey%
-}{%
-Hoenig%
-\ \BBA {} Heisey%
-}{%
-{\protect \APACyear {2001}}%
-}]{%
-hoenig2001abuse}
-\APACinsertmetastar {%
-hoenig2001abuse}%
-\begin{APACrefauthors}%
-Hoenig, J\BPBI M.%
-\BCBT {}\ \BBA {} Heisey, D\BPBI M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2001}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {The abuse of power: the pervasive fallacy of power
-  calculations for data analysis} {The abuse of power: the pervasive fallacy of
-  power calculations for data analysis}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{The American Statistician}{55}{1}{19--24}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Jhingran%
-}{%
-Jhingran%
-}{%
-{\protect \APACyear {2009}}%
-}]{%
-jhingran2009hundreds}
-\APACinsertmetastar {%
-jhingran2009hundreds}%
-\begin{APACrefauthors}%
-Jhingran, D.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2009}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Hundreds of home languages in the country and many in
-  most classrooms: Coping with diversity in primary education in India}
-  {Hundreds of home languages in the country and many in most classrooms:
-  Coping with diversity in primary education in india}.{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {Social justice through multilingual education} {Social
-  justice through multilingual education}\ (\BPGS\ 263--282).
-\newblock
-\APACaddressPublisher{}{Multilingual Matters}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 B.~Kachru%
 \ \BBA {} Smith%
 }{%
@@ -1112,29 +881,6 @@ Khattab%
 }{%
 Khattab%
 }{%
-{\protect \APACyear {2009}}%
-}]{%
-khattab2009phonetic}
-\APACinsertmetastar {%
-khattab2009phonetic}%
-\begin{APACrefauthors}%
-Khattab, G.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYear{2009}.
-\newblock
-\APACrefbtitle {{Phonetic accommodation in children's code-switching}}
-  {{Phonetic accommodation in children's code-switching}}.
-\newblock
-\APACaddressPublisher{}{na}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Khattab%
-}{%
-Khattab%
-}{%
 {\protect \APACyear {2013}}%
 }]{%
 khattab2013phonetic}
@@ -1152,116 +898,6 @@ Khattab, G.%
   strategies in English-Arabic bilingual children}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Linguistics}{51}{2}{439--472}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Khubchandani%
-}{%
-Khubchandani%
-}{%
-{\protect \APACyear {1997}}%
-}]{%
-khubchandani1997language}
-\APACinsertmetastar {%
-khubchandani1997language}%
-\begin{APACrefauthors}%
-Khubchandani, L\BPBI M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1997}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Language policy and education in the Indian
-  subcontinent} {Language policy and education in the indian
-  subcontinent}.{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {Encyclopedia of language and education} {Encyclopedia of
-  language and education}\ (\BPGS\ 179--187).
-\newblock
-\APACaddressPublisher{}{Springer}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Khubchandani%
-}{%
-Khubchandani%
-}{%
-{\protect \APACyear {2021}}%
-}]{%
-khubchandani2021plural}
-\APACinsertmetastar {%
-khubchandani2021plural}%
-\begin{APACrefauthors}%
-Khubchandani, L\BPBI M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2021}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Plur{\'a}l languages, plur{\'a}l cultures} {Plur{\'a}l
-  languages, plur{\'a}l cultures}.{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {Plural Languages, Plural Cultures.} {Plural languages,
-  plural cultures.}
-\newblock
-\APACaddressPublisher{}{University of Hawaii Press}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Kumle%
-, V{\~o}%
-\BCBL {}\ \BBA {} Draschkow%
-}{%
-Kumle%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2021}}%
-}]{%
-kumle2021estimating}
-\APACinsertmetastar {%
-kumle2021estimating}%
-\begin{APACrefauthors}%
-Kumle, L.%
-, V{\~o}, M\BPBI L\BHBI H.%
-\BCBL {}\ \BBA {} Draschkow, D.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2021}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Estimating power in (generalized) linear mixed models:
-  An open introduction and tutorial in R} {Estimating power in (generalized)
-  linear mixed models: An open introduction and tutorial in r}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Behavior research methods}{53}{6}{2528--2543}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Kuznetsova%
-, Brockhoff%
-\BCBL {}\ \BBA {} Christensen%
-}{%
-Kuznetsova%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2017}}%
-}]{%
-lmerTest}
-\APACinsertmetastar {%
-lmerTest}%
-\begin{APACrefauthors}%
-Kuznetsova, A.%
-, Brockhoff, P\BPBI B.%
-\BCBL {}\ \BBA {} Christensen, R\BPBI H\BPBI B.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2017}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{lmerTest} Package: Tests in Linear Mixed Effects
-  Models} {{lmerTest} package: Tests in linear mixed effects models}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Statistical Software}{82}{13}{1--26}.
-\newblock
-\begin{APACrefDOI} \doi{10.18637/jss.v082.i13} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1294,35 +930,6 @@ MacLeod, A\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Marian%
-, Blumenfeld%
-\BCBL {}\ \BBA {} Kaushanskaya%
-}{%
-Marian%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2007}}%
-}]{%
-leap-q}
-\APACinsertmetastar {%
-leap-q}%
-\begin{APACrefauthors}%
-Marian, V.%
-, Blumenfeld, H\BPBI K.%
-\BCBL {}\ \BBA {} Kaushanskaya, M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2007}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {The Language Experience and Proficiency Questionnaire
-  (LEAP-Q): Assessing language profiles in bilinguals and multilinguals} {The
-  language experience and proficiency questionnaire (leap-q): Assessing
-  language profiles in bilinguals and multilinguals}.{\BBCQ}
-\newblock
-
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Masica%
 }{%
 Masica%
@@ -1343,56 +950,6 @@ Masica, C.%
   {{The Sound System of Indian English. Monograph No. 7.}}{\BBCQ}
 \newblock
 
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-McCloy%
-}{%
-McCloy%
-}{%
-{\protect \APACyear {2016}}%
-}]{%
-phonR}
-\APACinsertmetastar {%
-phonR}%
-\begin{APACrefauthors}%
-McCloy, D\BPBI R.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2016}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {phonR: tools for phoneticians and phonologists} {phonr:
-  tools for phoneticians and phonologists}{\BBCQ}\
-  [\bibcomputersoftwaremanual].
-\newblock
-\APACrefnote{R package version 1.0-7}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Mohanty%
-}{%
-Mohanty%
-}{%
-{\protect \APACyear {2009}}%
-}]{%
-mohanty2009multilingual}
-\APACinsertmetastar {%
-mohanty2009multilingual}%
-\begin{APACrefauthors}%
-Mohanty, A\BPBI K.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2009}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Multilingual education: A bridge too far?} {Multilingual
-  education: A bridge too far?}{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {Social justice through multilingual education} {Social
-  justice through multilingual education}\ (\BPGS\ 3--16).
-\newblock
-\APACaddressPublisher{}{Multilingual matters}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1664,63 +1221,6 @@ r}%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Ramanathan%
-}{%
-Ramanathan%
-}{%
-{\protect \APACyear {2005}}%
-}]{%
-ramanathan2005rethinking}
-\APACinsertmetastar {%
-ramanathan2005rethinking}%
-\begin{APACrefauthors}%
-Ramanathan, V.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2005}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Rethinking language planning and policy from the ground
-  up: Refashioning institutional realities and human lives} {Rethinking
-  language planning and policy from the ground up: Refashioning institutional
-  realities and human lives}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Current issues in language planning}{6}{2}{89--101}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Rodriguez-Fornells%
-, Kramer%
-, Lorenzo-Seva%
-, Festman%
-\BCBL {}\ \BBA {} M{\"u}nte%
-}{%
-Rodriguez-Fornells%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2012}}%
-}]{%
-language_switching_questionnaire}
-\APACinsertmetastar {%
-language_switching_questionnaire}%
-\begin{APACrefauthors}%
-Rodriguez-Fornells, A.%
-, Kramer, U.%
-, Lorenzo-Seva, U.%
-, Festman, J.%
-\BCBL {}\ \BBA {} M{\"u}nte, T\BPBI F.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2012}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Self-assessment of individual differences in language
-  switching} {Self-assessment of individual differences in language
-  switching}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Frontiers in Psychology}{2}{}{388}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Rubino%
 \ \BBA {} Garry%
 }{%
@@ -1940,35 +1440,6 @@ Sirsa, H.%
   sounds and timing patterns}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of phonetics}{41}{6}{393--406}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Stuart-Smith%
-\ \protect \BOthers {.}}{%
-Stuart-Smith%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2011}}%
-}]{%
-stuart2011hybridity}
-\APACinsertmetastar {%
-stuart2011hybridity}%
-\begin{APACrefauthors}%
-Stuart-Smith, J.%
-, Timmins, C.%
-, Alam, F.%
-, Gregersen, F.%
-, Parrot, J.%
-\BCBL {}\ \BBA {} Quist, P.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2011}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Hybridity and ethnic accents} {Hybridity and ethnic
-  accents}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Selected Papers ICLaVE Amsterdam:
-  Benjamins}{5}{}{43--57}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
