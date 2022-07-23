@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.12.14)  21 MAY 2022 07:58
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.12.14)  23 JUL 2022 10:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1436,10 +1436,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 712.
 Here is how much of TeX's memory you used:
  22571 strings out of 492970
  398897 string characters out of 6137297
- 473457 words of memory out of 5000000
+ 473458 words of memory out of 5000000
  26219 multiletter control sequences out of 15000+600000
  8491 words of font info for 35 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 69i,12n,70p,2876b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on BLC_AM-ID_manuscript.pdf (67 pages).
+ 1348 hyphenation exceptions out of 8
