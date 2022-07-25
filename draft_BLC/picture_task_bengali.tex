@@ -1,0 +1,45 @@
+\documentclass[border=0pt]{standalone}
+
+%\usepackage[banglamainfont=Kalpurush,
+%banglattfont=Siyam Rupali
+%]{latexbangla}
+
+\usepackage{polyglossia}
+\setotherlanguage[numerals=Devanagari]{bengali}
+\setmainlanguage{english}
+\newfontfamily\englishfont[Scale=MatchLowercase]{Linux Biolinum O}
+\newfontfamily\bengalifont[Script=Bengali]{Akaash}
+
+\usepackage{graphicx} %for images
+\graphicspath{{images/}}
+
+\usepackage{stackengine,xcolor,tikz}
+\usetikzlibrary{arrows}
+\newcommand\myscreen{\fcolorbox{white}{black}{\rule{50pt}{40pt}}}
+\renewcommand\useanchorwidth{T}
+\newcommand\newscreen[3]{%
+	\savestack#1{\stackunder{%
+			\stackinset{c}{}{c}{}{\textcolor{white}{\bfseries#2}}{\myscreen}%
+		}{\tiny#3}}}
+\tikzset{line/.style={draw, thick, -latex'}}
+\fboxsep=0pt 
+\sffamily
+\savestack\Wall{\textcolor{white}{\rule{200pt}{145pt}}}
+\newscreen\Fa{\textbengali{অধ্যায়}}{lang cue}
+\newscreen\Fb{\includegraphics[width=48pt]{fish_black_bg.png}}{(50 ms)}
+\newscreen\Fc{done}{target}
+\newscreen\Fd{$20+6 = ?$}{distractor}
+%\newscreen\Fe{}{50 ms}
+%\newscreen\Ff{cat}{Tail response}
+\begin{document}
+	
+	\begin{tikzpicture}[inner sep=0pt]
+		\node at (0,0) {\stackinset{l}{165pt}{t}{112pt}{\Ff}{%
+				\stackinset{l}{125pt}{t}{82pt}{\Fe}{%
+					\stackinset{l}{135pt}{t}{65pt}{\Fd}{%
+						\stackinset{l}{95pt}{t}{45pt}{\Fc}{%
+							\stackinset{l}{55pt}{t}{25pt}{\Fb}{%
+								\stackinset{l}{15pt}{t}{5pt}{\Fa}{\Wall}}}}}}};
+		\draw[line, blue]  (-3.3,0.5)  to [|-] (1.7,-2);
+	\end{tikzpicture}
+\end{document}

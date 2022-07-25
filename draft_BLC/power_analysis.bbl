@@ -1,0 +1,132 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Brysbaert%
+\ \BBA {} Stevens%
+}{%
+Brysbaert%
+\ \BBA {} Stevens%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+brysbaert2018power}
+\APACinsertmetastar {%
+brysbaert2018power}%
+\begin{APACrefauthors}%
+Brysbaert, M.%
+\BCBT {}\ \BBA {} Stevens, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Power analysis and effect size in mixed effects models:
+  A tutorial} {Power analysis and effect size in mixed effects models: A
+  tutorial}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of cognition}{1}{1}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Cohen%
+}{%
+Cohen%
+}{%
+{\protect \APACyear {1988}}%
+}]{%
+cohen1988statistical}
+\APACinsertmetastar {%
+cohen1988statistical}%
+\begin{APACrefauthors}%
+Cohen, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1988}.
+\newblock
+\APACrefbtitle {Statistical power analysis for the behavioral sciences}
+  {Statistical power analysis for the behavioral sciences}.
+\newblock
+\APACaddressPublisher{}{Routledge}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gelman%
+}{%
+Gelman%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+gelman2019observed_effect_size}
+\APACinsertmetastar {%
+gelman2019observed_effect_size}%
+\begin{APACrefauthors}%
+Gelman, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Don’t calculate post-hoc power using observed estimate
+  of effect size} {Don’t calculate post-hoc power using observed estimate of
+  effect size}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Annals of surgery}{269}{1}{e9--e10}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hoenig%
+\ \BBA {} Heisey%
+}{%
+Hoenig%
+\ \BBA {} Heisey%
+}{%
+{\protect \APACyear {2001}}%
+}]{%
+hoenig2001abuse}
+\APACinsertmetastar {%
+hoenig2001abuse}%
+\begin{APACrefauthors}%
+Hoenig, J\BPBI M.%
+\BCBT {}\ \BBA {} Heisey, D\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2001}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The abuse of power: the pervasive fallacy of power
+  calculations for data analysis} {The abuse of power: the pervasive fallacy of
+  power calculations for data analysis}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The American Statistician}{55}{1}{19--24}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kumle%
+, V{\~o}%
+\BCBL {}\ \BBA {} Draschkow%
+}{%
+Kumle%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+kumle2021estimating}
+\APACinsertmetastar {%
+kumle2021estimating}%
+\begin{APACrefauthors}%
+Kumle, L.%
+, V{\~o}, M\BPBI L\BHBI H.%
+\BCBL {}\ \BBA {} Draschkow, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Estimating power in (generalized) linear mixed models:
+  An open introduction and tutorial in R} {Estimating power in (generalized)
+  linear mixed models: An open introduction and tutorial in r}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Behavior research methods}{53}{6}{2528--2543}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
