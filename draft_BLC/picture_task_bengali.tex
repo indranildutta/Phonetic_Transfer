@@ -4,12 +4,6 @@
 %banglattfont=Siyam Rupali
 %]{latexbangla}
 
-\usepackage{polyglossia}
-\setotherlanguage[numerals=Devanagari]{bengali}
-\setmainlanguage{english}
-\newfontfamily\englishfont[Scale=MatchLowercase]{Linux Biolinum O}
-\newfontfamily\bengalifont[Script=Bengali]{Akaash}
-
 \usepackage{graphicx} %for images
 \graphicspath{{images/}}
 
@@ -25,7 +19,7 @@
 \fboxsep=0pt 
 \sffamily
 \savestack\Wall{\textcolor{white}{\rule{200pt}{145pt}}}
-\newscreen\Fa{\textbengali{অধ্যায়}}{lang cue}
+\newscreen\Fa{অধ্যায়}{lang cue}
 \newscreen\Fb{\includegraphics[width=48pt]{fish_black_bg.png}}{(50 ms)}
 \newscreen\Fc{done}{target}
 \newscreen\Fd{$20+6 = ?$}{distractor}

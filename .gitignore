@@ -1,6 +1,9 @@
 ~$BLC_reviewer_comments.xlsx
 PULL_FIRST.txt
-.Rproj.user/
+\.Rproj\.user/
 shruti/
-.Rdata
+\.RData
 Bilingual Language Profile_ English-Bangla.csv.zip
+RCode/.RData
+*\.R*
+.Rproj.user

@@ -108,8 +108,7 @@ five weeks of learning a language as involving bilinguals.
 AR: We have rephrased this line on page 10: "The research discussed above concerns situations where a speaker is operating in any one of their languages"
 
 
-page 13: It wasn’t clear to me how the discussion of the Bengali laryngeal contrast was relevant
-here.
+page 13: It wasn’t clear to me how the discussion of the Bengali laryngeal contrast was relevant here.
 AR: We discuss the four-way laryngeal contrast to motivate our use of vowels as the feature of interest in this study, rather than VOT. The large body of literature on phonetic transfer in VOT is largely based around languages where VOT is the primary cue for voicing contrast (voiced vs voiceless). Thus, exploiting canonical VOT differences between languages allows us to ascertain cross-language influence. In Bengali, the voicing contrast is four-way (voiced vs voiceless, aspirated/breathy vs unaspirated), and VOT is not the primary cue for this contrast. If we were to examine changes to L2 IE VOT as a result of L1 Bengali influence, it would be difficult to interpret the observations in a straightforward manner, owing to the additional phonological differences between the languages.  
 
 ------------------------------------------------------------------------------------------------------------------

@@ -8,7 +8,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = TRUE, message = TRUE)
 
-options(scipen=999) # turn off scientific e notation, show full numbers. To turn on: options(scipen=0)
+options(scipen=0) # turn off scientific e notation: options(scipen=999), show full numbers. To turn on: options(scipen=0)
 ```
 
 Load packages and data, create objects for lobanov normalized F1 and F2, create dataframe.
@@ -367,7 +367,7 @@ rm(df_eng_unilingual)
 
 
 ```{r}
-## final result plot:
+## final result plot (unilingual IE + mixed + baseline Bengali):
 
 df_eng_plots <- df_time %>%
   filter(time %in% (3:5))
@@ -436,11 +436,11 @@ df_lobanov_gender_time <- df_lobanov_time %>%
 rm(gender_normalized)  
 ```
 
+
 Plots after gender normalization:
 
 ```{r}
 
-# raw FFs
 with(df_lobanov_gender_time, plotVowels(f1, f2, vowel, group = gender,
                                plot.tokens = F, plot.means = TRUE , pch.tokens = vowel, pch.means = vowel,
                                var.col.by = vowel, var.sty.by = gender, 
@@ -453,6 +453,67 @@ with(df_lobanov_gender_time, plotVowels(f1, f2, vowel, group = gender,
 
 
 ```
+
+---
+
+### 29.7.2022 (second round revision):
+
+gender normalizing the raw (non-z-score normalized) data
+
+```{r}
+
+gender_normalized <- with(df_time, normLobanov(cbind(f1,f2), group=gender))
+
+df_gender_time <- df_time %>%
+  select(!c(f1,f2)) %>%
+  mutate(f1 = gender_normalized$f1,
+         f2 = gender_normalized$f2)
+
+rm(gender_normalized) 
+
+```
+
+```{r}
+
+# Plots before gender normalization:
+
+xlim = c(2500, 700)
+ylim = c(1400, 100)
+
+with(df_time, plotVowels(f1, f2, vowel, group = gender,
+                               plot.tokens = F, plot.means = TRUE , pch.tokens = vowel, pch.means = vowel,
+                               var.col.by = vowel, var.sty.by = gender, 
+                               cex.tokens = 0.8, cex.means = 1, alpha.means = 0.5,alpha.tokens = 0.3,
+                               ellipse.line = T,  ellipse.fill = T,
+                               poly.line = F, poly.order = c("\\ae","\\vt"),
+                               xlim = xlim, ylim = ylim, 
+                               legend.kwd = "bottomright", legend.args = gender,
+                               fill.opacity = 0.05, pretty = TRUE))
+
+
+```
+
+```{r}
+
+# Plots after gender normalization:
+
+xlim = c(3, -3)
+ylim = c(4, -4)
+
+with(df_gender_time, plotVowels(f1, f2, vowel, group = gender,
+                               plot.tokens = F, plot.means = TRUE , pch.tokens = vowel, pch.means = vowel,
+                               var.col.by = vowel, var.sty.by = gender, 
+                               cex.tokens = 0.8, cex.means = 1, alpha.means = 0.5,alpha.tokens = 0.3,
+                               ellipse.line = T,  ellipse.fill = T,
+                               poly.line = F, poly.order = c("\\ae","\\vt"),
+                               xlim = xlim, ylim = ylim, 
+                               legend.kwd = "bottomright", legend.args = gender,
+                               fill.opacity = 0.05, pretty = TRUE))
+
+
+```
+
+---
 
 ## LME models:
 
@@ -492,7 +553,7 @@ temp <- df_lobanov_gender_time %>%
 
 # full model
 phon_acco.model_f1 = lmer(f1 ~ 
-                         time*vowel + vowel*context*task + time*task +
+                         time*vowel + vowel*context +
                          (1+context|word) + (1+context+vowel|subject), 
                          data= temp, REML=FALSE, control = lmerControl(optimizer = "bobyqa"))
 
@@ -509,7 +570,7 @@ d_F1 <- lme.dscore(phon_acco.model, data=temp, type='lme4')
 
 # null model
 null.model = lmer(f1~
-                   time*vowel + vowel*context*task + time*task +
+                   time*vowel +
                    (1+context|word) + (1+context+vowel|subject), 
                    data= temp, REML=FALSE, control = lmerControl(optimizer = "bobyqa")) 
 
@@ -523,6 +584,42 @@ anova(phon_acco.model_f1, null.model)
 #modelsummary(phon_acco.model)
 
 ```
+
+---
+
+### 29.7.2022 (second round revision):
+
+Fitting models to non-z-score-normalized data (only gender normalized)
+
+```{r, eval=FALSE}
+
+temp_raw <- df_gender_time %>%
+  mutate(time = as.numeric(time)) %>%
+  mutate(time = scale(time))
+
+# F1
+
+# full model
+raw_phon_acco.model_f1 = lmer(f1 ~ 
+                         time*vowel + task*vowel*context +
+                         (1+context|word) + (1+context+vowel|subject), 
+                         data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa"))
+
+summary(raw_phon_acco.model_f1)
+
+
+# null model
+raw_null.model = lmer(f1~
+                   time*vowel + vowel*context +
+                   (1+context|word) + (1+context+vowel|subject), 
+                   data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa")) 
+
+summary(raw_null.model)
+
+anova(raw_phon_acco.model_f1, raw_null.model)
+
+```
+
 
 Random effects structure: (1+context|word) + (1+context+vowel|subject). But by-word random slope for context is explaining barely any variance, and null model is not converging. So removing that: (1|word) + (1+context+vowel|subject)
 
@@ -813,6 +910,7 @@ There is literature saying that power analysis is not very relevant if an effect
 say:power for vowel\*context is lower than 80%. Means that: for a effect of this size, if it is present, there is a 40% chance that we may not observe it in the data. This means that if we get a null result, we should be careful about interpreting this as an absence of effect, and future studies should instead repeat this with larger sample sizes. For vowel\*context\*task, however, power is more than 80%. Thus, we can reasonably interpret the absence of statistical significance as an absence of the effect. 
 
 ```{r, eval=FALSE, include=FALSE}
+
 # scratch pad: additional code for manuscript revision
 
 temp <- df_lobanov %>%
@@ -821,3 +919,276 @@ temp <- df_lobanov %>%
 # total: 2333; ʌ: 1137, æ: 1196
 
 ```
+
+
+## 29.7.2022 (second round revision):
+
+Content for separate .rmd file:
+
+Fitting models to non-z-score-normalized data (only gender normalized)
+
+```{r, eval=FALSE}
+
+temp_raw <- df_gender_time %>%
+  mutate(time = as.numeric(time)) %>%
+  mutate(time = scale(time))
+
+```
+
+
+### F1
+
+First, to test our first research question (L2 vowels), we fitted a model with vowel\*time, and vowel\*context as fixed effects. Comparing this to a null model that lacks the transfer term shows that the full model is significantly better. To confirm whether the effect of context is moderated by vowel identity, we compared a second null model that contained Context as a fixed effect, but lacked the Context*Vowel interaction. The full model was better.
+
+```{r}
+
+# full model
+raw_phon_acco.model_f1 = lmer(f1 ~ 
+                         time*vowel + vowel*context +
+                         (1+context|word) + (1+context+vowel|subject), 
+                         data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa"))
+
+summary(raw_phon_acco.model_f1)
+
+
+# null model 1
+raw_null.model = lmer(f1~
+                   time*vowel +
+                   (1+context|word) + (1+context+vowel|subject), 
+                   data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa")) 
+
+summary(raw_null.model)
+
+anova(raw_phon_acco.model_f1, raw_null.model)
+
+
+# null model 2
+raw_null.model = lmer(f1~
+                   time*vowel + context +
+                   (1+context|word) + (1+context+vowel|subject), 
+                   data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa")) 
+
+summary(raw_null.model)
+
+anova(raw_phon_acco.model_f1, raw_null.model)
+
+```
+
+To test the hypothesis Paradigm, we fitted a model with vowel*time and task*vowel*context as fixed effects. This three-way interaction term is significant. Comparing this model to a null model that lacks the fixed effect Task shows that the full model is better. Because Task has an independent effect on F1, and adding interactions increases model parameters, we fitted a second null model with Task as a separate fixed effect without the interaction term
+to test whether the interaction term is needed. However, the full model was still a better fit for the data:
+
+```{r}
+
+# full model
+raw_phon_acco.model_f1 = lmer(f1 ~ 
+                         time*vowel + task*vowel*context +
+                         (1+context|word) + (1+context+vowel|subject), 
+                         data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa"))
+
+summary(raw_phon_acco.model_f1)
+
+
+# null model 1
+raw_null.model = lmer(f1~
+                   time*vowel + vowel*context +
+                   (1+context|word) + (1+context+vowel|subject), 
+                   data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa")) 
+
+summary(raw_null.model)
+
+anova(raw_phon_acco.model_f1, raw_null.model)
+
+
+# null model 2
+raw_null.model = lmer(f1~
+                   time*vowel + vowel*context + task +
+                   (1+context|word) + (1+context+vowel|subject), 
+                   data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa")) 
+
+summary(raw_null.model)
+
+anova(raw_phon_acco.model_f1, raw_null.model)
+
+```
+
+Because an independent effect of task on FFs is unexpected (c.f. model interpretation below), we wanted to examine if the effect might be local, i.e. decrease over time. We added a task*time interaction term to the full model, which is significant and improves model fit.
+
+```{r}
+
+# full model
+raw_phon_acco.model_f1 = lmer(f1 ~ 
+                         time*vowel + task*vowel*context + task*time +
+                         (1+context|word) + (1+context+vowel|subject), 
+                         data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa"))
+
+summary(raw_phon_acco.model_f1)
+
+
+# null model 
+raw_null.model = lmer(f1~
+                   time*vowel + task*vowel*context +
+                   (1+context|word) + (1+context+vowel|subject), 
+                   data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa")) 
+
+summary(raw_null.model)
+
+anova(raw_phon_acco.model_f1, raw_null.model)
+
+```
+
+Next, to examine the dynamics of transfer, we added a three-way interaction between the transfer term (vowel\*context) and time. This term has a significant effect, but does not significantly improve model fit compared to a null model lacking the vowel\*context\*time term. 
+
+```{r}
+
+# full model
+raw_phon_acco.model_f1 = lmer(f1 ~ 
+                         time*vowel + task*vowel*context + task*time + vowel*context*time +
+                         (1+context|word) + (1+context+vowel|subject), 
+                         data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa"))
+
+summary(raw_phon_acco.model_f1)
+
+
+# null model 
+raw_null.model = lmer(f1~
+                   time*vowel + task*vowel*context + task*time +
+                   (1+context|word) + (1+context+vowel|subject), 
+                   data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa")) 
+
+summary(raw_null.model)
+
+anova(raw_phon_acco.model_f1, raw_null.model)
+
+```
+
+Thus, the optimal model was: f1 ~ time\*vowel + vowel\*context\*task + time\*task + (1 + context|word) + (1 + context + vowel|subject).
+
+
+### F2
+
+First, to test our first research question (L2 vowels), we fitted a model with vowel\*time, and vowel\*context as fixed effects. Comparing this to a null model that lacks the transfer term shows that the full model is significantly better. To confirm whether the effect of context is moderated by vowel identity, we compared a second null model that contained Context as a fixed effect, but lacked the Context*Vowel interaction. The full model was better.
+
+```{r}
+
+# full model
+raw_phon_acco.model_f2 = lmer(f2 ~ 
+                         time*vowel + vowel*context +
+                         (1+context|word) + (1+context+vowel|subject), 
+                         data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa"))
+
+summary(raw_phon_acco.model_f2)
+
+
+# null model 1
+raw_null.model = lmer(f2~
+                   time*vowel +
+                   (1+context|word) + (1+context+vowel|subject), 
+                   data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa")) 
+
+summary(raw_null.model)
+
+anova(raw_phon_acco.model_f2, raw_null.model)
+
+
+# null model 2
+raw_null.model = lmer(f2~
+                   time*vowel + context +
+                   (1+context|word) + (1+context+vowel|subject), 
+                   data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa")) 
+
+summary(raw_null.model)
+
+anova(raw_phon_acco.model_f2, raw_null.model)
+
+
+```
+
+To test the hypothesis Paradigm, we fitted a model with vowel\*time and task\*vowel\*context as fixed effects. While task has an independent effect on F2, the three-way interaction term is not significant. However, there are significant two-way interactions between task\*context and task\*vowel. Comparing this to a null model
+that lacks the fixed effect Task confirms that the full model is still a better fit for the data, indicating that an optimal model should contain the term Task. To confirm whether Task interacts with any of the other terms, we fitted a model with Task as a separate fixed effect without the interaction term. Comparing this to the full (interaction) model shows that the latter is still a better fit.
+
+
+```{r}
+
+# full model
+raw_phon_acco.model_f2 = lmer(f2 ~ 
+                         time*vowel + task*vowel*context +
+                         (1+context|word) + (1+context+vowel|subject), 
+                         data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa"))
+
+summary(raw_phon_acco.model_f2)
+
+
+# null model 1
+raw_null.model = lmer(f2~
+                   time*vowel + vowel*context +
+                   (1+context|word) + (1+context+vowel|subject), 
+                   data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa")) 
+
+summary(raw_null.model)
+
+anova(raw_phon_acco.model_f2, raw_null.model)
+
+
+# null model 2
+raw_null.model = lmer(f2~
+                   time*vowel + vowel*context + task +
+                   (1+context|word) + (1+context+vowel|subject), 
+                   data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa")) 
+
+summary(raw_null.model)
+
+anova(raw_phon_acco.model_f2, raw_null.model)
+
+```
+
+Because an independent effect of task on FFs is unexpected (c.f. model interpretation below), we wanted to examine if the effect might be local, i.e. decrease over time. We added a task\*time interaction term to the full model, which is significant and improves model fit.
+
+```{r}
+
+# full model
+raw_phon_acco.model_f2 = lmer(f2 ~ 
+                         time*vowel + task*vowel*context + task*time +
+                         (1+context|word) + (1+context+vowel|subject), 
+                         data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa"))
+
+summary(raw_phon_acco.model_f2)
+
+
+# null model
+raw_null.model = lmer(f2~
+                   time*vowel + task*vowel*context +
+                   (1+context|word) + (1+context+vowel|subject), 
+                   data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa")) 
+
+summary(raw_null.model)
+
+anova(raw_phon_acco.model_f2, raw_null.model)
+
+```
+
+Next, to examine the dynamics of transfer, we added a three-way interaction between the transfer term (vowel\*context) and time. This term is not significant, and does not significantly improve model fit compared to a null model lacking the vowel\*context\*time term. 
+
+```{r}
+
+# full model
+raw_phon_acco.model_f2 = lmer(f2 ~ 
+                         time*vowel + task*vowel*context + task*time + vowel*context*time +
+                         (1+context|word) + (1+context+vowel|subject), 
+                         data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa"))
+
+summary(raw_phon_acco.model_f2)
+
+
+# null model
+raw_null.model = lmer(f2~
+                   time*vowel + task*vowel*context + task*time +
+                   (1+context|word) + (1+context+vowel|subject), 
+                   data= temp_raw, REML=FALSE, control = lmerControl(optimizer = "bobyqa")) 
+
+summary(raw_null.model)
+
+anova(raw_phon_acco.model_f2, raw_null.model)
+
+```
+
+Thus, the optimal model is: f2 ~ vowel\*time + vowel\*context\*task + task\*time + (1+context|word) + (1+context+vowel|subject).
