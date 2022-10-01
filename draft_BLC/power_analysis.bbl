@@ -1,6 +1,34 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Birdsong%
+, Gertken%
+\BCBL {}\ \BBA {} Amengual%
+}{%
+Birdsong%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+blp}
+\APACinsertmetastar {%
+blp}%
+\begin{APACrefauthors}%
+Birdsong, D.%
+, Gertken, L.%
+\BCBL {}\ \BBA {} Amengual, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+\APACrefbtitle {Bilingual Language Profile: An Easy-to-Use Instrument to Assess
+  Bilingualism. {COERLL}, {U}niversity of {T}exas at {A}ustin. Web. 20 Jan.
+  2012.} {Bilingual language profile: An easy-to-use instrument to assess
+  bilingualism. {COERLL}, {U}niversity of {T}exas at {A}ustin. web. 20 jan.
+  2012.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Brysbaert%
 \ \BBA {} Stevens%
 }{%
@@ -24,7 +52,7 @@ Brysbaert, M.%
   A tutorial} {Power analysis and effect size in mixed effects models: A
   tutorial}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of cognition}{1}{1}{}.
+\APACjournalVolNumPages{Journal of Cognition}{1}{1}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -48,6 +76,34 @@ Cohen, J.%
   {Statistical power analysis for the behavioral sciences}.
 \newblock
 \APACaddressPublisher{}{Routledge}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dziak%
+, Dierker%
+\BCBL {}\ \BBA {} Abar%
+}{%
+Dziak%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+dziak2020interpretation}
+\APACinsertmetastar {%
+dziak2020interpretation}%
+\begin{APACrefauthors}%
+Dziak, J\BPBI J.%
+, Dierker, L\BPBI C.%
+\BCBL {}\ \BBA {} Abar, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The interpretation of statistical power after the data
+  have been gathered} {The interpretation of statistical power after the data
+  have been gathered}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Current Psychology}{39}{3}{870--877}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -102,6 +158,87 @@ Hoenig, J\BPBI M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Jhingran%
+}{%
+Jhingran%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+jhingran2009hundreds}
+\APACinsertmetastar {%
+jhingran2009hundreds}%
+\begin{APACrefauthors}%
+Jhingran, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Hundreds of home languages in the country and many in
+  most classrooms: Coping with diversity in primary education in India}
+  {Hundreds of home languages in the country and many in most classrooms:
+  Coping with diversity in primary education in india}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Social justice through multilingual education} {Social
+  justice through multilingual education}\ (\BPGS\ 263--282).
+\newblock
+\APACaddressPublisher{}{Multilingual Matters}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Khubchandani%
+}{%
+Khubchandani%
+}{%
+{\protect \APACyear {1997}}%
+}]{%
+khubchandani1997language}
+\APACinsertmetastar {%
+khubchandani1997language}%
+\begin{APACrefauthors}%
+Khubchandani, L\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1997}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Language policy and education in the {I}ndian
+  subcontinent} {Language policy and education in the {I}ndian
+  subcontinent}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Encyclopedia of language and education} {Encyclopedia of
+  language and education}\ (\BPGS\ 179--187).
+\newblock
+\APACaddressPublisher{}{Springer}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Khubchandani%
+}{%
+Khubchandani%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+khubchandani2021plural}
+\APACinsertmetastar {%
+khubchandani2021plural}%
+\begin{APACrefauthors}%
+Khubchandani, L\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Plur{\'a}l languages, plur{\'a}l cultures} {Plur{\'a}l
+  languages, plur{\'a}l cultures}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Plural Languages, Plural Cultures.} {Plural languages,
+  plural cultures.}
+\newblock
+\APACaddressPublisher{}{University of Hawaii Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Kumle%
 , V{\~o}%
 \BCBL {}\ \BBA {} Draschkow%
@@ -127,6 +264,195 @@ Kumle, L.%
   linear mixed models: An open introduction and tutorial in r}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Behavior research methods}{53}{6}{2528--2543}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lakens%
+}{%
+Lakens%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+lakens_2021}
+\APACinsertmetastar {%
+lakens_2021}%
+\begin{APACrefauthors}%
+Lakens, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{Jan}{}.
+\newblock
+\APACrefbtitle {Sample Size Justification.} {Sample size justification.}
+\newblock
+\APACaddressPublisher{}{PsyArXiv}.
+\newblock
+\begin{APACrefURL} \url{psyarxiv.com/9d3yf} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1525/collabra.33267} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lenth%
+}{%
+Lenth%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+lenth2007post}
+\APACinsertmetastar {%
+lenth2007post}%
+\begin{APACrefauthors}%
+Lenth, R\BPBI V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Post hoc power: tables and commentary} {Post hoc power:
+  tables and commentary}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Iowa City: Department of Statistics and Actuarial
+  Science, University of Iowa}{}{}{1--13}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Marian%
+, Blumenfeld%
+\BCBL {}\ \BBA {} Kaushanskaya%
+}{%
+Marian%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+leap-q}
+\APACinsertmetastar {%
+leap-q}%
+\begin{APACrefauthors}%
+Marian, V.%
+, Blumenfeld, H\BPBI K.%
+\BCBL {}\ \BBA {} Kaushanskaya, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Language Experience and Proficiency Questionnaire
+  (LEAP-Q): Assessing language profiles in bilinguals and multilinguals} {The
+  language experience and proficiency questionnaire (leap-q): Assessing
+  language profiles in bilinguals and multilinguals}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mohanty%
+}{%
+Mohanty%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+mohanty2009multilingual}
+\APACinsertmetastar {%
+mohanty2009multilingual}%
+\begin{APACrefauthors}%
+Mohanty, A\BPBI K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Multilingual education: A bridge too far?} {Multilingual
+  education: A bridge too far?}{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Social justice through multilingual education} {Social
+  justice through multilingual education}\ (\BPGS\ 3--16).
+\newblock
+\APACaddressPublisher{}{Multilingual matters}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ramanathan%
+}{%
+Ramanathan%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+ramanathan2005rethinking}
+\APACinsertmetastar {%
+ramanathan2005rethinking}%
+\begin{APACrefauthors}%
+Ramanathan, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Rethinking language planning and policy from the ground
+  up: Refashioning institutional realities and human lives} {Rethinking
+  language planning and policy from the ground up: Refashioning institutional
+  realities and human lives}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Current issues in language planning}{6}{2}{89--101}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rodriguez-Fornells%
+, Kramer%
+, Lorenzo-Seva%
+, Festman%
+\BCBL {}\ \BBA {} M{\"u}nte%
+}{%
+Rodriguez-Fornells%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+language_switching_questionnaire}
+\APACinsertmetastar {%
+language_switching_questionnaire}%
+\begin{APACrefauthors}%
+Rodriguez-Fornells, A.%
+, Kramer, U.%
+, Lorenzo-Seva, U.%
+, Festman, J.%
+\BCBL {}\ \BBA {} M{\"u}nte, T\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Self-assessment of individual differences in language
+  switching} {Self-assessment of individual differences in language
+  switching}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Frontiers in Psychology}{2}{}{388}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tollefson%
+\ \BBA {} Tsui%
+}{%
+Tollefson%
+\ \BBA {} Tsui%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+tollefson2014language}
+\APACinsertmetastar {%
+tollefson2014language}%
+\begin{APACrefauthors}%
+Tollefson, J\BPBI W.%
+\BCBT {}\ \BBA {} Tsui, A\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Language diversity and language policy in educational
+  access and equity} {Language diversity and language policy in educational
+  access and equity}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Review of Research in Education}{38}{1}{189--214}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

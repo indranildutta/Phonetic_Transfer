@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.12.14)  30 SEP 2022 22:23
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.12.14)  30 SEP 2022 22:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1040,12 +1040,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 345--348
+Underfull \hbox (badness 10000) in paragraph at lines 344--347
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
 
  []
 
@@ -1056,7 +1056,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
@@ -1067,7 +1067,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 361--362
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
 
  []
 
@@ -1099,12 +1099,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 397--398
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--401
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
 
  []
 
@@ -1145,7 +1145,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [34]
 
 LaTeX Font Warning: Font shape `TU/ptm/bx/it' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 444.
+(Font)              using `TU/ptm/bx/n' instead on input line 443.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1226,13 +1226,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [45]
 
 LaTeX Font Warning: Font shape `TU/ptm/bx/sc' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 490.
+(Font)              using `TU/ptm/bx/n' instead on input line 489.
 
-LaTeX Font Info:    Try loading font information for TU+pcr on input line 493.
-LaTeX Font Info:    No file TUpcr.fd. on input line 493.
+LaTeX Font Info:    Try loading font information for TU+pcr on input line 492.
+LaTeX Font Info:    No file TUpcr.fd. on input line 492.
 
 LaTeX Font Warning: Font shape `TU/pcr/bx/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 493.
+(Font)              using `TU/lmr/m/n' instead on input line 492.
 
 (./BLC_AM-ID_manuscript.bbl
 
@@ -1306,7 +1306,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 ! Undefined control sequence.
 \@sharp ->\multirow 
                     {}{}{}
-l.524 ^^I}
+l.523 ^^I}
           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1317,7 +1317,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \multirow 
                           
-l.524 ^^I}
+l.523 ^^I}
           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1376,7 +1376,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/vowels_unilingual_ie_bengali.png Graphic file (type bmp)
 <images/vowels_unilingual_ie_bengali.png>
 
-Overfull \hbox (36.13742pt too wide) in paragraph at lines 617--618
+Overfull \hbox (36.13742pt too wide) in paragraph at lines 616--617
 [][] 
  []
 
@@ -1390,7 +1390,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/vowels_e_b_final.png Graphic file (type bmp)
 <images/vowels_e_b_final.png>
 
-Overfull \hbox (36.13742pt too wide) in paragraph at lines 625--626
+Overfull \hbox (36.13742pt too wide) in paragraph at lines 624--625
 [][] 
  []
 
@@ -1415,7 +1415,7 @@ File: picture_task_eng.pdf Graphic file (type pdf)
 <use picture_task_eng.pdf>
 File: picture_task_bengali.pdf Graphic file (type pdf)
 <use picture_task_bengali.pdf>
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 676.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 675.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1437,25 +1437,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [64]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 676.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 675.
  (./BLC_AM-ID_manuscript.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 676.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 676.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 675.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 675.
 Package rerunfilecheck Info: File `BLC_AM-ID_manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 1BED9170055872E7B6366B9838BF55BA.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 676.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 675.
  ) 
 Here is how much of TeX's memory you used:
  23667 strings out of 492970
  418117 string characters out of 6137297
- 491643 words of memory out of 5000000
+ 492643 words of memory out of 5000000
  27272 multiletter control sequences out of 15000+600000
  8491 words of font info for 35 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 84i,12n,70p,2911b,601s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,12n,70p,2915b,599s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on BLC_AM-ID_manuscript.pdf (64 pages).
