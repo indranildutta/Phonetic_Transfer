@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.12.14)  7 OCT 2022 22:13
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.12.14)  9 OCT 2022 23:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -905,6 +905,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 188.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 188.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1008,6 +1013,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [19]
 
+Package caption Warning: \label without proper reference on input line 565.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `figure_picture_task' on page 20 undefined on input li
+ne 306.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -1024,13 +1037,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 327--328
  []
 
 
+Package caption Warning: \label without proper reference on input line 565.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `figure_picture_task' on page 21 undefined on input li
+ne 329.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 337--338
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
 
  []
 
@@ -1041,7 +1062,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 339--340
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
 
  []
 
@@ -1061,15 +1082,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [24]
 
 LaTeX Font Warning: Font shape `TU/ptm/bx/it' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 359.
+(Font)              using `TU/ptm/bx/n' instead on input line 362.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--363
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
 
  []
 
@@ -1152,13 +1173,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [35]
 
 LaTeX Font Warning: Font shape `TU/ptm/bx/sc' undefined
-(Font)              using `TU/ptm/bx/n' instead on input line 428.
+(Font)              using `TU/ptm/bx/n' instead on input line 431.
 
-LaTeX Font Info:    Try loading font information for TU+pcr on input line 431.
-LaTeX Font Info:    No file TUpcr.fd. on input line 431.
+LaTeX Font Info:    Try loading font information for TU+pcr on input line 434.
+LaTeX Font Info:    No file TUpcr.fd. on input line 434.
 
 LaTeX Font Warning: Font shape `TU/pcr/bx/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 431.
+(Font)              using `TU/lmr/m/n' instead on input line 434.
 
 (./BLC_AM-ID_manuscript.bbl
 
@@ -1232,7 +1253,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 ! Undefined control sequence.
 \@sharp ->\multirow 
                     {}{}{}
-l.462 ^^I}
+l.465 ^^I}
           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1243,7 +1264,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \multirow 
                           
-l.462 ^^I}
+l.465 ^^I}
           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1302,7 +1323,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/vowels_unilingual_ie_bengali.png Graphic file (type bmp)
 <images/vowels_unilingual_ie_bengali.png>
 
-Overfull \hbox (36.13742pt too wide) in paragraph at lines 555--556
+Overfull \hbox (36.13742pt too wide) in paragraph at lines 558--559
 [][] 
  []
 
@@ -1313,10 +1334,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [50]
+File: picture_task_eng.pdf Graphic file (type pdf)
+<use picture_task_eng.pdf>
+File: picture_task_bengali.pdf Graphic file (type pdf)
+<use picture_task_bengali.pdf>
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[51]
 File: images/vowels_e_b_final.png Graphic file (type bmp)
 <images/vowels_e_b_final.png>
 
-Overfull \hbox (36.13742pt too wide) in paragraph at lines 563--564
+Overfull \hbox (36.13742pt too wide) in paragraph at lines 584--585
 [][] 
  []
 
@@ -1326,7 +1359,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[51]
+[52]
 File: images/gender_before.png Graphic file (type bmp)
 <images/gender_before.png>
 File: images/gender_after.png Graphic file (type bmp)
@@ -1337,18 +1370,7 @@ File: images/vowel_by_subject_ggplot.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-File: picture_task_eng.pdf Graphic file (type pdf)
-<use picture_task_eng.pdf>
-File: picture_task_bengali.pdf Graphic file (type pdf)
-<use picture_task_bengali.pdf>
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 614.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[52]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 619.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1363,24 +1385,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [54]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 614.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 619.
  (./BLC_AM-ID_manuscript.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 614.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 614.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 619.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 619.
 Package rerunfilecheck Info: File `BLC_AM-ID_manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 1BED9170055872E7B6366B9838BF55BA.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 614.
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 619.
  ) 
 Here is how much of TeX's memory you used:
- 23665 strings out of 492970
- 418075 string characters out of 6137297
- 491642 words of memory out of 5000000
- 27270 multiletter control sequences out of 15000+600000
- 8491 words of font info for 35 fonts, out of 8000000 for 9000
+ 23676 strings out of 492970
+ 418334 string characters out of 6137297
+ 488642 words of memory out of 5000000
+ 27276 multiletter control sequences out of 15000+600000
+ 8974 words of font info for 39 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  84i,12n,70p,2830b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
 
