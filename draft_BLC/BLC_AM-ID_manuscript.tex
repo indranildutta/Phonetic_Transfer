@@ -330,7 +330,7 @@ Carrier sentences were chosen such that the sound preceding the target word was 
 	
 \end{enumerate}
 \subsection{Acoustic analysis}\label{analysis}
-The first iteration of each task was treated as a trial, and excluded from further analyses. An additional 67 tokens (2.79\%) were excluded due to errors in presentation/production, giving 2333 target word tokens (\nt{2}: 1137, \nt{\ae}: 1196) for analysis. Recordings were manually segmented and annotated in Praat \citep{boersma2016praat}, and the first and second formant frequencies (F1 and F2) of the target vowels \nt{2, \ae} were measured at five points: in 10\% increments starting at 5\% into the vowel. This gave measures of F1 and F2 at 5\%, 15\%, 25\%, 35\% and 45\% into the vowel, allowing us to observe any dynamic changes in the extent of transfer over the course of producing the vowel. Individual vocal tract differences affect formant frequencies across speakers. To reduce between-speaker differences, we used z-score normalization (using the PhonR package \citep{phonR} in R \citep{r}, representing each speaker's formant frequencies as the scaled distance from their own mean). \footnote{Since our experimental treatments were between-subject and statistical analyses use mixed-effects regression, this step would not affect the results, as pointed out by a reviewer. This was done to allow for more intuitive values and visualizations, rater than statistical necessity. The code for parallel statistical analysis using non-z-score-normalized values can be found in the OSF repository.} Plotting these vowels shows a difference between male and female speakers, such that male speakers have overall lower formant frequencies (figure \ref{gender_before}). %Speaker normalization using the z-score method does not get rid of this difference. 
+The first iteration of each task was treated as a trial, and excluded from further analyses. An additional 67 tokens (2.79\%) were excluded due to errors in presentation/production, giving 2333 target word tokens (\nt{2}: 1137, \nt{\ae}: 1196) for analysis. Recordings were manually segmented and annotated in Praat \citep{boersma2016praat}, and the first and second formant frequencies (F1 and F2) of the target vowels \nt{2, \ae} were measured at five points: in 10\% increments starting at 5\% into the vowel. This gave measures of F1 and F2 at 5\%, 15\%, 25\%, 35\% and 45\% into the vowel, allowing us to observe any dynamic changes in the extent of transfer over the course of producing the vowel. Individual vocal tract differences affect formant frequencies across speakers. To reduce between-speaker differences, we used z-score normalization (using the PhonR package \citep{phonR} in R \citep{r}, representing each speaker's formant frequencies as the scaled distance from their own mean). \footnote{Since our experimental treatments were between-subject and statistical analyses use mixed-effects regression, this step would not affect the results, as pointed out by a reviewer. This was done to allow for more intuitive values and visualizations, rather than statistical necessity. The code and analyses using non-normalized values can be found in the OSF repository.} Plotting these vowels shows a difference between male and female speakers, such that male speakers have overall lower formant frequencies (figure \ref{gender_before}). %Speaker normalization using the z-score method does not get rid of this difference. 
 Since gender-related differences in formant frequencies are not of interest in this study, we normalized individual values by gender (representing each value as a scaled distance from the group mean; figure \ref{gender_after}). Statistical analyses were performed on these normalized values. 
 
 < Insert figure \ref{gender_before},\ref{gender_after} about here >
@@ -566,6 +566,22 @@ The authors declare none.
 	\centering
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
+		\includegraphics[scale=1]{images/picture_task_eng}
+		\caption{English (nonswitch) trial} \label{picture_task_english}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.49\textwidth}
+		\centering
+		\includegraphics[scale=1]{images/picture_task_bengali} 
+		\caption{Bengali-English (switch/mixed) trial} \label{picture_trial_bengali}
+	\end{subfigure}
+	\caption{Picture-naming task sample sequence: language cue (not read out), picture (named as per lang cue), target (read out), distractor}
+\end{figure}
+
+\begin{comment}
+	\begin{figure}[!htb] \label{figure_picture_task}
+	\centering
+	\begin{subfigure}[t]{0.49\textwidth}
+		\centering
 		\includestandalone[mode=image]{picture_task_eng}
 		\caption{English (nonswitch) trial} \label{picture_task_english}
 	\end{subfigure}
@@ -576,8 +592,7 @@ The authors declare none.
 	\end{subfigure}
 	\caption{Picture-naming task sample sequence: language cue (not read out), picture (named as per lang cue), target (read out), distractor}
 \end{figure}
-
-
+\end{comment}
 \newpage
 
 \begin{figure}[h] %\centering
