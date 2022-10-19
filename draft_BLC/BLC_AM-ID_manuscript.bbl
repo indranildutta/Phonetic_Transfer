@@ -18,9 +18,9 @@ Agnihotri, R\BPBI K.%
 \APACrefYear{1979}.
 \unskip\
 \newblock
-\APACrefbtitle {Processes of Assimilation: A Sociolinguistic Study of Sikh
+\APACrefbtitle {Processes of Assimilation: A Sociolinguistic Study of {S}ikh
   Children in Leeds.} {Processes of assimilation: A sociolinguistic study of
-  sikh children in leeds.}\ \APACtypeAddressSchool {\BUPhD}{}{}.
+  {S}ikh children in leeds.}\ \APACtypeAddressSchool {\BUPhD}{}{}.
 \unskip\
 \newblock
 \APACaddressSchool {}{University of York}.
@@ -243,9 +243,10 @@ Birdsong, D.%
 \APACrefYearMonthDay{2012}{}{}.
 \newblock
 \APACrefbtitle {Bilingual Language Profile: An Easy-to-Use Instrument to Assess
-  Bilingualism. COERLL, University of Texas at Austin. Web. 20 Jan. 2012.}
-  {Bilingual language profile: An easy-to-use instrument to assess
-  bilingualism. coerll, university of texas at austin. web. 20 jan. 2012.}
+  Bilingualism. {COERLL}, {U}niversity of {T}exas at {A}ustin. Web. 20 Jan.
+  2012.} {Bilingual language profile: An easy-to-use instrument to assess
+  bilingualism. {COERLL}, {U}niversity of {T}exas at {A}ustin. web. 20 jan.
+  2012.}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -325,34 +326,7 @@ Bosch, L.%
   bilingualism and the perception of a language-specific vowel contrast in the
   first year of life}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Language and speech}{46}{2-3}{217--243}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Brysbaert%
-\ \BBA {} Stevens%
-}{%
-Brysbaert%
-\ \BBA {} Stevens%
-}{%
-{\protect \APACyear {2018}}%
-}]{%
-brysbaert2018power}
-\APACinsertmetastar {%
-brysbaert2018power}%
-\begin{APACrefauthors}%
-Brysbaert, M.%
-\BCBT {}\ \BBA {} Stevens, M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2018}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Power analysis and effect size in mixed effects models:
-  A tutorial} {Power analysis and effect size in mixed effects models: A
-  tutorial}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of cognition}{1}{1}{}.
+\APACjournalVolNumPages{Language and Speech}{46}{2-3}{217--243}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -379,8 +353,11 @@ Bullock, B\BPBI E.%
   code-switching}} {{Trying to hit a moving target: On the sociophonetics of
   code-switching}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Multidisciplinary approaches to code
-  switching}{41}{}{189--206}.
+\BIn{} K\BPBI D\BPBI B.~Ludmila~Isurin Donald~Winford\ (\BED), \APACrefbtitle
+  {Multidisciplinary approaches to code switching} {Multidisciplinary
+  approaches to code switching}\ (\BVOL~41, \BPGS\ 189--206).
+\newblock
+\APACaddressPublisher{}{John Benjamins Publishing Amsterdam, The Netherlands}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -437,54 +414,7 @@ Chang, C\BPBI B.%
   effects of second-language learning on first-language speech
   production}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of phonetics}{40}{2}{249--268}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Coelho%
-}{%
-Coelho%
-}{%
-{\protect \APACyear {1997}}%
-}]{%
-coelho1997anglo}
-\APACinsertmetastar {%
-coelho1997anglo}%
-\begin{APACrefauthors}%
-Coelho, G\BPBI M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1997}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Anglo-Indian English}: A nativized variety of Indian
-  English} {{Anglo-Indian English}: A nativized variety of indian
-  english}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Language in Society}{}{}{561--589}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Cohen%
-}{%
-Cohen%
-}{%
-{\protect \APACyear {1988}}%
-}]{%
-cohen1988statistical}
-\APACinsertmetastar {%
-cohen1988statistical}%
-\begin{APACrefauthors}%
-Cohen, J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYear{1988}.
-\newblock
-\APACrefbtitle {Statistical power analysis for the behavioral sciences}
-  {Statistical power analysis for the behavioral sciences}.
-\newblock
-\APACaddressPublisher{}{Routledge}.
+\APACjournalVolNumPages{Journal of Phonetics}{40}{2}{249--268}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -515,58 +445,6 @@ Das, B.%
 \BIn{} \APACrefbtitle {2011 International conference on speech database and
   assessments (Oriental COCOSDA)} {2011 international conference on speech
   database and assessments (oriental cocosda)}\ (\BPGS\ 51--55).
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Dmitrieva%
-\ \BBA {} Dutta%
-}{%
-Dmitrieva%
-\ \BBA {} Dutta%
-}{%
-{\protect \APACyear {2020}}%
-}]{%
-dmitrieva2020acoustic}
-\APACinsertmetastar {%
-dmitrieva2020acoustic}%
-\begin{APACrefauthors}%
-Dmitrieva, O.%
-\BCBT {}\ \BBA {} Dutta, I.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2020}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Acoustic correlates of the four-way laryngeal contrast
-  in Marathi}} {{Acoustic correlates of the four-way laryngeal contrast in
-  Marathi}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Phonetica}{77}{3}{209--237}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Dutta%
-}{%
-Dutta%
-}{%
-{\protect \APACyear {2021}}%
-}]{%
-dutta2021}
-\APACinsertmetastar {%
-dutta2021}%
-\begin{APACrefauthors}%
-Dutta, I.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2021}{Jun}{}.
-\newblock
-\APACrefbtitle {{Bengali Vowel Formant Data extracted from the Shruti Corpus}.}
-  {{Bengali Vowel Formant Data extracted from the Shruti Corpus}.}
-\newblock
-\APACaddressPublisher{}{OSF}.
-\newblock
-\begin{APACrefURL} \url{osf.io/2vpdm} \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -620,7 +498,7 @@ Flege, J\BPBI E.%
   {The production of “new” and “similar” phones in a foreign language:
   Evidence for the effect of equivalence classification}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of phonetics}{15}{1}{47--65}.
+\APACjournalVolNumPages{Journal of Phonetics}{15}{1}{47--65}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -760,30 +638,6 @@ Fowler, C\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Gelman%
-}{%
-Gelman%
-}{%
-{\protect \APACyear {2019}}%
-}]{%
-gelman2019observed_effect_size}
-\APACinsertmetastar {%
-gelman2019observed_effect_size}%
-\begin{APACrefauthors}%
-Gelman, A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2019}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Don’t calculate post-hoc power using observed estimate
-  of effect size} {Don’t calculate post-hoc power using observed estimate of
-  effect size}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Annals of surgery}{269}{1}{e9--e10}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Ghosh%
 }{%
 Ghosh%
@@ -857,7 +711,7 @@ Green, D\BPBI W.%
   resource: A framework and a model for the control of speech in
   bilinguals}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Brain and language}{27}{2}{210--223}.
+\APACjournalVolNumPages{Brain and Language}{27}{2}{210--223}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -880,7 +734,7 @@ Green, D\BPBI W.%
 {\BBOQ}\APACrefatitle {Mental control of the bilingual lexico-semantic system}
   {Mental control of the bilingual lexico-semantic system}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Bilingualism: Language and cognition}{1}{2}{67--81}.
+\APACjournalVolNumPages{Bilingualism: Language and Cognition}{1}{2}{67--81}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -903,7 +757,7 @@ Grosjean, F.%
 {\BBOQ}\APACrefatitle {Studying bilinguals: Methodological and conceptual
   issues} {Studying bilinguals: Methodological and conceptual issues}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Bilingualism: Language and cognition}{1}{2}{131--149}.
+\APACjournalVolNumPages{Bilingualism: Language and Cognition}{1}{2}{131--149}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -954,7 +808,7 @@ Grosjean, F.%
   flexibility}} {{Going in and out of languages: An example of bilingual
   flexibility}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Psychological science}{5}{4}{201--206}.
+\APACjournalVolNumPages{Psychological Science}{5}{4}{201--206}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1004,90 +858,9 @@ Hickey, R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Hoenig%
-\ \BBA {} Heisey%
+Kachru%
 }{%
-Hoenig%
-\ \BBA {} Heisey%
-}{%
-{\protect \APACyear {2001}}%
-}]{%
-hoenig2001abuse}
-\APACinsertmetastar {%
-hoenig2001abuse}%
-\begin{APACrefauthors}%
-Hoenig, J\BPBI M.%
-\BCBT {}\ \BBA {} Heisey, D\BPBI M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2001}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {The abuse of power: the pervasive fallacy of power
-  calculations for data analysis} {The abuse of power: the pervasive fallacy of
-  power calculations for data analysis}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{The American Statistician}{55}{1}{19--24}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Jhingran%
-}{%
-Jhingran%
-}{%
-{\protect \APACyear {2009}}%
-}]{%
-jhingran2009hundreds}
-\APACinsertmetastar {%
-jhingran2009hundreds}%
-\begin{APACrefauthors}%
-Jhingran, D.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2009}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Hundreds of home languages in the country and many in
-  most classrooms: Coping with diversity in primary education in India}
-  {Hundreds of home languages in the country and many in most classrooms:
-  Coping with diversity in primary education in india}.{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {Social justice through multilingual education} {Social
-  justice through multilingual education}\ (\BPGS\ 263--282).
-\newblock
-\APACaddressPublisher{}{Multilingual Matters}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-B.~Kachru%
-\ \BBA {} Smith%
-}{%
-B.~Kachru%
-\ \BBA {} Smith%
-}{%
-{\protect \APACyear {1981}}%
-}]{%
-kachru1981english}
-\APACinsertmetastar {%
-kachru1981english}%
-\begin{APACrefauthors}%
-Kachru, B.%
-\BCBT {}\ \BBA {} Smith, L.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1981}{}{}.
-\newblock
-\APACrefbtitle {{English for cross-cultural communication}.} {{English for
-  cross-cultural communication}.}
-\newblock
-\APACaddressPublisher{}{London: Macmillan Press}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-B\BPBI B.~Kachru%
-}{%
-B\BPBI B.~Kachru%
+Kachru%
 }{%
 {\protect \APACyear {1983}}%
 }]{%
@@ -1108,6 +881,32 @@ Kachru, B\BPBI B.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Kachru%
+\ \BBA {} Smith%
+}{%
+Kachru%
+\ \BBA {} Smith%
+}{%
+{\protect \APACyear {1981}}%
+}]{%
+kachru1981english}
+\APACinsertmetastar {%
+kachru1981english}%
+\begin{APACrefauthors}%
+Kachru, B\BPBI B.%
+\BCBT {}\ \BBA {} Smith, L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1981}{}{}.
+\newblock
+\APACrefbtitle {{English for cross-cultural communication}.} {{English for
+  cross-cultural communication}.}
+\newblock
+\APACaddressPublisher{}{London: Macmillan Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Khattab%
 }{%
 Khattab%
@@ -1122,12 +921,18 @@ Khattab, G.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{2009}.
+\APACrefYearMonthDay{2009}{}{}.
 \newblock
-\APACrefbtitle {{Phonetic accommodation in children's code-switching}}
-  {{Phonetic accommodation in children's code-switching}}.
+{\BBOQ}\APACrefatitle {Phonetic accommodation in children’s code-switching}
+  {Phonetic accommodation in children’s code-switching}.{\BBCQ}
 \newblock
-\APACaddressPublisher{}{na}.
+\BIn{} B\BPBI E.~Bullock\ \BBA {} A\BPBI J.~Toribio\ (\BEDS), \APACrefbtitle
+  {The Cambridge Handbook of Linguistic Code-switching} {The cambridge handbook
+  of linguistic code-switching}\ (\BPG~142–160).
+\newblock
+\APACaddressPublisher{}{Cambridge University Press}.
+\newblock
+\begin{APACrefDOI} \doi{10.1017/CBO9780511576331.010} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1152,87 +957,6 @@ Khattab, G.%
   strategies in English-Arabic bilingual children}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Linguistics}{51}{2}{439--472}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Khubchandani%
-}{%
-Khubchandani%
-}{%
-{\protect \APACyear {1997}}%
-}]{%
-khubchandani1997language}
-\APACinsertmetastar {%
-khubchandani1997language}%
-\begin{APACrefauthors}%
-Khubchandani, L\BPBI M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1997}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Language policy and education in the Indian
-  subcontinent} {Language policy and education in the indian
-  subcontinent}.{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {Encyclopedia of language and education} {Encyclopedia of
-  language and education}\ (\BPGS\ 179--187).
-\newblock
-\APACaddressPublisher{}{Springer}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Khubchandani%
-}{%
-Khubchandani%
-}{%
-{\protect \APACyear {2021}}%
-}]{%
-khubchandani2021plural}
-\APACinsertmetastar {%
-khubchandani2021plural}%
-\begin{APACrefauthors}%
-Khubchandani, L\BPBI M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2021}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Plur{\'a}l languages, plur{\'a}l cultures} {Plur{\'a}l
-  languages, plur{\'a}l cultures}.{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {Plural Languages, Plural Cultures.} {Plural languages,
-  plural cultures.}
-\newblock
-\APACaddressPublisher{}{University of Hawaii Press}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Kumle%
-, V{\~o}%
-\BCBL {}\ \BBA {} Draschkow%
-}{%
-Kumle%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2021}}%
-}]{%
-kumle2021estimating}
-\APACinsertmetastar {%
-kumle2021estimating}%
-\begin{APACrefauthors}%
-Kumle, L.%
-, V{\~o}, M\BPBI L\BHBI H.%
-\BCBL {}\ \BBA {} Draschkow, D.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2021}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Estimating power in (generalized) linear mixed models:
-  An open introduction and tutorial in R} {Estimating power in (generalized)
-  linear mixed models: An open introduction and tutorial in r}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Behavior research methods}{53}{6}{2528--2543}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1367,32 +1091,6 @@ McCloy, D\BPBI R.%
   [\bibcomputersoftwaremanual].
 \newblock
 \APACrefnote{R package version 1.0-7}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Mohanty%
-}{%
-Mohanty%
-}{%
-{\protect \APACyear {2009}}%
-}]{%
-mohanty2009multilingual}
-\APACinsertmetastar {%
-mohanty2009multilingual}%
-\begin{APACrefauthors}%
-Mohanty, A\BPBI K.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2009}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Multilingual education: A bridge too far?} {Multilingual
-  education: A bridge too far?}{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {Social justice through multilingual education} {Social
-  justice through multilingual education}\ (\BPGS\ 3--16).
-\newblock
-\APACaddressPublisher{}{Multilingual matters}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1664,31 +1362,6 @@ r}%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Ramanathan%
-}{%
-Ramanathan%
-}{%
-{\protect \APACyear {2005}}%
-}]{%
-ramanathan2005rethinking}
-\APACinsertmetastar {%
-ramanathan2005rethinking}%
-\begin{APACrefauthors}%
-Ramanathan, V.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2005}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Rethinking language planning and policy from the ground
-  up: Refashioning institutional realities and human lives} {Rethinking
-  language planning and policy from the ground up: Refashioning institutional
-  realities and human lives}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Current issues in language planning}{6}{2}{89--101}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Rodriguez-Fornells%
 , Kramer%
 , Lorenzo-Seva%
@@ -1774,7 +1447,7 @@ Sancier, M\BPBI L.%
   Portuguese and English}} {{Gestural drift in a bilingual speaker of Brazilian
   Portuguese and English}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of phonetics}{25}{4}{421--436}.
+\APACjournalVolNumPages{Journal of Phonetics}{25}{4}{421--436}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1939,7 +1612,7 @@ Sirsa, H.%
   and timing patterns}} {{The effects of native language on Indian English
   sounds and timing patterns}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of phonetics}{41}{6}{393--406}.
+\APACjournalVolNumPages{Journal of Phonetics}{41}{6}{393--406}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1996,7 +1669,7 @@ Tobin, S\BPBI J.%
   Experiment and a self-organizing model}} {{Phonetic drift in Spanish-English
   bilinguals: Experiment and a self-organizing model}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of phonetics}{65}{}{45--59}.
+\APACjournalVolNumPages{Journal of Phonetics}{65}{}{45--59}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
