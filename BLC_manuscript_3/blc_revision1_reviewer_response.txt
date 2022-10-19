@@ -1,0 +1,126 @@
+Manuscript BLC-21-0133.R2
+Response to Reviewers
+
+Dear Editors,
+
+Thank you for the opportunity to submit a revised draft of our manuscript “Mixed language processing increases cross-language phonetic transfer in Bengali-English bilinguals” for publication in Bilingualism: Language and Cognition. We appreciate the time and effort from your end and that of the reviewer in providing feedback on our manuscript. We have incorporated the suggestions made by the reviewer. Please see below, for a point-by-point response to the reviewer's comments and concerns. All page numbers refer to the revised manuscript file uploaded in the portal.
+
+
+Sincerely,
+Auromita
+
+---------------------------------------------------
+
+
+Reviewer: 2
+
+Comments to the Author
+I have now had a chance to read the latest version of the manuscript as well as the authors’ response letter. I am satisfied with the changes (or at least most of the changes) made by the authors in response to the reviews and believe the manuscript is closer to being ready for publication than it was. I am satisfied with the fact that the Discussion section has been expanded and strengthened (with theoretical implications being discussed), a lot more information concerning the participants is provided, and an attempt to sample-size justification is made. My only negative substantial comment has to do with sample size and power analyses. The rest are superficial, minor, and I outline them below. For now, let me say that I appreciate the authors’ effort to reach out to the participants to ask them to answer a language-background questionnaire. This information was needed and is now provided. The Discussion now reviews the findings considering past findings (the contextual literature) and outlines some ideas for further research. This is much appreciated. As I said, I believe the manuscript is almost ready for publication.
+
+Let me talk now about sample-size justification. I appreciate the authors’ attempt at justifying their sample size by running some power analyses. Power analyses are difficult when one does not know what effect size to expect, and it is meaningless to run them a posteriori (using observed effect size as expected effect size). The authors are correct, in my opinion, when they observe that running post-hoc power analyses is meaningless, and yet I appreciate the fact that they were willing to run them anyway to satisfy my petition. Now that this is out in the open, I suggest the authors delete the power analysis section from the manuscript: it unnecessarily exposes them to future criticism. Power analyses in general, even when done a priori (during planning), are meaningless because most bilingualism research does not have established prior findings to base some of its assumptions upon, like minimal effect size of interest. (They are useful as an exploration, an estimation of minimal sample size, but, as a field, we cannot take them seriously (yet).) In the absence of this, which is true of this study (and the authors observe), a few strategies are possible: 1) assume a minimal-effect-size-of-interest of d = 0.4 or so (see Brysbaert’s papers below), focusing on normalized effect size and not effect size in absolute values (such as Hertz), and focusing on a single pairwise comparisons of interest rather than the whole combination of fixed effects and interactions one will end up running; 2) forget about power and focus on precision (get the largest sample one can get and leave it at that) (see Cumming’s book, below); 3) forget about wanting to run a confirmatory, dichotomous data analysis (such as mixed-effects regression or analyses of variance) and focus on effect-size estimation and exploration (what most of us do is exploration anyway, and yet we use confirmatory data analyses; see Cumming’s book; however, the field is dependent on inferential statistics and I understand that, as authors, we feel we have to run them to get published); and, 4) acknowledge that our studies are underpowered and thus focus on a combination of providing effect sizes (for future meta-analyses) and justifying one’s sample size as best as possible, being honest. I suggest the authors do 4 (explain and justify why they have a small sample size) and delete their power analyses from the manuscript. There is no way, given what the authors observe and what Brysbaert shows in his papers (below), that a sample size of 10 allows anybody to have sufficient power for almost anything of interest in bilingualism research. Given the complexity of the study’s design, chances are one would need over 100 participants to have sufficient power. This is not going to be possible for all the things the authors explain. So, here is what I recommend the authors do:
+
+1.      Delete the power analyses section from the manuscript.
+2.      Focus on explaining and justifying their sample size. This is already done (in the latest version of the manuscript, not the first one). I am personally satisfied with the authors’ justification: they are using strict inclusion criteria in a population that, although large, is extremely variable, and they saw the need to exclude lots of participants. I understand that one cannot just be running one’s studies for years to obtain a sample size of 100. In this case, this would mean excluding another 180 a posteriori. In this case, the sample size has been determined based on resource constraints (Lakens, see below). So, I fully understand now why the authors’ sample size is small and that it would be extremely difficult to have a larger sample size (given the strict inclusion criteria and human limitations: we have to get published and our projects are small and have few resources). Still, this does not mean that a sample size of 10 allows us to make any strong claims. So, I would leave it at that provided the authors state clearly that they are aware their sample size is very small and that only future research with larger sample sizes may confirm or reject their findings, that their findings are preliminary, and that prior research has also used small samples sizes (give some examples). I suggest the authors’ delete their power analysis section because it just shows the study is likely tremendously underpowered and that, in order to not reveal it, the authors ran obscure calculations to try to justify a small sample size.
+
+Brysbaert, M. (2019). How many participants do we have to Include in properly powered experiments? A tutorial of power analysis with reference tables [Review of How many participants do we have to Include in properly powered experiments? A tutorial of power analysis with reference tables]. Journal of Cognition, 2, 16.
+Brysbaert, M. (2021). Power considerations in bilingualism research: Time to step up our game. Bilingualism: Language and Cognition, 24(5), 813–818.
+Cumming, G. (2013). Understanding the New Statistics: Effect Sizes, Confidence Intervals, and Meta-Analysis. Routledge.
+Lakens, D. (2022). Sample size justification. Collabra. Psychology, 8(1). https://doi.org/10.1525/collabra.33267
+
+
+Authors' response (AR): Thank you for facilitating a productive discussion on this issue, and for pointing us to these references. We have removed the power analysis from the main manuscript. As per the Editor's suggestion, we have included it as Supplementary Material. As suggested, we have acknowledged the small sample size and need for replication in the main text, on page 19.
+
+
+
+
+The second comment of substance I have has to do with the procedure. I do not fully understand the procedure of the cued-picture naming task. Can you please explain it in greater detail and perhaps provide some sample trials? You could give the examples in the text and then also a schema in a Figure or something like that. To be honest, I don’t know whether the participants are reading out loud (and the cues are orthographic) or they are naming pictures (and then I don’t understand how language is cued). Please, just explain, give examples, and consider adding a schema in a figure. (“The picture of a fish was used in all {sic} trials…” ????)
+
+AR: We have now added a schematic figure showing examples of a nonswitched and a switched trial (figure 4, page 51). The trials proceeded as follows:
+(i) see a word in Bengali/English orthography. This is the cue. It is NOT read aloud.
+(ii) see a picture of a fish. Based on the language cue in the previous slide, name it aloud in either English (say "fish") or Bengali (say "matS").  
+(iii) see an English word, read it aloud. This is the target. If the previous slide was named in English this counts as a nonswitch trial; if it was named in Bengali this counts as a switched trial. 
+(iv) solve a distractor match problem before proceeding to the next trial
+
+
+
+The third comment of substance, which I hadn’t noticed before, has to do with acoustic analyses. On page 26, it is said that formant values were Lobanov-normalized. I don’t think this is possible in this study. I believe the authors did something akin to Lobanov-normalization but quite distinct from it. In Lobanov normalization, values are z-scored with reference to values of all the vowels in a speaker’s vowel system. In other words, for one to be able to do a Lobanov-normalization for a given vowel category (the tokens from a category) one MUST have tokens, collected from the same speaker, of all the other vowels in the speaker’s vowel system. In this case, the given vowel token is expressed with reference to its location in a speaker’s vowel space. This DOES allow to normalize across genders. This is a great normalization procedure, but one needs to have collected samples of all the vowels in the system, or at least of the corner vowels, which outline the limits of the system. I don’t think this is what the authors did here (because I don’t think they collected samples of all the vowels of English or at least the corner vowels). Their normalization method is akin to the Lobanov method in that they did z-scoring with all the vowels they had. However, if they didn’t have samples of all the vowels, this is not a true normalization method, and clearly not Lobanov’s normalization procedure. Please, explain better and then explain what this normalization method accomplished. (Since mixed-effects regression was to be used, and all factors are within-speaker, normalization was likely unnecessary.)
+
+
+AR: Thanks for pointing this out; we agree that "Lobanov normalization" is not the appropriate term here, given the lack of all corner vowels. We have replaced this with the term "z-score normalization". The target was to remove speaker-specific ranges in formant values, so that the relative positions of the two vowels and shift between conditions could be compared directly. Since the data had productions of the same two categories from all speakers, we felt comfortable that this would not affect the interpretability of the values. This was useful for first-pass visualizations to understand speakers' vowel systems (e.g. fig. 7 (pg. 54) in the text, which shows that speakers vary greatly in their default realizations of the two IE vowels), and to visualize gender differences without confounds from individual differences (e.g. figure 6, pg. 53). Since we were expecting high individual variability, we did this before running any further analyses. We agree that given the specific statistical methods used here, this was not essential for the statistical analyses. We re-ran the analysis with non-normalized values to verify this, and found identical results. We have included the code and output from both analyses in the OSF repository for the project, and added a footnote in the main text addressing this (pg. 22).   
+
+
+
+A quick note about terminology. I am a bit uncomfortable with the authors’ use of the terms “unilingual” and “mixed.” In past research, “unilingual” tends to refer to entire recording sessions in which a single language was used, and “bilingual” refers to recording sessions in which two languages were used. I don’t object to the use of “mixed” here, but only to the use of “unilingual.” It seems that all recording sessions in this study were bilingual or mixed. The difference between the two condition has to do with whether there was a code- or language-switch, that is, whether the target English word was produced after another English word or after a Bengali word. Following the terminology used by others (see Olson’s articles, for instance), I believe you should use “switch” vs “nonswitch” contexts or conditions rather than “unilingual” vs “mixed”. If not, at least explain your use of terminology at the outset and why you use it differently from others.
+
+AR: We have replaced the terminology throughout the text, and used "nonswitch" and "switch/mixed" to refer to the two conditions.
+
+
+
+Finally, I have a comment about punctuation. The authors, in many locations, use the n-dash (or minus sign) instead of the colon. One example: Page 24, line 51. “Language cue- a word…” I have seen this use of the n-dash throughout the manuscript. I don’t think this follows convention. I believe a colon should be used in most places where an n-dash is used. Please, consider, decide, and revise throughout if needed.
+
+AR: We have revised these.
+
+
+
+The following are minor comments:
+
+
+9.      Page 14, line 43. “cannot be treated as an atomic measure.” I don’t know what this means. Could you explain or revise wording?
+
+AR: By "atomic", we mean a single measure that characterizes a property. Since previous literature has reported that different categories within a language can differ in their patterns of transfer, and that shifts in individual categories may not be identical to the patterns of system-wide shift, we cannot have a single indivisibe ("atomic") measure such as "extent of transfer in L1"-- we must view the overall transfer as resulting from shifts constrained by different factors (cognitive, linguistic). To do this, we need to examine transfer in a wider range of sound contrasts.
+
+
+
+10.     Page 19, section 1.7. Not sure this list merits its own section. I believe this should be incorporated in the previous section. I also believe the question might need to be revised. You do not only check if vowel categories are modified in one setting relative to the other setting. You also check the direction and size (or extent) of the modification. Should you have a main research question and some follow-up, secondary questions focused on directionality and extent-of-change?
+18.     Page 46, line 9. “Our third research question Paradigm concerned…” I am a bit confused. I understood “Paradigm” to be a hypothesis, not a research question. Please, check section 1.7 and decide if Asymmetry and Paradigm and research questions or hypotheses. If they are questions, what are the hypotheses in this study? Also, when referring to Paradigm and Asymmetry in the Discussion section, please notice that, in most cases, surrounding commas are needed: “Our third research question, Paradigm, concerned…”
+
+AR: We have modified our Research Questions and Hypotheses section on the basis of these comments (pg. 16). 
+
+
+
+16.     Page 43, full last paragraph in page. This paragraph is quite intriguing. It seems it contains the gist of a great idea or observation. However, the idea is so vague that the paragraph becomes empty. Do the authors have something to say? Please, say it clearly (explaining it in some detail), even if speculative (you have a right to speculation after having explained the data). Are they not ready to explain their idea in some detail? Please, delete hints to ideas of they are not to be explained.
+
+AR: In this paragraph, we suggest that (i) examining multiple acoustic features within a single study would allow us to compare predictions made by different models for phonetic transfer; (ii) given its communicative relevance (as demonstrated by sociophonetic literature), communication-centered approaches might be more appropriate than inhibition-based ones. For the same reason, data from native multilingual populations is valuable, since these settings provide obvious communicative motivations for transfer. We have revised the wording in the paragraph (pg. 31), and hope it comes across more clearly now. 
+
+
+ 
+
+1.      Page 3, lines 51-53. “However, the reported…” Please, include the full list of references (citations) you have in mind to make this statement.
+
+2.      Page 4, lines 20-21: “properties: F1 and F2, of two…” Revise punctuation. Should likely be: “properties, F1 and F2, of two…”
+
+3.      Page 5, lines 47-50: “other additional languages.” Delete either ‘other’ or ‘additional’. I believe this is redundant.
+
+4.      Page 6, lines 54-55: “suggest that for the present” > “suggest that, for the present population, mixed-language processing. Add comma.
+
+5.      Throughout: F1XF2. Perhaps F1 * F2 or F1 x F2. And perhaps then refer to this as “vowel chart”, following convention.
+
+6.      Page 7. Lexical sets: KIT, FLEECE, etc. It turns out you never use the lexical set terminology again in the manuscript. I don’t see the point of introducing them here. Perhaps just delete.
+
+7.      Page 8, lines 43-49. This is the first place where I noticed this, but I have seen this mistake throughout. I am sure this is done by the automatic reference system used in Latex. Notice that, here, the citations should have the name of the author outside of the parentheses and the years should be inside the parenthesis. The mistake is that both author name and year are inside the parentheses. This is a mistake because, without reading the author names (and, if they are inside the parentheses, they are supposedly not part of the sentence), the sentence does not make sense. Please, do an automatic search and revise all instances of citations. I believe there are dozens of places where this mistake is made.
+
+8.      Page 13, lines 10-17. I don’t think this statement is accurate. Perhaps revise after checking the articles cited here. For instance, Simonet (2014) and Simonet/Amengual (2020) do not examine “only transfer effects on L1 vowels.” In these studies, there is a group of Catalan L1 Spanish L2 speakers and a group of Spanish L1 Catalan L2 speakers. Only Catalan vowels are compared across lingualism conditions (unilingual, bilingual settings). The same transfer or interference effects are found for both groups. This means, I believe, that both L1 and L2 vowels have been found to be modulated by language mode or lingualism.
+
+
+11.     Page 22, lines 10-13. “all participants … (n = 10)”. I don’t think including n = 10 is necessary here. You have said before you had 10 participants and this sentence already says “all.”
+
+12.     Page 23, lines 28-29. “used is creative ways” > “used in creative ways”
+
+13.     Page 25, line 20. “orthographies … are visually distinct” > “orthographies … are distinct” (orthographies are necessarily visual).
+
+14.     Page 37, lines 46-51. Please, revise sentence top include figure numbers, although you will hopefully delete the whole section.
+
+15.     Page 42, line 26-27. “it is a potential”. What does “it” refer to? Please, spell out, e.g.: “, differences reading proficiency are a potential…”
+
+17.     Page 44, line 11: “in a languages” > “in a language” or “in languages”
+
+
+AR: Thanks for pointing these out! We have revised the relevant parts of the manuscript. 
+
+
+
+
+
+Congratulations on a fine study and thank you for the opportunity to learn about this study before it was published. I hope some of my comments are found to be useful.
+
+AR: Thank you for the detailed and constructive feedback! We hope we have been able to address all the concerns.

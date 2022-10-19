@@ -1,0 +1,1475 @@
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.12.14)  25 JUL 2022 00:44
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**picture_task_bengali.tex
+(./picture_task_bengali.tex
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(c:/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cls
+Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
+dalone
+(c:/texlive/2018/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 69.
+)
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(c:/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(c:/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(c:/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks14
+\XKV@tempa@toks=\toks15
+
+(c:/texlive/2018/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count80
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\sa@internal=\count81
+\c@sapage=\count82
+
+(c:/texlive/2018/texmf-dist/tex/latex/standalone/standalone.cfg
+File: standalone.cfg 2018/03/26 v1.3a Default configuration file for 'standalon
+e' class
+)
+(c:/texlive/2018/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(c:/texlive/2018/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count83
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
+\c@figure=\count89
+\c@table=\count90
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+\sa@box=\box26
+)
+(c:/texlive/2018/texmf-dist/tex/latex/polyglossia/polyglossia.sty
+Package: polyglossia 2018/04/07 v1.43 Alternative to Babel for XeLaTeX and LuaL
+aTeX
+
+(c:/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count91
+)
+(c:/texlive/2018/texmf-dist/tex/latex/makecmds/makecmds.sty
+Package: makecmds 2009/09/03 v1.0a extra command making commands
+)
+(c:/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec.sty
+(c:/texlive/2018/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(c:/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2018/03/05 L3 programming layer (loader) 
+
+(c:/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2018/03/05 L3 programming layer (code)
+\c_max_int=\count92
+\l_tmpa_int=\count93
+\l_tmpb_int=\count94
+\g_tmpa_int=\count95
+\g_tmpb_int=\count96
+\g__intarray_font_int=\count97
+\g__prg_map_int=\count98
+\c_log_iow=\count99
+\l_iow_line_count_int=\count100
+\l__iow_line_target_int=\count101
+\l__iow_one_indent_int=\count102
+\l__iow_indent_int=\count103
+\c_zero_dim=\dimen103
+\c_max_dim=\dimen104
+\l_tmpa_dim=\dimen105
+\l_tmpb_dim=\dimen106
+\g_tmpa_dim=\dimen107
+\g_tmpb_dim=\dimen108
+\c_zero_skip=\skip43
+\c_max_skip=\skip44
+\l_tmpa_skip=\skip45
+\l_tmpb_skip=\skip46
+\g_tmpa_skip=\skip47
+\g_tmpb_skip=\skip48
+\c_zero_muskip=\muskip10
+\c_max_muskip=\muskip11
+\l_tmpa_muskip=\muskip12
+\l_tmpb_muskip=\muskip13
+\g_tmpa_muskip=\muskip14
+\g_tmpb_muskip=\muskip15
+\l_keys_choice_int=\count104
+\c__fp_leading_shift_int=\count105
+\c__fp_middle_shift_int=\count106
+\c__fp_trailing_shift_int=\count107
+\c__fp_big_leading_shift_int=\count108
+\c__fp_big_middle_shift_int=\count109
+\c__fp_big_trailing_shift_int=\count110
+\c__fp_Bigg_leading_shift_int=\count111
+\c__fp_Bigg_middle_shift_int=\count112
+\c__fp_Bigg_trailing_shift_int=\count113
+\l__sort_length_int=\count114
+\l__sort_min_int=\count115
+\l__sort_top_int=\count116
+\l__sort_max_int=\count117
+\l__sort_true_max_int=\count118
+\l__sort_block_int=\count119
+\l__sort_begin_int=\count120
+\l__sort_end_int=\count121
+\l__sort_A_int=\count122
+\l__sort_B_int=\count123
+\l__sort_C_int=\count124
+\l__tl_build_start_index_int=\count125
+\l__tl_build_index_int=\count126
+\l__tl_analysis_normal_int=\count127
+\l__tl_analysis_index_int=\count128
+\l__tl_analysis_nesting_int=\count129
+\l__tl_analysis_type_int=\count130
+\l__regex_internal_a_int=\count131
+\l__regex_internal_b_int=\count132
+\l__regex_internal_c_int=\count133
+\l__regex_balance_int=\count134
+\l__regex_group_level_int=\count135
+\l__regex_mode_int=\count136
+\c__regex_cs_in_class_mode_int=\count137
+\c__regex_cs_mode_int=\count138
+\l__regex_catcodes_int=\count139
+\l__regex_default_catcodes_int=\count140
+\c__regex_catcode_L_int=\count141
+\c__regex_catcode_O_int=\count142
+\c__regex_catcode_A_int=\count143
+\c__regex_all_catcodes_int=\count144
+\l__regex_show_lines_int=\count145
+\l__regex_min_state_int=\count146
+\l__regex_max_state_int=\count147
+\l__regex_left_state_int=\count148
+\l__regex_right_state_int=\count149
+\l__regex_capturing_group_int=\count150
+\l__regex_min_pos_int=\count151
+\l__regex_max_pos_int=\count152
+\l__regex_curr_pos_int=\count153
+\l__regex_start_pos_int=\count154
+\l__regex_success_pos_int=\count155
+\l__regex_curr_char_int=\count156
+\l__regex_curr_catcode_int=\count157
+\l__regex_last_char_int=\count158
+\l__regex_case_changed_char_int=\count159
+\l__regex_curr_state_int=\count160
+\l__regex_step_int=\count161
+\l__regex_min_active_int=\count162
+\l__regex_max_active_int=\count163
+\l__regex_replacement_csnames_int=\count164
+\l__regex_match_count_int=\count165
+\l__regex_min_submatch_int=\count166
+\l__regex_submatch_int=\count167
+\l__regex_zeroth_submatch_int=\count168
+\g__regex_trace_regex_int=\count169
+\c_empty_box=\box27
+\l_tmpa_box=\box28
+\l_tmpb_box=\box29
+\g_tmpa_box=\box30
+\g_tmpb_box=\box31
+\l__box_top_dim=\dimen109
+\l__box_bottom_dim=\dimen110
+\l__box_left_dim=\dimen111
+\l__box_right_dim=\dimen112
+\l__box_top_new_dim=\dimen113
+\l__box_bottom_new_dim=\dimen114
+\l__box_left_new_dim=\dimen115
+\l__box_right_new_dim=\dimen116
+\l__box_internal_box=\box32
+\l__coffin_internal_box=\box33
+\l__coffin_internal_dim=\dimen117
+\l__coffin_offset_x_dim=\dimen118
+\l__coffin_offset_y_dim=\dimen119
+\l__coffin_x_dim=\dimen120
+\l__coffin_y_dim=\dimen121
+\l__coffin_x_prime_dim=\dimen122
+\l__coffin_y_prime_dim=\dimen123
+\c_empty_coffin=\box34
+\l__coffin_aligned_coffin=\box35
+\l__coffin_aligned_internal_coffin=\box36
+\l_tmpa_coffin=\box37
+\l_tmpb_coffin=\box38
+\l__coffin_display_coffin=\box39
+\l__coffin_display_coord_coffin=\box40
+\l__coffin_display_pole_coffin=\box41
+\l__coffin_display_offset_dim=\dimen124
+\l__coffin_display_x_dim=\dimen125
+\l__coffin_display_y_dim=\dimen126
+\l__coffin_bounding_shift_dim=\dimen127
+\l__coffin_left_corner_dim=\dimen128
+\l__coffin_right_corner_dim=\dimen129
+\l__coffin_bottom_corner_dim=\dimen130
+\l__coffin_top_corner_dim=\dimen131
+\l__coffin_scaled_total_height_dim=\dimen132
+\l__coffin_scaled_width_dim=\dimen133
+)
+(c:/texlive/2018/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+File: l3xdvidpfmx.def 2017/03/18 v L3 Experimental driver: xdvipdfmx
+\g__driver_image_int=\count170
+))
+Package: xparse 2018/02/21 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count171
+\g__xparse_grabber_int=\count172
+\l__xparse_m_args_int=\count173
+\l__xparse_mandatory_args_int=\count174
+\l__xparse_v_nesting_int=\count175
+)
+Package: fontspec 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTeX
+
+(c:/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count176
+\l__fontspec_language_int=\count177
+\l__fontspec_strnum_int=\count178
+\l__fontspec_tmp_int=\count179
+\l__fontspec_em_int=\count180
+\l__fontspec_emdef_int=\count181
+\l__fontspec_strong_int=\count182
+\l__fontspec_strongdef_int=\count183
+\l__fontspec_tmpa_dim=\dimen134
+\l__fontspec_tmpb_dim=\dimen135
+\l__fontspec_tmpc_dim=\dimen136
+\g__file_internal_ior=\read1
+
+(c:/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(c:/texlive/2018/texmf-dist/tex/latex/base/tuenc.def
+File: tuenc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fontspec with sig. 'O{}mO{}' on line 542.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmainfont with sig. 'O{}mO{}' on line 546.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsansfont with sig. 'O{}mO{}' on line 550.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmonofont with sig. 'O{}mO{}' on line 554.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathrm with sig. 'O{}mO{}' on line 558.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setboldmathrm with sig. 'O{}mO{}' on line 562.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsf with sig. 'O{}mO{}' on line 566.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathtt with sig. 'O{}mO{}' on line 570.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setromanfont with sig. 'O{}mO{}' on line 574.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfamily with sig. 'mO{}mO{}' on line 578.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontface with sig. 'mO{}mO{}' on line 582.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultfontfeatures with sig. 't+om' on line 586.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeatures with sig. 'm' on line 590.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeature with sig. 'm' on line 594.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfeature with sig. 'mm' on line 598.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newAATfeature with sig. 'mmmm' on line 602.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newopentypefeature with sig. 'mmm' on line 606.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newICUfeature with sig. 'mmm' on line 610.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeature with sig. 'mm' on line 614.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 618.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontscript with sig. 'mm' on line 622.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontlanguage with sig. 'mm' on line 626.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 630.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \IfFontFeatureActiveTF with sig. 'mmm' on line 634.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCommand with sig. 'mO{}m' on line 3632.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingAccent with sig. 'mm' on line 3638.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingSymbol with sig. 'mm' on line 3644.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingComposite with sig. 'mmm' on line 3650.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCompositeCommand with sig. 'mmm' on line 3656.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUnicodeEncoding with sig. 'mm' on line 3681.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareSymbol with sig. 'm' on line 3687.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareAccent with sig. 'm' on line 3693.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareCommand with sig. 'm' on line 3699.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareComposite with sig. 'mm' on line 3706.
+.................................................
+
+(c:/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+LaTeX Info: Redefining \itshape on input line 3891.
+LaTeX Info: Redefining \slshape on input line 3896.
+LaTeX Info: Redefining \scshape on input line 3901.
+LaTeX Info: Redefining \upshape on input line 3906.
+LaTeX Info: Redefining \em on input line 3936.
+LaTeX Info: Redefining \emph on input line 3961.
+LaTeX Info: Redefining \- on input line 4015.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \oldstylenums with sig. 'm' on line 4110.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \liningnums with sig. 'm' on line 4114.
+.................................................
+))
+\xpg@normalclass=\XeTeXcharclass1
+)
+(c:/texlive/2018/texmf-dist/tex/latex/polyglossia/gloss-bengali.ldf
+File: gloss-bengali.ldf polyglossia: module for bengali
+
+(c:/texlive/2018/texmf-dist/tex/latex/polyglossia/devanagaridigits.sty
+Package: devanagaridigits 2010/04/01 v0.1 Formatting of Devanagari digits
+)
+(c:/texlive/2018/texmf-dist/tex/latex/polyglossia/bengalidigits.sty
+Package: bengalidigits 2015/08/07 v.02Formatting of Bengali digits
+))
+(c:/texlive/2018/texmf-dist/tex/latex/polyglossia/gloss-english.ldf
+File: gloss-english.ldf polyglossia: module for english
+)
+Package polyglossia Info: Default language is english.
+.................................................
+. fontspec info: "set-scale"
+. 
+. Linux Biolinum O scale = 0.9369547477990885.
+.................................................
+\g__fontspec_family_LinuxBiolinumO_int=\count184
+.................................................
+. fontspec info: "set-scale"
+. 
+. Linux Biolinum O scale = 0.9369547477990885.
+.................................................
+.................................................
+. fontspec info: "set-scale"
+. 
+. Linux Biolinum O scale = 0.9369547477990885.
+.................................................
+.................................................
+. fontspec info: "set-scale"
+. 
+. Linux Biolinum O/B scale = 1.004663007871271.
+.................................................
+.................................................
+. fontspec info: "set-scale"
+. 
+. Linux Biolinum O/B scale = 1.004663007871271.
+.................................................
+.................................................
+. fontspec info: "set-scale"
+. 
+. Linux Biolinum O/I scale = 1.004663007871271.
+.................................................
+.................................................
+. fontspec info: "set-scale"
+. 
+. Linux Biolinum O/I scale = 1.004663007871271.
+.................................................
+.................................................
+. fontspec info: "set-scale"
+. 
+. Linux Biolinum O/BI scale = 1.004663007871271.
+.................................................
+.................................................
+. fontspec info: "set-scale"
+. 
+. Linux Biolinum O/BI scale = 1.004663007871271.
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LinuxBiolinumO(0)' created for font 'Linux Biolinum O' with
+. options [Scale=MatchLowercase].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.: <->s*[0.9369547477990885]"Linux Biolinum
+. O/OT:script=latn;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.: <->s*[0.9369547477990885]"Linux
+. Biolinum O/OT:script=latn;language=DFLT;+smcp;"
+. - 'bold' (bx/n) with NFSS spec.: <->s*[1.004663007871271]"Linux Biolinum
+. O/B/OT:script=latn;language=DFLT;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: <->s*[1.004663007871271]"Linux
+. Biolinum O/B/OT:script=latn;language=DFLT;+smcp;"
+. - 'italic' (m/it) with NFSS spec.: <->s*[1.004663007871271]"Linux Biolinum
+. O/I/OT:script=latn;language=DFLT;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1.004663007871271]"Linux Biolinum
+. O/I/OT:script=latn;language=DFLT;+smcp;"
+. - 'bold italic' (bx/it) with NFSS spec.: <->s*[1.004663007871271]"Linux
+. Biolinum O/BI/OT:script=latn;language=DFLT;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->s*[1.004663007871271]"Linux Biolinum
+. O/BI/OT:script=latn;language=DFLT;+smcp;"
+.................................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! fontspec error: "font-not-found"
+! 
+! The font "Akaash" cannot be found.
+! 
+! See the fontspec documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.11 ...family\bengalifont[Script=Bengali]{Akaash}
+                                                  
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| A font might not be found for many reasons.
+|  Check the spelling, where the font is installed etc. etc.
+| 
+|  When in doubt, ask someone for help!
+|...............................................
+
+*************************************************
+* fontspec warning: "script-not-exist"
+* 
+* Font 'Akaash' does not contain script 'Bengali'.
+*************************************************
+\g__fontspec_family_Akaash_int=\count185
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "Akaash/BI" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "Akaash/B" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "Akaash/I" (it probably doesn't exist).
+.................................................
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! fontspec error: "font-not-found"
+! 
+! The font "Akaash" cannot be found.
+! 
+! See the fontspec documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.11 ...family\bengalifont[Script=Bengali]{Akaash}
+                                                  
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| A font might not be found for many reasons.
+|  Check the spelling, where the font is installed etc. etc.
+| 
+|  When in doubt, ask someone for help!
+|...............................................
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! fontspec error: "font-not-found"
+! 
+! The font "Akaash" cannot be found.
+! 
+! See the fontspec documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.11 ...family\bengalifont[Script=Bengali]{Akaash}
+                                                  
+|'''''''''''''''''''''''''''''''''''''''''''''''
+| A font might not be found for many reasons.
+|  Check the spelling, where the font is installed etc. etc.
+| 
+|  When in doubt, ask someone for help!
+|...............................................
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Akaash(0)' created for font 'Akaash' with options
+. [Script=Bengali].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.: <->"Akaash/OT"
+. - 'small caps'  (m/sc) with NFSS spec.: <->"Akaash/OT"
+.................................................
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 99.
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen137
+\Gin@req@width=\dimen138
+)
+(c:/texlive/2018/texmf-dist/tex/latex/stackengine/stackengine.sty
+Package: stackengine 2017/02/13 v4.01\ Stacking text and objects in convenient 
+ways
+
+(c:/texlive/2018/texmf-dist/tex/generic/listofitems/listofitems.sty
+(c:/texlive/2018/texmf-dist/tex/generic/listofitems/listofitems.tex
+\loi_nestcnt=\count186
+)
+Package: listofitems 2018/03/13 v1.53 Grab items in lists using user-specified 
+sep char (CT)
+)
+(c:/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count187
+\calc@Bcount=\count188
+\calc@Adimen=\dimen139
+\calc@Bdimen=\dimen140
+\calc@Askip=\skip49
+\calc@Bskip=\skip50
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count189
+\calc@Cskip=\skip51
+)
+\c@@stackindex=\count190
+\@boxshift=\skip52
+\stack@tmplength=\skip53
+\temp@stkl=\skip54
+\@stackedboxwidth=\skip55
+\@addedbox=\box42
+\@anchorbox=\box43
+\stackedbox=\box44
+\@centerbox=\box45
+\c@ROWcellindex@=\count191
+)
+(c:/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks16
+\pgfutil@tempdima=\dimen141
+\pgfutil@tempdimb=\dimen142
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
+) (c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box46
+
+(c:/texlive/2018/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks17
+\pgfkeys@temptoks=\toks18
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks19
+))
+\pgf@x=\dimen143
+\pgf@y=\dimen144
+\pgf@xa=\dimen145
+\pgf@ya=\dimen146
+\pgf@xb=\dimen147
+\pgf@yb=\dimen148
+\pgf@xc=\dimen149
+\pgf@yc=\dimen150
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count192
+\c@pgf@countb=\count193
+\c@pgf@countc=\count194
+\c@pgf@countd=\count195
+\t@pgf@toka=\toks20
+\t@pgf@tokb=\toks21
+\t@pgf@tokc=\toks22
+ (c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2014/07/09  (rcs-revision 1.11)
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)
+\pgfsys@objnum=\count196
+)))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count197
+\pgfsyssoftpath@bigbuffer@items=\count198
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen151
+\pgfmath@count=\count199
+\pgfmath@box=\box47
+\pgfmath@toks=\toks23
+\pgfmath@stack@operand=\toks24
+\pgfmath@stack@operation=\toks25
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+.code.tex)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+de.tex)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count266
+))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen152
+\pgf@picmaxx=\dimen153
+\pgf@picminy=\dimen154
+\pgf@picmaxy=\dimen155
+\pgf@pathminx=\dimen156
+\pgf@pathmaxx=\dimen157
+\pgf@pathminy=\dimen158
+\pgf@pathmaxy=\dimen159
+\pgf@xx=\dimen160
+\pgf@xy=\dimen161
+\pgf@yx=\dimen162
+\pgf@yy=\dimen163
+\pgf@zx=\dimen164
+\pgf@zy=\dimen165
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
+e.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen166
+\pgf@path@lasty=\dimen167
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
+x
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen168
+\pgf@shorten@start@additional=\dimen169
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box48
+\pgf@hbox=\box49
+\pgf@layerbox@main=\box50
+\pgf@picture@serial@count=\count267
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
+.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen170
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
+ode.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen171
+\pgf@pt@y=\dimen172
+\pgf@pt@temp=\dimen173
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
+de.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen174
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen175
+\pgf@sys@shading@range@num=\count268
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box51
+))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
+.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box52
+)
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
+y
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen176
+\pgf@nodesepend=\dimen177
+)
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
+y
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+)) (c:/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(c:/texlive/2018/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen178
+\pgffor@skip=\dimen179
+\pgffor@stack=\toks26
+\pgffor@toks=\toks27
+))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
+de.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count269
+\pgfplotmarksize=\dimen180
+)
+\tikz@lastx=\dimen181
+\tikz@lasty=\dimen182
+\tikz@lastxsaved=\dimen183
+\tikz@lastysaved=\dimen184
+\tikzleveldistance=\dimen185
+\tikzsiblingdistance=\dimen186
+\tikz@figbox=\box53
+\tikz@figbox@bg=\box54
+\tikz@tempbox=\box55
+\tikz@tempbox@bg=\box56
+\tikztreelevel=\count270
+\tikznumberofchildren=\count271
+\tikznumberofcurrentchild=\count272
+\tikz@fig@count=\count273
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count274
+\pgfmatrixcurrentcolumn=\count275
+\pgf@matrix@numberofcolumns=\count276
+)
+\tikz@expandcount=\count277
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(c:/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen187
+))
+\Wallcontent=\box57
+\Facontent=\box58
+
+
+! Package polyglossia Error: The current roman font does not contain the Bengal
+i script!
+(polyglossia)                Please define \bengalifont with \newfontfamily.
+
+See the polyglossia package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \newscreen\Fa{\textbengali{অধ্যায়}}{অধ্যায়}
+                                                  
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+Missing character: There is no অ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ধ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ্ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no া in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ় in font [lmsans10-bold]:mapping=tex-text;!
+
+! Package polyglossia Error: The current roman font does not contain the Bengal
+i script!
+(polyglossia)                Please define \bengalifont with \newfontfamily.
+
+See the polyglossia package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \newscreen\Fa{\textbengali{অধ্যায়}}{অধ্যায়}
+                                                  
+(That was another \errmessage.)
+
+Missing character: There is no অ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ধ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ্ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no া in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ় in font [lmsans10-bold]:mapping=tex-text;!
+
+! Package polyglossia Error: The current roman font does not contain the Bengal
+i script!
+(polyglossia)                Please define \bengalifont with \newfontfamily.
+
+See the polyglossia package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \newscreen\Fa{\textbengali{অধ্যায়}}{অধ্যায়}
+                                                  
+(That was another \errmessage.)
+
+Missing character: There is no অ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ধ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ্ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no া in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ় in font [lmsans10-bold]:mapping=tex-text;!
+
+! Package polyglossia Error: The current roman font does not contain the Bengal
+i script!
+(polyglossia)                Please define \bengalifont with \newfontfamily.
+
+See the polyglossia package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \newscreen\Fa{\textbengali{অধ্যায়}}{অধ্যায়}
+                                                  
+(That was another \errmessage.)
+
+Missing character: There is no অ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ধ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ্ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no া in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ় in font [lmsans10-bold]:mapping=tex-text;!
+
+! Package polyglossia Error: The current roman font does not contain the Bengal
+i script!
+(polyglossia)                Please define \bengalifont with \newfontfamily.
+
+See the polyglossia package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \newscreen\Fa{\textbengali{অধ্যায়}}{অধ্যায়}
+                                                  
+(That was another \errmessage.)
+
+Missing character: There is no অ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ধ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ্ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no া in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ় in font [lmsans10-bold]:mapping=tex-text;!
+
+! Package polyglossia Error: The current roman font does not contain the Bengal
+i script!
+(polyglossia)                Please define \bengalifont with \newfontfamily.
+
+See the polyglossia package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \newscreen\Fa{\textbengali{অধ্যায়}}{অধ্যায়}
+                                                  
+(That was another \errmessage.)
+
+Missing character: There is no অ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ধ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ্ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no া in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ় in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no অ in font [lmsans8-regular]:mapping=tex-text;!
+Missing character: There is no ধ in font [lmsans8-regular]:mapping=tex-text;!
+Missing character: There is no ্ in font [lmsans8-regular]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans8-regular]:mapping=tex-text;!
+Missing character: There is no া in font [lmsans8-regular]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans8-regular]:mapping=tex-text;!
+Missing character: There is no ় in font [lmsans8-regular]:mapping=tex-text;!
+
+! Package polyglossia Error: The current roman font does not contain the Bengal
+i script!
+(polyglossia)                Please define \bengalifont with \newfontfamily.
+
+See the polyglossia package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \newscreen\Fa{\textbengali{অধ্যায়}}{অধ্যায়}
+                                                  
+(That was another \errmessage.)
+
+Missing character: There is no অ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ধ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ্ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no া in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ় in font [lmsans10-bold]:mapping=tex-text;!
+
+! Package polyglossia Error: The current roman font does not contain the Bengal
+i script!
+(polyglossia)                Please define \bengalifont with \newfontfamily.
+
+See the polyglossia package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \newscreen\Fa{\textbengali{অধ্যায়}}{অধ্যায়}
+                                                  
+(That was another \errmessage.)
+
+Missing character: There is no অ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ধ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ্ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no া in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ় in font [lmsans10-bold]:mapping=tex-text;!
+
+! Package polyglossia Error: The current roman font does not contain the Bengal
+i script!
+(polyglossia)                Please define \bengalifont with \newfontfamily.
+
+See the polyglossia package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \newscreen\Fa{\textbengali{অধ্যায়}}{অধ্যায়}
+                                                  
+(That was another \errmessage.)
+
+Missing character: There is no অ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ধ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ্ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no া in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ় in font [lmsans10-bold]:mapping=tex-text;!
+
+! Package polyglossia Error: The current roman font does not contain the Bengal
+i script!
+(polyglossia)                Please define \bengalifont with \newfontfamily.
+
+See the polyglossia package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \newscreen\Fa{\textbengali{অধ্যায়}}{অধ্যায়}
+                                                  
+(That was another \errmessage.)
+
+Missing character: There is no অ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ধ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ্ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no া in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ় in font [lmsans10-bold]:mapping=tex-text;!
+
+! Package polyglossia Error: The current roman font does not contain the Bengal
+i script!
+(polyglossia)                Please define \bengalifont with \newfontfamily.
+
+See the polyglossia package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \newscreen\Fa{\textbengali{অধ্যায়}}{অধ্যায়}
+                                                  
+(That was another \errmessage.)
+
+Missing character: There is no অ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ধ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ্ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no া in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ় in font [lmsans10-bold]:mapping=tex-text;!
+
+! Package polyglossia Error: The current roman font does not contain the Bengal
+i script!
+(polyglossia)                Please define \bengalifont with \newfontfamily.
+
+See the polyglossia package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \newscreen\Fa{\textbengali{অধ্যায়}}{অধ্যায়}
+                                                  
+(That was another \errmessage.)
+
+Missing character: There is no অ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ধ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ্ in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no া in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no ় in font [lmsans10-bold]:mapping=tex-text;!
+Missing character: There is no অ in font [lmsans8-regular]:mapping=tex-text;!
+Missing character: There is no ধ in font [lmsans8-regular]:mapping=tex-text;!
+Missing character: There is no ্ in font [lmsans8-regular]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans8-regular]:mapping=tex-text;!
+Missing character: There is no া in font [lmsans8-regular]:mapping=tex-text;!
+Missing character: There is no য in font [lmsans8-regular]:mapping=tex-text;!
+Missing character: There is no ় in font [lmsans8-regular]:mapping=tex-text;!
+\Fbcontent=\box59
+File: fish_black_bg.png Graphic file (type bmp)
+<fish_black_bg.png>
+File: fish_black_bg.png Graphic file (type bmp)
+<fish_black_bg.png>
+File: fish_black_bg.png Graphic file (type bmp)
+<fish_black_bg.png>
+File: fish_black_bg.png Graphic file (type bmp)
+<fish_black_bg.png>
+File: fish_black_bg.png Graphic file (type bmp)
+<fish_black_bg.png>
+File: fish_black_bg.png Graphic file (type bmp)
+<fish_black_bg.png>
+File: fish_black_bg.png Graphic file (type bmp)
+<fish_black_bg.png>
+File: fish_black_bg.png Graphic file (type bmp)
+<fish_black_bg.png>
+File: fish_black_bg.png Graphic file (type bmp)
+<fish_black_bg.png>
+File: fish_black_bg.png Graphic file (type bmp)
+<fish_black_bg.png>
+File: fish_black_bg.png Graphic file (type bmp)
+<fish_black_bg.png>
+File: fish_black_bg.png Graphic file (type bmp)
+<fish_black_bg.png>
+\Fccontent=\box60
+\Fdcontent=\box61
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 31.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 31.
+(./picture_task_bengali.aux)
+\openout1 = `picture_task_bengali.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+.................................................
+. fontspec info: "setup-math"
+. 
+. Adjusting the maths setup (use [no-math] to avoid this).
+.................................................
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 34.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 34.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 34.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 34.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 34.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 34.
+LaTeX Font Info:    Redeclaring math accent \check on input line 34.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 34.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 34.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 34.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 34.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 34.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 34.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 34.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 34.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 34.
+ ABD: EveryShipout initializing macros
+! Undefined control sequence.
+\conditioned@inset ->\stack@delim \Ff 
+                                      \stack@delim 
+l.42 ...ackinset{l}{15pt}{t}{5pt}{\Fa}{\Wall}}}}}}
+                                                  };
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\conditioned@inset ->\stack@delim \Ff 
+                                      \stack@delim 
+l.42 ...ackinset{l}{15pt}{t}{5pt}{\Fa}{\Wall}}}}}}
+                                                  };
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\conditioned@inset ->\stack@delim \Fe 
+                                      \stack@delim 
+l.42 ...ackinset{l}{15pt}{t}{5pt}{\Fa}{\Wall}}}}}}
+                                                  };
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\conditioned@inset ->\stack@delim \Fe 
+                                      \stack@delim 
+l.42 ...ackinset{l}{15pt}{t}{5pt}{\Fa}{\Wall}}}}}}
+                                                  };
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\conditioned@inset ->\stack@lroffset \Fe 
+                                         \stack@lroffset 
+l.42 ...ackinset{l}{15pt}{t}{5pt}{\Fa}{\Wall}}}}}}
+                                                  };
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\conditioned@inset ->\stack@lroffset \Fe 
+                                         \stack@lroffset 
+l.42 ...ackinset{l}{15pt}{t}{5pt}{\Fa}{\Wall}}}}}}
+                                                  };
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\conditioned@inset ->\stack@lroffset \Ff 
+                                         \stack@lroffset 
+l.42 ...ackinset{l}{15pt}{t}{5pt}{\Fa}{\Wall}}}}}}
+                                                  };
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\conditioned@inset ->\stack@delim \Fe 
+                                      \stack@delim 
+l.42 ...ackinset{l}{15pt}{t}{5pt}{\Fa}{\Wall}}}}}}
+                                                  };
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\conditioned@inset ->\stack@delim \Fe 
+                                      \stack@delim 
+l.42 ...ackinset{l}{15pt}{t}{5pt}{\Fa}{\Wall}}}}}}
+                                                  };
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\conditioned@inset ->\stack@lroffset \Fe 
+                                         \stack@lroffset 
+l.42 ...ackinset{l}{15pt}{t}{5pt}{\Fa}{\Wall}}}}}}
+                                                  };
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\conditioned@inset ->\stack@lroffset \Fe 
+                                         \stack@lroffset 
+l.42 ...ackinset{l}{15pt}{t}{5pt}{\Fa}{\Wall}}}}}}
+                                                  };
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\conditioned@inset ->\stack@lroffset \Ff 
+                                         \stack@lroffset 
+l.42 ...ackinset{l}{15pt}{t}{5pt}{\Fa}{\Wall}}}}}}
+                                                  };
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[1
+
+] (./picture_task_bengali.aux) ) 
+Here is how much of TeX's memory you used:
+ 22599 strings out of 492970
+ 495588 string characters out of 6137297
+ 559242 words of memory out of 5000000
+ 26322 multiletter control sequences out of 15000+600000
+ 530352 words of font info for 32 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 55i,16n,117p,10494b,692s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on picture_task_bengali.pdf (1 page).

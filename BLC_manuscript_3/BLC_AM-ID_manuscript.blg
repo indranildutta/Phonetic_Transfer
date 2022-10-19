@@ -1,0 +1,76 @@
+This is BibTeX, Version 0.99d (TeX Live 2018/W32TeX)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: BLC_AM-ID_manuscript.aux
+The style file: apacite.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: references.bib
+Repeated entry---line 1325 of file references.bib
+ : @manual{r
+ :          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1657 of file references.bib
+ : @inproceedings{vsimavckova2015immediate
+ :                                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1671 of file references.bib
+ : @article{vsimavckova2018patterns
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2679 of file references.bib
+ : @article{stuart2011hybridity
+ :                             ,
+I'm skipping whatever remains of this entry
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--No journal in leap-q
+Warning--No journal in masica1972sound
+Warning--`others' not consistent with 6th ed. of the APA Manual
+You've used 65 entries,
+            6951 wiz_defined-function locations,
+            1639 strings with 22159 characters,
+and the built_in function-call counts, 130017 in all, are:
+= -- 16244
+> -- 984
+< -- 6647
++ -- 6770
+- -- 139
+* -- 8421
+:= -- 24534
+add.period$ -- 278
+call.type$ -- 65
+change.case$ -- 1115
+chr.to.int$ -- 0
+cite$ -- 132
+duplicate$ -- 3205
+empty$ -- 4818
+format.name$ -- 1562
+if$ -- 24407
+int.to.chr$ -- 0
+int.to.str$ -- 195
+missing$ -- 0
+newline$ -- 1596
+num.names$ -- 528
+pop$ -- 2119
+preamble$ -- 1
+purify$ -- 262
+quote$ -- 0
+skip$ -- 8291
+stack$ -- 0
+substring$ -- 7362
+swap$ -- 1894
+text.length$ -- 176
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 5776
+warning$ -- 3
+while$ -- 541
+width$ -- 0
+write$ -- 1951
+(There were 4 error messages)
